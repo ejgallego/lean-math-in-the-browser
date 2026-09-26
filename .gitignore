@@ -1,0 +1,7 @@
+.lake/
+vir/
+node_modules/
+__pycache__/
+referencia.json
+.wrangler/
+tests/out/

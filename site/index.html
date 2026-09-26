@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tunnell's criterion, in your browser</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M1 15 15 15 1 3z%22 fill=%22%232f6f6e%22/%3E%3C/svg%3E">
+<meta name="description" content="Decide Tunnell's criterion for the congruent number problem with a Lean 4 function running in your browser through lean-vir.">
+<style>
+:root{--bg:#f7f8f6;--card:#fff;--text:#1f2621;--soft:#5c655e;--line:rgba(60,95,69,.16);--accent:#2f6f6e;--no:#9b2c1f;--cond:#2f6f6e;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#12160f;--card:#1a2118;--text:#e6ebe4;--soft:#a7b0a4;--line:rgba(255,255,255,.12);--accent:#6cc4c2;--no:#f08a78;--cond:#6cc4c2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:2.5rem 16px 4rem}
+h1{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.15;margin:0 0 .6rem}
+p{margin:.6rem 0}.lead{color:var(--soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem 1.2rem 1rem;margin:1.4rem 0}
+label{font-weight:600}
+input{font:inherit;width:12rem;max-width:100%;padding:.45rem .6rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
+button{font:inherit;padding:.45rem .9rem;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;min-height:44px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:.95rem;overflow-wrap:anywhere}
+.no{color:var(--no);font-weight:600}.cond{color:var(--cond);font-weight:600}.note,.small{color:var(--soft)}.small{font-size:.85rem}
+#lista{white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;color:var(--soft)}
+footer{color:var(--soft);font-size:.85rem;border-top:1px solid var(--line);padding-top:1rem;margin-top:2rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>Tunnell's criterion, in your browser</h1>
+<p class="lead">Is <em>n</em> the area of a right triangle with rational sides? For a squarefree <em>n</em>, Tunnell (1983) turned this ancient question into counting integer points on two ellipsoids. This page runs that count with a <strong>Lean&nbsp;4 function</strong> — the same code the Lean kernel evaluates in its checks — compiled for the browser with <a href="https://github.com/ejgallego/lean-vir">lean-vir</a>.</p>
+
+<section aria-labelledby="h1n">
+<h2 id="h1n" style="font-size:1.1rem;margin:0 0 .6rem">Decide one n</h2>
+<label for="n">n</label> <input id="n" type="number" min="1" max="10000000" value="157" inputmode="numeric"> <button id="go" type="button">Decide</button>
+<div id="out" aria-live="polite"><p class="note">Try 1 (Fermat: not congruent), 5, 6, 7, or 157 (congruent, but its smallest triangle has sides with dozens of digits).</p></div>
+</section>
+
+<section aria-labelledby="h2l">
+<h2 id="h2l" style="font-size:1.1rem;margin:0 0 .6rem">List them</h2>
+<label for="m">up to</label> <input id="m" type="number" min="1" max="5000" value="200" inputmode="numeric"> <button id="golist" type="button">List</button>
+<div id="lista" aria-live="polite"></div>
+</section>
+
+<section aria-labelledby="h3w">
+<h2 id="h3w" style="font-size:1.1rem;margin:0 0 .6rem">What the answer means</h2>
+<p>For odd <em>n</em>, <span class="mono">A</span> and <span class="mono">B</span> count the integer solutions of <span class="mono">2x² + y² + 32z² = n</span> and <span class="mono">2x² + y² + 8z² = n</span>; for even <em>n</em> = 2<em>m</em>, <span class="mono">C</span> and <span class="mono">D</span> do the same with <span class="mono">4x²</span> and <em>m</em>.</p>
+<p><span class="no">If 2A ≠ B, n is not congruent.</span> This direction of Tunnell's theorem is unconditional.</p>
+<p><span class="cond">If 2A = B, n is congruent provided the Birch–Swinnerton-Dyer conjecture holds</span> for the curve <span class="mono">y² = x³ − n²x</span>. Nobody has proved that converse in general; this page does not claim it.</p>
+<p class="small">What is machine-checked: the Lean kernel evaluates this very function on n = 1, 2, 3 (criterion fails) and 5, 6, 7 (criterion holds). What is tested: on every n ≤ 400 the browser's counts equal an independent brute-force count, and the squarefree n that pass are exactly the terms of OEIS A003273. Tunnell's theorem itself is not formalized here.</p>
+</section>
+
+<footer>Source, tests and the Lean code: <a href="https://github.com/joelcanary/lean-math-in-the-browser">github.com/joelcanary/lean-math-in-the-browser</a>. The count runs in a Web Worker; large n take seconds (about 1 s at n ≈ 10⁶).</footer>
+</main>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

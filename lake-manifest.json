@@ -1,0 +1,16 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/ejgallego/lean-vir",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "cdba5cac11eb3ee9867b8039c05f66da4e4cfaf5",
+   "name": "lean_vir",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "cdba5cac11eb3ee9867b8039c05f66da4e4cfaf5",
+   "inherited": false,
+   "configFile": "lakefile.lean"}],
+ "name": "tunnell_vir",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}
