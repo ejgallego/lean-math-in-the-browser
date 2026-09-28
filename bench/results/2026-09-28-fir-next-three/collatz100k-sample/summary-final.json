@@ -1,0 +1,253 @@
+{
+  "input": 100000,
+  "repetitions": 20,
+  "artifactSha256": "6f4ade4f54d97f7e3d3580c80b874d8971139fe9f53100da8b12da0f58678acd",
+  "inventorySha256": "e631d0dfcc81c143dc59756c0e83050fe24b72d1638390cc1290f6b52070f3c6",
+  "profileSha256": "452f408dfe0db1d9cc314cc334cc6ea84aa17a6a2b2c6472fbe8945744fbe655",
+  "summarizerSha256": "ca80a57e3ef4d506e88ad6fc471e09248a25c111347ce8a2711f0d8d066d2ac3",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/b5c7647a",
+    "definedFunctions": 51,
+    "resolvedFunctions": 4,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 0,
+        "name": "Bench.collatzSteps",
+        "start": 519,
+        "end": 1574,
+        "bytes": 1055
+      },
+      {
+        "index": 1,
+        "name": "Bench.collatzBest",
+        "start": 1576,
+        "end": 2062,
+        "bytes": 486
+      },
+      {
+        "index": 2,
+        "name": "Bench.collatzRecord",
+        "start": 2063,
+        "end": 2093,
+        "bytes": 30
+      },
+      {
+        "index": 18,
+        "name": "fir_release_0",
+        "start": 5009,
+        "end": 5049,
+        "bytes": 40
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 2019,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 2152.9,
+  "attributedMs": 2151.931,
+  "unobservedTailMs": 0.969,
+  "callerCoverage": {
+    "rootOnlyWasm": [
+      {
+        "name": "fir_release_0",
+        "ms": 57.062,
+        "percent": 2.6516649465061843
+      }
+    ],
+    "rootOnlyWasmPercent": 2.6516649465061843,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 2130.698,
+      "percent": 99.01330479462399
+    },
+    {
+      "name": "JavaScript",
+      "ms": 20.173,
+      "percent": 0.9374371204281178
+    },
+    {
+      "name": "JS/Wasm trampoline",
+      "ms": 1.06,
+      "percent": 0.04925808494789099
+    }
+  ],
+  "self": [
+    {
+      "name": "Bench.collatzSteps",
+      "ms": 1276.753,
+      "percent": 59.33057333157987
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 818.884,
+      "percent": 38.053450598555436
+    },
+    {
+      "name": "Bench.collatzBest",
+      "ms": 35.061,
+      "percent": 1.6292808644886847
+    },
+    {
+      "name": "post",
+      "ms": 18.058,
+      "percent": 0.8391532999896373
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1.068,
+      "percent": 0.04962984407957318
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 1.06,
+      "percent": 0.04925808494789099
+    },
+    {
+      "name": "synchronizeResidentFrontierBeforeImport",
+      "ms": 1.047,
+      "percent": 0.04865397635890742
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 2151.931,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 2094.869,
+      "percent": 97.34833505349381
+    },
+    {
+      "name": "call",
+      "ms": 2075.743,
+      "percent": 96.4595519094246
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 2074.696,
+      "percent": 96.4108979330657
+    },
+    {
+      "name": "Bench.collatzRecord",
+      "ms": 2073.636,
+      "percent": 96.3616398481178
+    },
+    {
+      "name": "Bench.collatzBest",
+      "ms": 2069.407,
+      "percent": 96.16511867713231
+    },
+    {
+      "name": "Bench.collatzSteps",
+      "ms": 1697.641,
+      "percent": 78.8891930085119
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 818.884,
+      "percent": 38.053450598555436
+    },
+    {
+      "name": "post",
+      "ms": 18.058,
+      "percent": 0.8391532999896373
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 18.058,
+      "percent": 0.8391532999896373
+    },
+    {
+      "name": "fn",
+      "ms": 18.058,
+      "percent": 0.8391532999896373
+    },
+    {
+      "name": "synchronizeResidentFrontierBeforeImport",
+      "ms": 1.047,
+      "percent": 0.04865397635890742
+    }
+  ],
+  "selectedStacks": [
+    {
+      "name": "Bench.collatzSteps: Bench.collatzSteps",
+      "ms": 1276.753,
+      "percent": 59.33057333157987
+    },
+    {
+      "name": "Bench.collatzBest: Bench.collatzBest → Bench.collatzSteps",
+      "ms": 1272.524,
+      "percent": 59.134052160594365
+    },
+    {
+      "name": "fir_release_0: fir_release_0",
+      "ms": 818.884,
+      "percent": 38.053450598555436
+    },
+    {
+      "name": "Bench.collatzSteps: Bench.collatzSteps → fir_release_0",
+      "ms": 420.888,
+      "percent": 19.55861967693202
+    },
+    {
+      "name": "Bench.collatzBest: Bench.collatzBest → Bench.collatzSteps → fir_release_0",
+      "ms": 420.888,
+      "percent": 19.55861967693202
+    },
+    {
+      "name": "Bench.collatzBest: Bench.collatzBest → fir_release_0",
+      "ms": 340.934,
+      "percent": 15.843165975117232
+    },
+    {
+      "name": "Bench.collatzBest: Bench.collatzBest",
+      "ms": 35.061,
+      "percent": 1.6292808644886847
+    }
+  ],
+  "callerByLeaf": {
+    "Bench.collatzBest": [
+      {
+        "name": "Bench.collatzRecord",
+        "ms": 35.061,
+        "percent": 1.6292808644886847
+      }
+    ],
+    "fir_release_0": [
+      {
+        "name": "Bench.collatzSteps",
+        "ms": 420.888,
+        "percent": 19.55861967693202
+      },
+      {
+        "name": "Bench.collatzBest",
+        "ms": 340.934,
+        "percent": 15.843165975117232
+      },
+      {
+        "name": "(root)",
+        "ms": 57.062,
+        "percent": 2.6516649465061843
+      }
+    ],
+    "Bench.collatzSteps": [
+      {
+        "name": "Bench.collatzBest",
+        "ms": 1272.524,
+        "percent": 59.134052160594365
+      },
+      {
+        "name": "Bench.collatzRecord",
+        "ms": 4.229,
+        "percent": 0.1965211709855009
+      }
+    ]
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "input": 100000,
+  "repetitions": 100,
+  "artifactSha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd",
+  "inventorySha256": "0284f3f836477d694e7adfdc7653f24802498229e0e71950bc28183c81c6ea33",
+  "profileSha256": "70b0bef9d4ce9b69cbd9ae05fbe24e032e3a38e71c241f3f3b88a326e64eebe3",
+  "summarizerSha256": "ca80a57e3ef4d506e88ad6fc471e09248a25c111347ce8a2711f0d8d066d2ac3",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/5bea9a0e",
+    "definedFunctions": 61,
+    "resolvedFunctions": 21,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 0,
+        "name": "Bench.crossOut",
+        "start": 593,
+        "end": 1068,
+        "bytes": 475
+      },
+      {
+        "index": 1,
+        "name": "Bench.sieveFrom",
+        "start": 1070,
+        "end": 1890,
+        "bytes": 820
+      },
+      {
+        "index": 2,
+        "name": "Bench.countTrue",
+        "start": 1892,
+        "end": 2644,
+        "bytes": 752
+      },
+      {
+        "index": 5,
+        "name": "Bench.primeCount",
+        "start": 3707,
+        "end": 4090,
+        "bytes": 383
+      },
+      {
+        "index": 14,
+        "name": "fir_inc_once",
+        "start": 5096,
+        "end": 5277,
+        "bytes": 181
+      },
+      {
+        "index": 17,
+        "name": "fir_dec_once",
+        "start": 5544,
+        "end": 6837,
+        "bytes": 1293
+      },
+      {
+        "index": 18,
+        "name": "fir_release_0",
+        "start": 6838,
+        "end": 6878,
+        "bytes": 40
+      },
+      {
+        "index": 19,
+        "name": "fir_release_1",
+        "start": 6879,
+        "end": 6893,
+        "bytes": 14
+      },
+      {
+        "index": 20,
+        "name": "fir_box_uint8",
+        "start": 6894,
+        "end": 6964,
+        "bytes": 70
+      },
+      {
+        "index": 21,
+        "name": "fir_unbox_uint8",
+        "start": 6965,
+        "end": 7074,
+        "bytes": 109
+      },
+      {
+        "index": 23,
+        "name": "fir_numeric_validate_natural",
+        "start": 7177,
+        "end": 7540,
+        "bytes": 363
+      },
+      {
+        "index": 30,
+        "name": "fir_big_numeric_natural_low",
+        "start": 8021,
+        "end": 8106,
+        "bytes": 85
+      },
+      {
+        "index": 31,
+        "name": "fir_big_numeric_natural_high",
+        "start": 8107,
+        "end": 8189,
+        "bytes": 82
+      },
+      {
+        "index": 38,
+        "name": "fir_big_numeric_magnitude_high",
+        "start": 9047,
+        "end": 9096,
+        "bytes": 49
+      },
+      {
+        "index": 40,
+        "name": "fir_big_numeric_compare_at",
+        "start": 9240,
+        "end": 9391,
+        "bytes": 151
+      },
+      {
+        "index": 41,
+        "name": "fir_big_numeric_compare",
+        "start": 9392,
+        "end": 9467,
+        "bytes": 75
+      },
+      {
+        "index": 54,
+        "name": "fir_nat_div_generic",
+        "start": 12504,
+        "end": 13148,
+        "bytes": 644
+      },
+      {
+        "index": 56,
+        "name": "fir_ext_Nat_div",
+        "start": 13616,
+        "end": 13680,
+        "bytes": 64
+      },
+      {
+        "index": 57,
+        "name": "fir_ext_Array_get!Internal",
+        "start": 13681,
+        "end": 13796,
+        "bytes": 115
+      },
+      {
+        "index": 58,
+        "name": "fir_ext_Array_set!",
+        "start": 13798,
+        "end": 14455,
+        "bytes": 657
+      },
+      {
+        "index": 59,
+        "name": "fir_ext_Array_replicate",
+        "start": 14457,
+        "end": 14890,
+        "bytes": 433
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 299,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 333.058,
+  "attributedMs": 332.878,
+  "unobservedTailMs": 0.18,
+  "callerCoverage": {
+    "rootOnlyWasm": [
+      {
+        "name": "fir_ext_Array_get!Internal",
+        "ms": 5.293,
+        "percent": 1.5900720384044604
+      },
+      {
+        "name": "fir_dec_once",
+        "ms": 1.057,
+        "percent": 0.31753375110400806
+      }
+    ],
+    "rootOnlyWasmPercent": 1.9076057895084688,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 310.374,
+      "percent": 93.2395652461262
+    },
+    {
+      "name": "JavaScript",
+      "ms": 21.434,
+      "percent": 6.4389956680826
+    },
+    {
+      "name": "V8 other",
+      "ms": 1.07,
+      "percent": 0.3214390857911908
+    }
+  ],
+  "self": [
+    {
+      "name": "Bench.crossOut",
+      "ms": 79.597,
+      "percent": 23.911763468898513
+    },
+    {
+      "name": "fir_unbox_uint8",
+      "ms": 49.753,
+      "percent": 14.946316668569265
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 33.866,
+      "percent": 10.173697270471465
+    },
+    {
+      "name": "fir_box_uint8",
+      "ms": 30.694,
+      "percent": 9.220795606798887
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 26.571,
+      "percent": 7.982203690240869
+    },
+    {
+      "name": "fir_ext_Array_get!Internal",
+      "ms": 26.497,
+      "percent": 7.959973323559982
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 24.331,
+      "percent": 7.3092844826032355
+    },
+    {
+      "name": "post",
+      "ms": 19.157,
+      "percent": 5.754961277104525
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 19.006,
+      "percent": 5.709599312661095
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 5.319,
+      "percent": 1.597882707778826
+    },
+    {
+      "name": "Bench.sieveFrom",
+      "ms": 3.193,
+      "percent": 0.9592102812441796
+    },
+    {
+      "name": "fir_inc_once",
+      "ms": 3.094,
+      "percent": 0.9294696555494806
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 2.11,
+      "percent": 0.6338658607658061
+    },
+    {
+      "name": "fir_nat_div_generic",
+      "ms": 1.077,
+      "percent": 0.3235419583150584
+    },
+    {
+      "name": "Bench.primeCount",
+      "ms": 1.071,
+      "percent": 0.32173949615174324
+    },
+    {
+      "name": "(program)",
+      "ms": 1.07,
+      "percent": 0.3214390857911908
+    },
+    {
+      "name": "synchronizeResidentFrontierBeforeImport",
+      "ms": 1.06,
+      "percent": 0.3184349821856656
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1.06,
+      "percent": 0.3184349821856656
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 1.058,
+      "percent": 0.3178341614645606
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 1.056,
+      "percent": 0.31723334074345555
+    },
+    {
+      "name": "fir_big_numeric_compare_at",
+      "ms": 1.054,
+      "percent": 0.3166325200223505
+    },
+    {
+      "name": "fir_numeric_validate_natural",
+      "ms": 1.027,
+      "percent": 0.30852144028743267
+    },
+    {
+      "name": "dispatch",
+      "ms": 0.157,
+      "percent": 0.047164426606744816
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 332.878,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 325.458,
+      "percent": 97.77095512470034
+    },
+    {
+      "name": "call",
+      "ms": 305.084,
+      "percent": 91.6503944388034
+    },
+    {
+      "name": "Bench.primeCount",
+      "ms": 304.024,
+      "percent": 91.33195945661774
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 304.024,
+      "percent": 91.33195945661774
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 149.254,
+      "percent": 44.837447953905034
+    },
+    {
+      "name": "Bench.sieveFrom",
+      "ms": 123.011,
+      "percent": 36.95377886192539
+    },
+    {
+      "name": "Bench.crossOut",
+      "ms": 113.463,
+      "percent": 34.08546073936998
+    },
+    {
+      "name": "fir_unbox_uint8",
+      "ms": 49.753,
+      "percent": 14.946316668569265
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 33.866,
+      "percent": 10.173697270471465
+    },
+    {
+      "name": "fir_box_uint8",
+      "ms": 30.694,
+      "percent": 9.220795606798887
+    },
+    {
+      "name": "fir_ext_Array_get!Internal",
+      "ms": 26.497,
+      "percent": 7.959973323559982
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 24.331,
+      "percent": 7.3092844826032355
+    },
+    {
+      "name": "post",
+      "ms": 19.314,
+      "percent": 5.802125703711269
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 19.314,
+      "percent": 5.802125703711269
+    },
+    {
+      "name": "fn",
+      "ms": 19.314,
+      "percent": 5.802125703711269
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 19.006,
+      "percent": 5.709599312661095
+    },
+    {
+      "name": "fir_release_1",
+      "ms": 17.949,
+      "percent": 5.392065561557087
+    },
+    {
+      "name": "fir_nat_div_generic",
+      "ms": 6.355,
+      "percent": 1.9091078413112312
+    },
+    {
+      "name": "fir_ext_Nat_div",
+      "ms": 6.355,
+      "percent": 1.9091078413112312
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 5.319,
+      "percent": 1.597882707778826
+    },
+    {
+      "name": "fir_big_numeric_compare_at",
+      "ms": 5.278,
+      "percent": 1.5855658829961725
+    },
+    {
+      "name": "fir_big_numeric_compare",
+      "ms": 5.278,
+      "percent": 1.5855658829961725
+    },
+    {
+      "name": "fir_inc_once",
+      "ms": 3.094,
+      "percent": 0.9294696555494806
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 2.111,
+      "percent": 0.6341662711263586
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 2.11,
+      "percent": 0.6338658607658061
+    },
+    {
+      "name": "(program)",
+      "ms": 1.07,
+      "percent": 0.3214390857911908
+    },
+    {
+      "name": "synchronizeResidentFrontierBeforeImport",
+      "ms": 1.06,
+      "percent": 0.3184349821856656
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 1.058,
+      "percent": 0.3178341614645606
+    },
+    {
+      "name": "fir_numeric_validate_natural",
+      "ms": 1.027,
+      "percent": 0.30852144028743267
+    },
+    {
+      "name": "dispatch",
+      "ms": 0.157,
+      "percent": 0.047164426606744816
+    }
+  ],
+  "selectedStacks": [
+    {
+      "name": "Bench.crossOut: Bench.crossOut",
+      "ms": 79.597,
+      "percent": 23.911763468898513
+    },
+    {
+      "name": "fir_unbox_uint8: fir_unbox_uint8",
+      "ms": 49.753,
+      "percent": 14.946316668569265
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_unbox_uint8",
+      "ms": 48.695,
+      "percent": 14.628482507104703
+    },
+    {
+      "name": "fir_ext_Array_set!: fir_ext_Array_set!",
+      "ms": 33.866,
+      "percent": 10.173697270471465
+    },
+    {
+      "name": "Bench.crossOut: Bench.crossOut → fir_ext_Array_set!",
+      "ms": 33.866,
+      "percent": 10.173697270471465
+    },
+    {
+      "name": "fir_box_uint8: fir_box_uint8",
+      "ms": 30.694,
+      "percent": 9.220795606798887
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_box_uint8",
+      "ms": 30.694,
+      "percent": 9.220795606798887
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue",
+      "ms": 26.571,
+      "percent": 7.982203690240869
+    },
+    {
+      "name": "fir_ext_Array_get!Internal: fir_ext_Array_get!Internal",
+      "ms": 26.497,
+      "percent": 7.959973323559982
+    },
+    {
+      "name": "fir_release_0: fir_release_0",
+      "ms": 24.331,
+      "percent": 7.3092844826032355
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_ext_Array_get!Internal",
+      "ms": 21.204,
+      "percent": 6.369901285155523
+    },
+    {
+      "name": "fir_dec_once: fir_dec_once",
+      "ms": 19.006,
+      "percent": 5.709599312661095
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_release_0",
+      "ms": 17.969,
+      "percent": 5.398073768768137
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_inc_once",
+      "ms": 3.094,
+      "percent": 0.9294696555494806
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic",
+      "ms": 1.077,
+      "percent": 0.3235419583150584
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic → fir_big_numeric_compare → fir_big_numeric_compare_at → fir_big_numeric_natural_low",
+      "ms": 1.058,
+      "percent": 0.3178341614645606
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic → fir_big_numeric_compare → fir_big_numeric_compare_at → fir_big_numeric_magnitude_high",
+      "ms": 1.056,
+      "percent": 0.31723334074345555
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic → fir_big_numeric_compare → fir_big_numeric_compare_at → fir_big_numeric_magnitude_high → fir_big_numeric_natural_high",
+      "ms": 1.055,
+      "percent": 0.31693293038290304
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic → fir_big_numeric_compare → fir_big_numeric_compare_at → fir_big_numeric_natural_high",
+      "ms": 1.055,
+      "percent": 0.31693293038290304
+    },
+    {
+      "name": "fir_nat_div_generic: fir_nat_div_generic → fir_big_numeric_compare → fir_big_numeric_compare_at",
+      "ms": 1.054,
+      "percent": 0.3166325200223505
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue → fir_numeric_validate_natural",
+      "ms": 1.027,
+      "percent": 0.30852144028743267
+    }
+  ],
+  "callerByLeaf": {
+    "Bench.crossOut": [
+      {
+        "name": "Bench.sieveFrom",
+        "ms": 79.597,
+        "percent": 23.911763468898513
+      }
+    ],
+    "Bench.countTrue": [
+      {
+        "name": "Bench.primeCount",
+        "ms": 26.571,
+        "percent": 7.982203690240869
+      }
+    ],
+    "fir_box_uint8": [
+      {
+        "name": "Bench.countTrue",
+        "ms": 30.694,
+        "percent": 9.220795606798887
+      }
+    ],
+    "fir_unbox_uint8": [
+      {
+        "name": "Bench.countTrue",
+        "ms": 48.695,
+        "percent": 14.628482507104703
+      },
+      {
+        "name": "Bench.primeCount",
+        "ms": 1.058,
+        "percent": 0.3178341614645606
+      }
+    ],
+    "fir_release_0": [
+      {
+        "name": "Bench.countTrue",
+        "ms": 17.969,
+        "percent": 5.398073768768137
+      },
+      {
+        "name": "Bench.primeCount",
+        "ms": 6.362,
+        "percent": 1.9112107138350987
+      }
+    ],
+    "fir_ext_Array_get!Internal": [
+      {
+        "name": "Bench.countTrue",
+        "ms": 21.204,
+        "percent": 6.369901285155523
+      },
+      {
+        "name": "(root)",
+        "ms": 5.293,
+        "percent": 1.5900720384044604
+      }
+    ],
+    "fir_ext_Array_set!": [
+      {
+        "name": "Bench.crossOut",
+        "ms": 33.866,
+        "percent": 10.173697270471465
+      }
+    ],
+    "fir_dec_once": [
+      {
+        "name": "fir_release_1",
+        "ms": 11.635,
+        "percent": 3.4952745450285088
+      },
+      {
+        "name": "fir_dec_once",
+        "ms": 6.314,
+        "percent": 1.896791016528578
+      },
+      {
+        "name": "(root)",
+        "ms": 1.057,
+        "percent": 0.31753375110400806
+      }
+    ],
+    "fir_nat_div_generic": [
+      {
+        "name": "fir_ext_Nat_div",
+        "ms": 1.077,
+        "percent": 0.3235419583150584
+      }
+    ]
+  }
+}

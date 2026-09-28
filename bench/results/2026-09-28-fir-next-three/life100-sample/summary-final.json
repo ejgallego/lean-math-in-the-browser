@@ -1,0 +1,420 @@
+{
+  "input": 100,
+  "repetitions": 30,
+  "artifactSha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27",
+  "inventorySha256": "1cbedef105cb07a4b05fabf010cbd801cd113c01b050560ceaa7b724011c2d0e",
+  "profileSha256": "dc612d000fa1fbaaf9de40672f14f2fc2f54ef9a4fbd26e0fcae48092863e387",
+  "summarizerSha256": "ca80a57e3ef4d506e88ad6fc471e09248a25c111347ce8a2711f0d8d066d2ac3",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/0001509e",
+    "definedFunctions": 80,
+    "resolvedFunctions": 11,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 0,
+        "name": "Bench.neighbours._lam_0",
+        "start": 746,
+        "end": 1984,
+        "bytes": 1238
+      },
+      {
+        "index": 1,
+        "name": "Bench.neighbours",
+        "start": 1986,
+        "end": 3329,
+        "bytes": 1343
+      },
+      {
+        "index": 2,
+        "name": "Bench.stepCells",
+        "start": 3331,
+        "end": 5068,
+        "bytes": 1737
+      },
+      {
+        "index": 3,
+        "name": "Bench.evolve",
+        "start": 5070,
+        "end": 5334,
+        "bytes": 264
+      },
+      {
+        "index": 4,
+        "name": "Bench.countTrue",
+        "start": 5336,
+        "end": 6088,
+        "bytes": 752
+      },
+      {
+        "index": 8,
+        "name": "Bench.lifePopulation",
+        "start": 7001,
+        "end": 7071,
+        "bytes": 70
+      },
+      {
+        "index": 31,
+        "name": "fir_dec_once",
+        "start": 8775,
+        "end": 10068,
+        "bytes": 1293
+      },
+      {
+        "index": 32,
+        "name": "fir_release_0",
+        "start": 10069,
+        "end": 10109,
+        "bytes": 40
+      },
+      {
+        "index": 33,
+        "name": "fir_release_1",
+        "start": 10110,
+        "end": 10124,
+        "bytes": 14
+      },
+      {
+        "index": 77,
+        "name": "fir_ext_Array_set!",
+        "start": 19539,
+        "end": 20196,
+        "bytes": 657
+      },
+      {
+        "index": 78,
+        "name": "fir_ext_Array_replicate",
+        "start": 20198,
+        "end": 20631,
+        "bytes": 433
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 1844,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 1967.114,
+  "attributedMs": 1966.829,
+  "unobservedTailMs": 0.285,
+  "callerCoverage": {
+    "rootOnlyWasm": [
+      {
+        "name": "fir_dec_once",
+        "ms": 1.057,
+        "percent": 0.05374132677523058
+      },
+      {
+        "name": "fir_ext_Array_set!",
+        "ms": 1.054,
+        "percent": 0.05358879699251943
+      }
+    ],
+    "rootOnlyWasmPercent": 0.10733012376775002,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 1948.051,
+      "percent": 99.04526524674996
+    },
+    {
+      "name": "JavaScript",
+      "ms": 18.778,
+      "percent": 0.9547347532500283
+    }
+  ],
+  "self": [
+    {
+      "name": "Bench.neighbours._lam_0",
+      "ms": 1513.204,
+      "percent": 76.93622577255064
+    },
+    {
+      "name": "Bench.neighbours",
+      "ms": 251.568,
+      "percent": 12.790537459026687
+    },
+    {
+      "name": "Bench.stepCells",
+      "ms": 114.374,
+      "percent": 5.815147122601914
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 33.891,
+      "percent": 1.723128955287928
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 25.49,
+      "percent": 1.2959947204357878
+    },
+    {
+      "name": "post",
+      "ms": 17.68,
+      "percent": 0.8989088527777453
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 6.358,
+      "percent": 0.323261452825843
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1.098,
+      "percent": 0.05582590047228305
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 1.057,
+      "percent": 0.05374132677523058
+    },
+    {
+      "name": "Bench.evolve",
+      "ms": 1.055,
+      "percent": 0.05363964025342315
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 1.054,
+      "percent": 0.05358879699251943
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 1966.829,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1964.718,
+      "percent": 99.89266987623225
+    },
+    {
+      "name": "Bench.lifePopulation",
+      "ms": 1945.94,
+      "percent": 98.93793512298222
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 1945.94,
+      "percent": 98.93793512298222
+    },
+    {
+      "name": "call",
+      "ms": 1945.94,
+      "percent": 98.93793512298222
+    },
+    {
+      "name": "Bench.evolve",
+      "ms": 1944.886,
+      "percent": 98.8843463259897
+    },
+    {
+      "name": "Bench.stepCells",
+      "ms": 1898.297,
+      "percent": 96.51560964374636
+    },
+    {
+      "name": "Bench.neighbours",
+      "ms": 1746.801,
+      "percent": 88.81305898987661
+    },
+    {
+      "name": "Bench.neighbours._lam_0",
+      "ms": 1513.204,
+      "percent": 76.93622577255064
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 33.891,
+      "percent": 1.723128955287928
+    },
+    {
+      "name": "fir_release_1",
+      "ms": 32.834,
+      "percent": 1.6693876285126974
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 25.49,
+      "percent": 1.2959947204357878
+    },
+    {
+      "name": "post",
+      "ms": 17.68,
+      "percent": 0.8989088527777453
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 17.68,
+      "percent": 0.8989088527777453
+    },
+    {
+      "name": "fn",
+      "ms": 17.68,
+      "percent": 0.8989088527777453
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 6.358,
+      "percent": 0.323261452825843
+    },
+    {
+      "name": "fir_release_0",
+      "ms": 1.057,
+      "percent": 0.05374132677523058
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 1.054,
+      "percent": 0.05358879699251943
+    }
+  ],
+  "selectedStacks": [
+    {
+      "name": "Bench.neighbours._lam_0: Bench.neighbours._lam_0",
+      "ms": 1513.204,
+      "percent": 76.93622577255064
+    },
+    {
+      "name": "Bench.neighbours: Bench.neighbours → Bench.neighbours._lam_0",
+      "ms": 1495.233,
+      "percent": 76.0225215308499
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours → Bench.neighbours._lam_0",
+      "ms": 1495.233,
+      "percent": 76.0225215308499
+    },
+    {
+      "name": "Bench.neighbours: Bench.neighbours",
+      "ms": 251.568,
+      "percent": 12.790537459026687
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours",
+      "ms": 248.398,
+      "percent": 12.6293643219619
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells",
+      "ms": 114.374,
+      "percent": 5.815147122601914
+    },
+    {
+      "name": "fir_dec_once: fir_dec_once",
+      "ms": 33.891,
+      "percent": 1.723128955287928
+    },
+    {
+      "name": "fir_ext_Array_set!: fir_ext_Array_set!",
+      "ms": 25.49,
+      "percent": 1.2959947204357878
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → fir_ext_Array_set!",
+      "ms": 22.321,
+      "percent": 1.1348724266319035
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours._lam_0",
+      "ms": 17.971,
+      "percent": 0.9137042417007274
+    },
+    {
+      "name": "fir_release_0: fir_release_0",
+      "ms": 1.057,
+      "percent": 0.05374132677523058
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue",
+      "ms": 1.054,
+      "percent": 0.05358879699251943
+    }
+  ],
+  "callerByLeaf": {
+    "Bench.neighbours._lam_0": [
+      {
+        "name": "Bench.neighbours",
+        "ms": 1495.233,
+        "percent": 76.0225215308499
+      },
+      {
+        "name": "Bench.stepCells",
+        "ms": 17.971,
+        "percent": 0.9137042417007274
+      }
+    ],
+    "Bench.stepCells": [
+      {
+        "name": "Bench.evolve",
+        "ms": 114.374,
+        "percent": 5.815147122601914
+      }
+    ],
+    "Bench.neighbours": [
+      {
+        "name": "Bench.stepCells",
+        "ms": 248.398,
+        "percent": 12.6293643219619
+      },
+      {
+        "name": "Bench.evolve",
+        "ms": 3.17,
+        "percent": 0.16117313706478803
+      }
+    ],
+    "fir_dec_once": [
+      {
+        "name": "fir_release_1",
+        "ms": 23.218,
+        "percent": 1.1804788316625392
+      },
+      {
+        "name": "fir_dec_once",
+        "ms": 9.616,
+        "percent": 0.4889087968501583
+      },
+      {
+        "name": "(root)",
+        "ms": 1.057,
+        "percent": 0.05374132677523058
+      }
+    ],
+    "fir_ext_Array_set!": [
+      {
+        "name": "Bench.stepCells",
+        "ms": 22.321,
+        "percent": 1.1348724266319035
+      },
+      {
+        "name": "Bench.evolve",
+        "ms": 2.115,
+        "percent": 0.1075334968113649
+      },
+      {
+        "name": "(root)",
+        "ms": 1.054,
+        "percent": 0.05358879699251943
+      }
+    ],
+    "fir_release_0": [
+      {
+        "name": "Bench.evolve",
+        "ms": 1.057,
+        "percent": 0.05374132677523058
+      }
+    ],
+    "Bench.countTrue": [
+      {
+        "name": "Bench.lifePopulation",
+        "ms": 1.054,
+        "percent": 0.05358879699251943
+      }
+    ]
+  }
+}

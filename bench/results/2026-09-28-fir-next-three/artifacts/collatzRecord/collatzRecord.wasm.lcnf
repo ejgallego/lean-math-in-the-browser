@@ -1,0 +1,96 @@
+def Bench.collatzSteps x.1 x.2 x.3 : tobj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : tobj
+  | Bool.true =>
+    dec x.2;
+    dec x.1;
+    return x.3
+  | Bool.false =>
+    let _x.4 := 1;
+    let _x.5 := Nat.decLe x.2 _x.4;
+    cases _x.5 : tobj
+    | Bool.false =>
+      let n.6 := Nat.sub x.1 _x.4;
+      dec x.1;
+      jp _jp.7 _y.8 : tobj :=
+        let _x.9 := Nat.add x.3 _x.4;
+        dec x.3;
+        let _x.10 := Bench.collatzSteps n.6 _y.8 _x.9;
+        return _x.10;
+      let _x.11 := 2;
+      let _x.12 := Nat.mod x.2 _x.11;
+      let _x.13 := Nat.decEq _x.12 zero;
+      dec _x.12;
+      cases _x.13 : tobj
+      | Bool.false =>
+        let _x.14 := 3;
+        let _x.15 := Nat.mul _x.14 x.2;
+        dec x.2;
+        let _x.16 := Nat.add _x.15 _x.4;
+        dec _x.15;
+        goto _jp.7 _x.16
+      | Bool.true =>
+        let _x.17 := Nat.shiftRight x.2 _x.4;
+        dec x.2;
+        goto _jp.7 _x.17
+    | Bool.true =>
+      dec x.2;
+      dec x.1;
+      return x.3
+
+def Bench.collatzBest x.1 x.2 x.3 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.1;
+    let _x.4 := ctor_0[Prod.mk] x.2 x.3;
+    return _x.4
+  | Bool.false =>
+    let one := 1;
+    let n.5 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.6 := 100000;
+    let _x.7 := Nat.add n.5 one;
+    inc _x.7;
+    let s := Bench.collatzSteps _x.6 _x.7 zero;
+    let _x.8 := Nat.decLe x.3 s;
+    cases _x.8 : obj
+    | Bool.false =>
+      dec s;
+      dec _x.7;
+      let _x.9 := Bench.collatzBest n.5 x.2 x.3;
+      return _x.9
+    | Bool.true =>
+      dec x.3;
+      dec x.2;
+      let _x.10 := Bench.collatzBest n.5 _x.7 s;
+      return _x.10
+
+def Bench.collatzRecord N : obj :=
+  let _x.1 := 1;
+  let _x.2 := 0;
+  let _x.3 := Bench.collatzBest N _x.1 _x.2;
+  return _x.3
+
+def Nat.decEq @&n @&m : UInt8 :=
+  extern
+
+def Nat.sub @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.add @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.decLe @&n @&m : UInt8 :=
+  extern
+
+def Nat.mod @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mul @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.shiftRight @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern

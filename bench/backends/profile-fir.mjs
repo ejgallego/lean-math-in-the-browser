@@ -14,8 +14,8 @@ const args = process.argv.slice(2);
 const [manifestArg, outputArg, mode, workloadArg, inputArg, repsArg] = args.length === 5
   ? [...args.slice(0, 3), 'fibBits', ...args.slice(3)] : args;
 assert.ok(manifestArg && outputArg && ['phases', 'sample'].includes(mode),
-  'usage: node bench/backends/profile-fir.mjs MANIFEST OUT_DIR phases|sample fibBits|isPrime|mertens INPUT REPS');
-assert.ok(['fibBits', 'isPrime', 'mertens'].includes(workloadArg));
+  'usage: node bench/backends/profile-fir.mjs MANIFEST OUT_DIR phases|sample fibBits|isPrime|mertens|primeCount|collatzRecord|lifePopulation INPUT REPS');
+assert.ok(['fibBits', 'isPrime', 'mertens', 'primeCount', 'collatzRecord', 'lifePopulation'].includes(workloadArg));
 const n = Number(inputArg), reps = Number(repsArg);
 assert.ok(Number.isSafeInteger(n) && n > 0 && !(workloadArg === 'isPrime' && n >= 1279));
 assert.ok(Number.isSafeInteger(reps) && reps > 0 && reps <= 100);
@@ -61,7 +61,8 @@ const bytes = readFileSync(artifact.path);
 const descriptor = JSON.parse(readFileSync(artifact.path + '.json'));
 assert.equal(descriptor.sourceEntry, 'Bench.' + workloadArg);
 assert.deepEqual(descriptor.params, ['tobject']);
-assert.equal(descriptor.result, workloadArg === 'isPrime' ? 'uint8' : 'tobject');
+assert.equal(descriptor.result, workloadArg === 'collatzRecord' ? 'object'
+  : workloadArg === 'isPrime' ? 'uint8' : 'tobject');
 assert.deepEqual(WebAssembly.Module.imports(new WebAssembly.Module(bytes)), []);
 assert.deepEqual(descriptor.imports, []);
 const host = new ConcreteHost([], undefined, undefined, descriptor.closureDispatch, descriptor.closureDescriptors);
@@ -85,6 +86,12 @@ function call() {
       const integer = (raw & 1) || host.readHeader(raw).kind === 5
         ? BigInt.asIntN(32, host.taggedPayload(raw)) : host.readInteger(raw);
       value = String(integer);
+    } else if (workloadArg === 'collatzRecord') {
+      const header = host.readHeader(raw);
+      assert.equal(header.kind, 1); assert.equal(header.aux0, 0);
+      assert.equal(header.aux1, 2); assert.equal(header.aux2, 0);
+      const nat = word => String(word & 1 ? BigInt(word >>> 1) : host.readNatural(word));
+      value = `${nat(host.readWordSlot(raw + 32))} ${nat(host.readWordSlot(raw + 40))}`;
     } else value = String(raw & 1 ? BigInt(raw >>> 1) : host.readNatural(raw));
     t3 = performance.now();
     peak = exports.fir_heap_frontier() >>> 0;

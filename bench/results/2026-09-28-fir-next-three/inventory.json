@@ -1,0 +1,271 @@
+{
+  "schema": "fir-next-three-evidence/v1",
+  "producerCommit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+  "lean": "4.34.1",
+  "files": [
+    {
+      "path": "prime1m-phases/run.json",
+      "sha256": "5cf8919ed4ed6e3496579d6df883503264277377abc9924220ab38941266d156",
+      "bytes": 9516,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime1m-phases/run.json"
+    },
+    {
+      "path": "prime1m-sample/run.json",
+      "sha256": "e9f35c7a464ca609e8414cd144e0d2ecd3b891e9f3a84363766cf9386458229b",
+      "bytes": 33050,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime1m-sample/run.json"
+    },
+    {
+      "path": "prime1m-sample/cpu.cpuprofile",
+      "sha256": "8e567762b864cce9029c2c8ce290254b2bd34dd767c7f2c927c8e63c99acfbff",
+      "bytes": 29654,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime1m-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "prime1m-sample/summary-final.json",
+      "sha256": "25a42f4d5998c75bed241acff36efa831befee03b4492a55cc51bbc174669bc0",
+      "bytes": 18726,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime1m-sample/summary-final.json"
+    },
+    {
+      "path": "prime100k-phases/run.json",
+      "sha256": "ffbaea043c72393c8a4497e725277f7fcdbcc492612b942e8f738153a2e90c4c",
+      "bytes": 9483,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime100k-phases/run.json"
+    },
+    {
+      "path": "prime100k-sample/run.json",
+      "sha256": "2800811eece960f10f922e9d0ae27a9612b53b8e20767dc621323f646da3bf60",
+      "bytes": 44968,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime100k-sample/run.json"
+    },
+    {
+      "path": "prime100k-sample/cpu.cpuprofile",
+      "sha256": "70b0bef9d4ce9b69cbd9ae05fbe24e032e3a38e71c241f3f3b88a326e64eebe3",
+      "bytes": 9596,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime100k-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "prime100k-sample/summary-final.json",
+      "sha256": "563b04e8867688766d595577cda9349852e932997585e4166cbcd87e73b87f3c",
+      "bytes": 15790,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime100k-sample/summary-final.json"
+    },
+    {
+      "path": "collatz100k-phases/run.json",
+      "sha256": "ddf905760152a23f9a36e0ee6c0fe9f796ae4fbbdef305a77fe40fb4ad472f9f",
+      "bytes": 8707,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz100k-phases/run.json"
+    },
+    {
+      "path": "collatz100k-sample/run.json",
+      "sha256": "fbf10fcdc60bc5b57b03f1b43b957e77841f146a0a132471f3897b433302e340",
+      "bytes": 12955,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz100k-sample/run.json"
+    },
+    {
+      "path": "collatz100k-sample/cpu.cpuprofile",
+      "sha256": "452f408dfe0db1d9cc314cc334cc6ea84aa17a6a2b2c6472fbe8945744fbe655",
+      "bytes": 19092,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz100k-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "collatz100k-sample/summary-final.json",
+      "sha256": "30cad950fbf9265944e9a3914cadf63a2de71e1fe30318ba16fd067474b71375",
+      "bytes": 6344,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz100k-sample/summary-final.json"
+    },
+    {
+      "path": "collatz10k-phases/run.json",
+      "sha256": "701093a89e7ed6021afba004fe7e407882196850aa1eda03d761c2abe8cd1a84",
+      "bytes": 8719,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz10k-phases/run.json"
+    },
+    {
+      "path": "collatz10k-sample/run.json",
+      "sha256": "77690d1bd260951f222580d1ed0ea3a1ef5ea1562143b1eac3f8fb1f0481f231",
+      "bytes": 16929,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz10k-sample/run.json"
+    },
+    {
+      "path": "collatz10k-sample/cpu.cpuprofile",
+      "sha256": "6014e0ed7f896077c5c122f4a4dd659285d2868373c3cfaac25b06f0d49d1c89",
+      "bytes": 5131,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz10k-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "collatz10k-sample/summary-final.json",
+      "sha256": "28470f764eb1178cf7f1054651ef180db7eed0e977dd602ad2ead8eb0661577d",
+      "bytes": 6116,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-collatz10k-sample/summary-final.json"
+    },
+    {
+      "path": "life100-phases/run.json",
+      "sha256": "a704fb76c4f5e9dc278af8681b474c0867fe33eea42f46f4733055c7a74f73ef",
+      "bytes": 9555,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life100-phases/run.json"
+    },
+    {
+      "path": "life100-sample/run.json",
+      "sha256": "8ba341d79f0f6364d3751ed904dbd1c29fdea65f8703ba143af58c3466fce194",
+      "bytes": 17022,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life100-sample/run.json"
+    },
+    {
+      "path": "life100-sample/cpu.cpuprofile",
+      "sha256": "dc612d000fa1fbaaf9de40672f14f2fc2f54ef9a4fbd26e0fcae48092863e387",
+      "bytes": 19313,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life100-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "life100-sample/summary-final.json",
+      "sha256": "ebef9f8b8e87fb4ac7cabc46bfed0a62d3a33c7469c997fc0cdd94abe31047c0",
+      "bytes": 9818,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life100-sample/summary-final.json"
+    },
+    {
+      "path": "life30-phases/run.json",
+      "sha256": "c9bd5f5b86e11d9c57bd191385271ddb136803beea8e2b0414b3d6f5b15ae408",
+      "bytes": 9602,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life30-phases/run.json"
+    },
+    {
+      "path": "life30-sample/run.json",
+      "sha256": "6922b9c99e9b843948e88c31c4816ec0556534f53220a2e5fe0e494239d08947",
+      "bytes": 25275,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life30-sample/run.json"
+    },
+    {
+      "path": "life30-sample/cpu.cpuprofile",
+      "sha256": "828b723f11f5f8f68544d5e97624c05827a91348457204d481e415aa1a026ac9",
+      "bytes": 11868,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life30-sample/cpu.cpuprofile"
+    },
+    {
+      "path": "life30-sample/summary-final.json",
+      "sha256": "497f3e8428077498bb2f1fada45a892cbd699dc9641aac4dcce11d21f42ce4d0",
+      "bytes": 9117,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-life30-sample/summary-final.json"
+    },
+    {
+      "path": "artifacts/primeCount/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718",
+      "bytes": 159,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.json"
+    },
+    {
+      "path": "artifacts/primeCount/primeCount.wasm.functions.json",
+      "sha256": "0284f3f836477d694e7adfdc7653f24802498229e0e71950bc28183c81c6ea33",
+      "bytes": 3202,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.functions.json"
+    },
+    {
+      "path": "artifacts/primeCount/primeCount.wasm.lcnf",
+      "sha256": "2e02dc6214f99cf02278fc2d60ddbf4290ba91ed1e9a51cde99499e2654a539b",
+      "bytes": 5070,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.lcnf"
+    },
+    {
+      "path": "artifacts/primeCount/build-identity.json",
+      "sha256": "1fc5e1ff4ca208e67626cbad79842edbab77398f11ded5720ad6175a0579a338",
+      "bytes": 763,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/build-identity.json"
+    },
+    {
+      "path": "artifacts/collatzRecord/collatzRecord.wasm.json",
+      "sha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41",
+      "bytes": 164,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/collatzRecord.wasm.json"
+    },
+    {
+      "path": "artifacts/collatzRecord/collatzRecord.wasm.functions.json",
+      "sha256": "e631d0dfcc81c143dc59756c0e83050fe24b72d1638390cc1290f6b52070f3c6",
+      "bytes": 2764,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/collatzRecord.wasm.functions.json"
+    },
+    {
+      "path": "artifacts/collatzRecord/collatzRecord.wasm.lcnf",
+      "sha256": "6bdb1b62ba8c790f6d19bc180311f3ac2dd5d90044cdce91e8a77ec69e03dfdc",
+      "bytes": 2325,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/collatzRecord.wasm.lcnf"
+    },
+    {
+      "path": "artifacts/collatzRecord/build-identity.json",
+      "sha256": "78b531fc4ca28568fca80164744c402d650a9f54d009094d88b6e005ebe6e167",
+      "bytes": 766,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/build-identity.json"
+    },
+    {
+      "path": "artifacts/lifePopulation/lifePopulation.wasm.json",
+      "sha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b",
+      "bytes": 167,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/lifePopulation.wasm.json"
+    },
+    {
+      "path": "artifacts/lifePopulation/lifePopulation.wasm.functions.json",
+      "sha256": "1cbedef105cb07a4b05fabf010cbd801cd113c01b050560ceaa7b724011c2d0e",
+      "bytes": 4062,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/lifePopulation.wasm.functions.json"
+    },
+    {
+      "path": "artifacts/lifePopulation/lifePopulation.wasm.lcnf",
+      "sha256": "d01cb19e205ba4d4b96081ad6376e960748259250f89153f1b63397210ce1ebd",
+      "bytes": 8863,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/lifePopulation.wasm.lcnf"
+    },
+    {
+      "path": "artifacts/lifePopulation/build-identity.json",
+      "sha256": "5c954ab8c5daa0a6ee72c077b6e853d4642c5a1a0cac6cfe59614ae74ada2aba",
+      "bytes": 767,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/build-identity.json"
+    },
+    {
+      "path": "source/ResidentArray.lean",
+      "sha256": "642a7c55402f7e4ed850fbdc9220708242a5ab5df5839a74d4a26b08bbbddda5",
+      "bytes": 78500,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentArray.lean"
+    },
+    {
+      "path": "source/ResidentScalarBox.lean",
+      "sha256": "23554995df5f5c7ff25a01b62dab791729ea16edf69e2e853a1e960f578e6449",
+      "bytes": 34909,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentScalarBox.lean"
+    },
+    {
+      "path": "source/ResidentRelease.lean",
+      "sha256": "57b4113816c12f597140732fdacc90d4e4ff0cd1db152e656495997c31cf5c9d",
+      "bytes": 31770,
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentRelease.lean"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Bench.lean",
+      "sha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89"
+    },
+    {
+      "path": "bench/backends/profile-fir.mjs",
+      "sha256": "a14e65b7286565180a41231fe9bac40174197107b5b4ae0b4ef3d0e17293140c"
+    },
+    {
+      "path": "bench/backends/summarize-fir-profile.mjs",
+      "sha256": "ca80a57e3ef4d506e88ad6fc471e09248a25c111347ce8a2711f0d8d066d2ac3"
+    },
+    {
+      "path": "bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "bench/js-baseline-revised.mjs",
+      "sha256": "ba70f34a4a43a94e3fc111462c92c8707d9d82d172fb7469dd7f5277f46a1bcc"
+    },
+    {
+      "path": "bench/results/2026-09-28-fir-mul/fir-manifest.json",
+      "sha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf"
+    }
+  ]
+}

@@ -24,6 +24,8 @@ the [follow-up evaluation](docs/FIR-MULTIPLICATION-20260928.md) measures
 and 39/40 qualified inputs. Miller–Rabin remains slow.
 The [remaining-hotspot profiles](docs/FIR-REMAINING-HOTSPOTS-20260928.md)
 identify generic remainder and signed-integer handling as the next targets.
+The [sieve, Collatz and Life profiles](docs/FIR-NEXT-THREE-PROFILES-20260928.md)
+cover the next three candidates and their distinct runtime costs.
 The C/Wasm baseline helps distinguish interpreter costs from arithmetic and
 output conversion. These follow-up timings are Node measurements on one host;
 browser/Worker validation remains separate.

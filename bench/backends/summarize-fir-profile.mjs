@@ -74,7 +74,10 @@ const callerByLeaf = new Map();
 const targets = ['fir_nat_mul_generic', 'fir_nat_mod_generic', 'fir_nat_div_generic',
   'fir_ext_Array_set!', 'fir_ext_Array_get!InternalBorrowed', 'fir_ext_Array_get!Internal',
   'fir_big_ext_Int_add', 'fir_big_ext_Int_neg',
-  'fir_big_numeric_integer_combine', 'fir_dec_once'];
+  'fir_big_numeric_integer_combine', 'fir_dec_once', 'fir_release_0',
+  'fir_box_uint8', 'fir_unbox_uint8', 'Bench.crossOut', 'Bench.countTrue',
+  'Bench.collatzSteps', 'Bench.collatzBest', 'Bench.neighbours._lam_0',
+  'Bench.neighbours', 'Bench.stepCells'];
 const rootOnlyWasm = new Map();
 const add = (map, key, weight) => map.set(key, (map.get(key) ?? 0) + weight);
 let time = profile.startTime, sampledUs = 0;

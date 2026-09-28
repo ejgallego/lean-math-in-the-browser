@@ -99,11 +99,15 @@ the multiplication/addition hotspot findings. These diagnostics do not rebuild
 or modify the packages.
 
 The same profiler now accepts an explicit workload before the input:
-`profile-fir.mjs MANIFEST OUT_DIR phases|sample fibBits|isPrime|mertens INPUT REPS`.
+`profile-fir.mjs MANIFEST OUT_DIR phases|sample WORKLOAD INPUT REPS`.
+Supported workloads are `fibBits`, `isPrime`, `mertens`, `primeCount`,
+`collatzRecord` and `lifePopulation`.
 For `isPrime`, input is the case's bit-length label, resolved to the exact
 reference argument. The original five-argument Fibonacci commands still work.
 See the [remaining-hotspot report](../../docs/FIR-REMAINING-HOTSPOTS-20260928.md)
 for the bounded primality and Mertens recipes.
+The [next three profiles](../../docs/FIR-NEXT-THREE-PROFILES-20260928.md)
+provide prime-sieve, Collatz and Life captures using the same timing boundaries.
 
 The original module-wise replay issue is preserved as a diagnostic path:
 

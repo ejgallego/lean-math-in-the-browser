@@ -1,0 +1,390 @@
+{
+  "input": 30,
+  "repetitions": 50,
+  "artifactSha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27",
+  "inventorySha256": "1cbedef105cb07a4b05fabf010cbd801cd113c01b050560ceaa7b724011c2d0e",
+  "profileSha256": "828b723f11f5f8f68544d5e97624c05827a91348457204d481e415aa1a026ac9",
+  "summarizerSha256": "ca80a57e3ef4d506e88ad6fc471e09248a25c111347ce8a2711f0d8d066d2ac3",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/0001509e",
+    "definedFunctions": 80,
+    "resolvedFunctions": 10,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 0,
+        "name": "Bench.neighbours._lam_0",
+        "start": 746,
+        "end": 1984,
+        "bytes": 1238
+      },
+      {
+        "index": 1,
+        "name": "Bench.neighbours",
+        "start": 1986,
+        "end": 3329,
+        "bytes": 1343
+      },
+      {
+        "index": 2,
+        "name": "Bench.stepCells",
+        "start": 3331,
+        "end": 5068,
+        "bytes": 1737
+      },
+      {
+        "index": 3,
+        "name": "Bench.evolve",
+        "start": 5070,
+        "end": 5334,
+        "bytes": 264
+      },
+      {
+        "index": 4,
+        "name": "Bench.countTrue",
+        "start": 5336,
+        "end": 6088,
+        "bytes": 752
+      },
+      {
+        "index": 8,
+        "name": "Bench.lifePopulation",
+        "start": 7001,
+        "end": 7071,
+        "bytes": 70
+      },
+      {
+        "index": 31,
+        "name": "fir_dec_once",
+        "start": 8775,
+        "end": 10068,
+        "bytes": 1293
+      },
+      {
+        "index": 33,
+        "name": "fir_release_1",
+        "start": 10110,
+        "end": 10124,
+        "bytes": 14
+      },
+      {
+        "index": 77,
+        "name": "fir_ext_Array_set!",
+        "start": 19539,
+        "end": 20196,
+        "bytes": 657
+      },
+      {
+        "index": 78,
+        "name": "fir_ext_Array_replicate",
+        "start": 20198,
+        "end": 20631,
+        "bytes": 433
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 972,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 1047.253,
+  "attributedMs": 1046.075,
+  "unobservedTailMs": 1.178,
+  "callerCoverage": {
+    "rootOnlyWasm": [],
+    "rootOnlyWasmPercent": 0,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 1022.106,
+      "percent": 97.70867289630286
+    },
+    {
+      "name": "JavaScript",
+      "ms": 22.902,
+      "percent": 2.189326769113113
+    },
+    {
+      "name": "JS/Wasm trampoline",
+      "ms": 1.067,
+      "percent": 0.10200033458404034
+    }
+  ],
+  "self": [
+    {
+      "name": "Bench.neighbours._lam_0",
+      "ms": 779.792,
+      "percent": 74.54455942451546
+    },
+    {
+      "name": "Bench.neighbours",
+      "ms": 141.705,
+      "percent": 13.546351839017278
+    },
+    {
+      "name": "Bench.stepCells",
+      "ms": 63.46,
+      "percent": 6.066486628587817
+    },
+    {
+      "name": "post",
+      "ms": 18.723,
+      "percent": 1.78983342494563
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 13.937,
+      "percent": 1.33231364863896
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 13.746,
+      "percent": 1.3140549195803362
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 4.186,
+      "percent": 0.40016251224816574
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 3.168,
+      "percent": 0.3028463542289033
+    },
+    {
+      "name": "Bench.evolve",
+      "ms": 2.112,
+      "percent": 0.2018975694859355
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 2.068,
+      "percent": 0.1976913701216452
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 1.067,
+      "percent": 0.10200033458404034
+    },
+    {
+      "name": "hash",
+      "ms": 1.056,
+      "percent": 0.10094878474296776
+    },
+    {
+      "name": "call",
+      "ms": 1.055,
+      "percent": 0.10085318930287024
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1046.075,
+      "percent": 100
+    },
+    {
+      "name": "(root)",
+      "ms": 1046.075,
+      "percent": 100
+    },
+    {
+      "name": "call",
+      "ms": 1025.284,
+      "percent": 98.01247520493273
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 1023.173,
+      "percent": 97.81067323088689
+    },
+    {
+      "name": "Bench.lifePopulation",
+      "ms": 1022.106,
+      "percent": 97.70867289630286
+    },
+    {
+      "name": "Bench.evolve",
+      "ms": 1018.938,
+      "percent": 97.40582654207395
+    },
+    {
+      "name": "Bench.stepCells",
+      "ms": 995.702,
+      "percent": 95.18457089596825
+    },
+    {
+      "name": "Bench.neighbours",
+      "ms": 909.862,
+      "percent": 86.97865831799824
+    },
+    {
+      "name": "Bench.neighbours._lam_0",
+      "ms": 779.792,
+      "percent": 74.54455942451546
+    },
+    {
+      "name": "post",
+      "ms": 18.723,
+      "percent": 1.78983342494563
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 18.723,
+      "percent": 1.78983342494563
+    },
+    {
+      "name": "fn",
+      "ms": 18.723,
+      "percent": 1.78983342494563
+    },
+    {
+      "name": "fir_ext_Array_set!",
+      "ms": 13.937,
+      "percent": 1.33231364863896
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 13.746,
+      "percent": 1.3140549195803362
+    },
+    {
+      "name": "fir_release_1",
+      "ms": 13.746,
+      "percent": 1.3140549195803362
+    },
+    {
+      "name": "fir_ext_Array_replicate",
+      "ms": 4.186,
+      "percent": 0.40016251224816574
+    },
+    {
+      "name": "Bench.countTrue",
+      "ms": 3.168,
+      "percent": 0.3028463542289033
+    },
+    {
+      "name": "hash",
+      "ms": 1.056,
+      "percent": 0.10094878474296776
+    }
+  ],
+  "selectedStacks": [
+    {
+      "name": "Bench.neighbours._lam_0: Bench.neighbours._lam_0",
+      "ms": 779.792,
+      "percent": 74.54455942451546
+    },
+    {
+      "name": "Bench.neighbours: Bench.neighbours → Bench.neighbours._lam_0",
+      "ms": 768.157,
+      "percent": 73.43230647898096
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours → Bench.neighbours._lam_0",
+      "ms": 768.157,
+      "percent": 73.43230647898096
+    },
+    {
+      "name": "Bench.neighbours: Bench.neighbours",
+      "ms": 141.705,
+      "percent": 13.546351839017278
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours",
+      "ms": 141.705,
+      "percent": 13.546351839017278
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells",
+      "ms": 63.46,
+      "percent": 6.066486628587817
+    },
+    {
+      "name": "fir_ext_Array_set!: fir_ext_Array_set!",
+      "ms": 13.937,
+      "percent": 1.33231364863896
+    },
+    {
+      "name": "fir_dec_once: fir_dec_once",
+      "ms": 13.746,
+      "percent": 1.3140549195803362
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → Bench.neighbours._lam_0",
+      "ms": 11.635,
+      "percent": 1.112252945534498
+    },
+    {
+      "name": "Bench.stepCells: Bench.stepCells → fir_ext_Array_set!",
+      "ms": 10.745,
+      "percent": 1.0271730038477165
+    },
+    {
+      "name": "Bench.countTrue: Bench.countTrue",
+      "ms": 3.168,
+      "percent": 0.3028463542289033
+    }
+  ],
+  "callerByLeaf": {
+    "fir_ext_Array_set!": [
+      {
+        "name": "Bench.stepCells",
+        "ms": 10.745,
+        "percent": 1.0271730038477165
+      },
+      {
+        "name": "Bench.evolve",
+        "ms": 3.192,
+        "percent": 0.3051406447912435
+      }
+    ],
+    "Bench.neighbours._lam_0": [
+      {
+        "name": "Bench.neighbours",
+        "ms": 768.157,
+        "percent": 73.43230647898096
+      },
+      {
+        "name": "Bench.stepCells",
+        "ms": 11.635,
+        "percent": 1.112252945534498
+      }
+    ],
+    "Bench.neighbours": [
+      {
+        "name": "Bench.stepCells",
+        "ms": 141.705,
+        "percent": 13.546351839017278
+      }
+    ],
+    "Bench.stepCells": [
+      {
+        "name": "Bench.evolve",
+        "ms": 63.46,
+        "percent": 6.066486628587817
+      }
+    ],
+    "fir_dec_once": [
+      {
+        "name": "fir_release_1",
+        "ms": 8.47,
+        "percent": 0.8096933776258872
+      },
+      {
+        "name": "fir_dec_once",
+        "ms": 5.276,
+        "percent": 0.5043615419544488
+      }
+    ],
+    "Bench.countTrue": [
+      {
+        "name": "Bench.lifePopulation",
+        "ms": 3.168,
+        "percent": 0.3028463542289033
+      }
+    ]
+  }
+}

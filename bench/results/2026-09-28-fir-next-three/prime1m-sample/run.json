@@ -1,0 +1,1233 @@
+{
+  "status": "passed",
+  "mode": "sample",
+  "workload": "primeCount",
+  "input": 1000000,
+  "argument": "1000000",
+  "reps": 70,
+  "warmups": 1,
+  "started": "2026-09-28T18:46:18.122Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/next-prime1m-sample",
+    "sample",
+    "primeCount",
+    "1000000",
+    "70"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    1.28,
+    2.31,
+    2.94
+  ],
+  "producerCommit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "artifact": {
+    "workload": "primeCount",
+    "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm",
+    "sha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd",
+    "descriptorSha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718",
+    "buildIdentitySha256": "1fc5e1ff4ca208e67626cbad79842edbab77398f11ded5720ad6175a0579a338",
+    "bytes": 15802
+  },
+  "expectedSha256": "c9ab187dc9a3366dd148631ef1b508d55f37f98e15d33801d65fcedc76ff865b",
+  "manifestSha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf",
+  "files": [
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm",
+      "sha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.functions.json",
+      "sha256": "0284f3f836477d694e7adfdc7653f24802498229e0e71950bc28183c81c6ea33"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.lcnf",
+      "sha256": "2e02dc6214f99cf02278fc2d60ddbf4290ba91ed1e9a51cde99499e2654a539b"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/build-identity.json",
+      "sha256": "1fc5e1ff4ca208e67626cbad79842edbab77398f11ded5720ad6175a0579a338"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+      "sha256": "a14e65b7286565180a41231fe9bac40174197107b5b4ae0b4ef3d0e17293140c"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "sampling": {
+    "api": "Node inspector Profiler",
+    "intervalUs": 1000,
+    "scope": "Main Node isolate, measured call loop including validation, excluding instantiation and warmup"
+  },
+  "boundary": "marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and typed result copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.",
+  "rows": [
+    {
+      "repetition": 0,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.05512400000000639,
+      "executeMs": 34.44313700000001,
+      "decodeMs": 0.04391300000000342,
+      "cleanupMs": 0.013615999999984751,
+      "totalMs": 34.55579,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 1,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.01230300000000284,
+      "executeMs": 33.998800999999986,
+      "decodeMs": 0.04162900000000036,
+      "cleanupMs": 0.008195000000000618,
+      "totalMs": 34.06092799999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 2,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.011522000000013577,
+      "executeMs": 52.36715800000002,
+      "decodeMs": 0.054171999999994114,
+      "cleanupMs": 0.008726999999964846,
+      "totalMs": 52.44157899999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 3,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.036728999999979806,
+      "executeMs": 54.37719099999998,
+      "decodeMs": 0.04188800000002857,
+      "cleanupMs": 0.00846599999999853,
+      "totalMs": 54.46427399999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 4,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.011511999999981981,
+      "executeMs": 53.84430800000001,
+      "decodeMs": 0.01779399999998077,
+      "cleanupMs": 0.008125000000006821,
+      "totalMs": 53.88173899999998,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 5,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.009467999999969834,
+      "executeMs": 54.14895100000001,
+      "decodeMs": 0.01360600000003842,
+      "cleanupMs": 0.006120999999950527,
+      "totalMs": 54.17814599999997,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 6,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.01006900000004407,
+      "executeMs": 55.819785999999965,
+      "decodeMs": 0.07769600000005994,
+      "cleanupMs": 0.029154999999946085,
+      "totalMs": 55.936706000000015,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 7,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.07489099999997961,
+      "executeMs": 42.71732900000006,
+      "decodeMs": 0.04074600000001283,
+      "cleanupMs": 0.01049000000000433,
+      "totalMs": 42.84345600000006,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 8,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.02079999999989468,
+      "executeMs": 34.05913500000008,
+      "decodeMs": 0.025667999999996027,
+      "cleanupMs": 0.020417999999949643,
+      "totalMs": 34.12602099999992,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 9,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.010929999999916618,
+      "executeMs": 55.39469600000007,
+      "decodeMs": 0.036578999999960615,
+      "cleanupMs": 0.00823600000001079,
+      "totalMs": 55.450440999999955,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 10,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.024806000000012318,
+      "executeMs": 54.94967900000006,
+      "decodeMs": 0.015859999999975116,
+      "cleanupMs": 0.003876999999988584,
+      "totalMs": 54.994222000000036,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 11,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.020578999999997905,
+      "executeMs": 46.90157199999999,
+      "decodeMs": 0.008385999999973137,
+      "cleanupMs": 0.004669000000035339,
+      "totalMs": 46.935205999999994,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 12,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.011942999999973836,
+      "executeMs": 41.56403799999998,
+      "decodeMs": 0.005500000000097316,
+      "cleanupMs": 0.0019039999999677093,
+      "totalMs": 41.58338500000002,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 13,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006122000000004846,
+      "executeMs": 34.76690700000006,
+      "decodeMs": 0.005359999999996035,
+      "cleanupMs": 0.00220400000000609,
+      "totalMs": 34.78059300000007,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 14,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005339999999932843,
+      "executeMs": 35.80304699999999,
+      "decodeMs": 0.005350000000021282,
+      "cleanupMs": 0.002334000000018932,
+      "totalMs": 35.816070999999965,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 15,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006130999999982123,
+      "executeMs": 35.64151300000003,
+      "decodeMs": 0.006091999999966902,
+      "cleanupMs": 0.0024040000000695727,
+      "totalMs": 35.65614000000005,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 16,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005951999999979307,
+      "executeMs": 37.965907000000016,
+      "decodeMs": 0.0048790000000735745,
+      "cleanupMs": 0.002384000000006381,
+      "totalMs": 37.979122000000075,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 17,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006002000000080443,
+      "executeMs": 34.96215399999994,
+      "decodeMs": 0.004719000000022788,
+      "cleanupMs": 0.002655000000004293,
+      "totalMs": 34.97553000000005,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 18,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005430000000046675,
+      "executeMs": 35.18533400000001,
+      "decodeMs": 0.007042999999953281,
+      "cleanupMs": 0.003266000000053282,
+      "totalMs": 35.201073000000065,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 19,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006761999999980617,
+      "executeMs": 35.49088999999992,
+      "decodeMs": 0.007734000000027663,
+      "cleanupMs": 0.002885999999989508,
+      "totalMs": 35.50827199999992,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 20,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006151000000045315,
+      "executeMs": 35.271457000000055,
+      "decodeMs": 0.006050999999843043,
+      "cleanupMs": 0.0021240000000943837,
+      "totalMs": 35.28578300000004,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 21,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005691000000069835,
+      "executeMs": 34.01448099999993,
+      "decodeMs": 0.017622999999957756,
+      "cleanupMs": 0.0038369999999758875,
+      "totalMs": 34.041631999999936,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 22,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.0145270000000437,
+      "executeMs": 33.567108999999846,
+      "decodeMs": 0.012604000000010274,
+      "cleanupMs": 0.004338000000188913,
+      "totalMs": 33.59857800000009,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 23,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.024014999999963038,
+      "executeMs": 37.902477999999974,
+      "decodeMs": 0.021390000000110376,
+      "cleanupMs": 0.004519000000072992,
+      "totalMs": 37.95240200000012,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 24,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.047919999999976426,
+      "executeMs": 33.378263999999945,
+      "decodeMs": 0.013425000000097498,
+      "cleanupMs": 0.003917999999885069,
+      "totalMs": 33.443526999999904,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 25,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.011521999999786203,
+      "executeMs": 32.88930400000004,
+      "decodeMs": 0.030676999999968757,
+      "cleanupMs": 0.006262000000106127,
+      "totalMs": 32.9377649999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 26,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.019485999999915293,
+      "executeMs": 40.44962099999998,
+      "decodeMs": 0.02197100000012142,
+      "cleanupMs": 0.0037069999998493586,
+      "totalMs": 40.494784999999865,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 27,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.013546000000133063,
+      "executeMs": 39.523729,
+      "decodeMs": 0.016350999999986016,
+      "cleanupMs": 0.003576000000066415,
+      "totalMs": 39.55720200000019,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 28,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.01297500000009677,
+      "executeMs": 36.1030209999999,
+      "decodeMs": 0.02190100000007078,
+      "cleanupMs": 0.00694300000009207,
+      "totalMs": 36.14484000000016,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 29,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.013635999999905835,
+      "executeMs": 34.65127900000016,
+      "decodeMs": 0.006361999999853651,
+      "cleanupMs": 0.0024750000000040018,
+      "totalMs": 34.67375199999992,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 30,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.011671999999862237,
+      "executeMs": 36.01477599999998,
+      "decodeMs": 0.006061000000045169,
+      "cleanupMs": 0.003036000000065542,
+      "totalMs": 36.035544999999956,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 31,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.007843999999977314,
+      "executeMs": 40.77440200000001,
+      "decodeMs": 0.010991000000103668,
+      "cleanupMs": 0.0036569999999755964,
+      "totalMs": 40.796894000000066,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 32,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.009728999999879306,
+      "executeMs": 33.42572300000006,
+      "decodeMs": 0.006090999999969426,
+      "cleanupMs": 0.0024750000000040018,
+      "totalMs": 33.444017999999915,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 33,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005400000000008731,
+      "executeMs": 34.903102999999874,
+      "decodeMs": 0.004939000000149463,
+      "cleanupMs": 0.003085999999939304,
+      "totalMs": 34.91652799999997,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 34,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.013455000000021755,
+      "executeMs": 34.03015099999993,
+      "decodeMs": 0.017252000000098633,
+      "cleanupMs": 0.003696999999874606,
+      "totalMs": 34.06455499999993,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 35,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.02003799999988587,
+      "executeMs": 34.67275900000004,
+      "decodeMs": 0.016039999999975407,
+      "cleanupMs": 0.003727000000026237,
+      "totalMs": 34.71256399999993,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 36,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.009448000000020329,
+      "executeMs": 34.20725300000004,
+      "decodeMs": 0.012193000000024767,
+      "cleanupMs": 0.004278000000113025,
+      "totalMs": 34.233172000000195,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 37,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.007955000000038126,
+      "executeMs": 34.88979900000004,
+      "decodeMs": 0.01838399999996909,
+      "cleanupMs": 0.0036569999999755964,
+      "totalMs": 34.91979500000002,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 38,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.009898999999904845,
+      "executeMs": 34.4326480000002,
+      "decodeMs": 0.0071029999999154825,
+      "cleanupMs": 0.002314000000069427,
+      "totalMs": 34.45196400000009,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 39,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005189999999856809,
+      "executeMs": 35.13983899999994,
+      "decodeMs": 0.008375999999998385,
+      "cleanupMs": 0.003316000000040731,
+      "totalMs": 35.156720999999834,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 40,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.007203000000117754,
+      "executeMs": 34.81170099999986,
+      "decodeMs": 0.0060920000000805885,
+      "cleanupMs": 0.0024739999998928397,
+      "totalMs": 34.82746999999995,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 41,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.00522000000000844,
+      "executeMs": 35.209810999999945,
+      "decodeMs": 0.005219000000124652,
+      "cleanupMs": 0.002173999999968146,
+      "totalMs": 35.222424000000046,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 42,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004297999999835156,
+      "executeMs": 35.01561400000014,
+      "decodeMs": 0.008235999999897103,
+      "cleanupMs": 0.003196000000116328,
+      "totalMs": 35.03134399999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 43,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005830999999943742,
+      "executeMs": 36.26523700000007,
+      "decodeMs": 0.004968999999846346,
+      "cleanupMs": 0.0021740000001955195,
+      "totalMs": 36.278211000000056,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 44,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.0037070000000767322,
+      "executeMs": 36.65176500000007,
+      "decodeMs": 0.0052999999998064595,
+      "cleanupMs": 0.0022140000000945292,
+      "totalMs": 36.662986000000046,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 45,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.0041879999998855055,
+      "executeMs": 34.921698000000106,
+      "decodeMs": 0.00469899999984591,
+      "cleanupMs": 0.0021440000000438886,
+      "totalMs": 34.93272899999988,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 46,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.003997999999910462,
+      "executeMs": 34.25949200000014,
+      "decodeMs": 0.004437999999936437,
+      "cleanupMs": 0.002104000000144879,
+      "totalMs": 34.27003200000013,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 47,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004257999999936146,
+      "executeMs": 33.83492300000012,
+      "decodeMs": 0.004998999999997977,
+      "cleanupMs": 0.0019839999999931024,
+      "totalMs": 33.846164000000044,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 48,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004397999999810054,
+      "executeMs": 34.546853000000056,
+      "decodeMs": 0.005040000000008149,
+      "cleanupMs": 0.0021440000000438886,
+      "totalMs": 34.55843499999992,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 49,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004057000000102562,
+      "executeMs": 34.33824999999979,
+      "decodeMs": 0.006973999999900116,
+      "cleanupMs": 0.0025740000000951113,
+      "totalMs": 34.35185499999989,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 50,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005931000000146014,
+      "executeMs": 35.626234999999724,
+      "decodeMs": 0.0058109999999942374,
+      "cleanupMs": 0.002925000000232103,
+      "totalMs": 35.6409020000001,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 51,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004597999999987223,
+      "executeMs": 35.202126000000135,
+      "decodeMs": 0.004738999999972293,
+      "cleanupMs": 0.00228400000014517,
+      "totalMs": 35.21374700000024,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 52,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.00379800000018804,
+      "executeMs": 34.10588299999972,
+      "decodeMs": 0.005871000000297499,
+      "cleanupMs": 0.0021039999996901315,
+      "totalMs": 34.1176559999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 53,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004609000000073138,
+      "executeMs": 33.91813999999977,
+      "decodeMs": 0.00859600000012506,
+      "cleanupMs": 0.003796999999849504,
+      "totalMs": 33.935141999999814,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 54,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.006041999999979453,
+      "executeMs": 34.878185999999914,
+      "decodeMs": 0.005481000000145286,
+      "cleanupMs": 0.0025749999999788997,
+      "totalMs": 34.89228400000002,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 55,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.003616999999849213,
+      "executeMs": 35.05421800000022,
+      "decodeMs": 0.005820999999741616,
+      "cleanupMs": 0.0022140000000945292,
+      "totalMs": 35.065869999999904,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 56,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004467999999633321,
+      "executeMs": 38.146838000000116,
+      "decodeMs": 0.004868999999871448,
+      "cleanupMs": 0.0021639999999933934,
+      "totalMs": 38.158338999999614,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 57,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004569000000174128,
+      "executeMs": 34.56634899999972,
+      "decodeMs": 0.007344000000102824,
+      "cleanupMs": 0.0024350000003323657,
+      "totalMs": 34.58069700000033,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 58,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004799000000275555,
+      "executeMs": 34.564144999999826,
+      "decodeMs": 0.006010999999944033,
+      "cleanupMs": 0.0021240000000943837,
+      "totalMs": 34.57707900000014,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 59,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004828999999972439,
+      "executeMs": 34.65242100000023,
+      "decodeMs": 0.006112000000030093,
+      "cleanupMs": 0.002654999999776919,
+      "totalMs": 34.66601700000001,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 60,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004778999999871303,
+      "executeMs": 36.25081,
+      "decodeMs": 0.01139100000000326,
+      "cleanupMs": 0.00485900000012407,
+      "totalMs": 36.271839,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 61,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005931000000146014,
+      "executeMs": 34.53152399999999,
+      "decodeMs": 0.005380000000059226,
+      "cleanupMs": 0.0032470000001012522,
+      "totalMs": 34.5460820000003,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 62,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.005059999999957654,
+      "executeMs": 36.0072710000004,
+      "decodeMs": 0.006191999999828113,
+      "cleanupMs": 0.002464000000145461,
+      "totalMs": 36.02098700000033,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 63,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004508999999870866,
+      "executeMs": 38.33872900000006,
+      "decodeMs": 0.006351999999878899,
+      "cleanupMs": 0.002484000000094966,
+      "totalMs": 38.3520739999999,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 64,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.003857000000152766,
+      "executeMs": 35.295902999999726,
+      "decodeMs": 0.006822000000283879,
+      "cleanupMs": 0.002624999999625288,
+      "totalMs": 35.30920699999979,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 65,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004719000000022788,
+      "executeMs": 35.2240569999999,
+      "decodeMs": 0.004860000000007858,
+      "cleanupMs": 0.002414000000044325,
+      "totalMs": 35.23604999999998,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 66,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.003967000000102416,
+      "executeMs": 33.38857300000018,
+      "decodeMs": 0.004449000000022352,
+      "cleanupMs": 0.0020039999999426072,
+      "totalMs": 33.398993000000246,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 67,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.003666999999950349,
+      "executeMs": 35.79404000000022,
+      "decodeMs": 0.005830999999943742,
+      "cleanupMs": 0.001963000000159809,
+      "totalMs": 35.80550100000028,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 68,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.0038479999998344283,
+      "executeMs": 34.76692700000012,
+      "decodeMs": 0.004718000000139,
+      "cleanupMs": 0.0021749999996245606,
+      "totalMs": 34.77766799999972,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    },
+    {
+      "repetition": 69,
+      "value": "78498",
+      "raw": 156997,
+      "marshalMs": 0.004368999999769585,
+      "executeMs": 36.39152400000012,
+      "decodeMs": 0.017263000000184547,
+      "cleanupMs": 0.003515999999763153,
+      "totalMs": 36.416671999999835,
+      "memory": {
+        "before": 1024,
+        "peak": 8001224,
+        "after": 1024,
+        "bytes": 8060928
+      }
+    }
+  ],
+  "warmup": {
+    "value": "78498",
+    "raw": 156997,
+    "marshalMs": 0.14497199999999566,
+    "executeMs": 82.07185900000002,
+    "decodeMs": 0.045796999999993204,
+    "cleanupMs": 0.024074999999982083,
+    "totalMs": 82.28670299999999,
+    "memory": {
+      "before": 1024,
+      "peak": 8001224,
+      "after": 1024,
+      "bytes": 8060928
+    }
+  },
+  "profileSha256": "8e567762b864cce9029c2c8ce290254b2bd34dd767c7f2c927c8e63c99acfbff",
+  "finished": "2026-09-28T18:46:20.880Z",
+  "loadAfter": [
+    1.34,
+    2.3,
+    2.93
+  ]
+}

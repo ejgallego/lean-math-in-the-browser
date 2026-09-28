@@ -1,0 +1,348 @@
+def Bench.neighbours._lam_0 @&y @&_x.1 @&x _x.2 @&g @&dy @&dx : tobj :=
+  let _x.3 := Nat.add y dy;
+  let _x.4 := Nat.add _x.3 _x.1;
+  dec _x.3;
+  let _x.5 := 1;
+  let _x.6 := Nat.sub _x.4 _x.5;
+  dec _x.4;
+  let _x.7 := Nat.mod _x.6 _x.1;
+  dec _x.6;
+  let _x.8 := Nat.mul _x.7 _x.1;
+  dec _x.7;
+  let _x.9 := Nat.add x dx;
+  let _x.10 := Nat.add _x.9 _x.1;
+  dec _x.9;
+  let _x.11 := Nat.sub _x.10 _x.5;
+  dec _x.10;
+  let _x.12 := Nat.mod _x.11 _x.1;
+  dec _x.11;
+  let _x.13 := Nat.add _x.8 _x.12;
+  dec _x.12;
+  dec _x.8;
+  let _x.14 := box _x.2;
+  let _x.15 := Array.get!Internal ◾ _x.14 g _x.13;
+  dec _x.13;
+  dec _x.14;
+  let _x.16 := unbox _x.15;
+  dec _x.15;
+  cases _x.16 : tobj
+  | Bool.false =>
+    let _x.17 := 0;
+    return _x.17
+  | Bool.true =>
+    return _x.5
+
+def Bench.neighbours @&g @&i : tobj :=
+  let _x.1 := 0;
+  let _x.2 := 64;
+  let _x.3 := 6;
+  let y := Nat.shiftRight i _x.3;
+  let x := Nat.mod i _x.2;
+  let _x.4 := 0;
+  let _x.5 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.4 _x.4;
+  let _x.6 := 1;
+  let _x.7 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.4 _x.6;
+  let _x.8 := Nat.add _x.5 _x.7;
+  dec _x.7;
+  dec _x.5;
+  let _x.9 := 2;
+  let _x.10 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.4 _x.9;
+  let _x.11 := Nat.add _x.8 _x.10;
+  dec _x.10;
+  dec _x.8;
+  let _x.12 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.6 _x.4;
+  let _x.13 := Nat.add _x.11 _x.12;
+  dec _x.12;
+  dec _x.11;
+  let _x.14 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.6 _x.9;
+  let _x.15 := Nat.add _x.13 _x.14;
+  dec _x.14;
+  dec _x.13;
+  let _x.16 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.9 _x.4;
+  let _x.17 := Nat.add _x.15 _x.16;
+  dec _x.16;
+  dec _x.15;
+  let _x.18 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.9 _x.6;
+  let _x.19 := Nat.add _x.17 _x.18;
+  dec _x.18;
+  dec _x.17;
+  let _x.20 := Bench.neighbours._lam_0 y _x.2 x _x.1 g _x.9 _x.9;
+  dec x;
+  dec y;
+  let _x.21 := Nat.add _x.19 _x.20;
+  dec _x.20;
+  dec _x.19;
+  return _x.21
+
+def Bench.stepCells @&g x.1 x.2 : obj :=
+  let _x.3 := 0;
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.1;
+    let n := Bench.neighbours g zero;
+    let _x.4 := box _x.3;
+    let _x.5 := Array.get!Internal ◾ _x.4 g zero;
+    dec _x.4;
+    let _x.6 := unbox _x.5;
+    dec _x.5;
+    cases _x.6 : obj
+    | Bool.false =>
+      let _x.7 := 3;
+      let _x.8 := Nat.decEq n _x.7;
+      cases _x.8 : obj
+      | Bool.false =>
+        let _x.9 := 7;
+        let _x.10 := Nat.decEq n _x.9;
+        dec n;
+        let _x.11 := box _x.10;
+        let _x.12 := Array.set! ◾ x.2 zero _x.11;
+        return _x.12
+      | Bool.true =>
+        dec n;
+        let _x.13 := box isZero;
+        let _x.14 := Array.set! ◾ x.2 zero _x.13;
+        return _x.14
+    | Bool.true =>
+      let _x.15 := 2;
+      let _x.16 := Nat.decEq n _x.15;
+      cases _x.16 : obj
+      | Bool.false =>
+        let _x.17 := 3;
+        let _x.18 := Nat.decEq n _x.17;
+        cases _x.18 : obj
+        | Bool.false =>
+          let _x.19 := 7;
+          let _x.20 := Nat.decEq n _x.19;
+          cases _x.20 : obj
+          | Bool.false =>
+            let _x.21 := 8;
+            let _x.22 := Nat.decEq n _x.21;
+            dec n;
+            let _x.23 := box _x.22;
+            let _x.24 := Array.set! ◾ x.2 zero _x.23;
+            return _x.24
+          | Bool.true =>
+            dec n;
+            let _x.25 := box isZero;
+            let _x.26 := Array.set! ◾ x.2 zero _x.25;
+            return _x.26
+        | Bool.true =>
+          dec n;
+          let _x.27 := box isZero;
+          let _x.28 := Array.set! ◾ x.2 zero _x.27;
+          return _x.28
+      | Bool.true =>
+        dec n;
+        let _x.29 := box isZero;
+        let _x.30 := Array.set! ◾ x.2 zero _x.29;
+        return _x.30
+  | Bool.false =>
+    let one := 1;
+    let n.31 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.32 := Nat.add n.31 one;
+    jp _jp.33 _y.34 : obj :=
+      let _x.35 := box _y.34;
+      let _x.36 := Array.set! ◾ x.2 _x.32 _x.35;
+      dec _x.32;
+      let _x.37 := Bench.stepCells g n.31 _x.36;
+      return _x.37;
+    let n := Bench.neighbours g _x.32;
+    let _x.38 := box _x.3;
+    let _x.39 := Array.get!Internal ◾ _x.38 g _x.32;
+    dec _x.38;
+    let _x.40 := 1;
+    let _x.41 := unbox _x.39;
+    dec _x.39;
+    cases _x.41 : obj
+    | Bool.false =>
+      let _x.42 := 3;
+      let _x.43 := Nat.decEq n _x.42;
+      cases _x.43 : obj
+      | Bool.false =>
+        let _x.44 := 7;
+        let _x.45 := Nat.decEq n _x.44;
+        dec n;
+        goto _jp.33 _x.45
+      | Bool.true =>
+        dec n;
+        goto _jp.33 _x.40
+    | Bool.true =>
+      let _x.46 := 2;
+      let _x.47 := Nat.decEq n _x.46;
+      cases _x.47 : obj
+      | Bool.false =>
+        let _x.48 := 3;
+        let _x.49 := Nat.decEq n _x.48;
+        cases _x.49 : obj
+        | Bool.false =>
+          let _x.50 := 7;
+          let _x.51 := Nat.decEq n _x.50;
+          cases _x.51 : obj
+          | Bool.false =>
+            let _x.52 := 8;
+            let _x.53 := Nat.decEq n _x.52;
+            dec n;
+            goto _jp.33 _x.53
+          | Bool.true =>
+            dec n;
+            goto _jp.33 _x.40
+        | Bool.true =>
+          dec n;
+          goto _jp.33 _x.40
+      | Bool.true =>
+        dec n;
+        goto _jp.33 _x.40
+
+def Bench.evolve x.1 x.2 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.1;
+    return x.2
+  | Bool.false =>
+    let one := 1;
+    let n.3 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.4 := 4096;
+    let _x.5 := 4095;
+    let _x.6 := box isZero;
+    let _x.7 := Array.replicate ◾ _x.4 _x.6;
+    let _x.8 := Bench.stepCells x.2 _x.5 _x.7;
+    dec[ref] x.2;
+    let _x.9 := Bench.evolve n.3 _x.8;
+    return _x.9
+
+def Bench.countTrue @&a x.1 x.2 : tobj :=
+  let _x.3 := 0;
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : tobj
+  | Bool.true =>
+    dec x.1;
+    let _x.4 := box _x.3;
+    let _x.5 := Array.get!Internal ◾ _x.4 a zero;
+    dec _x.4;
+    let _x.6 := unbox _x.5;
+    dec _x.5;
+    cases _x.6 : tobj
+    | Bool.false =>
+      return x.2
+    | Bool.true =>
+      let _x.7 := 1;
+      let _x.8 := Nat.add x.2 _x.7;
+      dec x.2;
+      return _x.8
+  | Bool.false =>
+    let one := 1;
+    let n.9 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.10 := Nat.add n.9 one;
+    let _x.11 := box _x.3;
+    let _x.12 := Array.get!Internal ◾ _x.11 a _x.10;
+    dec _x.10;
+    dec _x.11;
+    let _x.13 := unbox _x.12;
+    dec _x.12;
+    cases _x.13 : tobj
+    | Bool.false =>
+      let _x.14 := Bench.countTrue a n.9 x.2;
+      return _x.14
+    | Bool.true =>
+      let _x.15 := Nat.add x.2 one;
+      dec x.2;
+      let _x.16 := Bench.countTrue a n.9 _x.15;
+      return _x.16
+
+def Bench.soup x.1 x.2 x.3 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.2;
+    dec x.1;
+    return x.3
+  | Bool.false =>
+    let one := 1;
+    let n.4 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.5 := 1103515245;
+    let _x.6 := Nat.mul _x.5 x.2;
+    dec x.2;
+    let _x.7 := 12345;
+    let _x.8 := Nat.add _x.6 _x.7;
+    dec _x.6;
+    let _x.9 := 2147483648;
+    let s' := Nat.mod _x.8 _x.9;
+    dec _x.8;
+    let _x.10 := 10;
+    let _x.11 := Nat.mod s' _x.10;
+    let _x.12 := 3;
+    let _x.13 := Nat.decLt _x.11 _x.12;
+    dec _x.11;
+    let _x.14 := box _x.13;
+    let _x.15 := Array.push ◾ x.3 _x.14;
+    let _x.16 := Bench.soup n.4 s' _x.15;
+    return _x.16
+
+def Bench.lifePopulation._closed_0 : obj :=
+  let _x.1 := 0;
+  let _x.2 := Array.mkEmpty ◾ _x.1;
+  return _x.2
+
+def Bench.lifePopulation._closed_1 : obj :=
+  let _x.1 := Bench.lifePopulation._closed_0;
+  let _x.2 := 20260926;
+  let _x.3 := 4096;
+  inc[persistent][ref] _x.1;
+  let _x.4 := Bench.soup _x.3 _x.2 _x.1;
+  return _x.4
+
+def Bench.lifePopulation k : tobj :=
+  let _x.1 := 0;
+  let _x.2 := Bench.lifePopulation._closed_1;
+  inc[persistent][ref] _x.2;
+  let g := Bench.evolve k _x.2;
+  let _x.3 := 4095;
+  let _x.4 := Bench.countTrue g _x.3 _x.1;
+  dec[ref] g;
+  return _x.4
+
+def Array.mkEmpty α @&c : obj :=
+  extern
+
+def Nat.decEq @&n @&m : UInt8 :=
+  extern
+
+def Nat.sub @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mul @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.add @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mod @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.decLt @&n @&m : UInt8 :=
+  extern
+
+def Array.push α a v : obj :=
+  extern
+
+def Array.replicate α n v : obj :=
+  extern
+
+def Nat.shiftRight @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Array.get!Internal α @&inst._@.Init.Prelude.3471936409._hygCtx._hyg.1 @&a @&i : tobj :=
+  extern
+
+def Array.set! α xs @&i v : obj :=
+  extern

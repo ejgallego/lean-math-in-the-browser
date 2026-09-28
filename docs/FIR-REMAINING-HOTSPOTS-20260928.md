@@ -7,6 +7,10 @@ combination**, including 29.8% under integer negation, while natural remainder
 accounts for another 19.0%. The phase runs place almost all usable-call time
 inside raw Wasm. These are attribution results, not measured optimization gains.
 
+The [next three profiles](FIR-NEXT-THREE-PROFILES-20260928.md) extend this
+investigation to the prime sieve, Collatz and Life, identifying array/scalar
+helpers, release checks and generated neighbor-counting code as further targets.
+
 The package is the clean FIR producer
 `340f4612ac622aa39d6a870528f96d6b827d97b8`, built with Lean 4.34.1 from
 the [frozen manifest](../bench/results/2026-09-28-fir-mul/fir-manifest.json).

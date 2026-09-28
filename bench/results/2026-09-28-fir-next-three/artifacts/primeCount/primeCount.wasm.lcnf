@@ -1,0 +1,211 @@
+def Bench.crossOut @&N @&p x.1 x.2 x.3 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.2;
+    dec x.1;
+    return x.3
+  | Bool.false =>
+    let _x.4 := Nat.decLt N x.2;
+    cases _x.4 : obj
+    | Bool.false =>
+      let one := 1;
+      let n.5 := Nat.sub x.1 one;
+      dec x.1;
+      let _x.6 := Nat.add x.2 p;
+      let _x.7 := box _x.4;
+      let _x.8 := Array.set! ◾ x.3 x.2 _x.7;
+      dec x.2;
+      let _x.9 := Bench.crossOut N p n.5 _x.6 _x.8;
+      return _x.9
+    | Bool.true =>
+      dec x.2;
+      dec x.1;
+      return x.3
+
+def Bench.sieveFrom @&N @&r x.1 x.2 x.3 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.2;
+    dec x.1;
+    return x.3
+  | Bool.false =>
+    let _x.4 := Nat.decLt r x.2;
+    cases _x.4 : obj
+    | Bool.false =>
+      let one := 1;
+      let n.5 := Nat.sub x.1 one;
+      dec x.1;
+      let _x.6 := Nat.add x.2 one;
+      let _x.7 := box _x.4;
+      let _x.8 := Array.get!Internal ◾ _x.7 x.3 x.2;
+      dec _x.7;
+      let _x.9 := unbox _x.8;
+      dec _x.8;
+      cases _x.9 : obj
+      | Bool.false =>
+        dec x.2;
+        let _x.10 := Bench.sieveFrom N r n.5 _x.6 x.3;
+        return _x.10
+      | Bool.true =>
+        let _x.11 := Nat.div N x.2;
+        let _x.12 := Nat.add _x.11 one;
+        dec _x.11;
+        let _x.13 := Nat.mul x.2 x.2;
+        let _x.14 := Bench.crossOut N x.2 _x.12 _x.13 x.3;
+        dec x.2;
+        let _x.15 := Bench.sieveFrom N r n.5 _x.6 _x.14;
+        return _x.15
+    | Bool.true =>
+      dec x.2;
+      dec x.1;
+      return x.3
+
+def Bench.countTrue @&a x.1 x.2 : tobj :=
+  let _x.3 := 0;
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : tobj
+  | Bool.true =>
+    dec x.1;
+    let _x.4 := box _x.3;
+    let _x.5 := Array.get!Internal ◾ _x.4 a zero;
+    dec _x.4;
+    let _x.6 := unbox _x.5;
+    dec _x.5;
+    cases _x.6 : tobj
+    | Bool.false =>
+      return x.2
+    | Bool.true =>
+      let _x.7 := 1;
+      let _x.8 := Nat.add x.2 _x.7;
+      dec x.2;
+      return _x.8
+  | Bool.false =>
+    let one := 1;
+    let n.9 := Nat.sub x.1 one;
+    dec x.1;
+    let _x.10 := Nat.add n.9 one;
+    let _x.11 := box _x.3;
+    let _x.12 := Array.get!Internal ◾ _x.11 a _x.10;
+    dec _x.10;
+    dec _x.11;
+    let _x.13 := unbox _x.12;
+    dec _x.12;
+    cases _x.13 : tobj
+    | Bool.false =>
+      let _x.14 := Bench.countTrue a n.9 x.2;
+      return _x.14
+    | Bool.true =>
+      let _x.15 := Nat.add x.2 one;
+      dec x.2;
+      let _x.16 := Bench.countTrue a n.9 _x.15;
+      return _x.16
+
+def Tunnell.isqrtAux @&s x.1 x.2 x.3 : tobj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : tobj
+  | Bool.true =>
+    dec x.3;
+    dec x.1;
+    return x.2
+  | Bool.false =>
+    let _x.4 := Nat.sub x.3 x.2;
+    let _x.5 := 1;
+    let _x.6 := Nat.decLe _x.4 _x.5;
+    dec _x.4;
+    cases _x.6 : tobj
+    | Bool.false =>
+      let n.7 := Nat.sub x.1 _x.5;
+      dec x.1;
+      let _x.8 := Nat.add x.2 x.3;
+      let mid := Nat.shiftRight _x.8 _x.5;
+      dec _x.8;
+      let _x.9 := Nat.mul mid mid;
+      let _x.10 := Nat.decLe _x.9 s;
+      dec _x.9;
+      cases _x.10 : tobj
+      | Bool.false =>
+        dec x.3;
+        let _x.11 := Tunnell.isqrtAux s n.7 x.2 mid;
+        return _x.11
+      | Bool.true =>
+        dec x.2;
+        let _x.12 := Tunnell.isqrtAux s n.7 mid x.3;
+        return _x.12
+    | Bool.true =>
+      dec x.3;
+      dec x.1;
+      return x.2
+
+def Tunnell.isqrt @&s : tobj :=
+  let _x.1 := 1;
+  let _x.2 := Nat.add s _x.1;
+  let _x.3 := 0;
+  inc _x.2;
+  let _x.4 := Tunnell.isqrtAux s _x.2 _x.3 _x.2;
+  return _x.4
+
+def Bench.primeCount N : tobj :=
+  let _x.1 := 2;
+  let _x.2 := Nat.decLt N _x.1;
+  cases _x.2 : tobj
+  | Bool.false =>
+    let _x.3 := 1;
+    let _x.4 := Nat.add N _x.3;
+    let _x.5 := 1;
+    let _x.6 := box _x.5;
+    inc _x.4;
+    let _x.7 := Array.replicate ◾ _x.4 _x.6;
+    let _x.8 := 0;
+    let _x.9 := box _x.2;
+    let _x.10 := Array.set! ◾ _x.7 _x.8 _x.9;
+    let _x.11 := box _x.2;
+    let a := Array.set! ◾ _x.10 _x.3 _x.11;
+    let _x.12 := Tunnell.isqrt N;
+    let _x.13 := Bench.sieveFrom N _x.12 _x.4 _x.1 a;
+    dec _x.12;
+    let _x.14 := Bench.countTrue _x.13 N _x.8;
+    dec[ref] _x.13;
+    return _x.14
+  | Bool.true =>
+    dec N;
+    let _x.15 := 0;
+    return _x.15
+
+def Nat.decLt @&n @&m : UInt8 :=
+  extern
+
+def Nat.add @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Array.replicate α n v : obj :=
+  extern
+
+def Array.set! α xs @&i v : obj :=
+  extern
+
+def Nat.decEq @&n @&m : UInt8 :=
+  extern
+
+def Nat.sub @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.decLe @&n @&m : UInt8 :=
+  extern
+
+def Nat.shiftRight @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mul @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Array.get!Internal α @&inst._@.Init.Prelude.3471936409._hygCtx._hyg.1 @&a @&i : tobj :=
+  extern
+
+def Nat.div @&x @&y : tobj :=
+  extern
