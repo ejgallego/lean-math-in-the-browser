@@ -56,7 +56,8 @@ and `partitionsBits` return floor(log₂(result)), avoiding a huge decimal outpu
 The primality input is identified by its bit length; Life uses 100 generations
 on the original 64×64 torus.
 
-FIR improves over VIR by about **5–67×** on the selected loop/array workloads.
+FIR improves over VIR by about **5–67×** on the selected loop/array workloads:
+Tunnell, Collatz, primeCount, Mertens and Life.
 Those gains still leave it at **1.7–20.6× native time** and **5.1–27.8× JS time**
 on those workloads. Mertens exposes a particularly large remaining gap.
 C/Wasm is close to native on several cases; FIR takes about 1.1× its time on
