@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "pairedSha256": "a84e52b9ff487c0c61a357af2014d73c3ebc0afd81cbe04d87273cb4cadaad07",
+  "producers": [
+    {
+      "commit": "4ae9445c3eb7a2ff72fec9a87d769c976f9ab11a",
+      "clean": true,
+      "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "preparationSha256": "841eb431e3040f99b40c4876d6cb7ebc65a92be2ea54a2baabbb8e7db7c74550"
+    },
+    {
+      "commit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+      "clean": true,
+      "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "preparationSha256": "8873fb1d76c3eaa3978a6640dabeb59818c4a7aae8cee5d03b6a8b1e322d9a8a"
+    }
+  ],
+  "sameCapture": "ordinary/unit",
+  "checkHarnessSha256": "ab2ed4425c1162d1c9cbeb3c3974fa1b6706543c2009b76d4e177aaa0c286ce9",
+  "integration/talos/artifact/concrete-host.mjs": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82",
+  "integration/talos/artifact/module-client.mjs": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b",
+  "integration/lcnf-c-wasm/emscripten-loader.mjs": "7402cd28f0e29cbc07050fed6371aded18ca21d4a6dcd3338aa4ed5c25286578"
+}

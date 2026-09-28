@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "mode": "phases",
+  "input": 10000,
+  "reps": 5,
+  "warmups": 1,
+  "started": "2026-09-28T18:21:45.599Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/new-10k-phases",
+    "phases",
+    "10000",
+    "5"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    2.79,
+    2.48,
+    2.14
+  ],
+  "producerCommit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "artifact": {
+    "workload": "fibBits",
+    "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm",
+    "sha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5",
+    "descriptorSha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7",
+    "buildIdentitySha256": "c2e6157759ea424ec8c2eaec87c5574977a6af603250c3ff75724c6df9de2c47",
+    "bytes": 14919
+  },
+  "expectedSha256": "817e970313efa2512802291b7d5156a9b8f23045736d92edf21769c70464101c",
+  "manifestSha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf",
+  "files": [
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm",
+      "sha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm.functions.json",
+      "sha256": "4bc2655142336978dada8cacc59ee26ad9260d1cfa1bfc23c7f5a6c3ec852041"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm.lcnf",
+      "sha256": "fe8de77a4f4a30236f13973bf4f7c589afa4b1eb182bd4e7e393cf18b28c69f2"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/build-identity.json",
+      "sha256": "c2e6157759ea424ec8c2eaec87c5574977a6af603250c3ff75724c6df9de2c47"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+      "sha256": "a05209e2d0eff390f4998acb6764b24e9f1baa80b18921bdc5bcb451f4255d02"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "sampling": null,
+  "boundary": "marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and Nat-to-decimal copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.",
+  "rows": [
+    {
+      "repetition": 0,
+      "value": "6941",
+      "raw": 13883,
+      "marshalMs": 0.008045000000002744,
+      "executeMs": 0.22727799999999831,
+      "decodeMs": 0.0055510000000040804,
+      "cleanupMs": 0.002744999999997333,
+      "totalMs": 0.24361900000000247,
+      "memory": {
+        "before": 1072,
+        "peak": 11296,
+        "after": 1072,
+        "bytes": 65536
+      }
+    },
+    {
+      "repetition": 1,
+      "value": "6941",
+      "raw": 13883,
+      "marshalMs": 0.0047789999999992006,
+      "executeMs": 0.20120900000000574,
+      "decodeMs": 0.0030760000000000787,
+      "cleanupMs": 0.0015129999999956567,
+      "totalMs": 0.21057700000000068,
+      "memory": {
+        "before": 1072,
+        "peak": 11296,
+        "after": 1072,
+        "bytes": 65536
+      }
+    },
+    {
+      "repetition": 2,
+      "value": "6941",
+      "raw": 13883,
+      "marshalMs": 0.0030959999999993215,
+      "executeMs": 0.19908399999999915,
+      "decodeMs": 0.007684999999995057,
+      "cleanupMs": 0.0012620000000040932,
+      "totalMs": 0.21112699999999762,
+      "memory": {
+        "before": 1072,
+        "peak": 11296,
+        "after": 1072,
+        "bytes": 65536
+      }
+    },
+    {
+      "repetition": 3,
+      "value": "6941",
+      "raw": 13883,
+      "marshalMs": 0.010869999999997049,
+      "executeMs": 0.21607700000000563,
+      "decodeMs": 0.006952999999995768,
+      "cleanupMs": 0.0014830000000003452,
+      "totalMs": 0.2353829999999988,
+      "memory": {
+        "before": 1072,
+        "peak": 11296,
+        "after": 1072,
+        "bytes": 65536
+      }
+    },
+    {
+      "repetition": 4,
+      "value": "6941",
+      "raw": 13883,
+      "marshalMs": 0.002805000000002167,
+      "executeMs": 0.22647599999999812,
+      "decodeMs": 0.006543000000000632,
+      "cleanupMs": 0.0029150000000015552,
+      "totalMs": 0.23873900000000248,
+      "memory": {
+        "before": 1072,
+        "peak": 11296,
+        "after": 1072,
+        "bytes": 65536
+      }
+    }
+  ],
+  "warmup": {
+    "value": "6941",
+    "raw": 13883,
+    "marshalMs": 0.09146199999999993,
+    "executeMs": 0.890556999999994,
+    "decodeMs": 0.014147000000001242,
+    "cleanupMs": 0.036087999999999454,
+    "totalMs": 1.0322539999999947,
+    "memory": {
+      "before": 1024,
+      "peak": 11296,
+      "after": 1072,
+      "bytes": 65536
+    }
+  },
+  "finished": "2026-09-28T18:21:45.614Z",
+  "loadAfter": [
+    2.79,
+    2.48,
+    2.14
+  ]
+}

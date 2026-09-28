@@ -17,7 +17,11 @@ browser experiments and charts.
 
 The review confirms substantial VIR slowdowns without finding a major client
 integration mistake. FIR improves selected loop/array workloads by roughly
-5–67× over VIR, but remains behind native/JS and regresses on large integers.
+5–67× over VIR in the initial campaign, but remains behind native/JS there.
+The resulting large-integer investigation led to FIR's new multiplication:
+the [follow-up evaluation](docs/FIR-MULTIPLICATION-20260928.md) measures
+377–1,021× gains on the two selected fibBits sizes, with fresh backend ratios
+and 39/40 qualified inputs. Miller–Rabin remains slow.
 The C/Wasm baseline helps distinguish interpreter costs from arithmetic and
 output conversion. These follow-up timings are Node measurements on one host;
 browser/Worker validation remains separate.

@@ -1,8 +1,15 @@
 # FIR backend preparation
 
-The active experiment now builds regular FIR and C/Emscripten packages on
-Lean 4.34.1. The original rc2 evaluation is preserved separately. The current
-isolated producer is `.deps/fir-producer-4341`, based on upstream `a09c113d1`
+The latest [multiplication evaluation](../../docs/FIR-MULTIPLICATION-20260928.md)
+uses accepted FIR `340f4612a` on Lean 4.34.1, staged under
+`.deps/fir-producer-mul-340f4612`. Build and check it with the same regular-FIR
+recipes below. For matched old/new measurements, use
+`compare-fir-revisions.mjs OLD_MANIFEST OLD_CHECKS NEW_MANIFEST NEW_CHECKS OUTPUT`;
+run it separately from builds and other benchmarks.
+
+The initial stable experiment built regular FIR and C/Emscripten packages on
+Lean 4.34.1. The original rc2 evaluation is preserved separately. Its
+isolated producer was `.deps/fir-producer-4341`, based on upstream `a09c113d1`
 with only its Lean pin changed, at local commit `4ae9445c3`.
 
 Preparation with `--with-emscripten` uses the producer's selected-compiler

@@ -1,0 +1,344 @@
+{
+  "input": 100000,
+  "repetitions": 100,
+  "artifactSha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5",
+  "inventorySha256": "4bc2655142336978dada8cacc59ee26ad9260d1cfa1bfc23c7f5a6c3ec852041",
+  "profileSha256": "954653add5476fd883866fe7aea7e43c4ea8fb45de5f740d20e4769a2eaefbac",
+  "summarizerSha256": "b92624cb9dfee17f89d2117d0c47e4343490bd32f54aaf471beca18bc4825a6d",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/b05bc792",
+    "definedFunctions": 59,
+    "resolvedFunctions": 14,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 1,
+        "name": "Bench.fibPair",
+        "start": 613,
+        "end": 2367,
+        "bytes": 1754
+      },
+      {
+        "index": 2,
+        "name": "Bench.fib",
+        "start": 2369,
+        "end": 2548,
+        "bytes": 179
+      },
+      {
+        "index": 3,
+        "name": "Bench.fibBits",
+        "start": 2549,
+        "end": 2575,
+        "bytes": 26
+      },
+      {
+        "index": 31,
+        "name": "fir_big_numeric_natural_count",
+        "start": 8124,
+        "end": 8153,
+        "bytes": 29
+      },
+      {
+        "index": 39,
+        "name": "fir_big_numeric_magnitude_low",
+        "start": 9130,
+        "end": 9179,
+        "bytes": 49
+      },
+      {
+        "index": 40,
+        "name": "fir_big_numeric_magnitude_high",
+        "start": 9180,
+        "end": 9229,
+        "bytes": 49
+      },
+      {
+        "index": 44,
+        "name": "fir_big_numeric_sum_carry_from",
+        "start": 9602,
+        "end": 9765,
+        "bytes": 163
+      },
+      {
+        "index": 45,
+        "name": "fir_big_numeric_write_sum_from",
+        "start": 9767,
+        "end": 10006,
+        "bytes": 239
+      },
+      {
+        "index": 46,
+        "name": "fir_big_numeric_difference_scan_from",
+        "start": 10008,
+        "end": 10226,
+        "bytes": 218
+      },
+      {
+        "index": 47,
+        "name": "fir_big_numeric_write_difference_from",
+        "start": 10228,
+        "end": 10487,
+        "bytes": 259
+      },
+      {
+        "index": 50,
+        "name": "fir_big_ext_Nat_add",
+        "start": 10617,
+        "end": 11048,
+        "bytes": 431
+      },
+      {
+        "index": 52,
+        "name": "fir_big_ext_Nat_sub",
+        "start": 11132,
+        "end": 11629,
+        "bytes": 497
+      },
+      {
+        "index": 53,
+        "name": "fir_nat_mul_generic",
+        "start": 11631,
+        "end": 12471,
+        "bytes": 840
+      },
+      {
+        "index": 55,
+        "name": "fir_ext_Nat_mul",
+        "start": 13119,
+        "end": 13584,
+        "bytes": 465
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 524,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 581.231,
+  "attributedMs": 580.671,
+  "unobservedTailMs": 0.56,
+  "callerCoverage": {
+    "rootOnlyWasm": [],
+    "rootOnlyWasmPercent": 0,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive multiplication share is the observed stack share, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 548.924,
+      "percent": 94.53270440576506
+    },
+    {
+      "name": "JavaScript",
+      "ms": 30.691,
+      "percent": 5.28543702027482
+    },
+    {
+      "name": "V8 other",
+      "ms": 1.056,
+      "percent": 0.18185857396012542
+    }
+  ],
+  "self": [
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 538.334,
+      "percent": 92.70895222940358
+    },
+    {
+      "name": "post",
+      "ms": 27.504,
+      "percent": 4.736589221779631
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 3.174,
+      "percent": 0.5466090092324225
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 3.17,
+      "percent": 0.5459201509977251
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 2.113,
+      "percent": 0.3638893624789252
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 1.077,
+      "percent": 0.18547507969228702
+    },
+    {
+      "name": "Hash",
+      "ms": 1.068,
+      "percent": 0.18392514866421777
+    },
+    {
+      "name": "call",
+      "ms": 1.061,
+      "percent": 0.18271964675349725
+    },
+    {
+      "name": "encodeTagged",
+      "ms": 1.058,
+      "percent": 0.18220300307747417
+    },
+    {
+      "name": "fir_big_ext_Nat_sub",
+      "ms": 1.056,
+      "percent": 0.18185857396012542
+    },
+    {
+      "name": "(program)",
+      "ms": 1.056,
+      "percent": 0.18185857396012542
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 580.671,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 579.615,
+      "percent": 99.81814142603987
+    },
+    {
+      "name": "call",
+      "ms": 552.111,
+      "percent": 95.08155220426025
+    },
+    {
+      "name": "Bench.fibPair",
+      "ms": 548.924,
+      "percent": 94.53270440576506
+    },
+    {
+      "name": "Bench.fib",
+      "ms": 548.924,
+      "percent": 94.53270440576506
+    },
+    {
+      "name": "Bench.fibBits",
+      "ms": 548.924,
+      "percent": 94.53270440576506
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 548.924,
+      "percent": 94.53270440576506
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 538.334,
+      "percent": 92.70895222940358
+    },
+    {
+      "name": "fir_ext_Nat_mul",
+      "ms": 538.334,
+      "percent": 92.70895222940358
+    },
+    {
+      "name": "post",
+      "ms": 27.504,
+      "percent": 4.736589221779631
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 27.504,
+      "percent": 4.736589221779631
+    },
+    {
+      "name": "fn",
+      "ms": 27.504,
+      "percent": 4.736589221779631
+    },
+    {
+      "name": "fir_big_ext_Nat_add",
+      "ms": 6.357,
+      "percent": 1.0947679494929143
+    },
+    {
+      "name": "fir_big_ext_Nat_sub",
+      "ms": 4.233,
+      "percent": 0.728984226868571
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 3.188,
+      "percent": 0.5490200130538635
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 3.174,
+      "percent": 0.5466090092324225
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 3.17,
+      "percent": 0.5459201509977251
+    },
+    {
+      "name": "fir_big_numeric_write_difference_from",
+      "ms": 2.119,
+      "percent": 0.3649226498309714
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 2.113,
+      "percent": 0.3638893624789252
+    },
+    {
+      "name": "fir_big_numeric_sum_carry_from",
+      "ms": 2.113,
+      "percent": 0.3638893624789252
+    },
+    {
+      "name": "Hash",
+      "ms": 1.068,
+      "percent": 0.18392514866421777
+    },
+    {
+      "name": "createHash",
+      "ms": 1.068,
+      "percent": 0.18392514866421777
+    },
+    {
+      "name": "hash",
+      "ms": 1.068,
+      "percent": 0.18392514866421777
+    },
+    {
+      "name": "fir_big_numeric_difference_scan_from",
+      "ms": 1.058,
+      "percent": 0.18220300307747417
+    },
+    {
+      "name": "encodeTagged",
+      "ms": 1.058,
+      "percent": 0.18220300307747417
+    },
+    {
+      "name": "allocateNatural",
+      "ms": 1.058,
+      "percent": 0.18220300307747417
+    },
+    {
+      "name": "(program)",
+      "ms": 1.056,
+      "percent": 0.18185857396012542
+    }
+  ],
+  "multiplicationStacks": [
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 538.334,
+      "percent": 92.70895222940358
+    }
+  ]
+}

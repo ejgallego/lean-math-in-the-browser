@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.wasm binary
 *.irpkg binary
+# Preserve the upstream licence byte-for-byte in the hashed evidence snapshot.
+bench/results/2026-09-28-fir-mul/source/LICENSE whitespace=-blank-at-eof

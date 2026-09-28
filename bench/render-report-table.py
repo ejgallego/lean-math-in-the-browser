@@ -21,10 +21,13 @@ START = "<!-- BEGIN BACKEND TABLE -->"
 END = "<!-- END BACKEND TABLE -->"
 
 
-def render():
-    raw = DATA.read_bytes()
-    inventory = json.loads((DATA.parents[1] / "files.json").read_text())
-    entry = next(f for f in inventory["files"] if f["path"] == "4341/comparison.json")
+def render(data_path=DATA, inventory_path=None):
+    data_path = data_path.resolve()
+    inventory_path = (inventory_path or data_path.parents[1] / "files.json").resolve()
+    raw = data_path.read_bytes()
+    inventory = json.loads(inventory_path.read_text())
+    relative = str(data_path.relative_to(inventory_path.parent))
+    entry = next(f for f in inventory["files"] if f["path"] == relative)
     assert hashlib.sha256(raw).hexdigest() == entry["sha256"], "evidence digest mismatch"
     data = json.loads(raw)
     assert data["status"] == "passed" and len(data["rows"]) == 500
@@ -56,10 +59,13 @@ def render():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--data", type=Path, default=DATA)
+    parser.add_argument("--inventory", type=Path)
+    parser.add_argument("--report", type=Path, default=ROOT / "docs/REPORT.md")
     args = parser.parse_args()
-    table = render()
+    table = render(args.data, args.inventory)
     if args.check:
-        report = (ROOT / "docs/REPORT.md").read_text()
+        report = args.report.read_text()
         assert report.count(START) == report.count(END) == 1
         assert report.split(START, 1)[1].split(END, 1)[0].strip() == table, "report table differs from evidence"
         print("Report table matches all 500 checked observations.")

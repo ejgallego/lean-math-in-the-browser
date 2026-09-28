@@ -6,10 +6,14 @@ independent references and browser experiments. This review reproduces its
 performance findings, audits the VIR integration and adds FIR and C/Emscripten
 comparisons for the author and runtime maintainers.
 
+**Update:** the [subsequent multiplication evaluation](FIR-MULTIPLICATION-20260928.md)
+tests FIR's response to the large-integer hotspot below. This initial campaign
+is retained as the baseline; the follow-up has fresh timings and backend ratios.
+
 **The reported slowdown is real, and we found no major VIR integration
 mistake or unused SDK setting that explains it away.** FIR removes much of
 the cost on loops and arrays, but remains behind native Lean and handwritten
-JS. Its current large-integer implementation has substantial regressions.
+JS. The initially evaluated large-integer implementation has substantial regressions.
 Compiled Wasm supplies a useful baseline and still has numeric and output
 conversion costs of its own.
 
