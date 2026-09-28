@@ -12,6 +12,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import * as JS from './js-baseline.mjs';
 import { CASOS } from './casos.mjs';
+import { resolve } from 'node:path';
 
 const R = new URL('../', import.meta.url);
 const lee = (p) => readFileSync(new URL(p, R));
@@ -67,6 +68,7 @@ for (const c of CASOS) {
     console.log(`${c.w.padEnd(15)} x=${String(c.x).padEnd(8)} ${motor.padEnd(4)} ${r.error ? 'ERROR ' + r.error : med.toFixed(2) + ' ms (median of ' + r.ms.length + ')'}`);
   }
 }
-mkdirSync(new URL('bench/out/', R), { recursive: true });
-writeFileSync(new URL('bench/out/node.json', R), JSON.stringify(out, null, 1));
+const outputDir = process.env.BENCH_OUT_DIR ? resolve(process.env.BENCH_OUT_DIR) : new URL('bench/out/', R);
+mkdirSync(outputDir, { recursive: true });
+writeFileSync(process.env.BENCH_OUT_DIR ? resolve(outputDir, 'node.json') : new URL('node.json', outputDir), JSON.stringify(out, null, 1));
 console.log(`cold start: import ${importMs.toFixed(0)} ms, runtime (compile + packages) ${coldMs.toFixed(0)} ms`);

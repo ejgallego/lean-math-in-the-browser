@@ -5,6 +5,8 @@ import { execFileSync } from 'node:child_process';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { CASOS } from './casos.mjs';
+import { resolve } from 'node:path';
+const OUT = process.env.BENCH_OUT_DIR ? resolve(process.env.BENCH_OUT_DIR) : new URL('./out/', import.meta.url);
 const CLI = new URL('../.lake/build/bin/tunnell_cli', import.meta.url).pathname;
 const filas = [];
 for (const c of CASOS) {
@@ -19,5 +21,5 @@ for (const c of CASOS) {
   filas.push({ w: c.w, x: c.x, motor: 'nativo', ...(ok ? { ms } : { error: 'value differs' }) });
   console.log(`${c.w.padEnd(15)} x=${String(c.x).padEnd(8)} nativo ${ok ? [...ms].sort((a, b) => a - b)[ms.length >> 1].toFixed(3) + ' ms' : 'ERROR value differs'}`);
 }
-mkdirSync(new URL('./out/', import.meta.url), { recursive: true });
-writeFileSync(new URL('./out/nativo.json', import.meta.url), JSON.stringify({ filas }, null, 1));
+mkdirSync(OUT, { recursive: true });
+writeFileSync(process.env.BENCH_OUT_DIR ? resolve(OUT, 'nativo.json') : new URL('nativo.json', OUT), JSON.stringify({ filas }, null, 1));

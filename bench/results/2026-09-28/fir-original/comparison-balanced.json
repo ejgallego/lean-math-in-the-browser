@@ -1,0 +1,2383 @@
+{
+  "status": "passed",
+  "started": "2026-09-28T11:22:01.137Z",
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    2.32,
+    2.57,
+    2.12
+  ],
+  "producer": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer",
+  "manifestSha256": "23527b91e69bc5e97731b3f56567b7d95f669be58fedc13885b7e1181cd53fa5",
+  "checksSha256": "2f646c0b9b1082342f024918c5135e898e1eff29b57045d25a2ef1896152de36",
+  "harnessSha256": "cfda54fcc4f3292de6c3ea5186ebfa2df31fae52a0d7fabe322b388d47244092",
+  "adapterSha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad",
+  "inputs": {
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "Bench.lean": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+    "Tunnell.lean": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+    "Main.lean": "913f92a4cc9fb60b0245dcd86e02dd3d8717a39e3e3e0cd4fc07229ad437aeee",
+    "bench/casos.mjs": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+    "site/lean-vir/js/vir-runtime-node.js": "5e582b6d8b6a061c797922cb4accdf2b1c403df5cdebec5c4eb9d7ce5ee54fe4",
+    "site/lean-vir/js/vir-runtime.js": "0ba57f0e580884f7d9215b10b09df8c210a497de288f39bd2b8809b8ad4b8c80",
+    "site/lean-vir/wasm/vir-upstream.wasm": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+    "bench/pkg/Bench.parts/0.irpkg": "6cc3d40afe0c207bffdc9085367d562c35ec98542681ae2187dda4e86a5bf731",
+    "bench/pkg/Bench.parts/1.irpkg": "efaed3eb36bcd90cdc51e6f9d86e0552f14cc038dbbf3ba4eeba24c1819e8aee",
+    "bench/pkg/Bench.irpkg": "8f2c747273547ab3ec741d18e60bb4a4ca32ebe836e30acbeb279c32553bf8c1"
+  },
+  "nativeSha256": "039dfe7d695ef14dadbcd915b3a608f51bb5773c7ad1b4793264bc29f0beccf7",
+  "selection": "Largest qualified input per workload with every diagnostic first-call sample below 1000ms; selection is exploratory.",
+  "boundary": "FIR/VIR call + copied/decoded result + common text formatting; FIR includes diagnostic host checks and cache-aware rewind. Native in-process function+Lean formatting, one warmup in each fresh process. Initialization/compile/load excluded. Every measured value hash checked outside timer.",
+  "caveats": "FIR Lean 4.34.0-rc2 versus native/VIR 4.34.0. No affinity/governor control. Node only; diagnostic FIR adapter. Six engine orders balance positions; native is re-warmed per sample.",
+  "rows": [
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 12.471994999999879,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 859.0712999999998,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 6.347196,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 859.21009,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 6.587979,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 12.426970999999867,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 6.3814,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 12.039612999999918,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 855.8978569999999,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 6.374708,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 813.8451709999999,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 10.48377900000014,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 10.631918000000042,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 5.51322,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 834.0549259999998,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 742.0475740000002,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 10.338055000000168,
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 6.369398,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 97.49333200000001,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 5492.033742000001,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 54.850776,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 6261.605023,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 55.971512,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 169.81812100000025,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 36.996277,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 120.23023599999942,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 6366.256856,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 34.571801,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 5708.606490000002,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 102.55409199999849,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 102.85259299999598,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 54.863571,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 6584.4106390000015,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 6342.006439999997,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 113.52178200000344,
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 55.354934,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 42.66129199999705,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 1345.7859459999963,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 15.758621,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 1332.9846929999985,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 17.569394,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 47.09449200000381,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 13.258103,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 52.83689299999969,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 1564.8154439999998,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 13.439524,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 1393.683401000002,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 46.96102200000314,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 45.50843200000236,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 16.914914,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 1383.1604799999986,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 1395.1544279999944,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 49.278227000002516,
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 16.678941,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 1208.4541260000115,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 4557.393736000013,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 69.639776,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 4901.010204000006,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 43.238898,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 972.5152799999923,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 41.624795,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 965.5261489999975,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 4218.144619999992,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 36.242973,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 4137.7620469999965,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 1013.0609649999969,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 1026.9950589999935,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 56.097662,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 4813.899049999993,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 4593.4431509999995,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 950.0833930000081,
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 35.658605,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 35.96570200000133,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 183.78251000000455,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 16.604481,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 173.04806899999676,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 17.125079,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 29.127292999997735,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 17.435783,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 28.895757000005688,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 175.24376500000653,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 15.109011,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 151.2905860000028,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 24.632366000005277,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 24.69734800000151,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 16.556401,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 152.62825900000462,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 154.6378759999934,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 24.892233999999007,
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 18.507057,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 57.6349099999934,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 2.9550429999944754,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 2.583545,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 2.9957089999952586,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 2.084117,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 56.8075450000033,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 2.219681,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 56.625543000001926,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 2.945003999993787,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 2.091069,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 2.958379000003333,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 59.12936799999443,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 58.6561090000032,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 3.042207,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 3.4250559999927646,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 3.2601660000073025,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 57.144547999996576,
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 2.278091,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 54.765076999989105,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 0.14050399999541696,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 0.014147,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 0.29068599999300204,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 0.022542,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 80.1834600000002,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 0.016191,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 55.615205000009155,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 0.2297720000060508,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 0.023204,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 0.432662999999593,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 56.5424869999988,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 55.57397800000035,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 0.022772,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 0.3387069999880623,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 0.17611100000794977,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 61.71921399999701,
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 0.023064,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 24.371476000000257,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 149.30207999999402,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 23.052677,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 197.33928499999456,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 16.33268,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 27.829312999994727,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 16.402952,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 29.19107200000144,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 177.27360000000044,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 15.962745,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 170.8543670000072,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 25.250877999991644,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 23.448812000002363,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 15.585055,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 158.37868599999638,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 144.61074400000507,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 22.74028100000578,
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 15.687237,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 147.0197099999932,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 3.2869270000082906,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 0.687282,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 3.6965350000100443,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 0.666923,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 141.829006999993,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 0.667264,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 145.31061899999622,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 3.0719220000028145,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 0.677243,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 3.441296000004513,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 144.0135719999962,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 141.38419200001226,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 0.709293,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 3.6309130000008736,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 3.7938390000053914,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 163.62781900000118,
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 0.674688,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 68.26159900000494,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 4062.954654999994,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "fir",
+        "vir",
+        "native"
+      ],
+      "ms": 37.464599,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 4147.9725800000015,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 38.555709,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "vir",
+        "native",
+        "fir"
+      ],
+      "ms": 77.39515199999732,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 53.907738,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 105.08388200000627,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "native",
+        "fir",
+        "vir"
+      ],
+      "ms": 4437.199332999997,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 53.77068,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 4130.181972000006,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "native",
+        "vir",
+        "fir"
+      ],
+      "ms": 68.442028999998,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 68.30785700000706,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 54.160713,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "fir",
+        "native",
+        "vir"
+      ],
+      "ms": 4286.662081999995,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 3556.2271790000086,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 59.17525599998771,
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "vir",
+        "fir",
+        "native"
+      ],
+      "ms": 54.448263,
+      "status": "passed"
+    }
+  ],
+  "finished": "2026-09-28T11:24:18.719Z",
+  "loadAfter": [
+    3.11,
+    2.82,
+    2.27
+  ]
+}

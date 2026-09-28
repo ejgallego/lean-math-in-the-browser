@@ -1,0 +1,251 @@
+{
+  "policy": "Byte-for-byte copies of measured records. Source paths describe the original local run; no paths or observations were rewritten. Executables, runtime libraries and worktrees are not included.",
+  "files": [
+    {
+      "path": "4341/preparation.json",
+      "source": "tests/out/research/4341/preparation.json",
+      "sha256": "342ab58c5a591fb66c374b70a9827117f7b61929c3c514bf4750b8eeb7ca609e",
+      "bytes": 4059
+    },
+    {
+      "path": "4341/client-checks.json",
+      "source": "tests/out/research/4341/client-checks.json",
+      "sha256": "12a8033bf8449e59fca7469154a13efd332d5ddd70bf0241338df2f1dd217ba0",
+      "bytes": 31808
+    },
+    {
+      "path": "4341/emscripten-checks.json",
+      "source": "tests/out/research/4341/emscripten-checks.json",
+      "sha256": "0044b3c4c5171f5a5020b362e5084f4ac632ad69f02e7e194280569e07f4e6b1",
+      "bytes": 37609
+    },
+    {
+      "path": "4341/summary.json",
+      "source": "tests/out/research/4341/summary.json",
+      "sha256": "fb3f4124074147ed9294ba96bba204a657a4ba871d3d9498f7097e5079829f47",
+      "bytes": 9020
+    },
+    {
+      "path": "4341/comparison.json",
+      "source": "tests/out/research/4341/comparison.json",
+      "sha256": "72a57c5f24b965d66d114a6562ad6d00bd2791477cbdb6950ad8ddf19a019cbc",
+      "bytes": 177987
+    },
+    {
+      "path": "4341/fir-checks.json",
+      "source": "tests/out/research/4341/fir-checks.json",
+      "sha256": "2ecaca1823caea24eee4a64f9982905d5172fccd111514d087cebdf15dd85013",
+      "bytes": 31659
+    },
+    {
+      "path": "vir-audit/static.json",
+      "source": "tests/out/research/vir-usage-audit/static.json",
+      "sha256": "c8ce35bfa33246535997b59e896b0873bb6cfe52c5f508ec36b866f0a6680170",
+      "bytes": 7951
+    },
+    {
+      "path": "vir-audit/Bench.report.md",
+      "source": "tests/out/research/vir-usage-audit/Bench.report.md",
+      "sha256": "3efe32e9c4ecec5183257c80cddfe460a886589801d1914d7a372b309aa9a88a",
+      "bytes": 5847
+    },
+    {
+      "path": "vir-audit/profile-fibbits/run.json",
+      "source": "tests/out/research/vir-usage-audit/profile-fibbits/run.json",
+      "sha256": "09b46c609f03869b0f7697d04ef07ffa0bb94b3529d8fafcc960d45cd16b1b5c",
+      "bytes": 13972
+    },
+    {
+      "path": "vir-audit/profile-fibbits/cpu.cpuprofile",
+      "source": "tests/out/research/vir-usage-audit/profile-fibbits/cpu.cpuprofile",
+      "sha256": "3088d2966c546e6dfff02858b5d864a18b3aaedd782ffe4fdaeebeb13603e80b",
+      "bytes": 35246
+    },
+    {
+      "path": "vir-audit/profile-prime/run.json",
+      "source": "tests/out/research/vir-usage-audit/profile-prime/run.json",
+      "sha256": "c9fe668ec1e6d747966edac41540bf2570c99206effe67312be8ee6d5e43cc7e",
+      "bytes": 21336
+    },
+    {
+      "path": "vir-audit/profile-prime/cpu.cpuprofile",
+      "source": "tests/out/research/vir-usage-audit/profile-prime/cpu.cpuprofile",
+      "sha256": "696f30ef32efcf3371463f8072dd8a90d61435e416def270c0a6240ffc7eb7b5",
+      "bytes": 46336
+    },
+    {
+      "path": "vir-audit/methods-repeat/run.json",
+      "source": "tests/out/research/vir-usage-audit/methods-repeat/run.json",
+      "sha256": "ccc2c3e1ff8cbf2dc22447fc5df04f8d0a10d7b4d7ff3a8f0a3d008e2681b4be",
+      "bytes": 38451
+    },
+    {
+      "path": "vir-audit/methods/run.json",
+      "source": "tests/out/research/vir-usage-audit/methods/run.json",
+      "sha256": "8577aa78b8d4176bff24e823d6297704611b998123dd1440934fe1a28c8b41de",
+      "bytes": 38459
+    },
+    {
+      "path": "vir-audit/phases/run.json",
+      "source": "tests/out/research/vir-usage-audit/phases/run.json",
+      "sha256": "0a823121e8c8e294b4c841ac5cb8c4b5987a9702549c7c8028e394ceb215a0aa",
+      "bytes": 29131
+    },
+    {
+      "path": "original-reproduction/nativo.json",
+      "source": "tests/out/research/20260928-original-node24/nativo.json",
+      "sha256": "93a898d4b9abfcddcbb63c9c0d68289dd6d08ed25e2725bb59d7e1b7fa7cb02f",
+      "bytes": 7204
+    },
+    {
+      "path": "original-reproduction/vir-phases-fib1m.json",
+      "source": "tests/out/research/20260928-original-node24/vir-phases-fib1m.json",
+      "sha256": "13cd32ee45be6d47cf03977d08941916ad1a27d00a56e64ebb7d27adf5b69e20",
+      "bytes": 3180
+    },
+    {
+      "path": "original-reproduction/node.json",
+      "source": "tests/out/research/20260928-original-node24/node.json",
+      "sha256": "6932662b7949db0181881a39165fcc951ffb3649ebea20e2d3c9da558dc23411",
+      "bytes": 19401
+    },
+    {
+      "path": "original-reproduction/identity.json",
+      "source": "tests/out/research/20260928-original-node24/identity.json",
+      "sha256": "91f49ad099f03e4bae783d0340438ce0caf2d0b4a210578bcaa5cc35f0502574",
+      "bytes": 6922
+    },
+    {
+      "path": "fir-profile/fibbits-100k-phases/run.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-100k-phases/run.json",
+      "sha256": "a2cd1f651f78bf113c8a31d0300e2d6f5b58b6af26f8ef4cb83a3a96e4f5ec7f",
+      "bytes": 5668
+    },
+    {
+      "path": "fir-profile/fibbits-100k-sample/run.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-100k-sample/run.json",
+      "sha256": "0dea72730acf5520a00c7810d4206363f2937a58503f45e79007cbd2ffff31d0",
+      "bytes": 5531
+    },
+    {
+      "path": "fir-profile/fibbits-100k-sample/summary-v2.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-100k-sample/summary-v2.json",
+      "sha256": "d0b2bc688e77f0ec475f397be1e8155d454de370acd55c4724fb507fc2d1038e",
+      "bytes": 12997
+    },
+    {
+      "path": "fir-profile/fibbits-100k-sample/cpu.cpuprofile",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-100k-sample/cpu.cpuprofile",
+      "sha256": "81a5e0d96199e2e1f8caa55b82391a533d765c46e224eab223837c16d3bc644f",
+      "bytes": 129809
+    },
+    {
+      "path": "fir-profile/fibbits-10k-phases/run.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-10k-phases/run.json",
+      "sha256": "8c49172ea9555e262564fde47ba1f98428dcff1a1bed19b85a61752291380fa7",
+      "bytes": 6411
+    },
+    {
+      "path": "fir-profile/fibbits-10k-sample/run.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-10k-sample/run.json",
+      "sha256": "22c984e919c8eca17ba935991ac17745cfc34574ecb15aee0f783a046a917630",
+      "bytes": 12631
+    },
+    {
+      "path": "fir-profile/fibbits-10k-sample/summary-v2.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-10k-sample/summary-v2.json",
+      "sha256": "26e5726c66592eb33fdabe241d233297ae87756f0c7b629b1fed6d365110f2ee",
+      "bytes": 13171
+    },
+    {
+      "path": "fir-profile/fibbits-10k-sample/cpu.cpuprofile",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_profiles/fibbits-10k-sample/cpu.cpuprofile",
+      "sha256": "e1e1a1079a5bf08921678d1509ff36bebc4e445d25d2ebbd5a70fe274423d4a1",
+      "bytes": 33683
+    },
+    {
+      "path": "fir-profile/artifact/fibBits.wasm.lcnf",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/fibBits.LLNUcP/fibBits.wasm.lcnf",
+      "sha256": "fe8de77a4f4a30236f13973bf4f7c589afa4b1eb182bd4e7e393cf18b28c69f2",
+      "bytes": 3273
+    },
+    {
+      "path": "fir-profile/artifact/fibBits.wasm.functions.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/fibBits.LLNUcP/fibBits.wasm.functions.json",
+      "sha256": "99eea2fb115c522439f0b90c316c848562fee729837a41c3ba872f17fc889076",
+      "bytes": 3016
+    },
+    {
+      "path": "fir-profile/artifact/fibBits.wasm.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/fibBits.LLNUcP/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7",
+      "bytes": 153
+    },
+    {
+      "path": "fir-profile/artifact/build-identity.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/fibBits.LLNUcP/build-identity.json",
+      "sha256": "4e2ff5c0162bff2a8315a83a269114def872f849becc28a161f0cb3e4548f13a",
+      "bytes": 764
+    },
+    {
+      "path": "fir-original/comparison-balanced.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/comparison-balanced.json",
+      "sha256": "508b8c04c73cd4c7023dddc1a651c8b37679848877347482c49977a4521d8da4",
+      "bytes": 44147
+    },
+    {
+      "path": "fir-original/suite-checks-bounded.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/suite-checks-bounded.json",
+      "sha256": "2f646c0b9b1082342f024918c5135e898e1eff29b57045d25a2ef1896152de36",
+      "bytes": 31655
+    },
+    {
+      "path": "fir-original/suite-ordinary-unit.json",
+      "source": ".deps/fir-producer/.deps/math-browser-fir/_build/suite-ordinary-unit.json",
+      "sha256": "23527b91e69bc5e97731b3f56567b7d95f669be58fedc13885b7e1181cd53fa5",
+      "bytes": 4989
+    },
+    {
+      "path": "4341/fir-manifest.json",
+      "source": ".deps/fir-producer-4341/.deps/math-browser-fir/_build/campaign.qFdm9A/manifest.json",
+      "sha256": "95739cb3a3119d3e1e4a87b0552b69988a52f9df1104bdb3c065056cb59cdf8f",
+      "bytes": 5127
+    },
+    {
+      "path": "4341/c-manifest.json",
+      "source": ".deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.manifest.json",
+      "sha256": "5c8f624fce0b2ee7faf0c20d2ff4d3c8791a437e91824b11feb17d7df167c57c",
+      "bytes": 2476
+    },
+    {
+      "path": "4341/c-preparation.json",
+      "source": ".deps/fir-producer-4341/.deps/math-browser-c/PREPARATION.json",
+      "sha256": "841eb431e3040f99b40c4876d6cb7ebc65a92be2ea54a2baabbb8e7db7c74550",
+      "bytes": 2153
+    },
+    {
+      "path": "4341/fir-preparation.json",
+      "source": ".deps/fir-producer-4341/.deps/math-browser-fir/PREPARATION.json",
+      "sha256": "841eb431e3040f99b40c4876d6cb7ebc65a92be2ea54a2baabbb8e7db7c74550",
+      "bytes": 2153
+    },
+    {
+      "path": "fir-profile/source/ResidentNatArithmetic.lean",
+      "source": ".deps/fir-producer/Fir/Wasm/Emit/ResidentNatArithmetic.lean",
+      "sha256": "4491306dd8b25f1ecf028bc4f4eccc1db76f39bd14e7066f2571087179510763",
+      "bytes": 48392
+    },
+    {
+      "path": "fir-profile/source/ResidentBigNumeric.lean",
+      "source": ".deps/fir-producer/Fir/Wasm/Emit/ResidentBigNumeric.lean",
+      "sha256": "05433e5ad5c2ca53838e1658303eb93d430e40556cc43726711cee0ef8e7fb85",
+      "bytes": 75263
+    },
+    {
+      "path": "fir-profile/source/LICENSE",
+      "source": ".deps/fir-producer/LICENSE",
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "bytes": 9160
+    }
+  ]
+}

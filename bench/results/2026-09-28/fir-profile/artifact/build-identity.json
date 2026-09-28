@@ -1,0 +1,17 @@
+{
+  "workload": "fibBits",
+  "sourceView": "ordinary",
+  "capture": "unit",
+  "exitCode": 0,
+  "signal": null,
+  "error": "",
+  "producer": "14be5c08bca91177fe033d13001a6bafeca22c19",
+  "lean": "Lean (version 4.34.0-rc2, x86_64-unknown-linux-gnu, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "inputs": {
+    "Tunnell.lean": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931",
+    "Bench.lean": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3",
+    "Emit.lean": "87e4e1b0f358e42a50e09e6713bde8bcafc6ab70b3896c082fb1e7360854970c",
+    "PREPARATION.json": "808689ae2ead4d27ee5eb58047056806efb127c86f91cdd493f8a6033b82a06b"
+  },
+  "harnessSha256": "d4cc2578ebca98be2ccf77eb47d75a972fa3d12519a927f310f897bda7b4aa33"
+}

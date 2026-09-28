@@ -5,3 +5,4 @@ __pycache__/
 referencia.json
 .wrangler/
 tests/out/
+.deps/

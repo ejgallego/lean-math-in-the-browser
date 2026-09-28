@@ -1,0 +1,1625 @@
+{
+  "status": "passed",
+  "mode": "methods",
+  "started": "2026-09-28T12:10:58.577Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/audit-vir.mjs",
+    "methods",
+    "tests/out/research/vir-usage-audit/methods"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    3.43,
+    3.29,
+    3.3
+  ],
+  "clientCommit": "34badae5f242e8e9943eb592e73cbce45597d9b9",
+  "dirtyStatus": "M .gitignore\n M bench/medir-nativo.mjs\n M bench/medir-node.mjs\n?? bench/audit-vir.mjs\n?? bench/backends/\n?? bench/phases.mjs\n?? bench/reproduce.mjs\n?? docs/FIR-FIBBITS-PROFILE-20260928.md\n?? docs/RESEARCH-20260928.md",
+  "trackedDiffSha256": "d29ffde5f417b4ad633b6f9b95190eb7c34595d162abe0538fc10c5958c3b6dc",
+  "inputs": {
+    "site/lean-vir/wasm/vir-upstream.wasm": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+    "site/lean-vir/js/host/vir-active-host-bindings.js": "07659db80728de3f71a17164ceff6dc568fec51f3df66204b7970f64da8e34b4",
+    "site/lean-vir/js/host/vir-dom-host-bindings.js": "71e9d08d39e1c4aaba13f54cc918d7a3764d059aab745460e986f172f63d0631",
+    "site/lean-vir/js/host/vir-infoview-host-bindings.js": "b0d8ba7b5501ac5b9eb7e0b98dedf79746b883c419044ac7fc01ebcee8deeaa2",
+    "site/lean-vir/js/host/vir-infoview-panel-bindings.js": "a80d407731f3bc0a6c319c0ba31e70e4b929640b2c7382a70ae48f654db194d3",
+    "site/lean-vir/js/host/vir-js-collection-bindings.js": "4534f09af422317c8cd75ec95ece18fd8ff6a3c0e9c272017ef070433d317af7",
+    "site/lean-vir/js/host/vir-js-value-bindings.js": "e9bb2bc643baa8c428a0c477905cbde0546a09712e62639f2ec180141cfbea35",
+    "site/lean-vir/js/host-boundary.js": "d23c2cdada47b67e4704fa06de38431db6a4e18ab72247f8fed4ce8851bf2234",
+    "site/lean-vir/js/react/vir-react-root.js": "bbedb033f50ef72b0eebf45b670af6a22c341529a198cdc8f9ef216ad9b82262",
+    "site/lean-vir/js/runtime/call-timing.js": "30fbe731cab7516f053a3a465616c0a63f76e959b3f44a71e83248fd5a303336",
+    "site/lean-vir/js/runtime/callbacks.js": "2c51f4458ba8259fc1febf15f4a1e2b728b94132b317905d1e7034d15dfd9a60",
+    "site/lean-vir/js/runtime/cleanup.js": "08303f1c734035f463a037dc20b1bcbbb086575e530daace887b0d6105c65e25",
+    "site/lean-vir/js/runtime/core.js": "af0e402aa8404a30de3514db4badbea5463a6d15fd312713d6c01dcfbe1e9059",
+    "site/lean-vir/js/runtime/host-state.js": "84c591a04118005502da266b08416222ee0ed528132642ff074733ddbea068bb",
+    "site/lean-vir/js/runtime/interface-effects.js": "e295591a1f9f6355d9c4b00d805373570c4489689aad1cb2ec19b3b83e3ca21c",
+    "site/lean-vir/js/runtime/interface-manifest.js": "e34af6a8ebeecf562139c210908c8af8b17a8e0511233a3a8b8d345089f31ecb",
+    "site/lean-vir/js/runtime/interface-tags.js": "ad8a4dfdff548704c578b24b36ae9be7211f563503860ba715bf76f2788881e1",
+    "site/lean-vir/js/runtime/ir-package.js": "fc2a287e5c062bf2259739446f7f2a984dd5745b3836ecf4a6f260a227ccba44",
+    "site/lean-vir/js/runtime/module-name.js": "4225f30eb5104c75c24f239eda99108d1b44d01fe7caeb98fccdf3334eaa7ad8",
+    "site/lean-vir/js/runtime/object-abi-exports.js": "14ffa9cfbaf02bb9af87cdd6b1eea13e532651ac6bff556398f144223fc31abe",
+    "site/lean-vir/js/runtime/object-abi.js": "3d07ef73498d9b6fe60739fc7c23b2821cd0dfcbcb053770b72616c724e11bd5",
+    "site/lean-vir/js/runtime/object-values.js": "497a2746c64ce9e71e9204219d7268d5225ec6b1cbf7f965b10f0fd6e321dd62",
+    "site/lean-vir/js/runtime/package-contract.js": "c9ee21d6ab1f224750a30322127c0b594e2fc0991350a59097035b41df0b97f5",
+    "site/lean-vir/js/runtime/package-targets.js": "5cabbd222c48c0538d16805ca9f454b5034fb2a7f403463bfbeca06ffc8b2a5a",
+    "site/lean-vir/js/runtime/vir-codec.js": "fdbe2ec0a553e8e4b4536dd6ecdebf491c60e5930514ea7e0bde8ff6920f6362",
+    "site/lean-vir/js/runtime/vir-value-normalizers.js": "7d02943c2493ca223a718fc07e9564b865f2ad68e92ee690e78ea0819f56a311",
+    "site/lean-vir/js/vir-host-bindings.js": "4a262f91b0a3283e5f24eec2b2c55896d7d464e94b53cc801d5cdb82e476e33d",
+    "site/lean-vir/js/vir-react-dom-client.js": "c7aa48fc75a191153e6bab1a1c1b971d08bfa0c5a35c031d2b99ba39ef394358",
+    "site/lean-vir/js/vir-react-host-bindings.js": "41511e9dc740f85cfcf4c9c9727e55ef112f17a0775dbcbfc3407010c9da199d",
+    "site/lean-vir/js/vir-runtime-node.js": "5e582b6d8b6a061c797922cb4accdf2b1c403df5cdebec5c4eb9d7ce5ee54fe4",
+    "site/lean-vir/js/vir-runtime.js": "0ba57f0e580884f7d9215b10b09df8c210a497de288f39bd2b8809b8ad4b8c80",
+    "bench/pkg/Bench.parts/0.irpkg": "6cc3d40afe0c207bffdc9085367d562c35ec98542681ae2187dda4e86a5bf731",
+    "bench/pkg/Bench.parts/1.irpkg": "efaed3eb36bcd90cdc51e6f9d86e0552f14cc038dbbf3ba4eeba24c1819e8aee",
+    "bench/pkg/Bench.irpkg": "8f2c747273547ab3ec741d18e60bb4a4ca32ebe836e30acbeb279c32553bf8c1",
+    "bench/pkg/Bench.irpkg-set.json": "ecf769d390c738ab2e5ac93840b75021393d8c539ea212742139f8485ca2d85c",
+    "Tunnell.lean": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+    "Bench.lean": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+    "Main.lean": "913f92a4cc9fb60b0245dcd86e02dd3d8717a39e3e3e0cd4fc07229ad437aeee",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lake-manifest.json": "df1bb5c74d2c5e179f1a5d0d252064edc5e7bf3060da22321297686913a3054a",
+    "bench/casos.mjs": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+    "bench/audit-vir.mjs": "45a54f23ab69a109b5d53717f27c79ae2a63dc56f035d4119d055cf88e0ee79a"
+  },
+  "policy": "Ordinary calls, no callTimed instrumentation. Named call vs documented exportsByName method, same runtime. Four AB/BA pairs; one warmup per method. Small inputs batch 25 calls, large inputs one. Every returned value checked outside each timed batch.",
+  "rows": [
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 23.722858000000002,
+      "perCallMs": 0.9489143200000001,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 22.75308299999999,
+      "perCallMs": 0.9101233199999996,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 22.149817000000013,
+      "perCallMs": 0.8859926800000005,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 22.267549000000002,
+      "perCallMs": 0.8907019600000001,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.701592000000005,
+      "perCallMs": 0.9880636800000002,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 42.14067899999998,
+      "perCallMs": 1.685627159999999,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 41.550847999999974,
+      "perCallMs": 1.662033919999999,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 40.91946899999999,
+      "perCallMs": 1.6367787599999997,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 41.084550000000036,
+      "perCallMs": 1.6433820000000015,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 41.089489000000015,
+      "perCallMs": 1.6435795600000005,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 42.08761900000002,
+      "perCallMs": 1.6835047600000008,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 31.89121,
+      "perCallMs": 1.2756484000000001,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 26.989990999999975,
+      "perCallMs": 1.079599639999999,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 26.251760999999988,
+      "perCallMs": 1.0500704399999996,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 26.185985999999957,
+      "perCallMs": 1.0474394399999982,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 26.468479000000002,
+      "perCallMs": 1.05873916,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1337.9367200000002,
+      "perCallMs": 1337.9367200000002,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1298.9358619999994,
+      "perCallMs": 1298.9358619999994,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1290.9644820000003,
+      "perCallMs": 1290.9644820000003,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1323.6455970000006,
+      "perCallMs": 1323.6455970000006,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1308.5672840000007,
+      "perCallMs": 1308.5672840000007,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1274.7153419999995,
+      "perCallMs": 1274.7153419999995,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1289.2090009999993,
+      "perCallMs": 1289.2090009999993,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1307.8496699999996,
+      "perCallMs": 1307.8496699999996,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1305.602017000001,
+      "perCallMs": 1305.602017000001,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1257.5939400000007,
+      "perCallMs": 1257.5939400000007,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1251.5488960000002,
+      "perCallMs": 1251.5488960000002,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1229.1068579999992,
+      "perCallMs": 1229.1068579999992,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1227.486625999998,
+      "perCallMs": 1227.486625999998,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1192.297806999999,
+      "perCallMs": 1192.297806999999,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 1200.8868089999996,
+      "perCallMs": 1200.8868089999996,
+      "status": "passed"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 1243.6726110000018,
+      "perCallMs": 1243.6726110000018,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.605199999998149,
+      "perCallMs": 0.02420799999992596,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.8743469999972149,
+      "perCallMs": 0.034973879999888595,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 1.1498649999994086,
+      "perCallMs": 0.04599459999997634,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 1.5925390000011248,
+      "perCallMs": 0.063701560000045,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.7000589999988733,
+      "perCallMs": 0.028002359999954932,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.6196270000000368,
+      "perCallMs": 0.024785080000001472,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.6771550000012212,
+      "perCallMs": 0.027086200000048848,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.7789870000015071,
+      "perCallMs": 0.031159480000060285,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.8172290000002249,
+      "perCallMs": 0.032689160000008995,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.5954810000002908,
+      "perCallMs": 0.02381924000001163,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.5828769999970973,
+      "perCallMs": 0.023315079999883893,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.5925959999985935,
+      "perCallMs": 0.02370383999994374,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.564422999999806,
+      "perCallMs": 0.022576919999992243,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.5733800000016345,
+      "perCallMs": 0.022935200000065378,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 0.5816649999978836,
+      "perCallMs": 0.023266599999915344,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 0.5894699999989825,
+      "perCallMs": 0.0235787999999593,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 452.6060660000003,
+      "perCallMs": 452.6060660000003,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 451.5785810000016,
+      "perCallMs": 451.5785810000016,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 452.48284299999796,
+      "perCallMs": 452.48284299999796,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 452.06052900000213,
+      "perCallMs": 452.06052900000213,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 452.5651990000006,
+      "perCallMs": 452.5651990000006,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 439.20450100000016,
+      "perCallMs": 439.20450100000016,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 437.4371730000021,
+      "perCallMs": 437.4371730000021,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 437.85073199999897,
+      "perCallMs": 437.85073199999897,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 438.44087299999956,
+      "perCallMs": 438.44087299999956,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 438.25995200000034,
+      "perCallMs": 438.25995200000034,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 422.7952729999997,
+      "perCallMs": 422.7952729999997,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 422.8253100000002,
+      "perCallMs": 422.8253100000002,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 422.29301699999996,
+      "perCallMs": 422.29301699999996,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 423.9141589999999,
+      "perCallMs": 423.9141589999999,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 1,
+      "elapsedMs": 423.9838400000008,
+      "perCallMs": 423.9838400000008,
+      "status": "passed"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 1,
+      "elapsedMs": 422.8850910000001,
+      "perCallMs": 422.8850910000001,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 27.425209999997605,
+      "perCallMs": 1.0970083999999043,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 0,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 25.986752000000706,
+      "perCallMs": 1.0394700800000283,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 25.144734999998036,
+      "perCallMs": 1.0057893999999215,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 0,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 25.418831999999384,
+      "perCallMs": 1.0167532799999754,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 25.27422899999874,
+      "perCallMs": 1.0109691599999495,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 1,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 24.67741599999863,
+      "perCallMs": 0.9870966399999452,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 25.267566999998962,
+      "perCallMs": 1.0107026799999586,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 1,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.79833399999916,
+      "perCallMs": 0.9919333599999663,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.472239999999147,
+      "perCallMs": 0.9788895999999658,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 2,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 24.887362000001303,
+      "perCallMs": 0.9954944800000521,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 25.00520300000062,
+      "perCallMs": 1.0002081200000248,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 2,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.82350099999894,
+      "perCallMs": 0.9929400399999576,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.924501000001328,
+      "perCallMs": 0.9969800400000531,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 3,
+      "pass": 0,
+      "order": [
+        "named",
+        "generated"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 24.60274500000014,
+      "perCallMs": 0.9841098000000056,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "generated",
+      "batchSize": 25,
+      "elapsedMs": 24.728601999999228,
+      "perCallMs": 0.9891440799999691,
+      "status": "passed"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "pair": 3,
+      "pass": 1,
+      "order": [
+        "generated",
+        "named"
+      ],
+      "method": "named",
+      "batchSize": 25,
+      "elapsedMs": 24.78175199999896,
+      "perCallMs": 0.9912700799999584,
+      "status": "passed"
+    }
+  ],
+  "manifest": {
+    "version": 8,
+    "artifact": "lean-vir-ir-package",
+    "metadata": {
+      "generator": "tools/GeneratePackage.lean",
+      "packageFormatVersion": 11,
+      "manifestVersion": 8,
+      "leanVersion": "4.34.0",
+      "leanToolchain": "leanprover/lean4:4.34.0",
+      "leanGithash": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+      "targets": [
+        {
+          "module": "Bench",
+          "mode": "markedModule",
+          "roots": [],
+          "resolvedRoots": [
+            "Bench.isPrime",
+            "Bench.isPrime._boxed",
+            "Bench.fibBits",
+            "Bench.fibBits._boxed",
+            "Bench.partitionsBits",
+            "Bench.partitionsBits._boxed",
+            "Bench.collatzRecord",
+            "Bench.lifePopulation",
+            "Bench.primeCount",
+            "Bench.fib",
+            "Bench.fib._boxed",
+            "Bench.partitions",
+            "Bench.partitions._boxed",
+            "Bench.tunnell",
+            "Bench.mertens"
+          ]
+        }
+      ],
+      "packageSetMember": {
+        "module": "Bench",
+        "role": "root"
+      }
+    },
+    "exports": [
+      {
+        "id": "Bench_isPrime",
+        "jsName": "Bench_isPrime",
+        "entry": "Bench.isPrime",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Bool",
+          "interfaceTag": 2
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_fibBits",
+        "jsName": "Bench_fibBits",
+        "entry": "Bench.fibBits",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_partitionsBits",
+        "jsName": "Bench_partitionsBits",
+        "entry": "Bench.partitionsBits",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_collatzRecord",
+        "jsName": "Bench_collatzRecord",
+        "entry": "Bench.collatzRecord",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat × Nat",
+          "interfaceTag": 19,
+          "kind": "prod",
+          "fst": {
+            "type": "Nat",
+            "interfaceTag": 0
+          },
+          "snd": {
+            "type": "Nat",
+            "interfaceTag": 0
+          }
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_lifePopulation",
+        "jsName": "Bench_lifePopulation",
+        "entry": "Bench.lifePopulation",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "k",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_primeCount",
+        "jsName": "Bench_primeCount",
+        "entry": "Bench.primeCount",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_fib",
+        "jsName": "Bench_fib",
+        "entry": "Bench.fib",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_partitions",
+        "jsName": "Bench_partitions",
+        "entry": "Bench.partitions",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_tunnell",
+        "jsName": "Bench_tunnell",
+        "entry": "Bench.tunnell",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Tunnell.Verdict",
+          "interfaceTag": 20,
+          "kind": "structure",
+          "name": "Tunnell.Verdict",
+          "objectFieldCount": 5,
+          "usizeFieldCount": 0,
+          "scalarByteSize": 2,
+          "fields": [
+            {
+              "name": "n",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 0
+              }
+            },
+            {
+              "name": "squarefree",
+              "type": {
+                "type": "Bool",
+                "interfaceTag": 2
+              },
+              "layout": {
+                "kind": "scalar",
+                "size": 1,
+                "offset": 0
+              }
+            },
+            {
+              "name": "parity",
+              "type": {
+                "type": "String",
+                "interfaceTag": 3
+              },
+              "layout": {
+                "kind": "object",
+                "index": 1
+              }
+            },
+            {
+              "name": "first",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 2
+              }
+            },
+            {
+              "name": "second",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 3
+              }
+            },
+            {
+              "name": "criterion",
+              "type": {
+                "type": "Bool",
+                "interfaceTag": 2
+              },
+              "layout": {
+                "kind": "scalar",
+                "size": 1,
+                "offset": 1
+              }
+            },
+            {
+              "name": "verdict",
+              "type": {
+                "type": "String",
+                "interfaceTag": 3
+              },
+              "layout": {
+                "kind": "object",
+                "index": 4
+              }
+            }
+          ]
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_mertens",
+        "jsName": "Bench_mertens",
+        "entry": "Bench.mertens",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Int",
+          "interfaceTag": 1
+        },
+        "effect": "pure",
+        "startup": false
+      }
+    ],
+    "hostImports": [],
+    "diagnostics": []
+  },
+  "finished": "2026-09-28T12:11:30.373Z",
+  "loadAfter": [
+    2.9,
+    3.18,
+    3.26
+  ]
+}

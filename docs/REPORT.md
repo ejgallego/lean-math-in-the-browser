@@ -1,207 +1,178 @@
-# Lean math in the browser: a small benchmark
+# Lean math in the browser: VIR, FIR and compiled Wasm
 
-*An educational experiment, September 2026. It started from a question on the Lean Zulip (see
-the [README](../README.md#where-this-comes-from)) and asks something narrow: if a mathematician
-writes small pure Lean programs, can they run in a web page through lean-vir, are the answers
-right, and what does it cost?*
+A follow-up to [Joel Canary's original experiment](REPORT-ORIGINAL.md),
+28 September 2026. The original work supplies the mathematical programs,
+independent references and browser experiments. This review reproduces its
+performance findings, audits the VIR integration and adds FIR and C/Emscripten
+comparisons for the author and runtime maintainers.
 
-## 1. Setup
+**The reported slowdown is real, and we found no major VIR integration
+mistake or unused SDK setting that explains it away.** FIR removes much of
+the cost on loops and arrays, but remains behind native Lean and handwritten
+JS. Its current large-integer implementation has substantial regressions.
+Compiled Wasm supplies a useful baseline and still has numeric and output
+conversion costs of its own.
 
-| | engine comparison | browser |
-|---|---|---|
-| machine | machine A | machine B |
-| engines | native Lean (compiled), Lean in WebAssembly via lean-vir in Node 22, hand-written JavaScript in Node | Lean via lean-vir and the JavaScript baseline, both in headless Chrome (September 2026), in a Web Worker and on the main thread |
-| Lean | v4.34.0, core only (no Mathlib) | same packages |
-| lean-vir | commit `cdba5cac11eb` (no release yet), SDK artifact of that commit | same |
+## Five backends, one comparison
 
-**Engines are only compared on the same machine.** Native Lean was built on machine A, so native vs
-WebAssembly vs JavaScript is measured there; the browser section compares WebAssembly
-with JavaScript inside the same Chrome. Ratios are never taken across machines.
+The mathematical definitions are unchanged. Native Lean, regular FIR and the
+C/Emscripten build use **Lean 4.34.1**; the newly generated VIR packages run on
+the original bundled VIR runtime. That retained runtime version difference is
+explicit and all 40 VIR reference inputs pass. All ten regular FIR artifacts
+are byte-identical to the earlier rc2 builds.
 
-**Method.** Every (engine, workload, size) gets one warm-up call, then 7 timed calls (5 above 1 s,
-3 above 10 s); medians are reported, and the charts shade the min–max range. Native Lean is timed
-inside its own process (`IO.monoNanosNow`), so process start-up is not counted. **Every value is
-checked before its time is kept** — against a SHA-256 of the value computed by an independent Python
-reference — so a fast wrong answer cannot enter the results.
+The measurements below come from **one campaign**, on a Ryzen AI 9 HX 370,
+Linux x64, Node 24.21.0 / V8 13.6.233.17-node.53. Ten engine orders balance
+positions and within-round predecessor pairs. All **500 measured results**
+pass their independent reference hashes. Startup is excluded.
 
-## 2. Workloads
+**Each cell is median milliseconds, with FIR's time divided by that column's
+time in parentheses.** Above 1 means FIR takes longer; below 1 means FIR is
+faster. The ratio direction is the same everywhere. For example, the sieve's
+native cell means 9.413 ms natively and FIR taking 3.91× as long. Its VIR cell
+means FIR takes 0.0323× VIR's time, or about 31× faster. Ratios use unrounded
+medians; FIR's own ratio is always 1.
 
-| workload | what it stresses | external reference |
-|---|---|---|
-| Tunnell's criterion | nested loops on small `Nat` | OEIS A003273, brute force |
-| Collatz record ≤ N | recursion of unknown length | OEIS A006877 |
-| sieve π(N) | writes into `Array Bool` | OEIS A000720 |
-| Mertens M(N) | writes into `Array Int` | OEIS A002321 |
-| partitions p(n) | big-`Nat` additions, dynamic programming | OEIS A000041 |
-| Fibonacci F(n) | big-`Nat` multiplication (fast doubling) | Python, two algorithms |
-| Miller–Rabin | modular powers of big `Nat` | known Mersenne primes |
-| Life B37/S2378, 64×64 torus | array updates, many generations | Python/numpy |
+<!-- BEGIN BACKEND TABLE -->
+| workload / input | Native | JavaScript | VIR | FIR | C/Wasm |
+|---|---:|---:|---:|---:|---:|
+| Tunnell / 1,000,003 | 6.419<br>(1.86×) | 2.211<br>(5.39×) | 794.804<br>(0.015×) | 11.930<br>(1×) | 10.817<br>(1.1×) |
+| Collatz / 100,000 | 39.756<br>(2.46×) | 19.310<br>(5.07×) | 5,399.278<br>(0.0181×) | 97.812<br>(1×) | 50.220<br>(1.95×) |
+| prime sieve / 1,000,000 | 9.413<br>(3.91×) | 1.917<br>(19.2×) | 1,138.685<br>(0.0323×) | 36.784<br>(1×) | 11.984<br>(3.07×) |
+| Mertens / 1,000,000 | 35.077<br>(20.6×) | 25.960<br>(27.8×) | 3,647.482<br>(0.198×) | 722.557<br>(1×) | 47.465<br>(15.2×) |
+| partitions / 3,000 | 13.527<br>(1.64×) | 3.767<br>(5.9×) | 135.336<br>(0.164×) | 22.239<br>(1×) | 13.171<br>(1.69×) |
+| fib, decimal / 10,000 | 2.926<br>(17.4×) | 0.1139<br>(446×) | 2.673<br>(19×) | 50.835<br>(1×) | 5.569<br>(9.13×) |
+| fibBits / 10,000 | 0.0294<br>(1,890×) | 0.0856<br>(649×) | 0.2560<br>(217×) | 55.572<br>(1×) | 0.1229<br>(452×) |
+| partitionsBits / 3,000 | 14.426<br>(1.52×) | 3.997<br>(5.47×) | 137.102<br>(0.16×) | 21.884<br>(1×) | 13.385<br>(1.63×) |
+| Miller–Rabin / 127 bits | 0.6433<br>(221×) | 0.6176<br>(231×) | 3.271<br>(43.5×) | 142.432<br>(1×) | 1.542<br>(92.4×) |
+| Life / 100 | 33.953<br>(1.75×) | 4.365<br>(13.6×) | 3,490.221<br>(0.017×) | 59.367<br>(1×) | 32.100<br>(1.85×) |
+<!-- END BACKEND TABLE -->
 
-The Python references use a **different algorithm** from the Lean code wherever there is one
-(coin-change DP vs Euler's pentagonal recurrence, a linear Möbius sieve vs a sieve by primes,
-iterative addition and matrix powers vs fast doubling, other Miller–Rabin bases), so agreement is
-evidence rather than an echo. The JavaScript baseline uses the **same algorithms** as the Lean code,
-so the ratio measures the runtime, not a better algorithm.
+Here **VIR** is Lean's IR interpreter compiled to Wasm; **FIR** is the regular
+FIR-generated Wasm backend; **C/Wasm** is Lean-generated C compiled with
+Emscripten through FIR's tooling. **Native** is compiled Lean; **JavaScript**
+is the handwritten implementation using typed arrays and BigInt. `fibBits`
+and `partitionsBits` return floor(log₂(result)), avoiding a huge decimal output.
+The primality input is identified by its bit length; Life uses 100 generations
+on the original 64×64 torus.
 
-## 3. Correctness
+FIR improves over VIR by about **5–67×** on the selected loop/array workloads.
+Those gains still leave it at **1.7–20.6× native time** and **5.1–27.8× JS time**
+on those workloads. Mertens exposes a particularly large remaining gap.
+C/Wasm is close to native on several cases; FIR takes about 1.1× its time on
+Tunnell, 3.1× on the sieve and 15.2× on Mertens.
 
-* **Kernel.** Each file ends with `decide +kernel` checks on small cases with known values: Tunnell
-  on n = 1, 2, 3 (fail) and 5, 6, 7 (pass); Collatz 27 → 111 steps; π(100) = 25; M(10) = −1;
-  p(10) = 42; F(30) = 832040; 97 prime, 91 not. The kernel evaluates the same code the browser runs.
-* **Differential.** For Tunnell, the WebAssembly build equals native Lean and an independent Python
-  count on **every n from 1 to 10,000** and on 40 random n up to 2·10⁶; the squarefree n that pass
-  are exactly the terms of OEIS A003273 up to 9,999 (6,083 numbers); the parity theorem of the Lax
-  archive entry lax-712553 (the counts are even) holds on every n it applies to.
-* **Benchmark cases.** All 40 cases × 3 engines on machine A (120 timed rows) and 34 cases × 2 engines
-  × 3 profiles in Chrome returned the expected value; none was discarded.
+Large integers give a different result. At fibBits(10,000), FIR takes about
+452× C/Wasm time. Fibonacci and Miller–Rabin regress even relative to VIR.
+C/Wasm does not win every case either: decimal fib(10,000) takes 5.57 ms
+versus VIR's 2.67 ms. Compiling away interpreter dispatch does not by itself
+fix multiplication or decimal conversion.
 
-## 4. Results
+## Did the client leave an optimization unused?
 
-The full numbers are in [`tabla.md`](tabla.md); the charts are drawn from `bench/out/*.json` by
-`bench/graficas.py`.
+The [VIR integration audit](VIR-USAGE-AUDIT-20260928.md) found appropriate
+usage for these workloads:
 
-### 4.1 What the interpreter costs
+- The runtime and packages are retained, with initialization outside steady
+  timers. One exported call performs each complete computation.
+- Resolved call slots and object marshalling plans are cached; the underlying
+  interpreter session is retained. These calls use the object ABI.
+- Nat arithmetic, Array operations and Int operations already use compiled
+  native externs. The package declares no JavaScript host imports.
+- No supported SDK switch supplies compiled client functions or substitutes
+  GMP. Adding common host bindings does not override Nat arithmetic.
 
-![time relative to native Lean, per workload](figuras/1-coste-por-carga.svg)
+Two balanced comparisons of named calls against generated SDK methods found
+no consistent large-input benefit. Tiny fibBits calls showed sub-microsecond
+to few-microsecond median differences. There is no evidence here for a client
+API change that would remove the large slowdowns. Source-level representation
+or algorithm changes remain possible separate experiments.
 
-On loops and arrays, Lean in WebAssembly is **about 120–170× slower than native Lean** (Tunnell 129×,
-sieve 145×, Mertens 170×, Collatz 172×, Life 137× at the largest sizes). Across every case with a
-measurable native time the median is 117×. That is the expected order for an IR interpreter compiled
-to WebAssembly, not a defect: lean-vir runs Lean's own interpreter, it does not compile Lean to
-WebAssembly.
+## Three costs worth separating
 
-Where big integers dominate, the gap is much smaller — partitions 9×, Miller–Rabin 10× — because the
-time is spent inside the runtime's arithmetic, which is compiled code in both cases.
+The first local campaign reproduced the broad native/VIR pattern, including
+large loop/array slowdowns, without reproducing every original ratio. Its
+[historical measurements](RESEARCH-20260928.md#same-machine-results) remain
+separate from the table above; hardware, engine versions and measurement
+policies differ.
 
-Against **hand-written JavaScript** doing the same thing, the WebAssembly build is roughly 60–500×
-slower on most workloads (Tunnell 320×, sieve 416×, Life 479×, partitions 64×) and only 6× on
-Miller–Rabin, where both spend their time in big-integer arithmetic. JavaScript is also
-faster than *native* Lean on most array workloads (a typed array against a boxed `Array Bool`).
+**Interpreter execution.** For the million-input sieve, a profile of the exact
+bundled release binary attributes 31.18% self time to interpreter `call`,
+23.03% to `eval_body`, 20.70% to symbol-cache lookup and 7.15% to `eval_expr`.
+Internal dispatch/evaluation and lookup are concrete runtime targets. This
+symbol-cache lookup is distinct from the client's cached SDK name lookup.
 
-In absolute terms: Tunnell for n ≈ 10⁵ answers in 78 ms, π(10⁶) in 1.1 s, p(3000) in 0.14 s. For
-interactive pages that is usable up to moderate sizes, and hopeless for heavy computation.
+**Compiled arithmetic.** For fibBits(1,000,000), **98.87% of sampled self time**
+is in compiled `lean::mpn_mul`. Calling the entire difference “interpreter
+overhead” would hide the dominant work. Separately, the
+[FIR profile](FIR-FIBBITS-PROFILE-20260928.md) finds repeated doubling/addition
+in its generic multiplication path, with addition and limb-access helpers
+dominating self time. That profile applies to the identical Wasm bytes rebuilt
+with 4.34.1. Miller–Rabin has not been separately profiled.
 
-### 4.2 Scaling
+**Output conversion.** Earlier VIR phase medians for decimal F(1,000,000)
+were roughly **424 ms executing and 23,943 ms decoding**. Nat decoding invokes
+a Wasm decimal-conversion routine, so this includes arithmetic rather than
+merely copying text in JS. Native formatting also took about ten seconds in
+that campaign. The author's small-result variants already make the right
+distinction. If an application needs the decimal digits, that cost remains
+part of its workload.
 
-![time against size, per workload and engine](figuras/2-escalado.svg)
+The profiles are diagnostics, not additional timing rows. Symbols were checked
+against the measured artifacts. Some sampled caller ancestry is unavailable;
+self-time in optimized frames may include inlined work. These findings identify
+costs, not a proved speedup for a proposed replacement.
 
-The three engines scale in parallel on almost every workload — the interpreter adds a constant
-factor, not a worse complexity. The two visible exceptions are native Lean jumping between 31 and
-61 bits in Miller–Rabin and between p(300) and p(1000): that is where Lean's `Nat` stops being an
-unboxed machine integer (below 2⁶³) and becomes a heap bignum.
+## Coverage and limits
 
-### 4.3 Printing, not multiplying
+Native, revised JS and rebuilt VIR packages pass all **40 reference inputs**.
+Regular FIR qualifies **37/40**, with 30-second per-call timeouts on million-input
+fib/fibBits and 1,279-bit primality. C/Wasm qualifies **39/40**; only the huge
+decimal Fibonacci result times out. Retained-instance checks include immediate
+repeats and forward/reverse input orders. No completed result mismatched.
+Timeouts remain unqualified outcomes, not estimated runtimes. The table keeps
+the same selected inputs as the earlier FIR campaign; the larger timeouts
+are disclosed rather than silently omitted.
 
-![F(10^6) with and without its decimal expansion](figuras/3-imprimir-vs-calcular.svg)
+JS and Wasm use retained instances with one explicit warmup. Each native
+sample is the second in-process call in a fresh process, with process startup
+excluded. FIR includes its diagnostic adapter and heap rewind; VIR includes
+SDK decoding; C/Wasm includes argument parsing, computation/formatting, text
+copying and release. Native and JS include result formatting. These boundaries
+are similar but not identical. The C/Wasm runtime uses `USE_GMP=OFF`.
 
-Native Lean computes F(10⁶) (694,241 bits) in **3 ms** and needs **9.3 s to print its 208,988 decimal
-digits**: `toString` on a `Nat` grows quadratically with the length (ten times the digits,
-F(10⁵) → F(10⁶), took about a hundred times longer: 92 ms → 9.3 s). Timing the printed value would
-have blamed the multiplication for the conversion, so every big-number workload is also measured
-without printing (`⌊log₂⌋` of the result).
+Background load, CPU affinity, frequency and thermal state were uncontrolled.
+JS representations and arithmetic libraries differ from Lean's. Ratios compare
+implementations, not a universal interpreter penalty. The new experiments are
+**Node-only**: the original browser/Worker, cold-start, throttling and frame-gap
+claims have not been rerun, and the new adapters are not browser-qualified.
 
-With printing taken out, **big-`Nat` multiplication in WebAssembly is ~230× slower than native**
-(697 ms vs 3 ms), much more than big-`Nat` addition (partitions, 9×). The binaries explain it: the
-native executable links GMP statically (209 GMP symbols), while the unstripped build of lean-vir's
-runtime (`vir-upstream.dev.wasm`) contains no GMP and instead Lean's own fallback for big numbers
-(`lean::mpn_mul`, `lean::mpz`, on 32-bit limbs). So big-number work in the browser runs on Lean's
-portable fallback, not on GMP; whether GMP could be built for WebAssembly there is a question for
-lean-vir's authors.
+Two methodology corrections belong with the results. The original harnesses
+checked Node/browser warmup values and the native final value, rather than
+every timed repetition as the original report states. The new comparison
+checks every measured result. Also, original JS `partitionsBits` converted to
+decimal and back; the separate revised baseline retains the BigInt internally
+and passes every reference case. Original programs, baseline and report are
+preserved. These corrections do not discount the original performance finding.
 
-### 4.4 In the browser
+## Evidence, reproduction and next work
 
-![cold start](figuras/5-arranque-en-frio.svg)
-
-Starting the Lean runtime in Chrome takes **55 ms at full CPU speed** from creating the worker to the first
-answer (29 ms importing the JavaScript runtime, 11 ms downloading, 15 ms compiling the WebAssembly
-and loading the packages, 1 ms for the first call), and 169 ms with the CPU slowed 4×. The download
-is from a local server, so on a real network add the transfer of 768 KB (runtime) + ~50 KB (packages).
-The real page answers its first question **187 ms after navigation** (450 ms on the slowed CPU).
-
-![the page stays responsive only with a Worker](figuras/4-la-pagina-no-se-congela.svg)
-
-The whole benchmark (about 46 s of computation) run **in a Web Worker never cost the page a frame**:
-the longest gap between two frames was 18 ms, one frame at 60 Hz. The same code **on the main thread
-froze the page for 46 s** (162 s with the CPU slowed 4×). Moving the work into a Worker cost nothing
-measurable (main thread ÷ worker = 0.99, median over 23 cases).
-
-Inside Chrome the WebAssembly build is ~170× slower than the same JavaScript (median over the cases
-where both take > 0.5 ms), the same order as in Node (111× on machine A; different machines, so only
-the order of magnitude is comparable).
-
-### 4.5 The mathematics
-
-![Tunnell's criterion by residue class mod 8](figuras/6-tunnell-por-clase.svg)
-
-Every squarefree n ≡ 5, 6, 7 (mod 8) up to 10,000 satisfies Tunnell's criterion (both counts are
-zero for those classes), as expected; for n ≡ 1, 2, 3 (mod 8) only 11–17 % do. Under BSD every
-squarefree n ≡ 5, 6, 7 (mod 8) is a congruent number; the unconditional statement is only that the
-numbers that fail the criterion are not.
-
-## 5. What we found along the way
-
-For Lean users writing code meant to run both in the kernel and in the browser:
-
-1. **Core `for` and `while` loops did not reduce in the kernel**, not even with `decide +kernel`
-   (Lean v4.34.0; `while` goes through a `partial` loop, and we did not trace why the bounded `for`
-   over a range also gets stuck). Code that should also be *checked* by evaluation had to be written
-   with structural recursion on an explicit bound.
-2. **With the module system, a definition is exported to other modules without its body** unless it
-   is `@[expose]`d, so evaluation that reaches it from another file gets stuck; the error only says
-   that reduction got stuck, not why.
-3. **Non-tail recursion overflows the IR interpreter's stack in WebAssembly** long before native code
-   would (Tunnell overflowed near n ≈ 10⁷ at a recursion depth of a few thousand); accumulators fix it.
-4. **`toString` of a big `Nat` is quadratic** (natively, 3 ms to compute F(10⁶), 9.3 s to print it).
-5. **Big-`Nat` multiplication in the WebAssembly runtime is ~230× slower than native** (§ 4.3): the
-   runtime uses Lean's portable fallback on 32-bit limbs, not GMP.
-
-For people measuring things in browsers:
-
-6. **Chrome's CPU throttling through the DevTools protocol does not reach dedicated Web Workers** —
-   set on the page or on the worker's own debugging session, the worker ran at full speed (ratio
-   0.98–1.05). A slowed-CPU profile of worker code measured that way runs at full speed. We measured
-   the slowed CPU on the main thread instead (4.4× slower, as intended).
-7. **The long-task observer misses a main thread that is blocked the whole time** (its entries arrive
-   after the thread frees up); the largest gap between frames cannot be missed that way.
-
-And one about the baseline:
-
-8. **The first hand-written JavaScript silently gave a wrong answer** (757 instead of 696 live cells):
-   a linear congruential generator whose product exceeds 2⁵³ loses low bits in a JavaScript `Number`.
-   It was caught by the value check and fixed with `BigInt`; a Lean `Nat` cannot fail that way.
-   A second JavaScript draft walked the Collatz range twice and was unfair to JavaScript; it was fixed
-   before the final runs.
-
-## 6. Limits of this study
-
-* Two machines, one browser (Chrome), one lean-vir commit, one Lean version. Firefox and Safari were
-  not measured, and lean-vir says its browser surface will change.
-* The slowed-CPU numbers are machine B's CPU slowed 4× by Chrome on the main thread, not a measurement
-  on real slower hardware.
-* Memory use and download over a real network were not measured.
-* Eight small classical workloads are not a representative sample of Lean programs; they are chosen
-  to stress different parts of the runtime, and all are single-threaded.
-* The kernel checks cover small cases only; on large inputs correctness rests on the differential
-  tests against independent code, which is evidence, not proof. Tunnell's theorem itself is not
-  formalized here.
-* The JavaScript baseline is one reasonable implementation per workload, not an optimised one.
-
-## Appendix: how every number was produced
+The [checked-in evidence snapshot](../bench/results/2026-09-28/README.md)
+contains raw samples, correctness outcomes, profiles and artifact identities.
+The table is generated from the 500 observations, not transcribed by hand:
 
 ```sh
-# the cases and their expected values (independent Python, different algorithms)
-python bench/generar_casos.py
-# on the machine with native Lean, after `lake build tunnell_cli` and copying the packages to bench/pkg/
-node bench/medir-nativo.mjs      # native Lean
-node bench/medir-node.mjs        # Lean in WebAssembly and JavaScript, in Node
-# in the browser (serve the repository root with python bench/servir.py; set CHROME to a Chrome binary)
-node bench/navegador/correr.mjs normal http://127.0.0.1:8125/ worker
-node bench/navegador/correr.mjs normal http://127.0.0.1:8125/ principal
-node bench/navegador/correr.mjs lenta http://127.0.0.1:8125/ principal
-# the report's numbers and figures
-python bench/resumen.py
-python bench/graficas.py
+python3 bench/render-report-table.py --check
 ```
 
-Prepared with the help of an AI assistant (Claude, Anthropic); the author reviewed the method,
-the results and this text and is responsible for them.
+The [4.34.1 methodology](EVALUATION-4341-20260928.md) documents exact builds,
+qualification and timing boundaries. [Backend recipes](../bench/backends/README.md)
+explain how to run a new campaign. Binaries, full runtime trees and debug
+companions are not shipped with the evidence; paths inside captured records
+refer to the original machine.
+
+The next application-facing step is browser/Worker qualification. Runtime
+work can independently target interpreter dispatch/lookup, FIR multiplication
+and decimal conversion. Evaluate changes against frozen packages with fresh
+correctness checks and balanced timings; the existing evidence does not yet
+establish their prospective speedups.

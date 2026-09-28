@@ -1,0 +1,1208 @@
+{
+  "status": "passed",
+  "started": "2026-09-28T15:50:03.796Z",
+  "node": "v24.21.0",
+  "inputs": {
+    "lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    ".lake/build/bin/tunnell_cli": "6ad816963762077b2e3bc349923901b9935904968c203bfe47b8ab58a7b92883",
+    "bench/js-baseline-revised.mjs": "ba70f34a4a43a94e3fc111462c92c8707d9d82d172fb7469dd7f5277f46a1bcc",
+    "bench/casos.mjs": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+    "bench/backends/check-client.mjs": "b746be37124087709c0f13959cc5d472eaf4836bed1daac49057b9b14e645d38",
+    "site/lean-vir/wasm/vir-upstream.wasm": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+    ".lake/build/vir/module-sets/Bench.parts/0.irpkg": "a7bfa01f047d54b2dd516bbf4fee1811d971cd6adac78d83477a2b6b3de2dbf7",
+    ".lake/build/vir/module-sets/Bench.parts/1.irpkg": "f1298847fcd9df87874a01d6e5c6cb723b4f33f8da0bb122a8309895cb8ac9ee",
+    ".lake/build/vir/module-sets/Bench.irpkg": "cdfad827ce9cd885a6f9eb0d7da450c17b544ee1507dd69fe929817e26540afd"
+  },
+  "rows": [
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "5064f05aeb6c352707ec25e122c1250ab02ae2a1076f30f261bb91e3becb634b"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "5064f05aeb6c352707ec25e122c1250ab02ae2a1076f30f261bb91e3becb634b"
+    },
+    {
+      "w": "tunnell",
+      "x": 1003,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "5064f05aeb6c352707ec25e122c1250ab02ae2a1076f30f261bb91e3becb634b"
+    },
+    {
+      "w": "tunnell",
+      "x": 10003,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "2ee018063de1fe295c22e56f750e8f2be344e127617d4e2445e42ceccc492270"
+    },
+    {
+      "w": "tunnell",
+      "x": 10003,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "2ee018063de1fe295c22e56f750e8f2be344e127617d4e2445e42ceccc492270"
+    },
+    {
+      "w": "tunnell",
+      "x": 10003,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "2ee018063de1fe295c22e56f750e8f2be344e127617d4e2445e42ceccc492270"
+    },
+    {
+      "w": "tunnell",
+      "x": 100003,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "5f14726292e777b993beaae6b6e232125089b5e988440d29f494e19ad59bf134"
+    },
+    {
+      "w": "tunnell",
+      "x": 100003,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "5f14726292e777b993beaae6b6e232125089b5e988440d29f494e19ad59bf134"
+    },
+    {
+      "w": "tunnell",
+      "x": 100003,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "5f14726292e777b993beaae6b6e232125089b5e988440d29f494e19ad59bf134"
+    },
+    {
+      "w": "tunnell",
+      "x": 1000003,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "44d72387c65856ebee54b2ee1fcd2dbb21aa3e938d02b14d98d4330ae64fd21b"
+    },
+    {
+      "w": "tunnell",
+      "x": 1000003,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "44d72387c65856ebee54b2ee1fcd2dbb21aa3e938d02b14d98d4330ae64fd21b"
+    },
+    {
+      "w": "tunnell",
+      "x": 1000003,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "44d72387c65856ebee54b2ee1fcd2dbb21aa3e938d02b14d98d4330ae64fd21b"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "a7acf229eb91368073ef5c629000d530065bcd1da1a5789c2a2179b66edcc9ff"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "a7acf229eb91368073ef5c629000d530065bcd1da1a5789c2a2179b66edcc9ff"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "a7acf229eb91368073ef5c629000d530065bcd1da1a5789c2a2179b66edcc9ff"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 10000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "53d86a950377e727f77c427eed257838b97932125a93b61ac079ccad4bdfd738"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 10000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "53d86a950377e727f77c427eed257838b97932125a93b61ac079ccad4bdfd738"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 10000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "53d86a950377e727f77c427eed257838b97932125a93b61ac079ccad4bdfd738"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 100000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "bc8935fe91fe0dfc8387ad12c6005b763530246169d746acccfc6ce1ec65e261"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 100000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "bc8935fe91fe0dfc8387ad12c6005b763530246169d746acccfc6ce1ec65e261"
+    },
+    {
+      "w": "collatzRecord",
+      "x": 100000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "bc8935fe91fe0dfc8387ad12c6005b763530246169d746acccfc6ce1ec65e261"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "80c3cd40fa35f9088b8741bd8be6153de05f661cfeeb4625ffbf5f4a6c3c02c4"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "80c3cd40fa35f9088b8741bd8be6153de05f661cfeeb4625ffbf5f4a6c3c02c4"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "80c3cd40fa35f9088b8741bd8be6153de05f661cfeeb4625ffbf5f4a6c3c02c4"
+    },
+    {
+      "w": "primeCount",
+      "x": 10000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "ee932b02fc14995ab1085f9c686b916d3dd5d21361ca4c20923965257334991d"
+    },
+    {
+      "w": "primeCount",
+      "x": 10000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "ee932b02fc14995ab1085f9c686b916d3dd5d21361ca4c20923965257334991d"
+    },
+    {
+      "w": "primeCount",
+      "x": 10000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "ee932b02fc14995ab1085f9c686b916d3dd5d21361ca4c20923965257334991d"
+    },
+    {
+      "w": "primeCount",
+      "x": 100000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "454df0b799320283814e09c66752efdf334c0205f55f6334c40896e9a48f0712"
+    },
+    {
+      "w": "primeCount",
+      "x": 100000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "454df0b799320283814e09c66752efdf334c0205f55f6334c40896e9a48f0712"
+    },
+    {
+      "w": "primeCount",
+      "x": 100000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "454df0b799320283814e09c66752efdf334c0205f55f6334c40896e9a48f0712"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "c9ab187dc9a3366dd148631ef1b508d55f37f98e15d33801d65fcedc76ff865b"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "c9ab187dc9a3366dd148631ef1b508d55f37f98e15d33801d65fcedc76ff865b"
+    },
+    {
+      "w": "primeCount",
+      "x": 1000000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "c9ab187dc9a3366dd148631ef1b508d55f37f98e15d33801d65fcedc76ff865b"
+    },
+    {
+      "w": "mertens",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "w": "mertens",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "w": "mertens",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "w": "mertens",
+      "x": 10000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "163f9d874bf45bcce929f64cc69e816219b0f000e374076c1d3efe0a26ca6b6e"
+    },
+    {
+      "w": "mertens",
+      "x": 10000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "163f9d874bf45bcce929f64cc69e816219b0f000e374076c1d3efe0a26ca6b6e"
+    },
+    {
+      "w": "mertens",
+      "x": 10000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "163f9d874bf45bcce929f64cc69e816219b0f000e374076c1d3efe0a26ca6b6e"
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194"
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194"
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194"
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd"
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd"
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd"
+    },
+    {
+      "w": "partitions",
+      "x": 100,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "50de17d47bcec0fd9e0d09e3da44e19da40faf789eb1dcb1db0b09c8689c3442"
+    },
+    {
+      "w": "partitions",
+      "x": 100,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "50de17d47bcec0fd9e0d09e3da44e19da40faf789eb1dcb1db0b09c8689c3442"
+    },
+    {
+      "w": "partitions",
+      "x": 100,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "50de17d47bcec0fd9e0d09e3da44e19da40faf789eb1dcb1db0b09c8689c3442"
+    },
+    {
+      "w": "partitions",
+      "x": 300,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "d3bdb3b444511d556f5c3f6b3230d9c5e6ec165f258c15b1c266e45367559605"
+    },
+    {
+      "w": "partitions",
+      "x": 300,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "d3bdb3b444511d556f5c3f6b3230d9c5e6ec165f258c15b1c266e45367559605"
+    },
+    {
+      "w": "partitions",
+      "x": 300,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "d3bdb3b444511d556f5c3f6b3230d9c5e6ec165f258c15b1c266e45367559605"
+    },
+    {
+      "w": "partitions",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "734a7c05b5614ca17207fb6bafec1d54f74dabd1f517c64087f6451bf0811e63"
+    },
+    {
+      "w": "partitions",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "734a7c05b5614ca17207fb6bafec1d54f74dabd1f517c64087f6451bf0811e63"
+    },
+    {
+      "w": "partitions",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "734a7c05b5614ca17207fb6bafec1d54f74dabd1f517c64087f6451bf0811e63"
+    },
+    {
+      "w": "partitions",
+      "x": 3000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "cb97ac2f66b2fa929ebd46802c983ffcd768d8809cd29839a85a1bfbe0690ae8"
+    },
+    {
+      "w": "partitions",
+      "x": 3000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "cb97ac2f66b2fa929ebd46802c983ffcd768d8809cd29839a85a1bfbe0690ae8"
+    },
+    {
+      "w": "partitions",
+      "x": 3000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "cb97ac2f66b2fa929ebd46802c983ffcd768d8809cd29839a85a1bfbe0690ae8"
+    },
+    {
+      "w": "fib",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "30ad6e2a0cbbd0a636a53ce8df4f703ece426736cf4777519f1c5cffbea2e220"
+    },
+    {
+      "w": "fib",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "30ad6e2a0cbbd0a636a53ce8df4f703ece426736cf4777519f1c5cffbea2e220"
+    },
+    {
+      "w": "fib",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "30ad6e2a0cbbd0a636a53ce8df4f703ece426736cf4777519f1c5cffbea2e220"
+    },
+    {
+      "w": "fib",
+      "x": 10000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "e9c83559a05641cfd86d6c192c53fdfda87b8e53470b63dc19d1d0d7526e987a"
+    },
+    {
+      "w": "fib",
+      "x": 10000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "e9c83559a05641cfd86d6c192c53fdfda87b8e53470b63dc19d1d0d7526e987a"
+    },
+    {
+      "w": "fib",
+      "x": 10000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "e9c83559a05641cfd86d6c192c53fdfda87b8e53470b63dc19d1d0d7526e987a"
+    },
+    {
+      "w": "fib",
+      "x": 100000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "9fe22f691a91170da9006226d479ad986b2f92021b7045ecfb0a5091b641b802"
+    },
+    {
+      "w": "fib",
+      "x": 100000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "9fe22f691a91170da9006226d479ad986b2f92021b7045ecfb0a5091b641b802"
+    },
+    {
+      "w": "fib",
+      "x": 100000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "9fe22f691a91170da9006226d479ad986b2f92021b7045ecfb0a5091b641b802"
+    },
+    {
+      "w": "fib",
+      "x": 1000000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    },
+    {
+      "w": "fib",
+      "x": 1000000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    },
+    {
+      "w": "fib",
+      "x": 1000000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "8b7fb6aee1c63e17f44f935a6b64e05920ddad65327de1cb5e6994a6a3f0b618"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "8b7fb6aee1c63e17f44f935a6b64e05920ddad65327de1cb5e6994a6a3f0b618"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "8b7fb6aee1c63e17f44f935a6b64e05920ddad65327de1cb5e6994a6a3f0b618"
+    },
+    {
+      "w": "fibBits",
+      "x": 10000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "817e970313efa2512802291b7d5156a9b8f23045736d92edf21769c70464101c"
+    },
+    {
+      "w": "fibBits",
+      "x": 10000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "817e970313efa2512802291b7d5156a9b8f23045736d92edf21769c70464101c"
+    },
+    {
+      "w": "fibBits",
+      "x": 10000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "817e970313efa2512802291b7d5156a9b8f23045736d92edf21769c70464101c"
+    },
+    {
+      "w": "fibBits",
+      "x": 100000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "88f5cb4c01c811550bd78a686583e2ec187fd34471f72be1126c194d7342f073"
+    },
+    {
+      "w": "fibBits",
+      "x": 100000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "88f5cb4c01c811550bd78a686583e2ec187fd34471f72be1126c194d7342f073"
+    },
+    {
+      "w": "fibBits",
+      "x": 100000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "88f5cb4c01c811550bd78a686583e2ec187fd34471f72be1126c194d7342f073"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "fibBits",
+      "x": 1000000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 100,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "670671cd97404156226e507973f2ab8330d3022ca96e0c93bdbdb320c41adcaf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 100,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "670671cd97404156226e507973f2ab8330d3022ca96e0c93bdbdb320c41adcaf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 100,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "670671cd97404156226e507973f2ab8330d3022ca96e0c93bdbdb320c41adcaf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 300,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "2858dcd1057d3eae7f7d5f782167e24b61153c01551450a628cee722509f6529"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 300,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "2858dcd1057d3eae7f7d5f782167e24b61153c01551450a628cee722509f6529"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 300,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "2858dcd1057d3eae7f7d5f782167e24b61153c01551450a628cee722509f6529"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 1000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "5ef6fdf32513aa7cd11f72beccf132b9224d33f271471fff402742887a171edf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 1000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "5ef6fdf32513aa7cd11f72beccf132b9224d33f271471fff402742887a171edf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 1000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "5ef6fdf32513aa7cd11f72beccf132b9224d33f271471fff402742887a171edf"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 3000,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "d6061bbee6cf13bd73765faaea7cdd0af1323e4b125342ac346047f7c4bda1fc"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 3000,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "d6061bbee6cf13bd73765faaea7cdd0af1323e4b125342ac346047f7c4bda1fc"
+    },
+    {
+      "w": "partitionsBits",
+      "x": 3000,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "d6061bbee6cf13bd73765faaea7cdd0af1323e4b125342ac346047f7c4bda1fc"
+    },
+    {
+      "w": "isPrime",
+      "x": 31,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 31,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 31,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 89,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 89,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 89,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 521,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 521,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 521,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 1279,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 1279,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 1279,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 10,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "32eb1a8dafeb0873c8d00b0e9058c8c77ff6c6d9235b3236989c50ef63d8f9ba"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 10,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "32eb1a8dafeb0873c8d00b0e9058c8c77ff6c6d9235b3236989c50ef63d8f9ba"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 10,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "32eb1a8dafeb0873c8d00b0e9058c8c77ff6c6d9235b3236989c50ef63d8f9ba"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 30,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "43d244581aa23a744de9d775979165eb226a80e2cce6c0d0885412c9b6a0dbdf"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 30,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "43d244581aa23a744de9d775979165eb226a80e2cce6c0d0885412c9b6a0dbdf"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 30,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "43d244581aa23a744de9d775979165eb226a80e2cce6c0d0885412c9b6a0dbdf"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 100,
+      "engine": "native",
+      "status": "passed",
+      "sha256": "677fe64a8ea7e98a420d129f1cf3d4d23a9f107e9fbe8d83efe95f093001cd54"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 100,
+      "engine": "js",
+      "status": "passed",
+      "sha256": "677fe64a8ea7e98a420d129f1cf3d4d23a9f107e9fbe8d83efe95f093001cd54"
+    },
+    {
+      "w": "lifePopulation",
+      "x": 100,
+      "engine": "vir",
+      "status": "passed",
+      "sha256": "677fe64a8ea7e98a420d129f1cf3d4d23a9f107e9fbe8d83efe95f093001cd54"
+    }
+  ],
+  "manifest": {
+    "version": 8,
+    "artifact": "lean-vir-ir-package",
+    "metadata": {
+      "generator": "tools/GeneratePackage.lean",
+      "packageFormatVersion": 11,
+      "manifestVersion": 8,
+      "leanVersion": "4.34.1",
+      "leanToolchain": "leanprover/lean4:4.34.1",
+      "leanGithash": "5045d0056413266e57c625dcd7c365b10e377c52",
+      "targets": [
+        {
+          "module": "Bench",
+          "mode": "markedModule",
+          "roots": [],
+          "resolvedRoots": [
+            "Bench.isPrime",
+            "Bench.isPrime._boxed",
+            "Bench.fibBits",
+            "Bench.fibBits._boxed",
+            "Bench.partitionsBits",
+            "Bench.partitionsBits._boxed",
+            "Bench.collatzRecord",
+            "Bench.lifePopulation",
+            "Bench.primeCount",
+            "Bench.fib",
+            "Bench.fib._boxed",
+            "Bench.partitions",
+            "Bench.partitions._boxed",
+            "Bench.tunnell",
+            "Bench.mertens"
+          ]
+        }
+      ],
+      "packageSetMember": {
+        "module": "Bench",
+        "role": "root"
+      }
+    },
+    "exports": [
+      {
+        "id": "Bench_isPrime",
+        "jsName": "Bench_isPrime",
+        "entry": "Bench.isPrime",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Bool",
+          "interfaceTag": 2
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_fibBits",
+        "jsName": "Bench_fibBits",
+        "entry": "Bench.fibBits",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_partitionsBits",
+        "jsName": "Bench_partitionsBits",
+        "entry": "Bench.partitionsBits",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_collatzRecord",
+        "jsName": "Bench_collatzRecord",
+        "entry": "Bench.collatzRecord",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat × Nat",
+          "interfaceTag": 19,
+          "kind": "prod",
+          "fst": {
+            "type": "Nat",
+            "interfaceTag": 0
+          },
+          "snd": {
+            "type": "Nat",
+            "interfaceTag": 0
+          }
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_lifePopulation",
+        "jsName": "Bench_lifePopulation",
+        "entry": "Bench.lifePopulation",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "k",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_primeCount",
+        "jsName": "Bench_primeCount",
+        "entry": "Bench.primeCount",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_fib",
+        "jsName": "Bench_fib",
+        "entry": "Bench.fib",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_partitions",
+        "jsName": "Bench_partitions",
+        "entry": "Bench.partitions",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Nat",
+          "interfaceTag": 0
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_tunnell",
+        "jsName": "Bench_tunnell",
+        "entry": "Bench.tunnell",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "n",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Tunnell.Verdict",
+          "interfaceTag": 20,
+          "kind": "structure",
+          "name": "Tunnell.Verdict",
+          "objectFieldCount": 5,
+          "usizeFieldCount": 0,
+          "scalarByteSize": 2,
+          "fields": [
+            {
+              "name": "n",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 0
+              }
+            },
+            {
+              "name": "squarefree",
+              "type": {
+                "type": "Bool",
+                "interfaceTag": 2
+              },
+              "layout": {
+                "kind": "scalar",
+                "size": 1,
+                "offset": 0
+              }
+            },
+            {
+              "name": "parity",
+              "type": {
+                "type": "String",
+                "interfaceTag": 3
+              },
+              "layout": {
+                "kind": "object",
+                "index": 1
+              }
+            },
+            {
+              "name": "first",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 2
+              }
+            },
+            {
+              "name": "second",
+              "type": {
+                "type": "Nat",
+                "interfaceTag": 0
+              },
+              "layout": {
+                "kind": "object",
+                "index": 3
+              }
+            },
+            {
+              "name": "criterion",
+              "type": {
+                "type": "Bool",
+                "interfaceTag": 2
+              },
+              "layout": {
+                "kind": "scalar",
+                "size": 1,
+                "offset": 1
+              }
+            },
+            {
+              "name": "verdict",
+              "type": {
+                "type": "String",
+                "interfaceTag": 3
+              },
+              "layout": {
+                "kind": "object",
+                "index": 4
+              }
+            }
+          ]
+        },
+        "effect": "pure",
+        "startup": false
+      },
+      {
+        "id": "Bench_mertens",
+        "jsName": "Bench_mertens",
+        "entry": "Bench.mertens",
+        "source": "module Bench",
+        "args": [
+          {
+            "name": "N",
+            "type": {
+              "type": "Nat",
+              "interfaceTag": 0
+            }
+          }
+        ],
+        "result": {
+          "type": "Int",
+          "interfaceTag": 1
+        },
+        "effect": "pure",
+        "startup": false
+      }
+    ],
+    "hostImports": [],
+    "diagnostics": []
+  },
+  "finished": "2026-09-28T15:51:01.975Z"
+}

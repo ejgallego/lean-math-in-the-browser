@@ -1,0 +1,39 @@
+{
+  "schema": "lean-math-backend-preparation/v1",
+  "clientCommit": "34badae5f242e8e9943eb592e73cbce45597d9b9",
+  "producerCommit": "4ae9445c3eb7a2ff72fec9a87d769c976f9ab11a",
+  "producerToolchain": "leanprover/lean4:v4.34.1",
+  "clientToolchain": "leanprover/lean4:v4.34.1",
+  "sources": [
+    {
+      "path": "Tunnell.lean",
+      "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+      "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931",
+      "cStagedSha256": "39914d4dd62998e3bc2915b42d12a5b18a81a8c6b7b3dc13c84ffccdda114783"
+    },
+    {
+      "path": "Bench.lean",
+      "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+      "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3",
+      "cStagedSha256": "e17ba2357e0ea31b68f1c29a6020f9fd6b2d7e1e8f162d90e3fbbd543d30d814"
+    }
+  ],
+  "transformation": "Remove meta import Vir.Attributes and attribute [vir_export] commands only; retain all definitions and kernel checks.",
+  "cTransformation": "Additionally remove the unnecessary public import Lean; preserve all definitions and kernel checks, using the default Init import.",
+  "templates": {
+    "prepare.py": "8075898717fb2c2b737a5a6e1e9dff95caf57756ec6ff572ba8126b119adadd2",
+    "Emit.lean": "c69b8c7a40a3038dd78ae134e0184204e303b69dca7a9b5fffe9106adce61f71",
+    "build-fir.sh": "92aceb3846ac26aaabb5c6480e304462bd2fe4a5912703135e36a2c97692c8ca",
+    "emit-fir.mjs": "22f2f2b05bf1fedbe406339402d7690b3e08708cce2750a81a24620b9e5c4281",
+    "MathBench.lean": "5592fea8f6989c615a6a80540e6b506cf8df22afd182d047fb7dbf0e92a88a6b",
+    "bridge.c": "617f965b5a96e2f612f95b0130a1184ec9601f64c9a5932ac1f68dff688d341e",
+    "build-emscripten.sh": "a30fdf9da4285812ac0fc966423fc4fcaf6e659c5eb53c6a8bc8a72be938db64"
+  },
+  "emscripten": {
+    "runtimeLeanVersion": "4.34.1",
+    "runtimeLeanCommit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "emsdkVersion": "5.0.3",
+    "status": "ready-for-runtime-preflight"
+  },
+  "qualification": "Prepared sources only; no claim of generated or validated Wasm packages."
+}

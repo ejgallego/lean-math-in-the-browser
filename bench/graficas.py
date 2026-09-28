@@ -1,4 +1,4 @@
-"""Figures for docs/REPORT.md, from the measured data in bench/out/ and tests/out/.
+"""Figures for docs/REPORT-ORIGINAL.md, from the measured data in bench/out/ and tests/out/.
 
 Palette: the validated reference palette, first three categorical slots (native blue, WebAssembly
 orange, JavaScript aqua; all-pairs CVD dE >= 9.2, normal-vision dE >= 24.0 on #fcfcfb). Aqua is below

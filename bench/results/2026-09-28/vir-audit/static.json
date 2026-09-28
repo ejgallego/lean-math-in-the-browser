@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "recorded": "2026-09-28T12:18:59.771489+00:00",
+  "virDependencyCommit": "cdba5cac11eb3ee9867b8039c05f66da4e4cfaf5",
+  "sdkFiles": [
+    {
+      "bundled": "site/lean-vir/js/host/vir-active-host-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-active-host-bindings.js",
+      "sha256": "07659db80728de3f71a17164ceff6dc568fec51f3df66204b7970f64da8e34b4"
+    },
+    {
+      "bundled": "site/lean-vir/js/host/vir-dom-host-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-dom-host-bindings.js",
+      "sha256": "71e9d08d39e1c4aaba13f54cc918d7a3764d059aab745460e986f172f63d0631"
+    },
+    {
+      "bundled": "site/lean-vir/js/host/vir-infoview-host-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-infoview-host-bindings.js",
+      "sha256": "b0d8ba7b5501ac5b9eb7e0b98dedf79746b883c419044ac7fc01ebcee8deeaa2"
+    },
+    {
+      "bundled": "site/lean-vir/js/host/vir-infoview-panel-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-infoview-panel-bindings.js",
+      "sha256": "a80d407731f3bc0a6c319c0ba31e70e4b929640b2c7382a70ae48f654db194d3"
+    },
+    {
+      "bundled": "site/lean-vir/js/host/vir-js-collection-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-js-collection-bindings.js",
+      "sha256": "4534f09af422317c8cd75ec95ece18fd8ff6a3c0e9c272017ef070433d317af7"
+    },
+    {
+      "bundled": "site/lean-vir/js/host/vir-js-value-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/host/vir-js-value-bindings.js",
+      "sha256": "e9bb2bc643baa8c428a0c477905cbde0546a09712e62639f2ec180141cfbea35"
+    },
+    {
+      "bundled": "site/lean-vir/js/host-boundary.js",
+      "source": ".lake/packages/lean_vir/web/src/host-boundary.js",
+      "sha256": "d23c2cdada47b67e4704fa06de38431db6a4e18ab72247f8fed4ce8851bf2234"
+    },
+    {
+      "bundled": "site/lean-vir/js/react/vir-react-root.js",
+      "source": ".lake/packages/lean_vir/web/src/react/vir-react-root.js",
+      "sha256": "bbedb033f50ef72b0eebf45b670af6a22c341529a198cdc8f9ef216ad9b82262"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/call-timing.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/call-timing.js",
+      "sha256": "30fbe731cab7516f053a3a465616c0a63f76e959b3f44a71e83248fd5a303336"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/callbacks.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/callbacks.js",
+      "sha256": "2c51f4458ba8259fc1febf15f4a1e2b728b94132b317905d1e7034d15dfd9a60"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/cleanup.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/cleanup.js",
+      "sha256": "08303f1c734035f463a037dc20b1bcbbb086575e530daace887b0d6105c65e25"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/core.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/core.js",
+      "sha256": "af0e402aa8404a30de3514db4badbea5463a6d15fd312713d6c01dcfbe1e9059"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/host-state.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/host-state.js",
+      "sha256": "84c591a04118005502da266b08416222ee0ed528132642ff074733ddbea068bb"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/interface-effects.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/interface-effects.js",
+      "sha256": "e295591a1f9f6355d9c4b00d805373570c4489689aad1cb2ec19b3b83e3ca21c"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/interface-manifest.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/interface-manifest.js",
+      "sha256": "e34af6a8ebeecf562139c210908c8af8b17a8e0511233a3a8b8d345089f31ecb"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/interface-tags.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/interface-tags.js",
+      "sha256": "ad8a4dfdff548704c578b24b36ae9be7211f563503860ba715bf76f2788881e1"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/ir-package.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/ir-package.js",
+      "sha256": "fc2a287e5c062bf2259739446f7f2a984dd5745b3836ecf4a6f260a227ccba44"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/module-name.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/module-name.js",
+      "sha256": "4225f30eb5104c75c24f239eda99108d1b44d01fe7caeb98fccdf3334eaa7ad8"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/object-abi-exports.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/object-abi-exports.js",
+      "sha256": "14ffa9cfbaf02bb9af87cdd6b1eea13e532651ac6bff556398f144223fc31abe"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/object-abi.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/object-abi.js",
+      "sha256": "3d07ef73498d9b6fe60739fc7c23b2821cd0dfcbcb053770b72616c724e11bd5"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/object-values.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/object-values.js",
+      "sha256": "497a2746c64ce9e71e9204219d7268d5225ec6b1cbf7f965b10f0fd6e321dd62"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/package-contract.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/package-contract.js",
+      "sha256": "c9ee21d6ab1f224750a30322127c0b594e2fc0991350a59097035b41df0b97f5"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/package-targets.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/package-targets.js",
+      "sha256": "5cabbd222c48c0538d16805ca9f454b5034fb2a7f403463bfbeca06ffc8b2a5a"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/vir-codec.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/vir-codec.js",
+      "sha256": "fdbe2ec0a553e8e4b4536dd6ecdebf491c60e5930514ea7e0bde8ff6920f6362"
+    },
+    {
+      "bundled": "site/lean-vir/js/runtime/vir-value-normalizers.js",
+      "source": ".lake/packages/lean_vir/web/src/runtime/vir-value-normalizers.js",
+      "sha256": "7d02943c2493ca223a718fc07e9564b865f2ad68e92ee690e78ea0819f56a311"
+    },
+    {
+      "bundled": "site/lean-vir/js/vir-host-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/vir-host-bindings.js",
+      "sha256": "4a262f91b0a3283e5f24eec2b2c55896d7d464e94b53cc801d5cdb82e476e33d"
+    },
+    {
+      "bundled": "site/lean-vir/js/vir-react-dom-client.js",
+      "source": ".lake/packages/lean_vir/web/src/vir-react-dom-client.js",
+      "sha256": "c7aa48fc75a191153e6bab1a1c1b971d08bfa0c5a35c031d2b99ba39ef394358"
+    },
+    {
+      "bundled": "site/lean-vir/js/vir-react-host-bindings.js",
+      "source": ".lake/packages/lean_vir/web/src/vir-react-host-bindings.js",
+      "sha256": "41511e9dc740f85cfcf4c9c9727e55ef112f17a0775dbcbfc3407010c9da199d"
+    },
+    {
+      "bundled": "site/lean-vir/js/vir-runtime-node.js",
+      "source": ".lake/packages/lean_vir/web/src/vir-runtime-node.js",
+      "sha256": "5e582b6d8b6a061c797922cb4accdf2b1c403df5cdebec5c4eb9d7ce5ee54fe4"
+    },
+    {
+      "bundled": "site/lean-vir/js/vir-runtime.js",
+      "source": ".lake/packages/lean_vir/web/src/vir-runtime.js",
+      "sha256": "0ba57f0e580884f7d9215b10b09df8c210a497de288f39bd2b8809b8ad4b8c80"
+    }
+  ],
+  "packages": [
+    {
+      "bundled": "bench/pkg/Bench.irpkg",
+      "rebuilt": ".lake/build/vir/module-sets/Bench.irpkg",
+      "sha256": "8f2c747273547ab3ec741d18e60bb4a4ca32ebe836e30acbeb279c32553bf8c1"
+    },
+    {
+      "bundled": "bench/pkg/Bench.parts/0.irpkg",
+      "rebuilt": ".lake/build/vir/module-sets/Bench.parts/0.irpkg",
+      "sha256": "6cc3d40afe0c207bffdc9085367d562c35ec98542681ae2187dda4e86a5bf731"
+    },
+    {
+      "bundled": "bench/pkg/Bench.parts/1.irpkg",
+      "rebuilt": ".lake/build/vir/module-sets/Bench.parts/1.irpkg",
+      "sha256": "efaed3eb36bcd90cdc51e6f9d86e0552f14cc038dbbf3ba4eeba24c1819e8aee"
+    }
+  ],
+  "packageReportSha256": "3efe32e9c4ecec5183257c80cddfe460a886589801d1914d7a372b309aa9a88a"
+}

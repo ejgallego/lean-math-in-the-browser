@@ -1,0 +1,89 @@
+{
+  "producer": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341",
+  "producerCommit": "4ae9445c3eb7a2ff72fec9a87d769c976f9ab11a",
+  "sourceView": "ordinary",
+  "capture": "unit",
+  "artifacts": [
+    {
+      "workload": "tunnell",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/tunnell.ZyMHy7/tunnell.wasm",
+      "sha256": "bc89f7e302874a47c8f01def8fe8e48165267b268ee346e34ebb4e398cd7a9a7",
+      "descriptorSha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5",
+      "buildIdentitySha256": "cc059e3ac67a974622f86217d9d4ac3b1d653807fee1c7888e1df450c5031710",
+      "bytes": 25460
+    },
+    {
+      "workload": "collatzRecord",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/collatzRecord.nahNsY/collatzRecord.wasm",
+      "sha256": "07e1d81589d6155190bd353180d23a778918401faa2c02f20f69b1d21981b00d",
+      "descriptorSha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41",
+      "buildIdentitySha256": "a266b5d13019ab7d3ef04e9d0a5f47744082ea5cafb5cd5bbd35eb3652328bd3",
+      "bytes": 11715
+    },
+    {
+      "workload": "primeCount",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/primeCount.RUtSI4/primeCount.wasm",
+      "sha256": "c9477d86d664f0f3c857c901350aafbae34330527461308f46e7e5ded7dd9dc1",
+      "descriptorSha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718",
+      "buildIdentitySha256": "e856fc6ca63c527b26d7449f069ea72ff51872397588d0e724122b1afb70fcc6",
+      "bytes": 15331
+    },
+    {
+      "workload": "mertens",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/mertens.LvRIxe/mertens.wasm",
+      "sha256": "2d2d10a3b8028296563987e257c928209da3bd00bc5f6b667210faf0fff6f803",
+      "descriptorSha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+      "buildIdentitySha256": "e0b85a441fc1e1d5622717b82b849808150b0265fbcc14e3fea615f2744ed2ec",
+      "bytes": 21424
+    },
+    {
+      "workload": "partitions",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/partitions.aUzc89/partitions.wasm",
+      "sha256": "1898c75e5e969e295c4b1aa4ae61bcd0cf47176615191b1b2ecadc36aebc35ed",
+      "descriptorSha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0",
+      "buildIdentitySha256": "13388b270ed24270735a2a4d36878bb63d0c2602e0ceee666bd01228e2e62db3",
+      "bytes": 16555
+    },
+    {
+      "workload": "fib",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/fib.Wglb2B/fib.wasm",
+      "sha256": "9830c563f05189965e4c78bcfd89d5da52eba627bfd69f8998b997775489b1b0",
+      "descriptorSha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1",
+      "buildIdentitySha256": "791b4e1462926ad07000e42e6a8d9cd1bb389df0edb9d20b483de81425907e23",
+      "bytes": 14411
+    },
+    {
+      "workload": "fibBits",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/fibBits.iBuo5R/fibBits.wasm",
+      "sha256": "7b1353b299e9e84663bd3edea96192b285bc61400894756d61a772a227bbc869",
+      "descriptorSha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7",
+      "buildIdentitySha256": "5fc31d54f4a46ca3279080a7bfa9cc12a11a389e8e9d652e91e3127a19715be1",
+      "bytes": 14448
+    },
+    {
+      "workload": "partitionsBits",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/partitionsBits.T3Y8f4/partitionsBits.wasm",
+      "sha256": "b7c33d2775edd57853665590be347b08f2b98d2fa4de9570aa52e6974f773205",
+      "descriptorSha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903",
+      "buildIdentitySha256": "3a873a7d3bf97dd610f369132f95fda00f94db6dcf28f9b068afb414d75c1507",
+      "bytes": 16827
+    },
+    {
+      "workload": "isPrime",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/isPrime.aTzck7/isPrime.wasm",
+      "sha256": "e4cca3c71f8ffc70041a201fe547bb36f0f6a076cf821a6414aa7c64adbb9c16",
+      "descriptorSha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474",
+      "buildIdentitySha256": "c8e1739882e565e3186f4de7b259536e7413047ffa802e7ddb0f9f1d83251309",
+      "bytes": 18371
+    },
+    {
+      "workload": "lifePopulation",
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/lifePopulation.Yo84m6/lifePopulation.wasm",
+      "sha256": "de69f15a32556da6961aba80079849983087bcdaaa5e58dd8adf12631ff37696",
+      "descriptorSha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b",
+      "buildIdentitySha256": "a24af44b28a55f542abfdea7d1855423d427fe7728a365eafef13f37779ec93b",
+      "bytes": 21072
+    }
+  ],
+  "failures": []
+}

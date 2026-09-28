@@ -1,0 +1,506 @@
+{
+  "input": 10000,
+  "repetitions": 20,
+  "artifactSha256": "7b1353b299e9e84663bd3edea96192b285bc61400894756d61a772a227bbc869",
+  "inventorySha256": "99eea2fb115c522439f0b90c316c848562fee729837a41c3ba872f17fc889076",
+  "profileSha256": "e1e1a1079a5bf08921678d1509ff36bebc4e445d25d2ebbd5a70fe274423d4a1",
+  "summarizerSha256": "b92624cb9dfee17f89d2117d0c47e4343490bd32f54aaf471beca18bc4825a6d",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/fab4d692",
+    "definedFunctions": 59,
+    "resolvedFunctions": 17,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 1,
+        "name": "Bench.fibPair",
+        "start": 613,
+        "end": 2367,
+        "bytes": 1754
+      },
+      {
+        "index": 2,
+        "name": "Bench.fib",
+        "start": 2369,
+        "end": 2548,
+        "bytes": 179
+      },
+      {
+        "index": 3,
+        "name": "Bench.fibBits",
+        "start": 2549,
+        "end": 2575,
+        "bytes": 26
+      },
+      {
+        "index": 10,
+        "name": "fir_heap_alloc",
+        "start": 3150,
+        "end": 3622,
+        "bytes": 472
+      },
+      {
+        "index": 11,
+        "name": "fir_heap_recycle",
+        "start": 3624,
+        "end": 3913,
+        "bytes": 289
+      },
+      {
+        "index": 22,
+        "name": "fir_dec_once",
+        "start": 4996,
+        "end": 6289,
+        "bytes": 1293
+      },
+      {
+        "index": 31,
+        "name": "fir_big_numeric_natural_count",
+        "start": 8124,
+        "end": 8153,
+        "bytes": 29
+      },
+      {
+        "index": 32,
+        "name": "fir_big_numeric_natural_low",
+        "start": 8154,
+        "end": 8239,
+        "bytes": 85
+      },
+      {
+        "index": 33,
+        "name": "fir_big_numeric_natural_high",
+        "start": 8240,
+        "end": 8322,
+        "bytes": 82
+      },
+      {
+        "index": 34,
+        "name": "fir_big_numeric_validate_natural",
+        "start": 8324,
+        "end": 8763,
+        "bytes": 439
+      },
+      {
+        "index": 39,
+        "name": "fir_big_numeric_magnitude_low",
+        "start": 9130,
+        "end": 9179,
+        "bytes": 49
+      },
+      {
+        "index": 40,
+        "name": "fir_big_numeric_magnitude_high",
+        "start": 9180,
+        "end": 9229,
+        "bytes": 49
+      },
+      {
+        "index": 41,
+        "name": "fir_big_numeric_allocate",
+        "start": 9231,
+        "end": 9371,
+        "bytes": 140
+      },
+      {
+        "index": 45,
+        "name": "fir_big_numeric_write_sum_from",
+        "start": 9767,
+        "end": 10006,
+        "bytes": 239
+      },
+      {
+        "index": 50,
+        "name": "fir_big_ext_Nat_add",
+        "start": 10617,
+        "end": 11048,
+        "bytes": 431
+      },
+      {
+        "index": 53,
+        "name": "fir_nat_mul_generic",
+        "start": 11631,
+        "end": 12000,
+        "bytes": 369
+      },
+      {
+        "index": 55,
+        "name": "fir_ext_Nat_mul",
+        "start": 12648,
+        "end": 13113,
+        "bytes": 465
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 1379,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 1485.85,
+  "attributedMs": 1485.364,
+  "unobservedTailMs": 0.486,
+  "callerCoverage": {
+    "rootOnlyWasm": [
+      {
+        "name": "fir_big_numeric_magnitude_high",
+        "ms": 95.65,
+        "percent": 6.439499004957708
+      },
+      {
+        "name": "fir_big_numeric_magnitude_low",
+        "ms": 36.107,
+        "percent": 2.4308519662520434
+      },
+      {
+        "name": "fir_big_numeric_natural_low",
+        "ms": 11.684,
+        "percent": 0.7866085350122932
+      },
+      {
+        "name": "fir_big_numeric_natural_high",
+        "ms": 4.244,
+        "percent": 0.28572121042384224
+      },
+      {
+        "name": "fir_big_numeric_natural_count",
+        "ms": 1.058,
+        "percent": 0.07122833191056199
+      }
+    ],
+    "rootOnlyWasmPercent": 10.013909048556448,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive multiplication share is the observed stack share, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 1461.081,
+      "percent": 98.36518186787885
+    },
+    {
+      "name": "JavaScript",
+      "ms": 24.283,
+      "percent": 1.6348181321211501
+    }
+  ],
+  "self": [
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 407.824,
+      "percent": 27.456165626741996
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 260.874,
+      "percent": 17.56296773046876
+    },
+    {
+      "name": "fir_big_ext_Nat_add",
+      "ms": 233.677,
+      "percent": 15.731968729550466
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 180.531,
+      "percent": 12.153990536999684
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 143.524,
+      "percent": 9.662547362128072
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 111.546,
+      "percent": 7.509674396309592
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 59.491,
+      "percent": 4.005146213318755
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 33.893,
+      "percent": 2.2817975930478993
+    },
+    {
+      "name": "post",
+      "ms": 22.14,
+      "percent": 1.490543732041439
+    },
+    {
+      "name": "fir_heap_alloc",
+      "ms": 11.659,
+      "percent": 0.7849254458839718
+    },
+    {
+      "name": "fir_big_numeric_validate_natural",
+      "ms": 8.455,
+      "percent": 0.5692207431983002
+    },
+    {
+      "name": "fir_big_numeric_allocate",
+      "ms": 6.429,
+      "percent": 0.43282320023913334
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 2.143,
+      "percent": 0.1442744000797111
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 2.121,
+      "percent": 0.14279328164678828
+    },
+    {
+      "name": "fir_heap_recycle",
+      "ms": 1.057,
+      "percent": 0.07116100834542913
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 1485.364,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 1336.621,
+      "percent": 89.98609095144356
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "fir_ext_Nat_mul",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "Bench.fibPair",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "Bench.fib",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "Bench.fibBits",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "call",
+      "ms": 1312.338,
+      "percent": 88.3512728193224
+    },
+    {
+      "name": "fir_big_ext_Nat_add",
+      "ms": 1242.373,
+      "percent": 83.64097958480211
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 532.822,
+      "percent": 35.871476621218775
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 488.691,
+      "percent": 32.90042036834069
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 208.153,
+      "percent": 14.013602053099442
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 143.524,
+      "percent": 9.662547362128072
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 111.546,
+      "percent": 7.509674396309592
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 59.491,
+      "percent": 4.005146213318755
+    },
+    {
+      "name": "post",
+      "ms": 22.14,
+      "percent": 1.490543732041439
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 22.14,
+      "percent": 1.490543732041439
+    },
+    {
+      "name": "fn",
+      "ms": 22.14,
+      "percent": 1.490543732041439
+    },
+    {
+      "name": "fir_big_numeric_allocate",
+      "ms": 17.033,
+      "percent": 1.1467222849079417
+    },
+    {
+      "name": "fir_big_numeric_validate_natural",
+      "ms": 12.73,
+      "percent": 0.8570289841412609
+    },
+    {
+      "name": "fir_heap_alloc",
+      "ms": 11.659,
+      "percent": 0.7849254458839718
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 3.178,
+      "percent": 0.2139542899922174
+    },
+    {
+      "name": "fir_heap_recycle",
+      "ms": 1.057,
+      "percent": 0.07116100834542913
+    }
+  ],
+  "multiplicationStacks": [
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from",
+      "ms": 260.874,
+      "percent": 17.56296773046876
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add",
+      "ms": 233.677,
+      "percent": 15.731968729550466
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_magnitude_high",
+      "ms": 205.012,
+      "percent": 13.802138735017142
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_magnitude_low",
+      "ms": 119.987,
+      "percent": 8.077952609596032
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from → fir_big_numeric_magnitude_high",
+      "ms": 98.705,
+      "percent": 6.645172496438584
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from → fir_big_numeric_natural_count",
+      "ms": 58.433,
+      "percent": 3.9339178814081937
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from → fir_big_numeric_magnitude_high → fir_big_numeric_natural_high",
+      "ms": 46.825,
+      "percent": 3.152425937345997
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from → fir_big_numeric_natural_low",
+      "ms": 41.453,
+      "percent": 2.7907637454522933
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_magnitude_high → fir_big_numeric_natural_high",
+      "ms": 34.042,
+      "percent": 2.291828804252695
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 33.893,
+      "percent": 2.2817975930478993
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_natural_high",
+      "ms": 30.805,
+      "percent": 2.0739024239176387
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_magnitude_low → fir_big_numeric_natural_low",
+      "ms": 27.622,
+      "percent": 1.8596115160997573
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_natural_low",
+      "ms": 27.588,
+      "percent": 1.8573225148852401
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from → fir_big_numeric_natural_high",
+      "ms": 26.532,
+      "percent": 1.7862288301049438
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_numeric_magnitude_low",
+      "ms": 24.437,
+      "percent": 1.64518596115161
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_allocate → fir_heap_alloc",
+      "ms": 10.604,
+      "percent": 0.7138990846688085
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_numeric_magnitude_high",
+      "ms": 8.457,
+      "percent": 0.569355390328566
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_validate_natural",
+      "ms": 8.455,
+      "percent": 0.5692207431983002
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_allocate",
+      "ms": 6.429,
+      "percent": 0.43282320023913334
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_validate_natural → fir_big_numeric_natural_low",
+      "ms": 3.199,
+      "percent": 0.21536808486000736
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_dec_once",
+      "ms": 2.121,
+      "percent": 0.14279328164678828
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_big_numeric_validate_natural → fir_big_numeric_natural_high",
+      "ms": 1.076,
+      "percent": 0.0724401560829534
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_dec_once → fir_heap_recycle",
+      "ms": 1.057,
+      "percent": 0.07116100834542913
+    },
+    {
+      "name": "fir_nat_mul_generic → fir_big_ext_Nat_add → fir_heap_alloc",
+      "ms": 1.055,
+      "percent": 0.07102636121516342
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""The numbers quoted in docs/REPORT.md, computed from bench/out/*.json (run after the campaigns).
+"""The numbers quoted in docs/REPORT-ORIGINAL.md, computed from bench/out/*.json (run after the campaigns).
 
 Run: python bench/resumen.py
 """

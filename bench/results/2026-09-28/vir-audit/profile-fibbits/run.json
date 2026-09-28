@@ -1,0 +1,458 @@
+{
+  "status": "passed",
+  "w": "fibBits",
+  "x": 1000000,
+  "reps": 5,
+  "warmups": 1,
+  "started": "2026-09-28T12:18:17.848Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/profile-vir.mjs",
+    "/home/egallego/lean/vir/build/reviews/pr202-landing/mounted/vir-upstream.dev.wasm",
+    "tests/out/research/vir-usage-audit/profile-fibbits",
+    "fibBits",
+    "1000000",
+    "5"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "loadBefore": [
+    2.06,
+    2.52,
+    2.95
+  ],
+  "releaseSha256": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+  "debugSha256": "0d8a696d616bd9edfca45a47ec282f9edaaa094c369a42e0123c29f487ba788b",
+  "debugPath": "/home/egallego/lean/vir/build/reviews/pr202-landing/mounted/vir-upstream.dev.wasm",
+  "symbols": {
+    "nonCustomSectionsIdentical": true,
+    "nonCustomSha256": "4e11a74a4758f9bcd91e98b59ea0329bde7f09a2da0eec1e086edd14bdf0686f",
+    "names": 2853,
+    "method": "Function names from debug name section, c++filt demangling; code-section byte offsets checked against original release."
+  },
+  "intervalUs": 1000,
+  "scope": "Main isolate, whole measured call loop plus validation and profiler bookkeeping; instantiate/warmup excluded.",
+  "inputs": {
+    "site/lean-vir/js/runtime/core.js": "af0e402aa8404a30de3514db4badbea5463a6d15fd312713d6c01dcfbe1e9059",
+    "site/lean-vir/js/runtime/object-values.js": "497a2746c64ce9e71e9204219d7268d5225ec6b1cbf7f965b10f0fd6e321dd62",
+    "site/lean-vir/js/runtime/host-state.js": "84c591a04118005502da266b08416222ee0ed528132642ff074733ddbea068bb",
+    "site/lean-vir/js/vir-runtime.js": "0ba57f0e580884f7d9215b10b09df8c210a497de288f39bd2b8809b8ad4b8c80",
+    "site/lean-vir/js/vir-runtime-node.js": "5e582b6d8b6a061c797922cb4accdf2b1c403df5cdebec5c4eb9d7ce5ee54fe4",
+    "bench/casos.mjs": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+    "Bench.lean": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+    "bench/pkg/Bench.parts/0.irpkg": "6cc3d40afe0c207bffdc9085367d562c35ec98542681ae2187dda4e86a5bf731",
+    "bench/pkg/Bench.parts/1.irpkg": "efaed3eb36bcd90cdc51e6f9d86e0552f14cc038dbbf3ba4eeba24c1819e8aee",
+    "bench/pkg/Bench.irpkg": "8f2c747273547ab3ec741d18e60bb4a4ca32ebe836e30acbeb279c32553bf8c1"
+  },
+  "harnessSha256": "51f3025ae3912ca5e95941fa92e057e7d4b84d4414cb0761c690357941cb7783",
+  "rows": [
+    {
+      "repetition": 0,
+      "ms": 458.91347199999996,
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "repetition": 1,
+      "ms": 478.8424329999998,
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "repetition": 2,
+      "ms": 487.2493710000001,
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "repetition": 3,
+      "ms": 487.66313000000036,
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "repetition": 4,
+      "ms": 487.36580000000004,
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    }
+  ],
+  "profileSha256": "3088d2966c546e6dfff02858b5d864a18b3aaedd782ffe4fdaeebeb13603e80b",
+  "summary": {
+    "samples": 2276,
+    "attributedMs": 2426.026,
+    "unobservedTailMs": 0.954,
+    "weighting": "Actual timeDeltas, preceding interval assigned to ending sample, clipped to end. Inclusive symbols once per stack; inclusive rows overlap.",
+    "mappedFunctions": [
+      {
+        "index": 405,
+        "name": "vir_call_resolved_objects",
+        "offset": 215588
+      },
+      {
+        "index": 399,
+        "name": "lean::vir::run_interpreter_function(lean_object*, unsigned long, lean_object**)",
+        "offset": 214997
+      },
+      {
+        "index": 42,
+        "name": "lean::vir::run_package_interpreter_function(lean_object*, unsigned long, lean_object**)",
+        "offset": 15319
+      },
+      {
+        "index": 44,
+        "name": "lean::ir::interpreter::call_boxed(lean::name const&, unsigned int, lean_object**)",
+        "offset": 16359
+      },
+      {
+        "index": 115,
+        "name": "lean_apply_n",
+        "offset": 70163
+      },
+      {
+        "index": 112,
+        "name": "lean_apply_1",
+        "offset": 46883
+      },
+      {
+        "index": 77,
+        "name": "lean::ir::interpreter::stub_4_aux(lean_object*, lean_object*, lean_object*, lean_object*)",
+        "offset": 34041
+      },
+      {
+        "index": 90,
+        "name": "lean::ir::interpreter::stub_m_aux(lean_object**)",
+        "offset": 35550
+      },
+      {
+        "index": 34,
+        "name": "lean_object* lean::ir::interpreter::with_interpreter<lean_object*>(lean::elab_environment const&, lean::options const&, lean::name const&, std::__2::function<lean_object* (lean::ir::interpreter&)> const&)",
+        "offset": 13371
+      },
+      {
+        "index": 103,
+        "name": "lean_object* std::__2::__function::__policy_func<lean_object* (lean::ir::interpreter&)>::__call_func[abi:nqe220100]<lean::ir::interpreter::stub_m_aux(lean_object**)::'lambda'(lean::ir::interpreter&)>(std::__2::__function::__policy_storage const*, lean::ir::interpreter&)",
+        "offset": 43699
+      },
+      {
+        "index": 104,
+        "name": "lean::ir::interpreter::stub_m(lean_object**)",
+        "offset": 43719
+      },
+      {
+        "index": 70,
+        "name": "lean::ir::interpreter::eval_body(lean::object_ref const&)",
+        "offset": 28245
+      },
+      {
+        "index": 97,
+        "name": "lean::ir::interpreter::eval_expr(lean::object_ref const&, lean::ir::type)",
+        "offset": 37468
+      },
+      {
+        "index": 100,
+        "name": "lean::ir::interpreter::call(lean::name const&, lean::array_ref<lean::object_ref> const&)",
+        "offset": 41218
+      },
+      {
+        "index": 111,
+        "name": "lean::curry(void*, unsigned int, lean_object**)",
+        "offset": 45830
+      },
+      {
+        "index": 1598,
+        "name": "l_Nat_mul___boxed",
+        "offset": 386106
+      },
+      {
+        "index": 229,
+        "name": "lean_nat_big_mul",
+        "offset": 176222
+      },
+      {
+        "index": 170,
+        "name": "lean::mpz::operator*=(lean::mpz const&)",
+        "offset": 155283
+      },
+      {
+        "index": 146,
+        "name": "lean::mpz::mul(bool, unsigned long, unsigned int const*)",
+        "offset": 150633
+      },
+      {
+        "index": 140,
+        "name": "lean::mpn_mul(unsigned int const*, unsigned long, unsigned int const*, unsigned long, unsigned int*)",
+        "offset": 143167
+      },
+      {
+        "index": 1593,
+        "name": "l_Nat_sub___boxed",
+        "offset": 385311
+      },
+      {
+        "index": 228,
+        "name": "lean_nat_big_sub",
+        "offset": 175770
+      },
+      {
+        "index": 156,
+        "name": "lean::mpz::mpz(lean::mpz const&)",
+        "offset": 153369
+      },
+      {
+        "index": 2841,
+        "name": "malloc",
+        "offset": 697018
+      },
+      {
+        "index": 2842,
+        "name": "dlmalloc",
+        "offset": 697030
+      }
+    ],
+    "buckets": [
+      {
+        "name": "resolved Wasm",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "JS/V8 other",
+        "ms": 26.28,
+        "percent": 1.083253023669161
+      }
+    ],
+    "self": [
+      {
+        "name": "lean::mpn_mul(unsigned int const*, unsigned long, unsigned int const*, unsigned long, unsigned int*)",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "post",
+        "ms": 25.104,
+        "percent": 1.0347786874501756
+      },
+      {
+        "name": "createPerformance",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "dlmalloc",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      }
+    ],
+    "inclusive": [
+      {
+        "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/profile-vir.mjs>",
+        "ms": 2426.026,
+        "percent": 100
+      },
+      {
+        "name": "(root)",
+        "ms": 2426.026,
+        "percent": 100
+      },
+      {
+        "name": "lean::curry(void*, unsigned int, lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::call(lean::name const&, lean::array_ref<lean::object_ref> const&)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::eval_expr(lean::object_ref const&, lean::ir::type)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::eval_body(lean::object_ref const&)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::stub_m(lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean_object* std::__2::__function::__policy_func<lean_object* (lean::ir::interpreter&)>::__call_func[abi:nqe220100]<lean::ir::interpreter::stub_m_aux(lean_object**)::'lambda'(lean::ir::interpreter&)>(std::__2::__function::__policy_storage const*, lean::ir::interpreter&)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean_object* lean::ir::interpreter::with_interpreter<lean_object*>(lean::elab_environment const&, lean::options const&, lean::name const&, std::__2::function<lean_object* (lean::ir::interpreter&)> const&)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::stub_m_aux(lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::stub_4_aux(lean_object*, lean_object*, lean_object*, lean_object*)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean_apply_1",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean_apply_n",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::ir::interpreter::call_boxed(lean::name const&, unsigned int, lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::vir::run_package_interpreter_function(lean_object*, unsigned long, lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::vir::run_interpreter_function(lean_object*, unsigned long, lean_object**)",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "vir_call_resolved_objects",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "js-to-wasm::i",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "callResolvedObjects",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "tryObjectResolvedCall",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "callEntry",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "call",
+        "ms": 2399.746,
+        "percent": 98.91674697633084
+      },
+      {
+        "name": "lean::mpn_mul(unsigned int const*, unsigned long, unsigned int const*, unsigned long, unsigned int*)",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "lean::mpz::mul(bool, unsigned long, unsigned int const*)",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "lean::mpz::operator*=(lean::mpz const&)",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "lean_nat_big_mul",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "l_Nat_mul___boxed",
+        "ms": 2398.689,
+        "percent": 98.87317778127687
+      },
+      {
+        "name": "post",
+        "ms": 25.104,
+        "percent": 1.0347786874501756
+      },
+      {
+        "name": "<anonymous@node:internal/util>",
+        "ms": 25.104,
+        "percent": 1.0347786874501756
+      },
+      {
+        "name": "fn",
+        "ms": 25.104,
+        "percent": 1.0347786874501756
+      },
+      {
+        "name": "createPerformance",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "<anonymous@node:internal/perf/performance>",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "compileForInternalLoader",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "requireBuiltin",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "<anonymous@node:perf_hooks>",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "get",
+        "ms": 1.176,
+        "percent": 0.04847433621898529
+      },
+      {
+        "name": "dlmalloc",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      },
+      {
+        "name": "malloc",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      },
+      {
+        "name": "lean::mpz::mpz(lean::mpz const&)",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      },
+      {
+        "name": "lean_nat_big_sub",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      },
+      {
+        "name": "l_Nat_sub___boxed",
+        "ms": 1.057,
+        "percent": 0.04356919505396892
+      }
+    ],
+    "rootOnlyWasm": []
+  },
+  "finished": "2026-09-28T12:18:20.823Z",
+  "loadAfter": [
+    2.13,
+    2.53,
+    2.95
+  ]
+}

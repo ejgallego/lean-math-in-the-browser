@@ -1,0 +1,78 @@
+{
+  "clientToolchain": "leanprover/lean4:v4.34.1",
+  "producer": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341",
+  "producerCommit": "4ae9445c3eb7a2ff72fec9a87d769c976f9ab11a",
+  "upstreamBase": "a09c113d1",
+  "producerChange": "lean-toolchain only: rc2 to 4.34.1",
+  "firManifest": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/_build/campaign.qFdm9A/manifest.json",
+  "cManifest": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.manifest.json",
+  "runtimeCopySource": "/home/egallego/lean/fir/.worktrees/tooling-c-runtime-4341/.deps/lcnf-c-wasm",
+  "runtimeReuse": "Independent local copies of emsdk, exact patched Lean source and unthreaded runtime; producer validates source/header/archive receipts before link. No shared mutable .deps state.",
+  "cTransformations": [
+    "Remove Vir metadata import/export registrations",
+    "Remove unused public import Lean; preserve all kernel checks",
+    "Use module format in MathBench facade"
+  ],
+  "failedAttempt": "math-browser-c-meta-import-attempt: meta import Lean retained compiler initializers; failed link, preserved separately",
+  "files": {
+    "/home/egallego/lean/lean-math-in-the-browser/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "/home/egallego/lean/lean-math-in-the-browser/lake-manifest.json": "df1bb5c74d2c5e179f1a5d0d252064edc5e7bf3060da22321297686913a3054a",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-fir/PREPARATION.json": "841eb431e3040f99b40c4876d6cb7ebc65a92be2ea54a2baabbb8e7db7c74550",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-c/PREPARATION.json": "841eb431e3040f99b40c4876d6cb7ebc65a92be2ea54a2baabbb8e7db7c74550",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-c-build-final.log": "8904eac00287f259accc5a7522c9ebe5aab617b3e97b8c0649bf92628973f427",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-fir-build.log": "0d6abebaca262223723bcca8b34f4f2b7099ab372f6df89de58c0e5e7cd70e42",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/lcnf-c-wasm/lean4-emscripten-build-5045d0056413266e57c625dcd7c365b10e377c52-unthreaded/fir-runtime-identity.txt": "5f8eb12f6c7ba673a8ed6654a920c2ae39d12f8f493f19dd7ed931d01833adcf"
+  },
+  "firBinaryParityWithPreviousProducer": [
+    {
+      "workload": "tunnell",
+      "sha256": "bc89f7e302874a47c8f01def8fe8e48165267b268ee346e34ebb4e398cd7a9a7",
+      "identical": true
+    },
+    {
+      "workload": "collatzRecord",
+      "sha256": "07e1d81589d6155190bd353180d23a778918401faa2c02f20f69b1d21981b00d",
+      "identical": true
+    },
+    {
+      "workload": "primeCount",
+      "sha256": "c9477d86d664f0f3c857c901350aafbae34330527461308f46e7e5ded7dd9dc1",
+      "identical": true
+    },
+    {
+      "workload": "mertens",
+      "sha256": "2d2d10a3b8028296563987e257c928209da3bd00bc5f6b667210faf0fff6f803",
+      "identical": true
+    },
+    {
+      "workload": "partitions",
+      "sha256": "1898c75e5e969e295c4b1aa4ae61bcd0cf47176615191b1b2ecadc36aebc35ed",
+      "identical": true
+    },
+    {
+      "workload": "fib",
+      "sha256": "9830c563f05189965e4c78bcfd89d5da52eba627bfd69f8998b997775489b1b0",
+      "identical": true
+    },
+    {
+      "workload": "fibBits",
+      "sha256": "7b1353b299e9e84663bd3edea96192b285bc61400894756d61a772a227bbc869",
+      "identical": true
+    },
+    {
+      "workload": "partitionsBits",
+      "sha256": "b7c33d2775edd57853665590be347b08f2b98d2fa4de9570aa52e6974f773205",
+      "identical": true
+    },
+    {
+      "workload": "isPrime",
+      "sha256": "e4cca3c71f8ffc70041a201fe547bb36f0f6a076cf821a6414aa7c64adbb9c16",
+      "identical": true
+    },
+    {
+      "workload": "lifePopulation",
+      "sha256": "de69f15a32556da6961aba80079849983087bcdaaa5e58dd8adf12631ff37696",
+      "identical": true
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+def Bench.fibPair._closed_0 : obj :=
+  let _x.1 := 1;
+  let zero := 0;
+  let _x.2 := ctor_0[Prod.mk] zero _x.1;
+  return _x.2
+
+def Bench.fibPair @&x.1 @&x.2 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    let _x.3 := Bench.fibPair._closed_0;
+    inc[persistent][ref] _x.3;
+    return _x.3
+  | Bool.false =>
+    let _x.4 := Nat.decEq x.2 zero;
+    cases _x.4 : obj
+    | Bool.false =>
+      let one := 1;
+      let n.5 := Nat.sub x.1 one;
+      let _x.6 := Nat.shiftRight x.2 one;
+      let _x.7 := Bench.fibPair n.5 _x.6;
+      dec _x.6;
+      dec n.5;
+      let fst.8 := oproj[0] _x.7;
+      let snd.9 := oproj[1] _x.7;
+      jp resetjp.10 _x.11 isShared.12 : obj :=
+        let _x.13 := 2;
+        let _x.14 := Nat.mul _x.13 snd.9;
+        let _x.15 := Nat.sub _x.14 fst.8;
+        dec _x.14;
+        let c := Nat.mul fst.8 _x.15;
+        dec _x.15;
+        let _x.16 := Nat.mul fst.8 fst.8;
+        dec fst.8;
+        let _x.17 := Nat.mul snd.9 snd.9;
+        dec snd.9;
+        let d := Nat.add _x.16 _x.17;
+        dec _x.17;
+        dec _x.16;
+        let _x.18 := Nat.mod x.2 _x.13;
+        let _x.19 := Nat.decEq _x.18 zero;
+        dec _x.18;
+        cases _x.19 : obj
+        | Bool.false =>
+          let _x.20 := Nat.add c d;
+          dec c;
+          jp reusejp.21 _x.22 : obj :=
+            return _x.22;
+          cases isShared.12 : obj
+          | Bool.false =>
+            oset _x.11 [1] := _x.20;
+            oset _x.11 [0] := d;
+            goto reusejp.21 _x.11
+          | Bool.true =>
+            let reuseFailAlloc.23 := ctor_0[Prod.mk] d _x.20;
+            goto reusejp.21 reuseFailAlloc.23
+        | Bool.true =>
+          jp reusejp.24 _x.25 : obj :=
+            return _x.25;
+          cases isShared.12 : obj
+          | Bool.false =>
+            oset _x.11 [1] := d;
+            oset _x.11 [0] := c;
+            goto reusejp.24 _x.11
+          | Bool.true =>
+            let reuseFailAlloc.26 := ctor_0[Prod.mk] c d;
+            goto reusejp.24 reuseFailAlloc.26;
+      let isSharedCheck.27 := isShared _x.7;
+      cases isSharedCheck.27 : obj
+      | Bool.false =>
+        goto resetjp.10 _x.7 isSharedCheck.27
+      | Bool.true =>
+        inc snd.9;
+        inc fst.8;
+        dec _x.7;
+        goto resetjp.10 ◾ isSharedCheck.27
+    | Bool.true =>
+      let _x.28 := Bench.fibPair._closed_0;
+      inc[persistent][ref] _x.28;
+      return _x.28
+
+def Bench.fib @&n : tobj :=
+  let _x.1 := Nat.log2 n;
+  let _x.2 := 2;
+  let _x.3 := Nat.add _x.1 _x.2;
+  dec _x.1;
+  let _x.4 := Bench.fibPair _x.3 n;
+  dec _x.3;
+  let fst := oproj[0] _x.4;
+  inc fst;
+  dec[ref] _x.4;
+  return fst
+
+def Bench.fibBits @&n : tobj :=
+  let _x.1 := Bench.fib n;
+  let _x.2 := Nat.log2 _x.1;
+  dec _x.1;
+  return _x.2
+
+def Nat.log2 @&n : tobj :=
+  extern
+
+def Nat.add @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.decEq @&n @&m : UInt8 :=
+  extern
+
+def Nat.sub @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.shiftRight @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mul @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mod @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern

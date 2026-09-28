@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "profile": "emscripten",
+  "artifactName": "math-browser",
+  "pipeline": "lean-final-impure-lcnf-to-c-to-wasm",
+  "sources": {
+    "entry": "MathBench.lean",
+    "additional": [],
+    "c": [
+      ".lake/build/ir/Tunnell.c",
+      ".lake/build/ir/Bench.c",
+      "bridge.c"
+    ]
+  },
+  "toolchain": {
+    "lean": {
+      "version": "4.34.1",
+      "commit": "5045d0056413266e57c625dcd7c365b10e377c52"
+    },
+    "emscripten": {
+      "version": "5.0.3",
+      "commit": "a620cf1d71c62dfdfbb0c01fe0a371e2af2dda6c"
+    }
+  },
+  "build": {
+    "runtimeProfile": "unthreaded",
+    "compileFlags": [
+      "-std=c11",
+      "-O3",
+      "-DNDEBUG",
+      "-DLEAN_EXPORTING",
+      "-flto",
+      "-fomit-frame-pointer",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fvisibility=hidden",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-fwasm-exceptions",
+      "-I",
+      "<lean-emscripten>/include"
+    ],
+    "linkFlags": [
+      "-O3",
+      "-flto",
+      "-fwasm-exceptions",
+      "--no-entry",
+      "-Wl,--gc-sections",
+      "-Wl,--strip-all",
+      "-sALLOW_MEMORY_GROWTH=1",
+      "-sASSERTIONS=0",
+      "-sENVIRONMENT=node,web",
+      "-sEXPORT_ES6=1",
+      "-sMODULARIZE=1",
+      "-sWASM_BIGINT=1",
+      "-sEXPORTED_FUNCTIONS=_fir_lcnf_c_initialize,_fir_math_input_alloc,_fir_math_run,_fir_math_result_ptr,_fir_math_result_len,_fir_math_release",
+      "-sEXPORTED_RUNTIME_METHODS=HEAPU8"
+    ],
+    "runtimeArchives": [
+      "libleanrt.a",
+      "libInit.a",
+      "libStd.a",
+      "libuv.a"
+    ],
+    "exactFloatingPoint": true
+  },
+  "runtime": {
+    "threads": false,
+    "crossOriginIsolated": false,
+    "wasmExceptions": true,
+    "memoryGrowth": true,
+    "environments": [
+      "node",
+      "web"
+    ]
+  },
+  "abi": {
+    "initialize": "fir_lcnf_c_initialize",
+    "moduleInitializer": "initialize_MathBench",
+    "exports": [
+      "fir_math_input_alloc",
+      "fir_math_run",
+      "fir_math_result_ptr",
+      "fir_math_result_len",
+      "fir_math_release"
+    ],
+    "runtimeMethods": [
+      "HEAPU8"
+    ],
+    "start": null
+  },
+  "artifacts": {
+    "module": {
+      "file": "math-browser.mjs",
+      "byteLength": 60089,
+      "sha256": "31cfed50b6b221186cb8f144d8e5bfdaab3bf7a267e30c21c97f7e3f59dd7ff8"
+    },
+    "wasm": {
+      "file": "math-browser.wasm",
+      "byteLength": 1330189,
+      "sha256": "3aab10cf9ef687b31929d5e7629226d6535558e7054b80bfd4fc9168433f97b2"
+    }
+  }
+}

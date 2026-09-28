@@ -1,0 +1,98 @@
+{
+  "schema": "lean-math-vir-phases/v1",
+  "diagnostic": true,
+  "node": "v24.21.0",
+  "captured": "2026-09-28T09:12:36.336Z",
+  "artifacts": {
+    "site/lean-vir/wasm/vir-upstream.wasm": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+    "bench/pkg/Bench.parts/0.irpkg": "6cc3d40afe0c207bffdc9085367d562c35ec98542681ae2187dda4e86a5bf731",
+    "bench/pkg/Bench.parts/1.irpkg": "efaed3eb36bcd90cdc51e6f9d86e0552f14cc038dbbf3ba4eeba24c1819e8aee",
+    "bench/pkg/Bench.irpkg": "8f2c747273547ab3ec741d18e60bb4a4ca32ebe836e30acbeb279c32553bf8c1"
+  },
+  "harnessSha256": "935cc7e6bff2ee11bc4ae30c1ed75effa3a8b8a4bb8b355b49f88826f8e35720",
+  "timingImplementationSha256": "30fbe731cab7516f053a3a465616c0a63f76e959b3f44a71e83248fd5a303336",
+  "casesSha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+  "warmups": 1,
+  "repetitions": 3,
+  "validation": "Every result checked, outside the timed call.",
+  "rows": [
+    {
+      "w": "fibBits",
+      "n": 1000000,
+      "repetition": 0,
+      "timings": {
+        "marshalMs": 0.059170999999878404,
+        "executeMs": 425.40208299999995,
+        "decodeMs": 0.05599599999993643,
+        "hostMs": 0,
+        "totalMs": 425.77343099999996
+      },
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "fibBits",
+      "n": 1000000,
+      "repetition": 1,
+      "timings": {
+        "marshalMs": 0.04156799999998384,
+        "executeMs": 425.90284399999985,
+        "decodeMs": 0.04994400000009591,
+        "hostMs": 0,
+        "totalMs": 426.075729
+      },
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "fibBits",
+      "n": 1000000,
+      "repetition": 2,
+      "timings": {
+        "marshalMs": 0.039855999999645064,
+        "executeMs": 425.9607229999999,
+        "decodeMs": 0.042840999999953056,
+        "hostMs": 0,
+        "totalMs": 426.12510199999997
+      },
+      "valueSha256": "7f15ec930c94ddbddb4044caede96acc89fb258457eb7178bd34294f234d7d49"
+    },
+    {
+      "w": "fib",
+      "n": 1000000,
+      "repetition": 0,
+      "timings": {
+        "marshalMs": 0.06755700000212528,
+        "executeMs": 425.29656199999954,
+        "decodeMs": 23942.916117,
+        "hostMs": 0,
+        "totalMs": 24368.395444
+      },
+      "valueSha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    },
+    {
+      "w": "fib",
+      "n": 1000000,
+      "repetition": 1,
+      "timings": {
+        "marshalMs": 0.051446999998006504,
+        "executeMs": 423.78346299999976,
+        "decodeMs": 23846.713793999996,
+        "hostMs": 0,
+        "totalMs": 24270.641118
+      },
+      "valueSha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    },
+    {
+      "w": "fib",
+      "n": 1000000,
+      "repetition": 2,
+      "timings": {
+        "marshalMs": 0.050164000000222586,
+        "executeMs": 423.969591999994,
+        "decodeMs": 24722.008434000003,
+        "hostMs": 0,
+        "totalMs": 25146.160128000003
+      },
+      "valueSha256": "aef6e8c19df607aa07940f2abde8460d1b34c18df1a6f46b5fc04dfe9be51706"
+    }
+  ]
+}
