@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the report's single table from the preserved 500 checked observations.
+"""Render a report's single table from preserved checked observations.
 
 python3 bench/render-report-table.py          # print Markdown
 python3 bench/render-report-table.py --check  # verify the table in docs/REPORT.md
@@ -30,7 +30,7 @@ def render(data_path=DATA, inventory_path=None):
     entry = next(f for f in inventory["files"] if f["path"] == relative)
     assert hashlib.sha256(raw).hexdigest() == entry["sha256"], "evidence digest mismatch"
     data = json.loads(raw)
-    assert data["status"] == "passed" and len(data["rows"]) == 500
+    assert data["status"] == "passed" and len(data["rows"]) == 50 * len(data["selection"])
     references = (ROOT / "bench/casos.mjs").read_text().split("=", 1)[1].strip().removesuffix(";")
     references = {(c["w"], c["x"]): c["esperado"] for c in json.loads(references)}
     lines = ["| workload / input | Native | JavaScript | VIR | FIR | C/Wasm |",
@@ -68,6 +68,6 @@ if __name__ == "__main__":
         report = args.report.read_text()
         assert report.count(START) == report.count(END) == 1
         assert report.split(START, 1)[1].split(END, 1)[0].strip() == table, "report table differs from evidence"
-        print("Report table matches all 500 checked observations.")
+        print(f"Report table matches all {len(json.loads(args.data.read_text())['rows'])} checked observations.")
     else:
         print(table)

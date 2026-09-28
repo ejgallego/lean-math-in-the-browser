@@ -1,6 +1,15 @@
 # FIR backend preparation
 
-The latest [multiplication evaluation](../../docs/FIR-MULTIPLICATION-20260928.md)
+The [small-negation evaluation](../../docs/FIR-INT-NEG-20260928.md) tests
+accepted FIR `05e0febe5` on Lean 4.34.1, prepared under
+`.deps/fir-producer-intneg-05e0`. Only the Mertens package changes from the
+previous accepted producer. Both `compare-fir-revisions.mjs` and
+`compare-all.mjs` accept `--workload mertens` after the output path for a
+focused, freshly checked run. The former measures both 100,000 and 1,000,000;
+the latter selects 1,000,000. Without the option, both retain their full-suite
+selection.
+
+The earlier [multiplication evaluation](../../docs/FIR-MULTIPLICATION-20260928.md)
 uses accepted FIR `340f4612a` on Lean 4.34.1, staged under
 `.deps/fir-producer-mul-340f4612`. Build and check it with the same regular-FIR
 recipes below. For matched old/new measurements, use

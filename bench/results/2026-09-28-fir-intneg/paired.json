@@ -1,0 +1,1151 @@
+{
+  "status": "passed",
+  "started": "2026-09-28T21:40:50.149Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-fir-revisions.mjs",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+    "tests/out/research/fir-mul-340f4612/fir-checks.json",
+    ".deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/campaign.xPlqt8/manifest.json",
+    "tests/out/research/fir-intneg-05e0/fir-checks.json",
+    "tests/out/research/fir-intneg-05e0/paired-both.json",
+    "--workload",
+    "mertens"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    2.03,
+    2.98,
+    2.86
+  ],
+  "producers": {
+    "baseline": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+    "candidate": "05e0febe5fdd3c947e31d1ae661c73d36cfcb80e"
+  },
+  "files": [
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-fir-revisions.mjs",
+      "sha256": "7fbaf106cd406ce073f7cfa23f2737caae9b628c7bc7863e2101ca5b6acbf17a"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+      "sha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf"
+    },
+    {
+      "path": "tests/out/research/fir-mul-340f4612/fir-checks.json",
+      "sha256": "40daccc5c5a309490561df56d643ccdc016ada97ef5eb72d8231856408e6a5c2"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/tunnell.FN7NUt/tunnell.wasm",
+      "sha256": "323c5f4c64f6e1f789922908d9b3988975e934b93e4041eed02745e2cd5859e1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/tunnell.FN7NUt/tunnell.wasm.json",
+      "sha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/tunnell.FN7NUt/build-identity.json",
+      "sha256": "8c0246a7d5dc8242bda85daadade9daf760c43eba8cefd7a5948cb5be956d715"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/collatzRecord.wasm",
+      "sha256": "6f4ade4f54d97f7e3d3580c80b874d8971139fe9f53100da8b12da0f58678acd"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/collatzRecord.wasm.json",
+      "sha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/collatzRecord.HpiMYv/build-identity.json",
+      "sha256": "78b531fc4ca28568fca80164744c402d650a9f54d009094d88b6e005ebe6e167"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm",
+      "sha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/primeCount.drfjqY/build-identity.json",
+      "sha256": "1fc5e1ff4ca208e67626cbad79842edbab77398f11ded5720ad6175a0579a338"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm",
+      "sha256": "ae9ee40ee912b477eb902ce02013951153c6dbbe5bb0a8700d7df5a2df217107"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/build-identity.json",
+      "sha256": "6115325484d13b50de05fd3b4f1d1866707b1c6b60aa2029d7f7d0c6e0eb3310"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitions.rICyNM/partitions.wasm",
+      "sha256": "32b84f188a968ee17503ee22a6663afe9e55f158592542cada1243843839ba69"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitions.rICyNM/partitions.wasm.json",
+      "sha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitions.rICyNM/build-identity.json",
+      "sha256": "07dd1feebe4ff3ba90ebbf8d546eb7fc1b70af65fdd20738cee9f99b726be2ab"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fib.VCMoKH/fib.wasm",
+      "sha256": "20a672068dce8d457a82141a39559f56890b5b47ec1a5c66a28010fd38a40682"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fib.VCMoKH/fib.wasm.json",
+      "sha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fib.VCMoKH/build-identity.json",
+      "sha256": "c1015063a0cdbb5dddb92a4a483cf3a21af83a795c0371048cf6786c2d44be96"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm",
+      "sha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/fibBits.J8baiu/build-identity.json",
+      "sha256": "c2e6157759ea424ec8c2eaec87c5574977a6af603250c3ff75724c6df9de2c47"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitionsBits.Srgfxi/partitionsBits.wasm",
+      "sha256": "7733eacb4412183adf75b42b69e2e127982b7f853bafc5ff41f2b11bf067d1da"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitionsBits.Srgfxi/partitionsBits.wasm.json",
+      "sha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/partitionsBits.Srgfxi/build-identity.json",
+      "sha256": "976473f81ecb18ce630d219ee7335a442e3a69dd17c323ece753ba28a3aed453"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/isPrime.wasm",
+      "sha256": "8b675cdaaabe10c87e26db030316c0dc71330bc89a3bc66d853b1b8f22b84d48"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/build-identity.json",
+      "sha256": "2f9c569a50f82d3463d0d0d1ff0621589eaf0b76db262c18f052c6a0ad27e397"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/lifePopulation.wasm",
+      "sha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/lifePopulation.wasm.json",
+      "sha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/lifePopulation.DhxgqR/build-identity.json",
+      "sha256": "5c954ab8c5daa0a6ee72c077b6e853d4642c5a1a0cac6cfe59614ae74ada2aba"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    },
+    {
+      "path": ".deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/campaign.xPlqt8/manifest.json",
+      "sha256": "0ee945fb1064b89108afc463e2a4cd352bfe2194480eeeffb61ec1005ca09537"
+    },
+    {
+      "path": "tests/out/research/fir-intneg-05e0/fir-checks.json",
+      "sha256": "b029768a21374f5cccd4490b58c2d7e53a23996791546ce906877d1a148f1e20"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/tunnell.oNwqZR/tunnell.wasm",
+      "sha256": "323c5f4c64f6e1f789922908d9b3988975e934b93e4041eed02745e2cd5859e1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/tunnell.oNwqZR/tunnell.wasm.json",
+      "sha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/tunnell.oNwqZR/build-identity.json",
+      "sha256": "6d5ef4d7a4bea398664a595c401f13b5d79b19ca7bdfd1c735a39bdabc79015f"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/collatzRecord.IRVLEp/collatzRecord.wasm",
+      "sha256": "6f4ade4f54d97f7e3d3580c80b874d8971139fe9f53100da8b12da0f58678acd"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/collatzRecord.IRVLEp/collatzRecord.wasm.json",
+      "sha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/collatzRecord.IRVLEp/build-identity.json",
+      "sha256": "fb11aec7fc53bbde511c3f7ded343e8691f991bb1aca3b9f30994ffb9ea5c1db"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/primeCount.TmjTyD/primeCount.wasm",
+      "sha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/primeCount.TmjTyD/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/primeCount.TmjTyD/build-identity.json",
+      "sha256": "d2e9cbb5b58f75c8dc09d637a0f3274d6ca427ebe339389c16e1475f62f2b8c4"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm",
+      "sha256": "b16fbb05279f7679503f84097fa9a1c7082c461bdf9689a1453b4940aa624882"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/build-identity.json",
+      "sha256": "54a0864e7c718002c957322a0a7bc12a007d9531990580088573ddf15861c5c2"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitions.h4bh4g/partitions.wasm",
+      "sha256": "32b84f188a968ee17503ee22a6663afe9e55f158592542cada1243843839ba69"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitions.h4bh4g/partitions.wasm.json",
+      "sha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitions.h4bh4g/build-identity.json",
+      "sha256": "91c36c695bb8507f0c94ab40e8847d54f4f5b329131d19c42a3ee1dfadaf9d29"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fib.LLnPd5/fib.wasm",
+      "sha256": "20a672068dce8d457a82141a39559f56890b5b47ec1a5c66a28010fd38a40682"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fib.LLnPd5/fib.wasm.json",
+      "sha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fib.LLnPd5/build-identity.json",
+      "sha256": "2f80da1bb76bc271d70ff48a7917a7ea68d5d4f5484b9bf3b5d88cd4ea9be47d"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fibBits.HhJzRF/fibBits.wasm",
+      "sha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fibBits.HhJzRF/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/fibBits.HhJzRF/build-identity.json",
+      "sha256": "3fb57eeb0bf894664f90cf6cdcb9134d4ccd77fccfe1be993e310912fe1b329e"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitionsBits.khcMpU/partitionsBits.wasm",
+      "sha256": "7733eacb4412183adf75b42b69e2e127982b7f853bafc5ff41f2b11bf067d1da"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitionsBits.khcMpU/partitionsBits.wasm.json",
+      "sha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/partitionsBits.khcMpU/build-identity.json",
+      "sha256": "2c255d6b866e499a660cd73961b973fbe6415c9a409609b4b932bfe5c77b842f"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/isPrime.h7SkGq/isPrime.wasm",
+      "sha256": "8b675cdaaabe10c87e26db030316c0dc71330bc89a3bc66d853b1b8f22b84d48"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/isPrime.h7SkGq/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/isPrime.h7SkGq/build-identity.json",
+      "sha256": "0cdb881bdaf3ae652ddcc9496f064ee9fc620420e4049be565c906496f5b043d"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/lifePopulation.t3D6qm/lifePopulation.wasm",
+      "sha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/lifePopulation.t3D6qm/lifePopulation.wasm.json",
+      "sha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/lifePopulation.t3D6qm/build-identity.json",
+      "sha256": "21d81891f335ec8ee5d037476839244f3c4b20edd4a01726171a7020df83663e"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "selection": [
+    [
+      "mertens",
+      100000
+    ],
+    [
+      "mertens",
+      1000000
+    ]
+  ],
+  "orders": [
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ]
+  ],
+  "policy": "Ten rounds alternating AB/BA, one warmup per retained instance per input. Same source/adapter and Lean 4.34.1. Results and warm frontier checked outside timer. No builds or other client benchmarks concurrent.",
+  "boundary": "FIR adapter call, result text and arena rewind. Startup excluded. No sampler or phase clocks.",
+  "caveats": "Node only; uncontrolled background load, affinity, clock frequency and temperature. Descriptive medians, not confidence intervals.",
+  "warmups": [
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 77.81170800000001,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9015384,
+        "frontierAfter": 1601144,
+        "bytes": 9043968
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194"
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 68.212375,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9015384,
+        "frontierAfter": 1601144,
+        "bytes": 9043968
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194"
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 697.2478600000001,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 66345744,
+        "frontierAfter": 16001264,
+        "bytes": 66387968
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd"
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 492.416698,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 66345744,
+        "frontierAfter": 16001264,
+        "bytes": 66387968
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd"
+    }
+  ],
+  "rows": [
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 59.93476100000001,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 39.10690800000003,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 36.853684999999984,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 50.67546799999997,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 48.19384600000001,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.587207999999976,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.147129000000007,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 47.96674899999999,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 47.527721999999926,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.57574599999998,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 29.73432200000002,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 48.17740500000002,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 47.970235,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.59404100000006,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.53166299999998,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 48.23656699999992,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 48.38277199999993,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 30.692645999999968,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "candidate",
+      "ms": 29.99699600000008,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 100000,
+      "engine": "baseline",
+      "ms": 48.12662,
+      "memory": {
+        "frontierBefore": 1601144,
+        "peakFrontier": 10615504,
+        "frontierAfter": 1601144,
+        "bytes": 10616832
+      },
+      "valueSha256": "c6407e624d1ce85628e6cbfd8f0d862eadd501bb81791f9fe8be467b3b0d0194",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 805.992847,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 601.9075889999999,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 469.37654900000007,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 684.4101090000004,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 677.9046610000005,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 494.4929769999999,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 470.3467760000003,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 684.5024430000003,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 671.6173739999995,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 547.2501139999995,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 729.0969220000006,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 681.567606999999,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 681.2764780000016,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 496.897993999999,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 475.26912300000004,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 756.8484410000001,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 978.2777909999986,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 565.1501349999999,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "candidate",
+      "ms": 555.9843270000001,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "mertens",
+      "x": 1000000,
+      "engine": "baseline",
+      "ms": 748.9776110000003,
+      "memory": {
+        "frontierBefore": 16001264,
+        "peakFrontier": 82345984,
+        "frontierAfter": 16001264,
+        "bytes": 82378752
+      },
+      "valueSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    }
+  ],
+  "finished": "2026-09-28T21:41:05.110Z",
+  "loadAfter": [
+    2.03,
+    2.93,
+    2.84
+  ]
+}

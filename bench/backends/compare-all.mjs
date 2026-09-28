@@ -11,8 +11,9 @@ import { createFirClient, textResult } from './fir-client.mjs';
 import { createEmscriptenClient } from './emscripten-client.mjs';
 import { createVirRuntime } from '../../site/lean-vir/js/vir-runtime-node.js';
 
-const [manifestArg, firChecksArg, cManifestArg, cChecksArg, outputArg] = process.argv.slice(2);
-assert.ok(outputArg, 'usage: node compare-all.mjs FIR_MANIFEST FIR_CHECKS C_MANIFEST C_CHECKS OUTPUT');
+const [manifestArg, firChecksArg, cManifestArg, cChecksArg, outputArg, option, chosenWorkload] = process.argv.slice(2);
+assert.ok(outputArg && (option === undefined || option === '--workload' && chosenWorkload),
+  'usage: node compare-all.mjs FIR_MANIFEST FIR_CHECKS C_MANIFEST C_CHECKS OUTPUT [--workload NAME]');
 assert.ok(!existsSync(outputArg));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const digest = path => hash(readFileSync(path));
@@ -52,9 +53,11 @@ for (const e of engines) for (let position = 0; position < 5; position++)
   assert.equal(orders.filter(row => row[position] === e).length, 2);
 for (const a of engines) for (const b of engines) if (a !== b)
   assert.equal(orders.reduce((n,row) => n + row.filter((e,i) => i > 0 && row[i-1] === a && e === b).length, 0), 2);
-const selection = { tunnell: 1000003, collatzRecord: 100000, primeCount: 1000000,
+const fullSelection = { tunnell: 1000003, collatzRecord: 100000, primeCount: 1000000,
   mertens: 1000000, partitions: 3000, fib: 10000, fibBits: 10000,
   partitionsBits: 3000, isPrime: 127, lifePopulation: 100 };
+assert.ok(!chosenWorkload || Object.hasOwn(fullSelection, chosenWorkload), `unknown workload: ${chosenWorkload}`);
+const selection = chosenWorkload ? { [chosenWorkload]: fullSelection[chosenWorkload] } : fullSelection;
 const report = { status: 'running', started: new Date().toISOString(),
   command: [process.execPath, ...process.execArgv, ...process.argv.slice(1)],
   node: process.version, v8: process.versions.v8, cpu: os.cpus()[0].model,
@@ -70,7 +73,7 @@ const vir = await createVirRuntime({ wasmBytes: readFileSync(join(root, 'site/le
 report.virPackageMetadata = vir.interfaceManifest.metadata;
 const cwasm = await createEmscriptenClient(firManifest.producer, cManifestArg);
 try {
-  for (const item of firManifest.artifacts) {
+  for (const item of firManifest.artifacts.filter(a => Object.hasOwn(selection, a.workload))) {
     const w = item.workload, x = selection[w];
     const c = CASOS.find(c => c.w === w && c.x === x); assert.ok(c);
     const fq = firChecks.rows.filter(r => r.workload === w && r.x === x);

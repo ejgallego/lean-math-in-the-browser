@@ -24,6 +24,9 @@ the [follow-up evaluation](docs/FIR-MULTIPLICATION-20260928.md) measures
 and 39/40 qualified inputs. Miller–Rabin remains slow.
 The [remaining-hotspot profiles](docs/FIR-REMAINING-HOTSPOTS-20260928.md)
 identify generic remainder and signed-integer handling as the next targets.
+The [small-negation follow-up](docs/FIR-INT-NEG-20260928.md) validates FIR's
+new path: Mertens improves 1.31× at one million, though it remains 10.4× slower
+than the C/Wasm baseline there.
 The [sieve, Collatz and Life profiles](docs/FIR-NEXT-THREE-PROFILES-20260928.md)
 cover the next three candidates and their distinct runtime costs.
 The C/Wasm baseline helps distinguish interpreter costs from arithmetic and

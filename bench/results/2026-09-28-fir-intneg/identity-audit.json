@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "producers": [
+    {
+      "commit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+      "clean": true,
+      "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "sourceView": "ordinary",
+      "capture": "unit",
+      "preparationSha256": "8873fb1d76c3eaa3978a6640dabeb59818c4a7aae8cee5d03b6a8b1e322d9a8a",
+      "sources": [
+        {
+          "path": "Tunnell.lean",
+          "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+          "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931"
+        },
+        {
+          "path": "Bench.lean",
+          "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+          "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3"
+        }
+      ]
+    },
+    {
+      "commit": "05e0febe5fdd3c947e31d1ae661c73d36cfcb80e",
+      "clean": true,
+      "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "sourceView": "ordinary",
+      "capture": "unit",
+      "preparationSha256": "e0b5b15d6da1e56d69ae88d5678e3ac29b3e68abe04b8ca7ed79e3d30c033902",
+      "sources": [
+        {
+          "path": "Tunnell.lean",
+          "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+          "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931"
+        },
+        {
+          "path": "Bench.lean",
+          "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+          "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3"
+        }
+      ]
+    }
+  ],
+  "unchangedArtifacts": [
+    "tunnell",
+    "collatzRecord",
+    "primeCount",
+    "partitions",
+    "fib",
+    "fibBits",
+    "partitionsBits",
+    "isPrime",
+    "lifePopulation"
+  ],
+  "changedArtifacts": [
+    "mertens"
+  ],
+  "integration/talos/artifact/concrete-host.mjs": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82",
+  "integration/talos/artifact/module-client.mjs": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b",
+  "integration/lcnf-c-wasm/emscripten-loader.mjs": "7402cd28f0e29cbc07050fed6371aded18ca21d4a6dcd3338aa4ed5c25286578",
+  "checkHarnessSha256": "ab2ed4425c1162d1c9cbeb3c3974fa1b6706543c2009b76d4e177aaa0c286ce9"
+}

@@ -1,0 +1,69 @@
+{
+  "producer": "05e0febe5fdd3c947e31d1ae661c73d36cfcb80e",
+  "paired": [
+    {
+      "workload": "mertens",
+      "input": 100000,
+      "medianMs": {
+        "baseline": 48.185625500000015,
+        "candidate": 30.58147699999998
+      },
+      "speedup": 1.575647425400678
+    },
+    {
+      "workload": "mertens",
+      "input": 1000000,
+      "medianMs": {
+        "baseline": 684.4562760000003,
+        "candidate": 522.0740539999993
+      },
+      "speedup": 1.3110329286733742
+    }
+  ],
+  "fiveBackend": {
+    "native": {
+      "medianMs": 38.4908425,
+      "firOverEngine": 12.806664000664648
+    },
+    "js": {
+      "medianMs": 29.79221000000325,
+      "firOverEngine": 16.5459120689586
+    },
+    "vir": {
+      "medianMs": 3625.408202999999,
+      "firOverEngine": 0.13596794054586714
+    },
+    "fir": {
+      "medianMs": 492.9392870000029,
+      "firOverEngine": null
+    },
+    "cwasm": {
+      "medianMs": 47.2607639999992,
+      "firOverEngine": 10.430201403430788
+    }
+  },
+  "qualification": {
+    "status": "incomplete",
+    "rows": 79
+  },
+  "intneg-mertens100k-phases": {
+    "reps": 8,
+    "mediansMs": {
+      "marshalMs": 0.014902999999989675,
+      "executeMs": 57.32271249999998,
+      "decodeMs": 0.06266249999995921,
+      "cleanupMs": 0.006877999999971962,
+      "totalMs": 57.411940500000014
+    }
+  },
+  "intneg-mertens1m-phases": {
+    "reps": 5,
+    "mediansMs": {
+      "marshalMs": 0.009037000000034823,
+      "executeMs": 480.11587099999997,
+      "decodeMs": 0.03444499999977779,
+      "cleanupMs": 0.005550999999968553,
+      "totalMs": 480.15755999999965
+    }
+  }
+}

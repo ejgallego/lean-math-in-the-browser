@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "mode": "sample",
+  "workload": "mertens",
+  "input": 1000000,
+  "argument": "1000000",
+  "reps": 3,
+  "warmups": 1,
+  "started": "2026-09-28T21:42:55.052Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+    ".deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/campaign.xPlqt8/manifest.json",
+    ".deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens1m-sample",
+    "sample",
+    "mertens",
+    "1000000",
+    "3"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    3.27,
+    3.14,
+    2.93
+  ],
+  "producerCommit": "05e0febe5fdd3c947e31d1ae661c73d36cfcb80e",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "artifact": {
+    "workload": "mertens",
+    "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm",
+    "sha256": "b16fbb05279f7679503f84097fa9a1c7082c461bdf9689a1453b4940aa624882",
+    "descriptorSha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+    "buildIdentitySha256": "54a0864e7c718002c957322a0a7bc12a007d9531990580088573ddf15861c5c2",
+    "bytes": 22082
+  },
+  "expectedSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+  "manifestSha256": "0ee945fb1064b89108afc463e2a4cd352bfe2194480eeeffb61ec1005ca09537",
+  "files": [
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm",
+      "sha256": "b16fbb05279f7679503f84097fa9a1c7082c461bdf9689a1453b4940aa624882"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.functions.json",
+      "sha256": "96412000b90dee7ac31a82ee83558914eceda7f643a8f61253f103468bba16f0"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.lcnf",
+      "sha256": "afbbe54e333b08dc349740c721c826c037a745bbf7f64aab58f0203180f2e00e"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/build-identity.json",
+      "sha256": "54a0864e7c718002c957322a0a7bc12a007d9531990580088573ddf15861c5c2"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+      "sha256": "a14e65b7286565180a41231fe9bac40174197107b5b4ae0b4ef3d0e17293140c"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "sampling": {
+    "api": "Node inspector Profiler",
+    "intervalUs": 1000,
+    "scope": "Main Node isolate, measured call loop including validation, excluding instantiation and warmup"
+  },
+  "boundary": "marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and typed result copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.",
+  "rows": [
+    {
+      "repetition": 0,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.022562999999991007,
+      "executeMs": 684.0936609999999,
+      "decodeMs": 0.18688200000019606,
+      "cleanupMs": 0.005790999999817359,
+      "totalMs": 684.3088969999999,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 1,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.10601900000006026,
+      "executeMs": 467.621136,
+      "decodeMs": 0.02684100000010403,
+      "cleanupMs": 0.012442999999848325,
+      "totalMs": 467.766439,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 2,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.008565999999973428,
+      "executeMs": 482.24357599999985,
+      "decodeMs": 0.028684000000339438,
+      "cleanupMs": 0.0135349999995924,
+      "totalMs": 482.29436099999975,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    }
+  ],
+  "warmup": {
+    "value": "212",
+    "raw": 425,
+    "marshalMs": 0.08612200000000314,
+    "executeMs": 571.1304640000001,
+    "decodeMs": 0.1868619999999055,
+    "cleanupMs": 0.06595400000003337,
+    "totalMs": 571.469402,
+    "memory": {
+      "before": 1024,
+      "peak": 66345744,
+      "after": 16001264,
+      "bytes": 66387968
+    }
+  },
+  "profileSha256": "148b99e5b84e5e3d626acca3abfa62a2d86a2dea12a1eeae4d547c553e5ce2c6",
+  "finished": "2026-09-28T21:42:57.289Z",
+  "loadAfter": [
+    3.17,
+    3.12,
+    2.92
+  ]
+}

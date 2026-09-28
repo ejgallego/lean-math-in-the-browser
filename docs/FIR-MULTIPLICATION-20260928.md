@@ -9,6 +9,8 @@ controls remain within roughly 3% of their baseline medians. Miller–Rabin at
 The [remaining-hotspot profiles](FIR-REMAINING-HOTSPOTS-20260928.md) now attribute
 that gap to generic remainder, and Mertens's cost chiefly to generic signed
 arithmetic plus remainder. They identify the next implementation experiments.
+The subsequent [small-negation evaluation](FIR-INT-NEG-20260928.md) measures
+the first of those FIR runtime improvements.
 
 This evaluates FIR `340f4612ac622aa39d6a870528f96d6b827d97b8`, accepted by FIR
 root after its integration gates, against the previous client producer

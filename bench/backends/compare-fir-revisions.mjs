@@ -7,8 +7,9 @@ import os from 'node:os';
 import { CASOS } from '../casos.mjs';
 import { createFirClient, textResult } from './fir-client.mjs';
 
-const [oldManifest, oldChecks, newManifest, newChecks, output] = process.argv.slice(2);
-assert.ok(output, 'usage: node compare-fir-revisions.mjs OLD_MANIFEST OLD_CHECKS NEW_MANIFEST NEW_CHECKS OUTPUT');
+const [oldManifest, oldChecks, newManifest, newChecks, output, option, chosenWorkload] = process.argv.slice(2);
+assert.ok(output && (option === undefined || option === '--workload' && chosenWorkload),
+  'usage: node compare-fir-revisions.mjs OLD_MANIFEST OLD_CHECKS NEW_MANIFEST NEW_CHECKS OUTPUT [--workload NAME]');
 assert.ok(!existsSync(output), 'output already exists');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const digest = path => hash(readFileSync(path));
@@ -36,11 +37,15 @@ const variants = Object.fromEntries([
     files.push(join(manifest.producer, 'integration/talos/artifact', name));
   return [name, { manifest, checks }];
 }));
-const selection = [
+const fullSelection = [
   ['tunnell', 1000003], ['collatzRecord', 100000], ['primeCount', 1000000],
   ['mertens', 1000000], ['partitions', 3000], ['fib', 10000], ['fibBits', 10000],
   ['partitionsBits', 3000], ['isPrime', 127], ['lifePopulation', 100], ['fibBits', 100000],
 ];
+const selection = chosenWorkload === 'mertens'
+  ? [['mertens', 100000], ['mertens', 1000000]]
+  : chosenWorkload ? fullSelection.filter(([w]) => w === chosenWorkload) : fullSelection;
+assert.ok(selection.length, `unknown workload: ${chosenWorkload}`);
 const orders = Array.from({ length: 10 }, (_, i) => i % 2
   ? ['candidate', 'baseline'] : ['baseline', 'candidate']);
 const report = { status: 'running', started: new Date().toISOString(),

@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "artifacts/mertens/build-identity.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/build-identity.json",
+      "bytes": 760,
+      "sha256": "54a0864e7c718002c957322a0a7bc12a007d9531990580088573ddf15861c5c2"
+    },
+    {
+      "path": "artifacts/mertens/mertens.wasm.functions.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.functions.json",
+      "bytes": 4236,
+      "sha256": "96412000b90dee7ac31a82ee83558914eceda7f643a8f61253f103468bba16f0"
+    },
+    {
+      "path": "artifacts/mertens/mertens.wasm.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.json",
+      "bytes": 153,
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "artifacts/mertens/mertens.wasm.lcnf",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/mertens.WsInpv/mertens.wasm.lcnf",
+      "bytes": 7450,
+      "sha256": "afbbe54e333b08dc349740c721c826c037a745bbf7f64aab58f0203180f2e00e"
+    },
+    {
+      "path": "comparison.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/fir-intneg-05e0/comparison.json",
+      "bytes": 34620,
+      "sha256": "2e39555c8fb5a8ee9da9892c116ab6e5d11aadd6891e117327f7280f2ab5b61a"
+    },
+    {
+      "path": "fir-checks.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/fir-intneg-05e0/fir-checks.json",
+      "bytes": 33017,
+      "sha256": "b029768a21374f5cccd4490b58c2d7e53a23996791546ce906877d1a148f1e20"
+    },
+    {
+      "path": "fir-manifest.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/campaign.xPlqt8/manifest.json",
+      "bytes": 5204,
+      "sha256": "0ee945fb1064b89108afc463e2a4cd352bfe2194480eeeffb61ec1005ca09537"
+    },
+    {
+      "path": "identity-audit.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/fir-intneg-05e0/identity-audit.json",
+      "bytes": 2485,
+      "sha256": "8b4175ae9d26bad3a96d8f91cb79c94a50244fa0b075ca04d2b7dfb11999bad6"
+    },
+    {
+      "path": "intneg-mertens100k-phases/run.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens100k-phases/run.json",
+      "bytes": 7907,
+      "sha256": "ff8ab778a0c655a1f70d4a04674476a09f185193b3b26d32e8e4ed2aecf79875"
+    },
+    {
+      "path": "intneg-mertens100k-sample/cpu.cpuprofile",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens100k-sample/cpu.cpuprofile",
+      "bytes": 37701,
+      "sha256": "c3303de969a78a7c1352c1630fd48f7a2a105613fb28e732be9539132d4c372e"
+    },
+    {
+      "path": "intneg-mertens100k-sample/run.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens100k-sample/run.json",
+      "bytes": 15123,
+      "sha256": "c38493533d13f2b2545f7aaa937f3800ca2c129e4f26ba2868d426683d7a9504"
+    },
+    {
+      "path": "intneg-mertens100k-sample/summary-final.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens100k-sample/summary-final.json",
+      "bytes": 45877,
+      "sha256": "d6339082bd1dd46954f7c84e81a8122ec2d9cf94e1dfa32bfb3d36186bac4707"
+    },
+    {
+      "path": "intneg-mertens1m-phases/run.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens1m-phases/run.json",
+      "bytes": 6683,
+      "sha256": "4d33198702ec34f9abe328ee1c80efd144f997d1a553d27dc769adf9029f298c"
+    },
+    {
+      "path": "intneg-mertens1m-sample/cpu.cpuprofile",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens1m-sample/cpu.cpuprofile",
+      "bytes": 45905,
+      "sha256": "148b99e5b84e5e3d626acca3abfa62a2d86a2dea12a1eeae4d547c553e5ce2c6"
+    },
+    {
+      "path": "intneg-mertens1m-sample/run.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens1m-sample/run.json",
+      "bytes": 6133,
+      "sha256": "41cbdb5a4fed2b14209f9de15eeeca44aa8dd7a14af6621dc6771dc8106975ab"
+    },
+    {
+      "path": "intneg-mertens1m-sample/summary-final.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_profiles/intneg-mertens1m-sample/summary-final.json",
+      "bytes": 46959,
+      "sha256": "82110184bf951fd7777ab8e287f00966200ab589120eb6fc123f35352fbfe026"
+    },
+    {
+      "path": "paired.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/fir-intneg-05e0/paired-both.json",
+      "bytes": 38864,
+      "sha256": "266d65207a45f25931f478d825a88d70055d5c5e86331ea21630b56877d63e56"
+    },
+    {
+      "path": "preparation.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/PREPARATION.json",
+      "bytes": 1429,
+      "sha256": "e0b5b15d6da1e56d69ae88d5678e3ac29b3e68abe04b8ca7ed79e3d30c033902"
+    },
+    {
+      "path": "source/LICENSE",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/LICENSE",
+      "bytes": 9160,
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e"
+    },
+    {
+      "path": "source/ResidentBigNumeric.lean",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/Fir/Wasm/Emit/ResidentBigNumeric.lean",
+      "bytes": 76526,
+      "sha256": "f283222652edfc8ecb507a767229ab71ac2d6aadcdd87b219812cc85288ba990"
+    },
+    {
+      "path": "summary.json",
+      "source": "snapshot-derived",
+      "bytes": 1609,
+      "sha256": "5040828310e0a46a90dd8fbe28d6de812389598021939d338c572073e2210a5b"
+    }
+  ]
+}
