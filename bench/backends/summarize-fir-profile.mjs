@@ -70,6 +70,11 @@ for (const n of nodes.values()) {
 assert.equal(wasmUrls.size, 1, 'expected exactly one sampled Wasm module');
 assert.equal(profile.samples.length, profile.timeDeltas.length);
 const self = new Map(), inclusive = new Map(), stacks = new Map(), buckets = new Map();
+const callerByLeaf = new Map();
+const targets = ['fir_nat_mul_generic', 'fir_nat_mod_generic', 'fir_nat_div_generic',
+  'fir_ext_Array_set!', 'fir_ext_Array_get!InternalBorrowed', 'fir_ext_Array_get!Internal',
+  'fir_big_ext_Int_add', 'fir_big_ext_Int_neg',
+  'fir_big_numeric_integer_combine', 'fir_dec_once'];
 const rootOnlyWasm = new Map();
 const add = (map, key, weight) => map.set(key, (map.get(key) ?? 0) + weight);
 let time = profile.startTime, sampledUs = 0;
@@ -81,6 +86,11 @@ for (let i = 0; i < profile.samples.length; i++) {
   time += delta; sampledUs += weight;
   const id = profile.samples[i], node = nodes.get(id); assert.ok(node);
   const name = labels.get(id); add(self, name, weight);
+  if (targets.includes(name)) {
+    const callers = callerByLeaf.get(name) ?? new Map();
+    add(callers, labels.get(parents.get(id)) ?? '<no parent>', weight);
+    callerByLeaf.set(name, callers);
+  }
   if (node.callFrame.url.startsWith('wasm://') && !trampolines.has(id)
       && labels.get(parents.get(id)) === '(root)') add(rootOnlyWasm, name, weight);
   const bucket = trampolines.has(id) ? 'JS/Wasm trampoline'
@@ -91,9 +101,11 @@ for (let i = 0; i < profile.samples.length; i++) {
   const chain = [];
   for (let current = id; current !== undefined; current = parents.get(current)) chain.push(labels.get(current));
   for (const label of new Set(chain)) add(inclusive, label, weight);
-  // Retain full call trees in the raw profile; show the multiplication subtree here.
-  const mul = chain.indexOf('fir_nat_mul_generic');
-  if (mul >= 0) add(stacks, chain.slice(0, mul + 1).reverse().join(' → '), weight);
+  // Retain full call trees in the raw profile; show key helper caller paths here.
+  for (const target of targets) {
+    const index = chain.indexOf(target);
+    if (index >= 0) add(stacks, `${target}: ${chain.slice(0, index + 1).reverse().join(' → ')}`, weight);
+  }
 }
 const sorted = map => [...map].sort((a,b) => b[1]-a[1]).map(([name, us]) => ({ name, ms: us/1000, percent: us/sampledUs*100 }));
 const summary = { input: run.input, repetitions: run.reps,
@@ -109,9 +121,14 @@ const summary = { input: run.input, repetitions: run.reps,
   unobservedTailMs: Math.max(0, profile.endTime-time)/1000,
   callerCoverage: { rootOnlyWasm: sorted(rootOnlyWasm),
     rootOnlyWasmPercent: [...rootOnlyWasm.values()].reduce((a,b) => a+b, 0)/sampledUs*100,
-    caveat: 'Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive multiplication share is the observed stack share, not a claim of complete unwinding.' },
-  buckets: sorted(buckets), self: sorted(self), inclusive: sorted(inclusive), multiplicationStacks: sorted(stacks) };
+    caveat: 'Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding.' },
+  buckets: sorted(buckets), self: sorted(self), inclusive: sorted(inclusive),
+  selectedStacks: sorted(stacks),
+  ...(run.workload === 'fibBits' || !run.workload ? { multiplicationStacks:
+    sorted(stacks).filter(row => row.name.startsWith('fir_nat_mul_generic: ')) } : {}),
+  callerByLeaf: Object.fromEntries(
+    [...callerByLeaf].map(([name, callers]) => [name, sorted(callers)])) };
 writeFileSync(join(directory, outputName), JSON.stringify(summary, null, 2) + '\n', { flag: 'wx' });
 console.log(JSON.stringify({ input: run.input, samples: summary.samples, mapping: summary.mapping.evidence,
   buckets: summary.buckets, self: summary.self.slice(0, 12), inclusive: summary.inclusive.filter(r => r.name.startsWith('fir_')).slice(0, 8),
-  multiplicationStacks: summary.multiplicationStacks.slice(0, 6) }, null, 2));
+  selectedStacks: summary.selectedStacks.slice(0, 8) }, null, 2));

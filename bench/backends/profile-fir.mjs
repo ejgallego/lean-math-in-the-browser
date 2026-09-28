@@ -1,4 +1,4 @@
-// Focused attribution of the frozen fibBits package. Does not regenerate Wasm.
+// Focused attribution of a frozen FIR package. Does not regenerate Wasm.
 import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, join, relative, dirname } from 'node:path';
@@ -9,15 +9,19 @@ import { Session } from 'node:inspector/promises';
 import os from 'node:os';
 import { CASOS } from '../casos.mjs';
 
-const [manifestArg, outputArg, mode, inputArg, repsArg] = process.argv.slice(2);
+const args = process.argv.slice(2);
+// Keep the original five-argument fibBits invocation reproducible.
+const [manifestArg, outputArg, mode, workloadArg, inputArg, repsArg] = args.length === 5
+  ? [...args.slice(0, 3), 'fibBits', ...args.slice(3)] : args;
 assert.ok(manifestArg && outputArg && ['phases', 'sample'].includes(mode),
-  'usage: node bench/backends/profile-fir.mjs MANIFEST OUT_DIR phases|sample INPUT REPS');
+  'usage: node bench/backends/profile-fir.mjs MANIFEST OUT_DIR phases|sample fibBits|isPrime|mertens INPUT REPS');
+assert.ok(['fibBits', 'isPrime', 'mertens'].includes(workloadArg));
 const n = Number(inputArg), reps = Number(repsArg);
-assert.ok([10000, 100000].includes(n));
+assert.ok(Number.isSafeInteger(n) && n > 0 && !(workloadArg === 'isPrime' && n >= 1279));
 assert.ok(Number.isSafeInteger(reps) && reps > 0 && reps <= 100);
 const hash = data => createHash('sha256').update(data).digest('hex');
 const manifest = JSON.parse(readFileSync(manifestArg));
-const artifact = manifest.artifacts.find(a => a.workload === 'fibBits');
+const artifact = manifest.artifacts.find(a => a.workload === workloadArg);
 assert.ok(artifact);
 const producer = resolve(manifest.producer), out = resolve(outputArg);
 const underDeps = relative(join(producer, '.deps'), out);
@@ -30,13 +34,14 @@ assert.equal(git(['rev-parse', 'HEAD']), build.producer);
 assert.equal(hash(readFileSync(identityPath)), artifact.buildIdentitySha256);
 assert.equal(hash(readFileSync(artifact.path)), artifact.sha256);
 assert.equal(hash(readFileSync(artifact.path + '.json')), artifact.descriptorSha256);
-const reference = CASOS.find(c => c.w === 'fibBits' && c.arg === n);
+const reference = CASOS.find(c => c.w === workloadArg && c.x === n);
 assert.ok(reference);
 const paths = [artifact.path, artifact.path + '.json', artifact.path + '.functions.json', artifact.path + '.lcnf',
   identityPath, new URL(import.meta.url), new URL('./fir-client.mjs', import.meta.url),
   new URL('../casos.mjs', import.meta.url), join(producer, 'integration/talos/artifact/concrete-host.mjs'),
   join(producer, 'integration/talos/artifact/module-client.mjs')];
-const report = { status: 'running', mode, input: n, reps, warmups: 1,
+const report = { status: 'running', mode, workload: workloadArg, input: n,
+  argument: String(reference.arg), reps, warmups: 1,
   started: new Date().toISOString(), command: [process.execPath, ...process.execArgv, ...process.argv.slice(1)],
   node: process.version, v8: process.versions.v8, cpu: os.cpus()[0].model,
   platform: `${os.platform()} ${os.release()} ${os.arch()}`, loadBefore: os.loadavg(),
@@ -45,7 +50,7 @@ const report = { status: 'running', mode, input: n, reps, warmups: 1,
   files: paths.map(path => ({ path: String(path), sha256: hash(readFileSync(path)) })),
   sampling: mode === 'sample' ? { api: 'Node inspector Profiler', intervalUs: 1000,
     scope: 'Main Node isolate, measured call loop including validation, excluding instantiation and warmup' } : null,
-  boundary: 'marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and Nat-to-decimal copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.',
+  boundary: 'marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and typed result copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.',
   rows: [] };
 mkdirSync(out, { recursive: false });
 const save = () => writeFileSync(join(out, 'run.json'), JSON.stringify(report, null, 2) + '\n');
@@ -54,8 +59,9 @@ const { ConcreteHost } = await import(pathToFileURL(join(producer, 'integration/
 const { instantiateModuleArtifact } = await import(pathToFileURL(join(producer, 'integration/talos/artifact/module-client.mjs')));
 const bytes = readFileSync(artifact.path);
 const descriptor = JSON.parse(readFileSync(artifact.path + '.json'));
-assert.equal(descriptor.sourceEntry, 'Bench.fibBits');
-assert.deepEqual(descriptor.params, ['tobject']); assert.equal(descriptor.result, 'tobject');
+assert.equal(descriptor.sourceEntry, 'Bench.' + workloadArg);
+assert.deepEqual(descriptor.params, ['tobject']);
+assert.equal(descriptor.result, workloadArg === 'isPrime' ? 'uint8' : 'tobject');
 assert.deepEqual(WebAssembly.Module.imports(new WebAssembly.Module(bytes)), []);
 assert.deepEqual(descriptor.imports, []);
 const host = new ConcreteHost([], undefined, undefined, descriptor.closureDispatch, descriptor.closureDescriptors);
@@ -66,13 +72,20 @@ function call() {
   const before = exports.fir_heap_frontier() >>> 0;
   let value, raw, peak, t1, t2, t3, t4;
   try {
-    const argument = host.allocateNatural(BigInt(n));
+    const argument = host.allocateNatural(BigInt(reference.arg));
     host.synchronizeResidentFrontierBeforeImport();
     t1 = performance.now();
     raw = entry(argument) >>> 0;
     t2 = performance.now();
     host.synchronizeResidentFrontierBeforeImport();
-    value = String(raw & 1 ? BigInt(raw >>> 1) : host.readNatural(raw));
+    if (workloadArg === 'isPrime') {
+      assert.ok(raw === 0 || raw === 1);
+      value = String(raw !== 0);
+    } else if (workloadArg === 'mertens') {
+      const integer = (raw & 1) || host.readHeader(raw).kind === 5
+        ? BigInt.asIntN(32, host.taggedPayload(raw)) : host.readInteger(raw);
+      value = String(integer);
+    } else value = String(raw & 1 ? BigInt(raw >>> 1) : host.readNatural(raw));
     t3 = performance.now();
     peak = exports.fir_heap_frontier() >>> 0;
   } finally {

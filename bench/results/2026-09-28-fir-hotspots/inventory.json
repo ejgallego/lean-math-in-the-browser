@@ -1,0 +1,168 @@
+{
+  "schema": "fir-hotspot-evidence/v1",
+  "files": [
+    {
+      "path": "prime61-phases/run.json",
+      "sha256": "55be03446d49de64377872721e694782288a44fd532e245c6fbb7fd29eba4754",
+      "bytes": 8632
+    },
+    {
+      "path": "prime61-sample/run.json",
+      "sha256": "29be76005347dd73d3e9009f23490c6112c187ccc8559d69f17eb0d607300028",
+      "bytes": 44807
+    },
+    {
+      "path": "prime61-sample/cpu.cpuprofile",
+      "sha256": "740b068a29888f16db0d8ceb47f7c065b2a1fc2df0cf778d3563c2e854c7ecc2",
+      "bytes": 31622
+    },
+    {
+      "path": "prime61-sample/summary-final.json",
+      "sha256": "0e71775820e501d3fe7b450a4426b8b3873f8a506d72c5588bd7044c2f2c414c",
+      "bytes": 19094
+    },
+    {
+      "path": "prime127-phases/run.json",
+      "sha256": "59e52c2cf0935ba1213cf154a150e143a9c43dba523c50653a5405fcaea249dc",
+      "bytes": 7836
+    },
+    {
+      "path": "prime127-sample/run.json",
+      "sha256": "23455ae5c7b85dd5d48c004d7044e58614691b01223a15b3c08f8d3a852e0d56",
+      "bytes": 12880
+    },
+    {
+      "path": "prime127-sample/cpu.cpuprofile",
+      "sha256": "a11e8bae8bbb31a0981550214f1eeed7817a6c5695be37be4bf4fa59f8d99c65",
+      "bytes": 37870
+    },
+    {
+      "path": "prime127-sample/summary-final.json",
+      "sha256": "51d5869565470297542d0669be2a7244bddd87870938687c564b4901383a049f",
+      "bytes": 19232
+    },
+    {
+      "path": "mertens100k-phases/run.json",
+      "sha256": "9610672f79ad5a5dd04ada474bc22fcc30bb7ef1b07cabb6059847088eeaccfa",
+      "bytes": 7896
+    },
+    {
+      "path": "mertens100k-sample/run.json",
+      "sha256": "b4811cdafa14d3cd3f3c4fc41c3e0b8da017e57556898df8ad49dd6253658863",
+      "bytes": 15128
+    },
+    {
+      "path": "mertens100k-sample/cpu.cpuprofile",
+      "sha256": "fe70cf06fc6c1111b12509685fe7d0ecd58dfafcfc5b092437147a7ae74a3c02",
+      "bytes": 56799
+    },
+    {
+      "path": "mertens100k-sample/summary-final.json",
+      "sha256": "3d2ccd61e769cd03c6b911ee48876234c804ae0bf5d9676d2ff00ecf8cd12de7",
+      "bytes": 62130
+    },
+    {
+      "path": "mertens1m-phases/run.json",
+      "sha256": "e42e3882662f9d4fecb4e7e14f9ef4f5637594153591f6d654cff973175005e9",
+      "bytes": 6677
+    },
+    {
+      "path": "mertens1m-sample/run.json",
+      "sha256": "d41c0f7c13eb90e78ec305dfac51697127e6b5f2e465b619668ed8ac38e0a0f0",
+      "bytes": 6146
+    },
+    {
+      "path": "mertens1m-sample/cpu.cpuprofile",
+      "sha256": "299c0a255c6392edb76806da543bdd79a810bd224f5eb99907c5ce1ecc701732",
+      "bytes": 63473
+    },
+    {
+      "path": "mertens1m-sample/summary-final.json",
+      "sha256": "ff31e4bf0e012383998725aa4c2d4ac5ca31e1972b8586453e116f309e12c492",
+      "bytes": 62703
+    },
+    {
+      "path": "artifacts/mertens.wasm.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+      "bytes": 153
+    },
+    {
+      "path": "artifacts/mertens.wasm.functions.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.functions.json",
+      "sha256": "1eb8791885c1d0e1435c211d01cc0431ab6052b30f39b181d3856f96080e7f7f",
+      "bytes": 4236
+    },
+    {
+      "path": "artifacts/mertens.wasm.lcnf",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.lcnf",
+      "sha256": "afbbe54e333b08dc349740c721c826c037a745bbf7f64aab58f0203180f2e00e",
+      "bytes": 7450
+    },
+    {
+      "path": "artifacts/isPrime.wasm.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474",
+      "bytes": 151
+    },
+    {
+      "path": "artifacts/isPrime.wasm.functions.json",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/isPrime.wasm.functions.json",
+      "sha256": "63eae8a24c04f641dee269de25682e5080ea393a8c07402deb3d37a140409202",
+      "bytes": 4843
+    },
+    {
+      "path": "artifacts/isPrime.wasm.lcnf",
+      "source": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/isPrime.2mswT6/isPrime.wasm.lcnf",
+      "sha256": "69d81151713aa16dedaaa29e122790c4d0c2eddc5945c98e8560c904e5eba786",
+      "bytes": 7873
+    }
+  ],
+  "sources": [
+    {
+      "path": "bench/backends/profile-fir.mjs",
+      "sha256": "09c1080ecdfb1b360985224177388c5e2de4aa0807e3a086d8c21bd9930dda2d",
+      "bytes": 7571
+    },
+    {
+      "path": "bench/backends/summarize-fir-profile.mjs",
+      "sha256": "ff566c5ec1db5db9cc4fcc31e6441f8fe8d44c475cd96bc841c3c90ecc916411",
+      "bytes": 7909
+    },
+    {
+      "path": "bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad",
+      "bytes": 3936
+    },
+    {
+      "path": "bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+      "bytes": 8043
+    },
+    {
+      "path": "Bench.lean",
+      "sha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+      "bytes": 10029
+    },
+    {
+      "path": ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+      "sha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf",
+      "bytes": 5215
+    },
+    {
+      "path": ".deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentNatArithmetic.lean",
+      "sha256": "adfa1d6842b565b01783e2cdb338e99392ee93549751e40f88dd7b1ddfadf5ed",
+      "bytes": 46065
+    },
+    {
+      "path": ".deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentBigNumeric.lean",
+      "sha256": "05433e5ad5c2ca53838e1658303eb93d430e40556cc43726711cee0ef8e7fb85",
+      "bytes": 75263
+    },
+    {
+      "path": ".deps/fir-producer-mul-340f4612/Fir/Wasm/Emit/ResidentArray.lean",
+      "sha256": "642a7c55402f7e4ed850fbdc9220708242a5ab5df5839a74d4a26b08bbbddda5",
+      "bytes": 78500
+    }
+  ]
+}

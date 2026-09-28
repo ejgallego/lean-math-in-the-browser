@@ -1,0 +1,188 @@
+{
+  "status": "passed",
+  "mode": "phases",
+  "workload": "mertens",
+  "input": 1000000,
+  "argument": "1000000",
+  "reps": 5,
+  "warmups": 1,
+  "started": "2026-09-28T18:32:08.684Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/campaign.KBIKlN/manifest.json",
+    ".deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_profiles/mertens1m-phases",
+    "phases",
+    "mertens",
+    "1000000",
+    "5"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    5.07,
+    5.05,
+    3.56
+  ],
+  "producerCommit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "artifact": {
+    "workload": "mertens",
+    "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm",
+    "sha256": "ae9ee40ee912b477eb902ce02013951153c6dbbe5bb0a8700d7df5a2df217107",
+    "descriptorSha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+    "buildIdentitySha256": "6115325484d13b50de05fd3b4f1d1866707b1c6b60aa2029d7f7d0c6e0eb3310",
+    "bytes": 21895
+  },
+  "expectedSha256": "fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd",
+  "manifestSha256": "f02b985bd6eeb8e8ca2320596a15f2bb217825a546c5bf99ee9141e894784bcf",
+  "files": [
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm",
+      "sha256": "ae9ee40ee912b477eb902ce02013951153c6dbbe5bb0a8700d7df5a2df217107"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.functions.json",
+      "sha256": "1eb8791885c1d0e1435c211d01cc0431ab6052b30f39b181d3856f96080e7f7f"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/mertens.wasm.lcnf",
+      "sha256": "afbbe54e333b08dc349740c721c826c037a745bbf7f64aab58f0203180f2e00e"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/.deps/math-browser-fir/_build/mertens.K3gCkj/build-identity.json",
+      "sha256": "6115325484d13b50de05fd3b4f1d1866707b1c6b60aa2029d7f7d0c6e0eb3310"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+      "sha256": "09c1080ecdfb1b360985224177388c5e2de4aa0807e3a086d8c21bd9930dda2d"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-mul-340f4612/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "sampling": null,
+  "boundary": "marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and typed result copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.",
+  "rows": [
+    {
+      "repetition": 0,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.020539000000098895,
+      "executeMs": 968.7097930000002,
+      "decodeMs": 0.18224199999986013,
+      "cleanupMs": 0.005571000000145432,
+      "totalMs": 968.9181450000003,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 1,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.1034140000001571,
+      "executeMs": 865.2237129999999,
+      "decodeMs": 0.029544999999870925,
+      "cleanupMs": 0.005701000000044587,
+      "totalMs": 865.3623729999999,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 2,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.01135100000010425,
+      "executeMs": 856.009892,
+      "decodeMs": 0.0330020000001241,
+      "cleanupMs": 0.0064119999997274135,
+      "totalMs": 856.060657,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 3,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.009117000000060216,
+      "executeMs": 853.1658970000003,
+      "decodeMs": 0.03111899999930756,
+      "cleanupMs": 0.005951000000095519,
+      "totalMs": 853.2120839999998,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    },
+    {
+      "repetition": 4,
+      "value": "212",
+      "raw": 425,
+      "marshalMs": 0.009197000000312983,
+      "executeMs": 852.8907929999996,
+      "decodeMs": 0.07416000000011991,
+      "cleanupMs": 0.005779999999504071,
+      "totalMs": 852.9799299999995,
+      "memory": {
+        "before": 16001264,
+        "peak": 82345984,
+        "after": 16001264,
+        "bytes": 82378752
+      }
+    }
+  ],
+  "warmup": {
+    "value": "212",
+    "raw": 425,
+    "marshalMs": 0.19186100000000295,
+    "executeMs": 1129.347939,
+    "decodeMs": 0.2132609999998749,
+    "cleanupMs": 0.07221600000002582,
+    "totalMs": 1129.825277,
+    "memory": {
+      "before": 1024,
+      "peak": 66345744,
+      "after": 16001264,
+      "bytes": 66387968
+    }
+  },
+  "finished": "2026-09-28T18:32:14.230Z",
+  "loadAfter": [
+    4.75,
+    4.99,
+    3.56
+  ]
+}

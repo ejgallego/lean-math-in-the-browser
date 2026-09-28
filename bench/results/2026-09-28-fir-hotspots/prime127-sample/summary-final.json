@@ -1,0 +1,748 @@
+{
+  "input": 127,
+  "repetitions": 20,
+  "artifactSha256": "8b675cdaaabe10c87e26db030316c0dc71330bc89a3bc66d853b1b8f22b84d48",
+  "inventorySha256": "63eae8a24c04f641dee269de25682e5080ea393a8c07402deb3d37a140409202",
+  "profileSha256": "a11e8bae8bbb31a0981550214f1eeed7817a6c5695be37be4bf4fa59f8d99c65",
+  "summarizerSha256": "ff566c5ec1db5db9cc4fcc31e6441f8fe8d44c475cd96bc841c3c90ecc916411",
+  "mapping": {
+    "wasmUrl": "wasm://wasm/0001266a",
+    "definedFunctions": 100,
+    "resolvedFunctions": 24,
+    "trampolineNodes": 1,
+    "evidence": "Single Wasm module; exact artifact/inventory hashes; every indexed Wasm frame and V8 column offset matches its encoded function body start. JS/Wasm trampolines are classified separately.",
+    "functions": [
+      {
+        "index": 1,
+        "name": "Bench.powMod",
+        "start": 1850,
+        "end": 3033,
+        "bytes": 1183
+      },
+      {
+        "index": 3,
+        "name": "Bench.mrRound",
+        "start": 3695,
+        "end": 4357,
+        "bytes": 662
+      },
+      {
+        "index": 4,
+        "name": "List.all._at_.Bench.isPrime.spec_0",
+        "start": 4359,
+        "end": 4867,
+        "bytes": 508
+      },
+      {
+        "index": 18,
+        "name": "Bench.isPrime",
+        "start": 5486,
+        "end": 6214,
+        "bytes": 728
+      },
+      {
+        "index": 25,
+        "name": "fir_heap_alloc",
+        "start": 6819,
+        "end": 7291,
+        "bytes": 472
+      },
+      {
+        "index": 50,
+        "name": "fir_dec_once",
+        "start": 8657,
+        "end": 9950,
+        "bytes": 1293
+      },
+      {
+        "index": 67,
+        "name": "fir_numeric_allocate_one_limb",
+        "start": 11477,
+        "end": 11577,
+        "bytes": 100
+      },
+      {
+        "index": 69,
+        "name": "fir_numeric_natural_sum",
+        "start": 11746,
+        "end": 11810,
+        "bytes": 64
+      },
+      {
+        "index": 71,
+        "name": "fir_big_numeric_natural_count",
+        "start": 11965,
+        "end": 11994,
+        "bytes": 29
+      },
+      {
+        "index": 72,
+        "name": "fir_big_numeric_natural_low",
+        "start": 11995,
+        "end": 12080,
+        "bytes": 85
+      },
+      {
+        "index": 73,
+        "name": "fir_big_numeric_natural_high",
+        "start": 12081,
+        "end": 12163,
+        "bytes": 82
+      },
+      {
+        "index": 74,
+        "name": "fir_big_numeric_validate_natural",
+        "start": 12165,
+        "end": 12604,
+        "bytes": 439
+      },
+      {
+        "index": 79,
+        "name": "fir_big_numeric_magnitude_low",
+        "start": 12971,
+        "end": 13020,
+        "bytes": 49
+      },
+      {
+        "index": 80,
+        "name": "fir_big_numeric_magnitude_high",
+        "start": 13021,
+        "end": 13070,
+        "bytes": 49
+      },
+      {
+        "index": 81,
+        "name": "fir_big_numeric_allocate",
+        "start": 13072,
+        "end": 13212,
+        "bytes": 140
+      },
+      {
+        "index": 82,
+        "name": "fir_big_numeric_compare_at",
+        "start": 13214,
+        "end": 13365,
+        "bytes": 151
+      },
+      {
+        "index": 85,
+        "name": "fir_big_numeric_write_sum_from",
+        "start": 13608,
+        "end": 13847,
+        "bytes": 239
+      },
+      {
+        "index": 90,
+        "name": "fir_big_ext_Nat_add",
+        "start": 14458,
+        "end": 14889,
+        "bytes": 431
+      },
+      {
+        "index": 92,
+        "name": "fir_big_ext_Nat_sub",
+        "start": 14973,
+        "end": 15470,
+        "bytes": 497
+      },
+      {
+        "index": 94,
+        "name": "fir_nat_mul_generic",
+        "start": 15554,
+        "end": 16394,
+        "bytes": 840
+      },
+      {
+        "index": 95,
+        "name": "fir_nat_mod_generic",
+        "start": 16396,
+        "end": 17040,
+        "bytes": 644
+      },
+      {
+        "index": 96,
+        "name": "fir_ext_Nat_mul",
+        "start": 17042,
+        "end": 17507,
+        "bytes": 465
+      },
+      {
+        "index": 97,
+        "name": "fir_ext_Nat_mod",
+        "start": 17509,
+        "end": 17701,
+        "bytes": 192
+      },
+      {
+        "index": 98,
+        "name": "fir_ext_Nat_shiftRight",
+        "start": 17703,
+        "end": 18613,
+        "bytes": 910
+      }
+    ]
+  },
+  "weighting": "Observed timeDeltas in microseconds; preceding interval assigned to ending sample, clipped at profile end. Inclusive symbols counted once per stack; never sum inclusive rows. No phase slicing or clock-origin assumptions.",
+  "samples": 2061,
+  "requestedIntervalUs": 1000,
+  "profileDurationMs": 2200.382,
+  "attributedMs": 2199.413,
+  "unobservedTailMs": 0.969,
+  "callerCoverage": {
+    "rootOnlyWasm": [
+      {
+        "name": "fir_big_numeric_magnitude_high",
+        "ms": 6.297,
+        "percent": 0.2863036637502825
+      },
+      {
+        "name": "fir_big_numeric_allocate",
+        "ms": 5.245,
+        "percent": 0.2384727197665923
+      },
+      {
+        "name": "fir_dec_once",
+        "ms": 3.168,
+        "percent": 0.14403843207255754
+      },
+      {
+        "name": "fir_big_numeric_magnitude_low",
+        "ms": 3.166,
+        "percent": 0.14394749871897639
+      },
+      {
+        "name": "fir_big_numeric_validate_natural",
+        "ms": 2.114,
+        "percent": 0.09611655473528619
+      },
+      {
+        "name": "fir_big_numeric_natural_low",
+        "ms": 2.113,
+        "percent": 0.09607108805849561
+      },
+      {
+        "name": "fir_big_numeric_write_sum_from",
+        "ms": 1.068,
+        "percent": 0.04855841081233948
+      },
+      {
+        "name": "fir_big_numeric_natural_count",
+        "ms": 1.058,
+        "percent": 0.048103744044433676
+      }
+    ],
+    "rootOnlyWasmPercent": 1.1016121119589635,
+    "caveat": "Root-only Wasm samples have resolved leaf symbols but no usable caller ancestry. Inclusive shares are observed stack shares, not a claim of complete unwinding."
+  },
+  "buckets": [
+    {
+      "name": "resolved Wasm",
+      "ms": 2176.75,
+      "percent": 98.96958870389508
+    },
+    {
+      "name": "JavaScript",
+      "ms": 22.663,
+      "percent": 1.0304112961049152
+    }
+  ],
+  "self": [
+    {
+      "name": "fir_big_numeric_validate_natural",
+      "ms": 344.47,
+      "percent": 15.661906154051103
+    },
+    {
+      "name": "fir_nat_mod_generic",
+      "ms": 343.487,
+      "percent": 15.617212410765962
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 236.997,
+      "percent": 10.775465999337095
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 203.004,
+      "percent": 9.22991725519491
+    },
+    {
+      "name": "fir_big_numeric_allocate",
+      "ms": 201.839,
+      "percent": 9.176948576733883
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 187.986,
+      "percent": 8.547098703153978
+    },
+    {
+      "name": "fir_big_ext_Nat_sub",
+      "ms": 124.765,
+      "percent": 5.672649929776718
+    },
+    {
+      "name": "fir_big_numeric_compare_at",
+      "ms": 116.323,
+      "percent": 5.2888202443106405
+    },
+    {
+      "name": "fir_big_ext_Nat_add",
+      "ms": 112.122,
+      "percent": 5.097814735113414
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 101.884,
+      "percent": 4.632326898131456
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 62.274,
+      "percent": 2.831391830456581
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 31.794,
+      "percent": 1.4455675218797015
+    },
+    {
+      "name": "Bench.powMod",
+      "ms": 31.638,
+      "percent": 1.4384747203003712
+    },
+    {
+      "name": "fir_numeric_natural_sum",
+      "ms": 26.456,
+      "percent": 1.2028664011715853
+    },
+    {
+      "name": "fir_heap_alloc",
+      "ms": 22.167,
+      "percent": 1.0078598244167876
+    },
+    {
+      "name": "post",
+      "ms": 21.607,
+      "percent": 0.9823984854140627
+    },
+    {
+      "name": "fir_numeric_allocate_one_limb",
+      "ms": 14.788,
+      "percent": 0.6723612163790975
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 6.282,
+      "percent": 0.2856216635984237
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 4.224,
+      "percent": 0.19205124276341004
+    },
+    {
+      "name": "fir_ext_Nat_mod",
+      "ms": 3.187,
+      "percent": 0.14490229893157858
+    },
+    {
+      "name": "List.all._at_.Bench.isPrime.spec_0",
+      "ms": 1.063,
+      "percent": 0.048331077428386576
+    },
+    {
+      "name": "allocateNatural",
+      "ms": 1.056,
+      "percent": 0.04801281069085251
+    }
+  ],
+  "inclusive": [
+    {
+      "name": "(root)",
+      "ms": 2199.413,
+      "percent": 100
+    },
+    {
+      "name": "<anonymous@file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs:0>",
+      "ms": 2175.184,
+      "percent": 98.89838788804104
+    },
+    {
+      "name": "call",
+      "ms": 2153.577,
+      "percent": 97.91598940262696
+    },
+    {
+      "name": "List.all._at_.Bench.isPrime.spec_0",
+      "ms": 2152.521,
+      "percent": 97.86797659193613
+    },
+    {
+      "name": "Bench.isPrime",
+      "ms": 2152.521,
+      "percent": 97.86797659193613
+    },
+    {
+      "name": "js-to-wasm:i:i",
+      "ms": 2152.521,
+      "percent": 97.86797659193613
+    },
+    {
+      "name": "Bench.mrRound",
+      "ms": 2151.458,
+      "percent": 97.81964551450774
+    },
+    {
+      "name": "Bench.powMod",
+      "ms": 2150.388,
+      "percent": 97.77099617034182
+    },
+    {
+      "name": "fir_nat_mod_generic",
+      "ms": 2038.461,
+      "percent": 92.68204743720257
+    },
+    {
+      "name": "fir_ext_Nat_mod",
+      "ms": 394.672,
+      "percent": 17.944424262291804
+    },
+    {
+      "name": "fir_big_numeric_validate_natural",
+      "ms": 344.47,
+      "percent": 15.661906154051103
+    },
+    {
+      "name": "fir_big_ext_Nat_add",
+      "ms": 342.48,
+      "percent": 15.57142746723785
+    },
+    {
+      "name": "fir_big_ext_Nat_sub",
+      "ms": 249.57,
+      "percent": 11.347118526625058
+    },
+    {
+      "name": "fir_big_numeric_write_sum_from",
+      "ms": 236.997,
+      "percent": 10.775465999337095
+    },
+    {
+      "name": "fir_big_numeric_magnitude_high",
+      "ms": 203.004,
+      "percent": 9.22991725519491
+    },
+    {
+      "name": "fir_big_numeric_allocate",
+      "ms": 201.839,
+      "percent": 9.176948576733883
+    },
+    {
+      "name": "fir_dec_once",
+      "ms": 187.986,
+      "percent": 8.547098703153978
+    },
+    {
+      "name": "fir_big_numeric_compare_at",
+      "ms": 118.366,
+      "percent": 5.381708664993796
+    },
+    {
+      "name": "fir_big_numeric_magnitude_low",
+      "ms": 101.884,
+      "percent": 4.632326898131456
+    },
+    {
+      "name": "fir_big_numeric_natural_low",
+      "ms": 62.274,
+      "percent": 2.831391830456581
+    },
+    {
+      "name": "fir_numeric_natural_sum",
+      "ms": 58.136,
+      "percent": 2.643250721897161
+    },
+    {
+      "name": "fir_numeric_allocate_one_limb",
+      "ms": 36.955,
+      "percent": 1.6802210407958853
+    },
+    {
+      "name": "fir_big_numeric_natural_count",
+      "ms": 31.794,
+      "percent": 1.4455675218797015
+    },
+    {
+      "name": "fir_heap_alloc",
+      "ms": 22.167,
+      "percent": 1.0078598244167876
+    },
+    {
+      "name": "post",
+      "ms": 21.607,
+      "percent": 0.9823984854140627
+    },
+    {
+      "name": "<anonymous@node:internal/util:478>",
+      "ms": 21.607,
+      "percent": 0.9823984854140627
+    },
+    {
+      "name": "fn",
+      "ms": 21.607,
+      "percent": 0.9823984854140627
+    },
+    {
+      "name": "fir_big_numeric_natural_high",
+      "ms": 6.282,
+      "percent": 0.2856216635984237
+    },
+    {
+      "name": "fir_ext_Nat_mul",
+      "ms": 5.28,
+      "percent": 0.24006405345426257
+    },
+    {
+      "name": "fir_nat_mul_generic",
+      "ms": 4.224,
+      "percent": 0.19205124276341004
+    },
+    {
+      "name": "allocateNatural",
+      "ms": 1.056,
+      "percent": 0.04801281069085251
+    },
+    {
+      "name": "fir_ext_Nat_shiftRight",
+      "ms": 1.055,
+      "percent": 0.047967344014061934
+    }
+  ],
+  "selectedStacks": [
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic",
+      "ms": 343.487,
+      "percent": 15.617212410765962
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_validate_natural",
+      "ms": 230.374,
+      "percent": 10.474340198953085
+    },
+    {
+      "name": "fir_dec_once: fir_dec_once",
+      "ms": 187.986,
+      "percent": 8.547098703153978
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_dec_once",
+      "ms": 180.596,
+      "percent": 8.211099961671591
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_write_sum_from",
+      "ms": 163.037,
+      "percent": 7.412750583905797
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_magnitude_high",
+      "ms": 136.52,
+      "percent": 6.207110715449986
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_allocate",
+      "ms": 126.757,
+      "percent": 5.763219549943553
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub",
+      "ms": 123.709,
+      "percent": 5.6246371190858655
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add",
+      "ms": 103.649,
+      "percent": 4.71257558266683
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_compare_at",
+      "ms": 94.061,
+      "percent": 4.276641085598749
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_magnitude_low",
+      "ms": 77.569,
+      "percent": 3.526804651968503
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_write_sum_from",
+      "ms": 70.784,
+      "percent": 3.218313249944417
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_allocate",
+      "ms": 64.564,
+      "percent": 2.9355105203070093
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_validate_natural",
+      "ms": 55.916,
+      "percent": 2.542314699422073
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_validate_natural",
+      "ms": 48.651,
+      "percent": 2.2119992925385095
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_natural_low",
+      "ms": 40.079,
+      "percent": 1.8222589390896569
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_magnitude_high",
+      "ms": 29.629,
+      "percent": 1.3471321666280958
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_natural_count",
+      "ms": 17.031,
+      "percent": 0.7743429724203685
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_compare_at",
+      "ms": 15.902,
+      "percent": 0.7230110943238037
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_numeric_natural_sum → fir_numeric_allocate_one_limb → fir_heap_alloc",
+      "ms": 15.83,
+      "percent": 0.7197374935948819
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_numeric_natural_sum",
+      "ms": 14.816,
+      "percent": 0.6736342833292337
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_magnitude_low",
+      "ms": 14.811,
+      "percent": 0.6734069499452808
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_magnitude_high",
+      "ms": 13.696,
+      "percent": 0.6227116053237841
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_numeric_natural_sum",
+      "ms": 11.64,
+      "percent": 0.5292321178423516
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_natural_low",
+      "ms": 9.528,
+      "percent": 0.4332064964606465
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_numeric_natural_sum → fir_numeric_allocate_one_limb",
+      "ms": 6.342,
+      "percent": 0.28834966420585856
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_numeric_natural_sum → fir_numeric_allocate_one_limb",
+      "ms": 5.282,
+      "percent": 0.24015498680784375
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_natural_count",
+      "ms": 5.228,
+      "percent": 0.2376997862611524
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_numeric_natural_sum → fir_numeric_allocate_one_limb → fir_heap_alloc",
+      "ms": 4.226,
+      "percent": 0.19214217611699122
+    },
+    {
+      "name": "fir_nat_mul_generic: fir_nat_mul_generic",
+      "ms": 4.224,
+      "percent": 0.19205124276341004
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_natural_high",
+      "ms": 3.183,
+      "percent": 0.14472043222441625
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_numeric_allocate_one_limb",
+      "ms": 3.164,
+      "percent": 0.14385656536539523
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_natural_low",
+      "ms": 2.113,
+      "percent": 0.09607108805849561
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_numeric_allocate_one_limb → fir_heap_alloc",
+      "ms": 2.111,
+      "percent": 0.09598015470491446
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_numeric_compare_at → fir_big_numeric_natural_high",
+      "ms": 2.043,
+      "percent": 0.092888420683155
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_add → fir_big_numeric_natural_count",
+      "ms": 1.077,
+      "percent": 0.0489676109034547
+    },
+    {
+      "name": "fir_nat_mod_generic: fir_nat_mod_generic → fir_big_ext_Nat_sub → fir_big_numeric_natural_high",
+      "ms": 1.056,
+      "percent": 0.04801281069085251
+    }
+  ],
+  "callerByLeaf": {
+    "fir_nat_mod_generic": [
+      {
+        "name": "Bench.powMod",
+        "ms": 277.881,
+        "percent": 12.634325613243169
+      },
+      {
+        "name": "fir_ext_Nat_mod",
+        "ms": 65.606,
+        "percent": 2.9828867975227933
+      }
+    ],
+    "fir_dec_once": [
+      {
+        "name": "fir_nat_mod_generic",
+        "ms": 180.596,
+        "percent": 8.211099961671591
+      },
+      {
+        "name": "Bench.powMod",
+        "ms": 4.222,
+        "percent": 0.19196030940982892
+      },
+      {
+        "name": "(root)",
+        "ms": 3.168,
+        "percent": 0.14403843207255754
+      }
+    ],
+    "fir_nat_mul_generic": [
+      {
+        "name": "fir_ext_Nat_mul",
+        "ms": 4.224,
+        "percent": 0.19205124276341004
+      }
+    ]
+  }
+}

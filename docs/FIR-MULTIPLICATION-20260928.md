@@ -6,6 +6,10 @@ fibBits(10,000) **377×**, and fibBits(100,000) **1,021×**. The loop and partit
 controls remain within roughly 3% of their baseline medians. Miller–Rabin at
 127 bits improves only 1.41× and remains a separate performance problem.
 
+The [remaining-hotspot profiles](FIR-REMAINING-HOTSPOTS-20260928.md) now attribute
+that gap to generic remainder, and Mertens's cost chiefly to generic signed
+arithmetic plus remainder. They identify the next implementation experiments.
+
 This evaluates FIR `340f4612ac622aa39d6a870528f96d6b827d97b8`, accepted by FIR
 root after its integration gates, against the previous client producer
 `4ae9445c3eb7a2ff72fec9a87d769c976f9ab11a`. Both use the same exact **Lean 4.34.1**

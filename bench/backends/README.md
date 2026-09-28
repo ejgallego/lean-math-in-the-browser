@@ -98,6 +98,13 @@ contains bounded reproduction commands, exact symbol-resolution checks and
 the multiplication/addition hotspot findings. These diagnostics do not rebuild
 or modify the packages.
 
+The same profiler now accepts an explicit workload before the input:
+`profile-fir.mjs MANIFEST OUT_DIR phases|sample fibBits|isPrime|mertens INPUT REPS`.
+For `isPrime`, input is the case's bit-length label, resolved to the exact
+reference argument. The original five-argument Fibonacci commands still work.
+See the [remaining-hotspot report](../../docs/FIR-REMAINING-HOTSPOTS-20260928.md)
+for the bounded primality and Mertens recipes.
+
 The original module-wise replay issue is preserved as a diagnostic path:
 
 ```sh
