@@ -1,0 +1,92 @@
+{
+  "method": "Parse WebAssembly code section; compare each encoded function body by exact inventory name, size and SHA-256. This is deterministic code evidence, not timing attribution.",
+  "baselineArtifact": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-intneg-05e0/.deps/math-browser-fir/_build/lifePopulation.t3D6qm/lifePopulation.wasm",
+  "candidateArtifact": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/lifePopulation.pgsZzS/lifePopulation.wasm",
+  "baselineModuleSha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27",
+  "candidateModuleSha256": "9357368898056c6f65ebd914d7d00a7aac133742bc7bffb6096578ecf5806eb1",
+  "baselineFunctionCount": 80,
+  "candidateFunctionCount": 80,
+  "unchangedNeighbourLambda": true,
+  "changedBodies": {
+    "Bench.neighbours": {
+      "old": {
+        "bytes": 1343,
+        "sha256": "d1c8cf289c46828f8a4024ca63464a7042c71c09b8bbbd86680b3b9cc3ae5f5e"
+      },
+      "new": {
+        "bytes": 1339,
+        "sha256": "0c0e4baa9a3eeadcf6e462b3c24dc3987be09c4ad4ad9a2a3a2d729daade3bb6"
+      }
+    },
+    "Bench.soup": {
+      "old": {
+        "bytes": 826,
+        "sha256": "e157b0f9fe47ab9159e50a14450536c8ab39330c827c06eb6e178c6211d54fc9"
+      },
+      "new": {
+        "bytes": 822,
+        "sha256": "b755c6d9833cfd7ccb9ea2d0d27b6a7d6c497ded9b492bcc783c9ece4bb8ebae"
+      }
+    },
+    "Bench.stepCells": {
+      "old": {
+        "bytes": 1737,
+        "sha256": "edfb9c0d5100df5ee979d956039a50a8fb7688b4085573300408ba5b2747cc40"
+      },
+      "new": {
+        "bytes": 3079,
+        "sha256": "bbad3be1df96644d90b36cdca24ea0fb612c672cee1310472cc22dda62cab928"
+      }
+    },
+    "fir_box_uint8": {
+      "old": {
+        "bytes": 70,
+        "sha256": "500d930897083430914cf50180ea637e678b90f840f54aa29aef0d2625987187"
+      },
+      "new": {
+        "bytes": 24,
+        "sha256": "8500796aa564463db94a86d99ddbe21a34fbc8e4c9f7e4f0ae36356f7113f8f8"
+      }
+    },
+    "fir_ext_Nat_mod": {
+      "old": {
+        "bytes": 192,
+        "sha256": "daeaa838600c2b46b35b77833674d83be78c8981bf504b6707eaacf8e7798d1d"
+      },
+      "new": {
+        "bytes": 166,
+        "sha256": "7d2a0eae9ca2ba9419171ff27e4628b8601307c98bc6800e0acfd7e5b6c176d5"
+      }
+    },
+    "fir_nat_mod_generic": {
+      "old": {
+        "bytes": 644,
+        "sha256": "856c5f4b05ca832eb4854fb03320b6e759c43333a5503ca9b8ebef563d834e9f"
+      },
+      "new": {
+        "bytes": 466,
+        "sha256": "26bb05de5b635d5f7ed80ef780da0f0b016604d8ef82f6569b518acfd91350a1"
+      }
+    },
+    "fir_release_0": {
+      "old": {
+        "bytes": 40,
+        "sha256": "e320e077bd3443367df4e452a36784294b4f45ab5f7f67c78ad73e9790bea964"
+      },
+      "new": {
+        "bytes": 31,
+        "sha256": "6ae3bc55a3da60587a2febaa57822fd1e83aebf1d9cc67c817ed96ac283eca3e"
+      }
+    },
+    "fir_unbox_uint8": {
+      "old": {
+        "bytes": 109,
+        "sha256": "f5a69f2466f830f1d146252c7c4262b999192eaf0bc7a53c623ca3deb72f389f"
+      },
+      "new": {
+        "bytes": 63,
+        "sha256": "c950ba145de00db924cd13abbb7668b1a6ec826f3e8afac67619d549706b1b61"
+      }
+    }
+  }
+}

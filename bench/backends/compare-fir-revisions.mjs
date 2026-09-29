@@ -40,10 +40,12 @@ const variants = Object.fromEntries([
 const fullSelection = [
   ['tunnell', 1000003], ['collatzRecord', 100000], ['primeCount', 1000000],
   ['mertens', 1000000], ['partitions', 3000], ['fib', 10000], ['fibBits', 10000],
-  ['partitionsBits', 3000], ['isPrime', 127], ['lifePopulation', 100], ['fibBits', 100000],
+  ['partitionsBits', 3000], ['isPrime', 61], ['isPrime', 127], ['lifePopulation', 100], ['fibBits', 100000],
 ];
 const selection = chosenWorkload === 'mertens'
   ? [['mertens', 100000], ['mertens', 1000000]]
+  : chosenWorkload === 'isPrime'
+    ? [['isPrime', 61], ['isPrime', 127]]
   : chosenWorkload ? fullSelection.filter(([w]) => w === chosenWorkload) : fullSelection;
 assert.ok(selection.length, `unknown workload: ${chosenWorkload}`);
 const orders = Array.from({ length: 10 }, (_, i) => i % 2

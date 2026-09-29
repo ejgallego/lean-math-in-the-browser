@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "producers": [
+    {
+      "commit": "05e0febe5fdd3c947e31d1ae661c73d36cfcb80e",
+      "clean": true,
+      "toolchain": "leanprover/lean4:v4.34.1",
+      "sourceView": "ordinary",
+      "capture": "unit",
+      "sources": [
+        {
+          "path": "Tunnell.lean",
+          "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+          "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931"
+        },
+        {
+          "path": "Bench.lean",
+          "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+          "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3"
+        }
+      ],
+      "templates": {
+        "prepare.py": "8075898717fb2c2b737a5a6e1e9dff95caf57756ec6ff572ba8126b119adadd2",
+        "Emit.lean": "c69b8c7a40a3038dd78ae134e0184204e303b69dca7a9b5fffe9106adce61f71",
+        "build-fir.sh": "92aceb3846ac26aaabb5c6480e304462bd2fe4a5912703135e36a2c97692c8ca",
+        "emit-fir.mjs": "22f2f2b05bf1fedbe406339402d7690b3e08708cce2750a81a24620b9e5c4281"
+      },
+      "artifactSha256": {
+        "tunnell": "323c5f4c64f6e1f789922908d9b3988975e934b93e4041eed02745e2cd5859e1",
+        "collatzRecord": "6f4ade4f54d97f7e3d3580c80b874d8971139fe9f53100da8b12da0f58678acd",
+        "primeCount": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd",
+        "mertens": "b16fbb05279f7679503f84097fa9a1c7082c461bdf9689a1453b4940aa624882",
+        "partitions": "32b84f188a968ee17503ee22a6663afe9e55f158592542cada1243843839ba69",
+        "fib": "20a672068dce8d457a82141a39559f56890b5b47ec1a5c66a28010fd38a40682",
+        "fibBits": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5",
+        "partitionsBits": "7733eacb4412183adf75b42b69e2e127982b7f853bafc5ff41f2b11bf067d1da",
+        "isPrime": "8b675cdaaabe10c87e26db030316c0dc71330bc89a3bc66d853b1b8f22b84d48",
+        "lifePopulation": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27"
+      },
+      "artifactBytes": {
+        "tunnell": 25931,
+        "collatzRecord": 12186,
+        "primeCount": 15802,
+        "mertens": 22082,
+        "partitions": 17027,
+        "fib": 14882,
+        "fibBits": 14919,
+        "partitionsBits": 17299,
+        "isPrime": 18842,
+        "lifePopulation": 21543
+      }
+    },
+    {
+      "commit": "94de4678b44d0d940436247543f38c156b6f611c",
+      "clean": true,
+      "toolchain": "leanprover/lean4:v4.34.1",
+      "sourceView": "ordinary",
+      "capture": "unit",
+      "sources": [
+        {
+          "path": "Tunnell.lean",
+          "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+          "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931"
+        },
+        {
+          "path": "Bench.lean",
+          "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+          "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3"
+        }
+      ],
+      "templates": {
+        "prepare.py": "8075898717fb2c2b737a5a6e1e9dff95caf57756ec6ff572ba8126b119adadd2",
+        "Emit.lean": "c69b8c7a40a3038dd78ae134e0184204e303b69dca7a9b5fffe9106adce61f71",
+        "build-fir.sh": "92aceb3846ac26aaabb5c6480e304462bd2fe4a5912703135e36a2c97692c8ca",
+        "emit-fir.mjs": "22f2f2b05bf1fedbe406339402d7690b3e08708cce2750a81a24620b9e5c4281"
+      },
+      "artifactSha256": {
+        "tunnell": "ed0f3ef776fd1f7e667e19211b6f38af2e4d22ccfcf846316491247bcae7e16e",
+        "collatzRecord": "b9d38807dd9ed04201282cf78491bf2f8402502675e9c50120741455f7334653",
+        "primeCount": "4e3f332aff182a5e144957f56d58b16508cde383e3fc660959db052f1ea21da1",
+        "mertens": "8931339e7efaee0b80f2da4faf964c5e3db8993104471a06a1c0193c8df798c1",
+        "partitions": "c69c71c70600b0cf03258afb842c63352aaad83e898c88d45baadae7f9b32d88",
+        "fib": "f459506522cd67a8b7636021767d7e304037dc62d34c2e757492278badcf5069",
+        "fibBits": "7aa0b5f146a77bcf16ce6c63bc381989d1317b7f7a72704881b6d4cbab2b1043",
+        "partitionsBits": "f9274ff54bdae18051dddc31767f441ab1a82b8e0e3318ce40eda32ad52253b9",
+        "isPrime": "7a16eb88ba5524d81e1e71550e087dce71d30892c115d5f050ac7e8d0aa79d04",
+        "lifePopulation": "9357368898056c6f65ebd914d7d00a7aac133742bc7bffb6096578ecf5806eb1"
+      },
+      "artifactBytes": {
+        "tunnell": 25688,
+        "collatzRecord": 11969,
+        "primeCount": 16283,
+        "mertens": 22573,
+        "partitions": 16809,
+        "fib": 14665,
+        "fibBits": 14702,
+        "partitionsBits": 17082,
+        "isPrime": 18621,
+        "lifePopulation": 22572
+      }
+    }
+  ],
+  "shared": {
+    "integration/talos/artifact/concrete-host.mjs": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82",
+    "integration/talos/artifact/module-client.mjs": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b",
+    "integration/lcnf-c-wasm/emscripten-loader.mjs": "7402cd28f0e29cbc07050fed6371aded18ca21d4a6dcd3338aa4ed5c25286578"
+  },
+  "changedArtifacts": [
+    "tunnell",
+    "collatzRecord",
+    "primeCount",
+    "mertens",
+    "partitions",
+    "fib",
+    "fibBits",
+    "partitionsBits",
+    "isPrime",
+    "lifePopulation"
+  ],
+  "checkHarnessSha256": "ab2ed4425c1162d1c9cbeb3c3974fa1b6706543c2009b76d4e177aaa0c286ce9",
+  "referenceSha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+}

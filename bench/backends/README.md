@@ -1,5 +1,14 @@
 # FIR backend preparation
 
+The [29 September rebenchmark](../../docs/FIR-UPDATE-20260929.md) uses clean
+current-main FIR `94de4678b` at Lean 4.34.1, staged under
+`.deps/fir-producer-main-94de`. Its isolated natural-remainder comparison
+uses exact candidate `faee469e5`, staged under
+`.deps/fir-producer-natmod-faee`. The frozen candidate rebuild matches all
+ten FIR-root package hashes. `compare-fir-revisions.mjs` now includes both
+61- and 127-bit primality in its full selection; `--workload isPrime` selects
+just those two. The full five-backend selection still uses 127 bits.
+
 The [small-negation evaluation](../../docs/FIR-INT-NEG-20260928.md) tests
 accepted FIR `05e0febe5` on Lean 4.34.1, prepared under
 `.deps/fir-producer-intneg-05e0`. Only the Mertens package changes from the

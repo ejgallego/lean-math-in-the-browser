@@ -1,0 +1,433 @@
+{
+  "status": "passed",
+  "mode": "sample",
+  "workload": "isPrime",
+  "input": 127,
+  "argument": "170141183460469231731687303715884105727",
+  "reps": 20,
+  "warmups": 1,
+  "started": "2026-09-29T16:54:24.600Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+    ".deps/fir-producer-main-94de/.deps/math-browser-fir/_build/campaign.pEV2HZ/manifest.json",
+    ".deps/fir-producer-main-94de/.deps/math-browser-fir/_profiles/prime127-sample",
+    "sample",
+    "isPrime",
+    "127",
+    "20"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    2.64,
+    2.75,
+    3.84
+  ],
+  "producerCommit": "94de4678b44d0d940436247543f38c156b6f611c",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "artifact": {
+    "workload": "isPrime",
+    "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm",
+    "sha256": "7a16eb88ba5524d81e1e71550e087dce71d30892c115d5f050ac7e8d0aa79d04",
+    "descriptorSha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474",
+    "buildIdentitySha256": "ba68ec15704de069bbd75bc82508b729697f0402a7d0f7a96bb51adadbadf777",
+    "bytes": 18621
+  },
+  "expectedSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+  "manifestSha256": "c803c7b47e81bb49b7c6a50276d8e9c82731ac649355debdfd7e2fd57f5fc039",
+  "files": [
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm",
+      "sha256": "7a16eb88ba5524d81e1e71550e087dce71d30892c115d5f050ac7e8d0aa79d04"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm.functions.json",
+      "sha256": "903df4340083d0d62f479f95630144aefbf12943aabd49c8bbf6c5710784a7a7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm.lcnf",
+      "sha256": "69d81151713aa16dedaaa29e122790c4d0c2eddc5945c98e8560c904e5eba786"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/build-identity.json",
+      "sha256": "ba68ec15704de069bbd75bc82508b729697f0402a7d0f7a96bb51adadbadf777"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/profile-fir.mjs",
+      "sha256": "a14e65b7286565180a41231fe9bac40174197107b5b4ae0b4ef3d0e17293140c"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "sampling": {
+    "api": "Node inspector Profiler",
+    "intervalUs": 1000,
+    "scope": "Main Node isolate, measured call loop including validation, excluding instantiation and warmup"
+  },
+  "boundary": "marshal = Nat encoding and host frontier sync; execute = raw Wasm entry only; decode = view refresh and typed result copy; cleanup = cache-aware rewind and host bookkeeping. Total independently timed. Correctness hash and warm-frontier checks outside total.",
+  "rows": [
+    {
+      "repetition": 0,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.0878150000000062,
+      "executeMs": 78.147243,
+      "decodeMs": 0.03777099999999223,
+      "cleanupMs": 0.019867000000004964,
+      "totalMs": 78.292696,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 1,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.09635099999999852,
+      "executeMs": 78.329456,
+      "decodeMs": 0.029265000000009422,
+      "cleanupMs": 0.005560000000002674,
+      "totalMs": 78.460632,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 2,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.05259999999998399,
+      "executeMs": 77.36960700000003,
+      "decodeMs": 0.020287999999993644,
+      "cleanupMs": 0.004728999999997541,
+      "totalMs": 77.447224,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 3,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.061055000000010295,
+      "executeMs": 76.69311300000004,
+      "decodeMs": 0.041127999999957865,
+      "cleanupMs": 0.005781000000013137,
+      "totalMs": 76.80107700000002,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 4,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.050223999999957414,
+      "executeMs": 75.99209400000001,
+      "decodeMs": 0.022972999999979038,
+      "cleanupMs": 0.005741000000057284,
+      "totalMs": 76.071032,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 5,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.05525399999999081,
+      "executeMs": 75.828214,
+      "decodeMs": 0.0159600000000637,
+      "cleanupMs": 0.004207999999948697,
+      "totalMs": 75.903636,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 6,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.05575499999997646,
+      "executeMs": 76.02033700000004,
+      "decodeMs": 0.006351999999992586,
+      "cleanupMs": 0.0029050000000552245,
+      "totalMs": 76.08534900000006,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 7,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.024145999999973355,
+      "executeMs": 76.18565699999999,
+      "decodeMs": 0.007895000000075925,
+      "cleanupMs": 0.00442899999995916,
+      "totalMs": 76.222127,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 8,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.09459800000001906,
+      "executeMs": 76.08732299999997,
+      "decodeMs": 0.02897399999994832,
+      "cleanupMs": 0.01391599999999471,
+      "totalMs": 76.22481099999993,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 9,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.034174000000007254,
+      "executeMs": 75.8202,
+      "decodeMs": 0.00814500000001317,
+      "cleanupMs": 0.0034469999999373613,
+      "totalMs": 75.86596599999996,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 10,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.01705200000003515,
+      "executeMs": 75.81260499999996,
+      "decodeMs": 0.0038880000000744985,
+      "cleanupMs": 0.0019929999999703796,
+      "totalMs": 75.83553800000004,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 11,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.009848999999917396,
+      "executeMs": 75.89856700000007,
+      "decodeMs": 0.0034570000000258005,
+      "cleanupMs": 0.0018929999998817948,
+      "totalMs": 75.9137659999999,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 12,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.010068999999930384,
+      "executeMs": 75.34449300000006,
+      "decodeMs": 0.019516999999950713,
+      "cleanupMs": 0.003727000000026237,
+      "totalMs": 75.37780599999996,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 13,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.03133900000011636,
+      "executeMs": 77.78330699999992,
+      "decodeMs": 0.023905000000013388,
+      "cleanupMs": 0.004437999999936437,
+      "totalMs": 77.84298899999999,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 14,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.03684999999995853,
+      "executeMs": 77.01701300000013,
+      "decodeMs": 0.01623099999983424,
+      "cleanupMs": 0.0037170000000514847,
+      "totalMs": 77.07381099999998,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 15,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.030467999999927997,
+      "executeMs": 77.06755900000007,
+      "decodeMs": 0.02161999999998443,
+      "cleanupMs": 0.006433000000015454,
+      "totalMs": 77.12608,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 16,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.05180799999993724,
+      "executeMs": 81.01911100000007,
+      "decodeMs": 0.016871999999921172,
+      "cleanupMs": 0.004008000000112588,
+      "totalMs": 81.09179900000004,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 17,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.031128000000080647,
+      "executeMs": 77.38946499999997,
+      "decodeMs": 0.01919699999984914,
+      "cleanupMs": 0.0038470000001780136,
+      "totalMs": 77.44363700000008,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 18,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.030396999999993568,
+      "executeMs": 77.28642100000002,
+      "decodeMs": 0.017233000000032916,
+      "cleanupMs": 0.004537999999911335,
+      "totalMs": 77.33858899999996,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    },
+    {
+      "repetition": 19,
+      "value": "true",
+      "raw": 1,
+      "marshalMs": 0.033063000000083775,
+      "executeMs": 76.79994399999987,
+      "decodeMs": 0.01007900000013251,
+      "cleanupMs": 0.0035769999999502033,
+      "totalMs": 76.84666300000004,
+      "memory": {
+        "before": 1744,
+        "peak": 5778440,
+        "after": 1744,
+        "bytes": 5832704
+      }
+    }
+  ],
+  "warmup": {
+    "value": "true",
+    "raw": 1,
+    "marshalMs": 0.23783800000000355,
+    "executeMs": 89.11555100000001,
+    "decodeMs": 0.030918999999983043,
+    "cleanupMs": 0.07328800000001934,
+    "totalMs": 89.45759600000002,
+    "memory": {
+      "before": 1024,
+      "peak": 5778344,
+      "after": 1744,
+      "bytes": 5832704
+    }
+  },
+  "profileSha256": "270070a4e8c0e35810a465c242dfefc72f9adb45f1ac84bda149fed1716c8125",
+  "finished": "2026-09-29T16:54:26.265Z",
+  "loadAfter": [
+    2.59,
+    2.74,
+    3.83
+  ]
+}

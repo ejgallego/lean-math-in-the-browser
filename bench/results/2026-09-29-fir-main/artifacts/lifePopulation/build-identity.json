@@ -1,0 +1,17 @@
+{
+  "workload": "lifePopulation",
+  "sourceView": "ordinary",
+  "capture": "unit",
+  "exitCode": 0,
+  "signal": null,
+  "error": "",
+  "producer": "94de4678b44d0d940436247543f38c156b6f611c",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "inputs": {
+    "Tunnell.lean": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931",
+    "Bench.lean": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3",
+    "Emit.lean": "c69b8c7a40a3038dd78ae134e0184204e303b69dca7a9b5fffe9106adce61f71",
+    "PREPARATION.json": "5df9dbd256b92c3ff160bb6da1084416fe4c2c8cd019bc441b93051c5df7e7ba"
+  },
+  "harnessSha256": "22f2f2b05bf1fedbe406339402d7690b3e08708cce2750a81a24620b9e5c4281"
+}

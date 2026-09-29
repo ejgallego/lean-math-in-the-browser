@@ -10,10 +10,11 @@ It is an experimental test bed, not a library or a production performance claim.
 The original mathematical programs, deployed browser demo and historical report
 are preserved.
 
-**Start with the [consolidated report](docs/REPORT.md).** It has one table of
-all five backends, with milliseconds and consistently oriented FIR-relative
-ratios. The [original report](docs/REPORT-ORIGINAL.md) retains the author's
-browser experiments and charts.
+**Start with the [consolidated report](docs/REPORT.md)** for the original
+review, then read the [current FIR rebenchmark](docs/FIR-UPDATE-20260929.md).
+Each has one five-backend table with milliseconds and FIR-relative ratios.
+The [original report](docs/REPORT-ORIGINAL.md) retains the author's browser
+experiments and charts.
 
 The review confirms substantial VIR slowdowns without finding a major client
 integration mistake. FIR improves selected loop/array workloads by roughly
@@ -29,6 +30,9 @@ new path: Mertens improves 1.31× at one million, though it remains 10.4× slowe
 than the C/Wasm baseline there.
 The [sieve, Collatz and Life profiles](docs/FIR-NEXT-THREE-PROFILES-20260928.md)
 cover the next three candidates and their distinct runtime costs.
+The [current-main rebenchmark](docs/FIR-UPDATE-20260929.md) validates the
+new remainder path: 61/127-bit primality improves about 1.3–1.4×, yet 127-bit
+FIR still takes 52.8× C/Wasm time; a repeated Life slowdown also needs review.
 The C/Wasm baseline helps distinguish interpreter costs from arithmetic and
 output conversion. These follow-up timings are Node measurements on one host;
 browser/Worker validation remains separate.

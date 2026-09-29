@@ -1,0 +1,1421 @@
+{
+  "status": "incomplete",
+  "timeoutMs": 30000,
+  "node": "v24.21.0",
+  "manifestSha256": "c803c7b47e81bb49b7c6a50276d8e9c82731ac649355debdfd7e2fd57f5fc039",
+  "harnessSha256": "ab2ed4425c1162d1c9cbeb3c3974fa1b6706543c2009b76d4e177aaa0c286ce9",
+  "adapterSha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad",
+  "referencesSha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+  "rows": [
+    {
+      "workload": "tunnell",
+      "x": 1003,
+      "elapsedMs": 1.2910290000000089,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1272,
+        "frontierAfter": 1192,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1192,
+        "peakFrontier": 1272,
+        "frontierAfter": 1192,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 10003,
+      "elapsedMs": 4.815241999999998,
+      "memory": {
+        "frontierBefore": 1192,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 100003,
+      "elapsedMs": 4.284391999999997,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "elapsedMs": 15.180596999999992,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 16480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 16480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1000003,
+      "elapsedMs": 14.354793999999998,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 16480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 16480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 100003,
+      "elapsedMs": 1.6992370000000108,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1480,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 10003,
+      "elapsedMs": 0.2577349999999967,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "tunnell",
+      "x": 1003,
+      "elapsedMs": 0.06516300000001252,
+      "memory": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1280,
+        "peakFrontier": 1360,
+        "frontierAfter": 1280,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 1000,
+      "elapsedMs": 2.9207660000000146,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 10000,
+      "elapsedMs": 12.129585999999989,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "elapsedMs": 155.28259599999996,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 100000,
+      "elapsedMs": 94.42161499999997,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 10000,
+      "elapsedMs": 7.615881999999942,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "collatzRecord",
+      "x": 1000,
+      "elapsedMs": 0.5553750000000264,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 1072,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000,
+      "elapsedMs": 0.8316849999999931,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9064,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9064,
+        "frontierAfter": 1024,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 10000,
+      "elapsedMs": 1.5459789999999884,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 81064,
+        "frontierAfter": 1024,
+        "bytes": 131072
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 81064,
+        "frontierAfter": 1024,
+        "bytes": 131072
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 100000,
+      "elapsedMs": 5.338365999999951,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 801104,
+        "frontierAfter": 1024,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 801104,
+        "frontierAfter": 1024,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "elapsedMs": 36.622768000000065,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8001224,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8001224,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000000,
+      "elapsedMs": 34.57955299999992,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8001224,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8001224,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 100000,
+      "elapsedMs": 2.9636669999999867,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 801104,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 801104,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 10000,
+      "elapsedMs": 0.33549199999993107,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 81064,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 81064,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "primeCount",
+      "x": 1000,
+      "elapsedMs": 0.044493999999986045,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9064,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "warm": {
+        "frontierBefore": 1024,
+        "peakFrontier": 9064,
+        "frontierAfter": 1024,
+        "bytes": 8060928
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000,
+      "elapsedMs": 1.8224099999999908,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 54664,
+        "frontierAfter": 17104,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 70744,
+        "frontierAfter": 17104,
+        "bytes": 131072
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 10000,
+      "elapsedMs": 7.810718999999949,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 916424,
+        "frontierAfter": 17104,
+        "bytes": 917504
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 916424,
+        "frontierAfter": 17104,
+        "bytes": 917504
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 100000,
+      "elapsedMs": 44.75777599999992,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 9031464,
+        "frontierAfter": 17104,
+        "bytes": 9043968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 9031464,
+        "frontierAfter": 17104,
+        "bytes": 9043968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "elapsedMs": 532.1135869999998,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 66361824,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 66361824,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000000,
+      "elapsedMs": 521.6512889999999,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 66361824,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 66361824,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 100000,
+      "elapsedMs": 33.89289099999996,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 9031464,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 9031464,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 10000,
+      "elapsedMs": 2.9004179999997177,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 916424,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 916424,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "mertens",
+      "x": 1000,
+      "elapsedMs": 0.2721120000001065,
+      "memory": {
+        "frontierBefore": 17104,
+        "peakFrontier": 70744,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "warm": {
+        "frontierBefore": 17104,
+        "peakFrontier": 70744,
+        "frontierAfter": 17104,
+        "bytes": 66387968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 100,
+      "elapsedMs": 0.7752689999997529,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 300,
+      "elapsedMs": 1.6834180000000742,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 196608
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 196608
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 1000,
+      "elapsedMs": 6.755432999999812,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 458752
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 458752
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "elapsedMs": 25.20932999999968,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 3000,
+      "elapsedMs": 25.455251999999746,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 1000,
+      "elapsedMs": 3.4578369999999268,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 300,
+      "elapsedMs": 0.3395789999999579,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitions",
+      "x": 100,
+      "elapsedMs": 0.050204000000121596,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 1000,
+      "elapsedMs": 0.956590000000233,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "elapsedMs": 0.31827900000007503,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 100000,
+      "elapsedMs": 10.46943199999987,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 131072
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 131072
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 1000000,
+      "elapsedMs": 593.5390910000001,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 1000000,
+      "elapsedMs": 602.9229089999999,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 100000,
+      "elapsedMs": 7.7439030000005005,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 10000,
+      "elapsedMs": 0.19209200000022975,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fib",
+      "x": 1000,
+      "elapsedMs": 0.07978999999977532,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 1000,
+      "elapsedMs": 0.8698770000000877,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "elapsedMs": 0.20715000000018335,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 100000,
+      "elapsedMs": 5.64112600000044,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 131072
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 131072
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 1000000,
+      "elapsedMs": 483.93046700000014,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 1000000,
+      "elapsedMs": 486.5672089999998,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 784832,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 100000,
+      "elapsedMs": 4.89382999999998,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 90112,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 10000,
+      "elapsedMs": 0.08676300000024639,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 11296,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "fibBits",
+      "x": 1000,
+      "elapsedMs": 0.010921000000053027,
+      "memory": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "warm": {
+        "frontierBefore": 1072,
+        "peakFrontier": 2856,
+        "frontierAfter": 1072,
+        "bytes": 786432
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 100,
+      "elapsedMs": 0.7660319999995409,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 65536
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 65536
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 300,
+      "elapsedMs": 1.3637059999991834,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 196608
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 196608
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 1000,
+      "elapsedMs": 5.88926199999969,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 458752
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 458752
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "elapsedMs": 24.75770999999986,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 3000,
+      "elapsedMs": 24.565287999999782,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 812312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 1000,
+      "elapsedMs": 3.4660219999996116,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 448312,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 300,
+      "elapsedMs": 0.31831899999997404,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 149432,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "partitionsBits",
+      "x": 100,
+      "elapsedMs": 0.02364399999987654,
+      "memory": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "warm": {
+        "frontierBefore": 1064,
+        "peakFrontier": 4184,
+        "frontierAfter": 1064,
+        "bytes": 851968
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 31,
+      "elapsedMs": 6.650625000000218,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 576648,
+        "frontierAfter": 1648,
+        "bytes": 589824
+      },
+      "warm": {
+        "frontierBefore": 1648,
+        "peakFrontier": 576696,
+        "frontierAfter": 1648,
+        "bytes": 589824
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 61,
+      "elapsedMs": 16.17918700000064,
+      "memory": {
+        "frontierBefore": 1648,
+        "peakFrontier": 8843496,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "warm": {
+        "frontierBefore": 1648,
+        "peakFrontier": 8843496,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 89,
+      "elapsedMs": 37.052756999999474,
+      "memory": {
+        "frontierBefore": 1648,
+        "peakFrontier": 4093464,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "warm": {
+        "frontierBefore": 1648,
+        "peakFrontier": 4093464,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "elapsedMs": 79.6957540000003,
+      "memory": {
+        "frontierBefore": 1648,
+        "peakFrontier": 5778344,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "warm": {
+        "frontierBefore": 1648,
+        "peakFrontier": 5778344,
+        "frontierAfter": 1648,
+        "bytes": 8847360
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 521,
+      "elapsedMs": 3059.8236239999987,
+      "memory": {
+        "frontierBefore": 1648,
+        "peakFrontier": 25707872,
+        "frontierAfter": 1648,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1648,
+        "peakFrontier": 25707872,
+        "frontierAfter": 1648,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 1279,
+      "status": "timeout",
+      "timeoutMs": 30000
+    },
+    {
+      "workload": "isPrime",
+      "x": 521,
+      "elapsedMs": 5395.453265999997,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 25707872,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1960,
+        "peakFrontier": 25708184,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 127,
+      "elapsedMs": 201.2857820000063,
+      "memory": {
+        "frontierBefore": 1960,
+        "peakFrontier": 5778656,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1960,
+        "peakFrontier": 5778656,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 89,
+      "elapsedMs": 93.72918500000378,
+      "memory": {
+        "frontierBefore": 1960,
+        "peakFrontier": 4093776,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1960,
+        "peakFrontier": 4093776,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 61,
+      "elapsedMs": 33.25982099999965,
+      "memory": {
+        "frontierBefore": 1960,
+        "peakFrontier": 8843808,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1960,
+        "peakFrontier": 8843808,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "isPrime",
+      "x": 31,
+      "elapsedMs": 4.397414999999455,
+      "memory": {
+        "frontierBefore": 1960,
+        "peakFrontier": 577008,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "warm": {
+        "frontierBefore": 1960,
+        "peakFrontier": 577008,
+        "frontierAfter": 1960,
+        "bytes": 25755648
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 10,
+      "elapsedMs": 143.41258299999754,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 30,
+      "elapsedMs": 80.55710700000054,
+      "memory": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "elapsedMs": 246.56579300000158,
+      "memory": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 100,
+      "elapsedMs": 237.6968029999989,
+      "memory": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 30,
+      "elapsedMs": 65.96714199999406,
+      "memory": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    },
+    {
+      "workload": "lifePopulation",
+      "x": 10,
+      "elapsedMs": 23.525212000000465,
+      "memory": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "warm": {
+        "frontierBefore": 4289168,
+        "peakFrontier": 4354768,
+        "frontierAfter": 4289168,
+        "bytes": 4390912
+      },
+      "status": "passed"
+    }
+  ]
+}

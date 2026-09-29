@@ -1,0 +1,89 @@
+{
+  "producer": "/home/egallego/lean/fir/.worktrees/wasm-generation",
+  "producerCommit": "faee469e5eb27f139a25527a3803318c24697721",
+  "sourceView": "ordinary",
+  "capture": "unit",
+  "artifacts": [
+    {
+      "workload": "tunnell",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/tunnell.wasm",
+      "sha256": "146b9295463c1ec0c8c2f031f5a9db6599df946790b2b142e83eea990fe13b1a",
+      "descriptorSha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5",
+      "buildIdentitySha256": "bfa0e100cee5950c05b90a2ed7b496716e67eae5c5a9c98f570bbb189d20c671",
+      "bytes": 25701
+    },
+    {
+      "workload": "collatzRecord",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/collatzRecord.wasm",
+      "sha256": "ae8ee33550687f7d00c2589650fd8f878c5c46d89163b20e148408f333b72c0c",
+      "descriptorSha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41",
+      "buildIdentitySha256": "ff859f661b2980c83d5cc70aa8e69e7a8d5110d9df4fb5cd8e829d06db30b625",
+      "bytes": 11982
+    },
+    {
+      "workload": "primeCount",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/primeCount.wasm",
+      "sha256": "b9ff639a63bf8f8ae4c31afe31ac9368289c2674edcc17363f21c119d4fa23f1",
+      "descriptorSha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718",
+      "buildIdentitySha256": "483e3c2d9f3a8081df5d7fc4a75db72b86d3e023b1f8689472b8892331f02d00",
+      "bytes": 15776
+    },
+    {
+      "workload": "mertens",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/mertens.wasm",
+      "sha256": "b5869b12d25ad96e2f4404f5d6c5edc1c683d115813c8df150edff4972ba290a",
+      "descriptorSha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+      "buildIdentitySha256": "a19bf97a0426fe5318c9d49fdae35722eb95d5c2518c59b25bf48f37e5b9d867",
+      "bytes": 21665
+    },
+    {
+      "workload": "partitions",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/partitions.wasm",
+      "sha256": "e58989934832f129ea49c3954d344e33b37eeb5908b025459892141677ece180",
+      "descriptorSha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0",
+      "buildIdentitySha256": "78e29364450f199c775139a87cb0e937290ab4e599f670784c9dac1c8a752c2a",
+      "bytes": 16822
+    },
+    {
+      "workload": "fib",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/fib.wasm",
+      "sha256": "9ce3c77df0315e2f620bcc727c845c9e394b0dfc2d03f4e6fceadb249849f44d",
+      "descriptorSha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1",
+      "buildIdentitySha256": "1e79b54302ab3c63121c824e87f67cade48d8fd6b3b1f7bfb9f27fcc9971e3c5",
+      "bytes": 14678
+    },
+    {
+      "workload": "fibBits",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/fibBits.wasm",
+      "sha256": "28fc3aee32e65c1de22f92fb62dd4af5ab41701b09b6eaf72e726fc9caa303f7",
+      "descriptorSha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7",
+      "buildIdentitySha256": "4208642d070ebcc34b0995865860949b494817b3f42d4efde9d4405c69ccc68a",
+      "bytes": 14715
+    },
+    {
+      "workload": "partitionsBits",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/partitionsBits.wasm",
+      "sha256": "c5ec4a7684e4b25ddf66ab6fde42fe1004773830b754972665970022a2ba38cc",
+      "descriptorSha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903",
+      "buildIdentitySha256": "4132721ec2eaa0c2ac4d3da5b9f442d99bcdb2df4e2855863c52c00c424ec069",
+      "bytes": 17095
+    },
+    {
+      "workload": "isPrime",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/isPrime.wasm",
+      "sha256": "75137de6cd7b0a3350d82c341950c9c8b350a13357b5baad8c5ef47aff6fd0f9",
+      "descriptorSha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474",
+      "buildIdentitySha256": "0a5d931d8554d466e297cf84b68e15a7f5dac993ffcf5d55da7406c04ab70134",
+      "bytes": 18638
+    },
+    {
+      "workload": "lifePopulation",
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/lifePopulation.wasm",
+      "sha256": "e675c4190195a67dce07c9e084d6759752e6098611713cd4ab22bf553aaf4f6b",
+      "descriptorSha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b",
+      "buildIdentitySha256": "a72b5f0c29a9792201136707f70aa2d5dff6e2494743cc3e7d06d49350567770",
+      "bytes": 21339
+    }
+  ],
+  "failures": []
+}

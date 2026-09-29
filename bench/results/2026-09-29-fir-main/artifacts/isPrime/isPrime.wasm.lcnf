@@ -1,0 +1,315 @@
+def Bench.twoAdic x.1 x.2 x.3 : obj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : obj
+  | Bool.true =>
+    dec x.1;
+    let _x.4 := ctor_0[Prod.mk] x.2 x.3;
+    return _x.4
+  | Bool.false =>
+    let one := 1;
+    let n.5 := Nat.sub x.1 one;
+    dec x.1;
+    jp _jp.6 _y.7 : obj :=
+      cases _y.7 : obj
+      | Bool.false =>
+        dec n.5;
+        let _x.8 := ctor_0[Prod.mk] x.2 x.3;
+        return _x.8
+      | Bool.true =>
+        let _x.9 := Nat.shiftRight x.2 one;
+        dec x.2;
+        let _x.10 := Nat.add x.3 one;
+        dec x.3;
+        let _x.11 := Bench.twoAdic n.5 _x.9 _x.10;
+        return _x.11;
+    let _x.12 := 2;
+    let _x.13 := Nat.mod x.2 _x.12;
+    let _x.14 := Nat.decEq _x.13 zero;
+    dec _x.13;
+    cases _x.14 : obj
+    | Bool.false =>
+      goto _jp.6 _x.14
+    | Bool.true =>
+      let _x.15 := Nat.decLt zero x.2;
+      goto _jp.6 _x.15
+
+def Bench.powMod @&m x.1 x.2 x.3 x.4 : tobj :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : tobj
+  | Bool.true =>
+    dec x.3;
+    dec x.2;
+    dec x.1;
+    return x.4
+  | Bool.false =>
+    let _x.5 := Nat.decEq x.3 zero;
+    cases _x.5 : tobj
+    | Bool.false =>
+      let one := 1;
+      let n.6 := Nat.sub x.1 one;
+      dec x.1;
+      let _x.7 := Nat.mul x.2 x.2;
+      let _x.8 := Nat.mod _x.7 m;
+      dec _x.7;
+      let _x.9 := 2;
+      let _x.10 := Nat.shiftRight x.3 one;
+      let _x.11 := Nat.mod x.3 _x.9;
+      dec x.3;
+      let _x.12 := Nat.decEq _x.11 one;
+      dec _x.11;
+      cases _x.12 : tobj
+      | Bool.false =>
+        dec x.2;
+        let _x.13 := Bench.powMod m n.6 _x.8 _x.10 x.4;
+        return _x.13
+      | Bool.true =>
+        let _x.14 := Nat.mul x.4 x.2;
+        dec x.2;
+        dec x.4;
+        let _x.15 := Nat.mod _x.14 m;
+        dec _x.14;
+        let _x.16 := Bench.powMod m n.6 _x.8 _x.10 _x.15;
+        return _x.16
+    | Bool.true =>
+      dec x.3;
+      dec x.2;
+      dec x.1;
+      return x.4
+
+def Bench.squaresHitMinusOne @&n x.1 x.2 : UInt8 :=
+  let zero := 0;
+  let isZero := Nat.decEq x.1 zero;
+  cases isZero : UInt8
+  | Bool.true =>
+    dec x.2;
+    dec x.1;
+    let _x.3 := 0;
+    return _x.3
+  | Bool.false =>
+    let _x.4 := Nat.mul x.2 x.2;
+    dec x.2;
+    let x := Nat.mod _x.4 n;
+    dec _x.4;
+    let _x.5 := 1;
+    let _x.6 := Nat.sub n _x.5;
+    let _x.7 := Nat.decEq x _x.6;
+    dec _x.6;
+    cases _x.7 : UInt8
+    | Bool.false =>
+      let n.8 := Nat.sub x.1 _x.5;
+      dec x.1;
+      let _x.9 := Bench.squaresHitMinusOne n n.8 x;
+      return _x.9
+    | Bool.true =>
+      dec x;
+      dec x.1;
+      return _x.7
+
+def Bench.mrRound @&n d @&s @&a : UInt8 :=
+  let _x.1 := Nat.log2 d;
+  let _x.2 := 2;
+  let _x.3 := Nat.add _x.1 _x.2;
+  dec _x.1;
+  let _x.4 := Nat.mod a n;
+  let _x.5 := 1;
+  let x := Bench.powMod n _x.3 _x.4 d _x.5;
+  jp _jp.6 _y.7 : UInt8 :=
+    cases _y.7 : UInt8
+    | Bool.false =>
+      let _x.8 := Nat.sub s _x.5;
+      let _x.9 := Bench.squaresHitMinusOne n _x.8 x;
+      return _x.9
+    | Bool.true =>
+      dec x;
+      return _y.7;
+  let _x.10 := Nat.decEq x _x.5;
+  cases _x.10 : UInt8
+  | Bool.false =>
+    let _x.11 := Nat.sub n _x.5;
+    let _x.12 := Nat.decEq x _x.11;
+    dec _x.11;
+    goto _jp.6 _x.12
+  | Bool.true =>
+    goto _jp.6 _x.10
+
+def List.all._at_.Bench.isPrime.spec_0 @&n fst.1 @&snd.2 @&x.3 : UInt8 :=
+  cases x.3 : UInt8
+  | List.nil =>
+    dec fst.1;
+    let _x.4 := 1;
+    return _x.4
+  | List.cons =>
+    let head.5 := oproj[0] x.3;
+    let tail.6 := oproj[1] x.3;
+    let _x.7 := 0;
+    let _x.8 := Nat.mod head.5 n;
+    let _x.9 := Nat.decEq _x.8 _x.7;
+    dec _x.8;
+    cases _x.9 : UInt8
+    | Bool.false =>
+      inc fst.1;
+      let _x.10 := Bench.mrRound n fst.1 snd.2 head.5;
+      cases _x.10 : UInt8
+      | Bool.false =>
+        dec fst.1;
+        return _x.10
+      | Bool.true =>
+        let _x.11 := List.all._at_.Bench.isPrime.spec_0 n fst.1 snd.2 tail.6;
+        return _x.11
+    | Bool.true =>
+      let _x.12 := List.all._at_.Bench.isPrime.spec_0 n fst.1 snd.2 tail.6;
+      return _x.12
+
+def Bench.isPrime._closed_0 : tobj :=
+  let _x.1 := ctor_0[List.nil];
+  let _x.2 := 41;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_1 : tobj :=
+  let _x.1 := Bench.isPrime._closed_0;
+  let _x.2 := 37;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_2 : tobj :=
+  let _x.1 := Bench.isPrime._closed_1;
+  let _x.2 := 31;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_3 : tobj :=
+  let _x.1 := Bench.isPrime._closed_2;
+  let _x.2 := 29;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_4 : tobj :=
+  let _x.1 := Bench.isPrime._closed_3;
+  let _x.2 := 23;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_5 : tobj :=
+  let _x.1 := Bench.isPrime._closed_4;
+  let _x.2 := 19;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_6 : tobj :=
+  let _x.1 := Bench.isPrime._closed_5;
+  let _x.2 := 17;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_7 : tobj :=
+  let _x.1 := Bench.isPrime._closed_6;
+  let _x.2 := 13;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_8 : tobj :=
+  let _x.1 := Bench.isPrime._closed_7;
+  let _x.2 := 11;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_9 : tobj :=
+  let _x.1 := Bench.isPrime._closed_8;
+  let _x.2 := 7;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_10 : tobj :=
+  let _x.1 := Bench.isPrime._closed_9;
+  let _x.2 := 5;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_11 : tobj :=
+  let _x.1 := Bench.isPrime._closed_10;
+  let _x.2 := 3;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime._closed_12 : tobj :=
+  let _x.1 := Bench.isPrime._closed_11;
+  let _x.2 := 2;
+  inc[persistent] _x.1;
+  let _x.3 := ctor_1[List.cons] _x.2 _x.1;
+  return _x.3
+
+def Bench.isPrime @&n : UInt8 :=
+  let _x.1 := 2;
+  let _x.2 := Nat.decLt n _x.1;
+  cases _x.2 : UInt8
+  | Bool.false =>
+    let _x.3 := 4;
+    let _x.4 := Nat.decLt n _x.3;
+    cases _x.4 : UInt8
+    | Bool.false =>
+      let _x.5 := Nat.mod n _x.1;
+      let _x.6 := 0;
+      let _x.7 := Nat.decEq _x.5 _x.6;
+      dec _x.5;
+      cases _x.7 : UInt8
+      | Bool.false =>
+        let _x.8 := Nat.log2 n;
+        let _x.9 := 1;
+        let _x.10 := Nat.add _x.8 _x.9;
+        dec _x.8;
+        let _x.11 := Nat.sub n _x.9;
+        let _x.12 := Bench.twoAdic _x.10 _x.11 _x.6;
+        let fst.13 := oproj[0] _x.12;
+        inc fst.13;
+        let snd.14 := oproj[1] _x.12;
+        inc snd.14;
+        dec[ref] _x.12;
+        let _x.15 := Bench.isPrime._closed_12;
+        let _x.16 := List.all._at_.Bench.isPrime.spec_0 n fst.13 snd.14 _x.15;
+        dec snd.14;
+        return _x.16
+      | Bool.true =>
+        return _x.4
+    | Bool.true =>
+      return _x.4
+  | Bool.true =>
+    let _x.17 := 0;
+    return _x.17
+
+def Nat.decLt @&n @&m : UInt8 :=
+  extern
+
+def Nat.mod @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.decEq @&n @&m : UInt8 :=
+  extern
+
+def Nat.log2 @&n : tobj :=
+  extern
+
+def Nat.add @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.sub @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.shiftRight @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern
+
+def Nat.mul @&a._@._internal._hyg.1 @&a._@._internal._hyg.2 : tobj :=
+  extern

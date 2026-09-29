@@ -1,0 +1,505 @@
+{
+  "producerCommit": "94de4678b44d0d940436247543f38c156b6f611c",
+  "qualification": {
+    "status": "incomplete",
+    "passedRows": 78,
+    "timedOutRows": 1
+  },
+  "paired": {
+    "paired.json": {
+      "loadBefore": [
+        13.06,
+        5.44,
+        4.86
+      ],
+      "loadAfter": [
+        18.8,
+        7.78,
+        5.66
+      ],
+      "results": [
+        {
+          "workload": "tunnell",
+          "input": 1000003,
+          "baselineMedianMs": 25.161655999999937,
+          "candidateMedianMs": 28.625619999999998,
+          "speedup": 0.878990778191003
+        },
+        {
+          "workload": "collatzRecord",
+          "input": 100000,
+          "baselineMedianMs": 236.26586799999995,
+          "candidateMedianMs": 199.51078949999976,
+          "speedup": 1.1842260190143763
+        },
+        {
+          "workload": "primeCount",
+          "input": 1000000,
+          "baselineMedianMs": 75.63915850000012,
+          "candidateMedianMs": 67.78594000000021,
+          "speedup": 1.1158532064318927
+        },
+        {
+          "workload": "mertens",
+          "input": 1000000,
+          "baselineMedianMs": 1131.9411105,
+          "candidateMedianMs": 1036.305517499999,
+          "speedup": 1.0922851334717525
+        },
+        {
+          "workload": "partitions",
+          "input": 3000,
+          "baselineMedianMs": 58.63326600000255,
+          "candidateMedianMs": 61.62037800000326,
+          "speedup": 0.9515239585190381
+        },
+        {
+          "workload": "fib",
+          "input": 10000,
+          "baselineMedianMs": 0.48048449999987497,
+          "candidateMedianMs": 0.4813204999991285,
+          "speedup": 0.9982631115872791
+        },
+        {
+          "workload": "fibBits",
+          "input": 10000,
+          "baselineMedianMs": 0.29344250000212924,
+          "candidateMedianMs": 0.3679325000011886,
+          "speedup": 0.7975443865415023
+        },
+        {
+          "workload": "partitionsBits",
+          "input": 3000,
+          "baselineMedianMs": 58.2487629999996,
+          "candidateMedianMs": 56.15871500000503,
+          "speedup": 1.0372168059756064
+        },
+        {
+          "workload": "isPrime",
+          "input": 61,
+          "baselineMedianMs": 42.11680449999403,
+          "candidateMedianMs": 31.52235649999784,
+          "speedup": 1.3360931470969475
+        },
+        {
+          "workload": "isPrime",
+          "input": 127,
+          "baselineMedianMs": 295.99533700000393,
+          "candidateMedianMs": 210.04097500000353,
+          "speedup": 1.4092266378024525
+        },
+        {
+          "workload": "lifePopulation",
+          "input": 100,
+          "baselineMedianMs": 173.03426250000484,
+          "candidateMedianMs": 198.00072699999873,
+          "speedup": 0.8739072079265949
+        },
+        {
+          "workload": "fibBits",
+          "input": 100000,
+          "baselineMedianMs": 11.22019999999975,
+          "candidateMedianMs": 11.446045500000764,
+          "speedup": 0.9802686875566763
+        }
+      ]
+    },
+    "paired-mertens.json": {
+      "loadBefore": [
+        12.98,
+        8.98,
+        6.78
+      ],
+      "loadAfter": [
+        11.04,
+        8.75,
+        6.74
+      ],
+      "results": [
+        {
+          "workload": "mertens",
+          "input": 100000,
+          "baselineMedianMs": 44.36284649999999,
+          "candidateMedianMs": 40.54676549999999,
+          "speedup": 1.094115546651927
+        },
+        {
+          "workload": "mertens",
+          "input": 1000000,
+          "baselineMedianMs": 634.0616719999998,
+          "candidateMedianMs": 595.4718925000002,
+          "speedup": 1.0648053753435551
+        }
+      ]
+    },
+    "paired-isprime.json": {
+      "loadBefore": [
+        8.98,
+        8.41,
+        6.66
+      ],
+      "loadAfter": [
+        8.98,
+        8.41,
+        6.66
+      ],
+      "results": [
+        {
+          "workload": "isPrime",
+          "input": 61,
+          "baselineMedianMs": 24.086424499999993,
+          "candidateMedianMs": 18.23020649999998,
+          "speedup": 1.321237063332224
+        },
+        {
+          "workload": "isPrime",
+          "input": 127,
+          "baselineMedianMs": 88.95969550000007,
+          "candidateMedianMs": 64.61081150000007,
+          "speedup": 1.3768546383293758
+        }
+      ]
+    },
+    "paired-vs-natmod-mertens.json": {
+      "loadBefore": [
+        2.33,
+        2.62,
+        3.73
+      ],
+      "loadAfter": [
+        4.16,
+        3,
+        3.84
+      ],
+      "results": [
+        {
+          "workload": "mertens",
+          "input": 100000,
+          "baselineMedianMs": 48.967776000000015,
+          "candidateMedianMs": 29.903919499999972,
+          "speedup": 1.6375036055056282
+        },
+        {
+          "workload": "mertens",
+          "input": 1000000,
+          "baselineMedianMs": 926.457082500001,
+          "candidateMedianMs": 636.007331499999,
+          "speedup": 1.4566767340794442
+        }
+      ]
+    },
+    "paired-vs-natmod-isprime.json": {
+      "loadBefore": [
+        2.1,
+        2.59,
+        3.74
+      ],
+      "loadAfter": [
+        2.1,
+        2.59,
+        3.74
+      ],
+      "results": [
+        {
+          "workload": "isPrime",
+          "input": 61,
+          "baselineMedianMs": 12.574909999999988,
+          "candidateMedianMs": 12.03574900000001,
+          "speedup": 1.0447966304382035
+        },
+        {
+          "workload": "isPrime",
+          "input": 127,
+          "baselineMedianMs": 73.83462150000003,
+          "candidateMedianMs": 74.08579550000002,
+          "speedup": 0.9966096874805105
+        }
+      ]
+    },
+    "paired-collatzRecord.json": {
+      "loadBefore": [
+        3,
+        3.09,
+        3.8
+      ],
+      "loadAfter": [
+        3,
+        3.09,
+        3.79
+      ],
+      "results": [
+        {
+          "workload": "collatzRecord",
+          "input": 100000,
+          "baselineMedianMs": 97.13329149999998,
+          "candidateMedianMs": 82.79154549999998,
+          "speedup": 1.1732271805458687
+        }
+      ]
+    },
+    "paired-primeCount.json": {
+      "loadBefore": [
+        3,
+        3.09,
+        3.79
+      ],
+      "loadAfter": [
+        3,
+        3.09,
+        3.79
+      ],
+      "results": [
+        {
+          "workload": "primeCount",
+          "input": 1000000,
+          "baselineMedianMs": 34.04029699999997,
+          "candidateMedianMs": 34.166022999999996,
+          "speedup": 0.9963201453092733
+        }
+      ]
+    },
+    "paired-lifePopulation.json": {
+      "loadBefore": [
+        3,
+        3.09,
+        3.79
+      ],
+      "loadAfter": [
+        3,
+        3.09,
+        3.79
+      ],
+      "results": [
+        {
+          "workload": "lifePopulation",
+          "input": 100,
+          "baselineMedianMs": 58.45548450000007,
+          "candidateMedianMs": 67.91557750000001,
+          "speedup": 0.8607080533181074
+        }
+      ]
+    },
+    "paired-life-repeat.json": {
+      "loadBefore": [
+        3.2,
+        3.13,
+        3.8
+      ],
+      "loadAfter": [
+        3.19,
+        3.13,
+        3.79
+      ],
+      "results": [
+        {
+          "workload": "lifePopulation",
+          "input": 100,
+          "baselineMedianMs": 60.60229799999996,
+          "candidateMedianMs": 69.84325749999999,
+          "speedup": 0.8676900272012652
+        }
+      ]
+    }
+  },
+  "fiveBackend": {
+    "comparison.json": {
+      "loadBefore": [
+        2.98,
+        2.57,
+        4.11
+      ],
+      "loadAfter": [
+        3.18,
+        2.86,
+        3.93
+      ],
+      "results": {
+        "tunnell": {
+          "native": 10.256911500000001,
+          "js": 1.9447685000000092,
+          "vir": 751.7629714999998,
+          "fir": 11.407904999999573,
+          "cwasm": 9.434372499999654
+        },
+        "collatzRecord": {
+          "native": 43.343593,
+          "js": 21.387824000001274,
+          "vir": 5565.759597499998,
+          "fir": 93.30871099999786,
+          "cwasm": 63.12220399999933
+        },
+        "primeCount": {
+          "native": 10.556275,
+          "js": 2.066868000001705,
+          "vir": 1337.3861499999985,
+          "fir": 31.084177500000806,
+          "cwasm": 12.413563000001886
+        },
+        "mertens": {
+          "native": 36.821914500000005,
+          "js": 29.257015000002866,
+          "vir": 4055.8684349999967,
+          "fir": 548.3825119999892,
+          "cwasm": 58.53930849999597
+        },
+        "partitions": {
+          "native": 14.872404,
+          "js": 4.5327480000123614,
+          "vir": 149.48474250000436,
+          "fir": 24.909325000015087,
+          "cwasm": 15.198437999992166
+        },
+        "fib": {
+          "native": 1.8262800000000001,
+          "js": 0.11833800000022165,
+          "vir": 2.7319655000028433,
+          "fir": 0.26224850000289734,
+          "cwasm": 5.811455999995815
+        },
+        "fibBits": {
+          "native": 0.029235499999999998,
+          "js": 0.062002000006032176,
+          "vir": 0.21109249998698942,
+          "fir": 0.15261250000912696,
+          "cwasm": 0.11264699998719152
+        },
+        "partitionsBits": {
+          "native": 14.509946,
+          "js": 4.41874850000022,
+          "vir": 153.95929050000268,
+          "fir": 23.799193499988178,
+          "cwasm": 15.44422599999234
+        },
+        "isPrime": {
+          "native": 0.635953,
+          "js": 0.5896705000195652,
+          "vir": 3.33861400000751,
+          "fir": 74.0585529999953,
+          "cwasm": 1.4021554999926593
+        },
+        "lifePopulation": {
+          "native": 34.5872535,
+          "js": 7.814424500014866,
+          "vir": 3489.3715414999897,
+          "fir": 71.75297349999892,
+          "cwasm": 33.53248199999507
+        }
+      }
+    },
+    "comparison-high-load.json": {
+      "loadBefore": [
+        22.92,
+        9.23,
+        6.17
+      ],
+      "loadAfter": [
+        5.28,
+        7.29,
+        6.18
+      ],
+      "results": {
+        "tunnell": {
+          "native": 12.0681535,
+          "js": 4.253655499999695,
+          "vir": 1654.8479880000014,
+          "fir": 24.73061349999898,
+          "cwasm": 20.765308000000005
+        },
+        "collatzRecord": {
+          "native": 52.783533,
+          "js": 33.24344900000142,
+          "vir": 9048.907508500008,
+          "fir": 152.74748700000055,
+          "cwasm": 85.62334750000446
+        },
+        "primeCount": {
+          "native": 14.162528,
+          "js": 2.5672490000142716,
+          "vir": 1557.5475305,
+          "fir": 38.71384900000703,
+          "cwasm": 14.001132999997935
+        },
+        "mertens": {
+          "native": 58.5774015,
+          "js": 34.98798499999975,
+          "vir": 4393.142589499999,
+          "fir": 578.9537845000013,
+          "cwasm": 86.68482350000704
+        },
+        "partitions": {
+          "native": 18.9318325,
+          "js": 5.8897704999981215,
+          "vir": 197.24872900001355,
+          "fir": 31.607423000008566,
+          "cwasm": 19.6284319999977
+        },
+        "fib": {
+          "native": 2.376403,
+          "js": 0.16922449998673983,
+          "vir": 3.849872500009951,
+          "fir": 0.36676650001027156,
+          "cwasm": 7.961498499993468
+        },
+        "fibBits": {
+          "native": 0.018640499999999997,
+          "js": 0.08719949997612275,
+          "vir": 0.268220999991172,
+          "fir": 0.22876650000398513,
+          "cwasm": 0.15447649999987334
+        },
+        "partitionsBits": {
+          "native": 19.0460475,
+          "js": 5.825072499996168,
+          "vir": 203.34429499998805,
+          "fir": 31.100791499993647,
+          "cwasm": 19.813254499982577
+        },
+        "isPrime": {
+          "native": 0.82464,
+          "js": 0.8105490000016289,
+          "vir": 4.297321500009275,
+          "fir": 100.75620350000099,
+          "cwasm": 1.921715000004042
+        },
+        "lifePopulation": {
+          "native": 42.9600425,
+          "js": 5.6800974999932805,
+          "vir": 4255.9075705,
+          "fir": 87.55908799999452,
+          "cwasm": 42.622287500009406
+        }
+      }
+    }
+  },
+  "prime61": {
+    "phaseMedianMs": 18.46426299999999,
+    "rawWasmMedianMs": 18.32651900000002,
+    "samples": 1113,
+    "rootOnlyWasmPercent": 0.7942745136850898,
+    "natModInclusivePercent": 49.48430867503772,
+    "intNegInclusivePercent": null
+  },
+  "prime127": {
+    "phaseMedianMs": 78.92430649999999,
+    "rawWasmMedianMs": 78.81100300000001,
+    "samples": 1459,
+    "rootOnlyWasmPercent": 1.150642985614396,
+    "natModInclusivePercent": 52.25312862343136,
+    "intNegInclusivePercent": null
+  },
+  "mertens1m": {
+    "phaseMedianMs": 449.62948099999994,
+    "rawWasmMedianMs": 449.50421500000016,
+    "samples": 1636,
+    "rootOnlyWasmPercent": 5.376979951136041,
+    "natModInclusivePercent": 19.877691406714675,
+    "intNegInclusivePercent": 13.126183852932293
+  },
+  "life100": {
+    "phaseMedianMs": 67.1478245,
+    "rawWasmMedianMs": 67.09465450000002,
+    "samples": 1831,
+    "rootOnlyWasmPercent": 0.16182634929359324,
+    "neighbourLambdaSelfPercent": 76.44869828887025
+  }
+}

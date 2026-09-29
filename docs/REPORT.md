@@ -6,9 +6,11 @@ independent references and browser experiments. This review reproduces its
 performance findings, audits the VIR integration and adds FIR and C/Emscripten
 comparisons for the author and runtime maintainers.
 
-**Update:** the [subsequent multiplication evaluation](FIR-MULTIPLICATION-20260928.md)
-tests FIR's response to the large-integer hotspot below. This initial campaign
-is retained as the baseline; the follow-up has fresh timings and backend ratios.
+**Update:** the [multiplication evaluation](FIR-MULTIPLICATION-20260928.md)
+tests FIR's response to the large-integer hotspot below, and the
+[current FIR rebenchmark](FIR-UPDATE-20260929.md) covers the subsequent
+remainder, negation and array changes. This initial campaign is retained as
+the baseline; the follow-ups have fresh timings and backend ratios.
 
 **The reported slowdown is real, and we found no major VIR integration
 mistake or unused SDK setting that explains it away.** FIR removes much of

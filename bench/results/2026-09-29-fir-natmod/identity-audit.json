@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "baselineCommit": "340f4612ac622aa39d6a870528f96d6b827d97b8",
+  "candidateCommit": "faee469e5eb27f139a25527a3803318c24697721",
+  "rootFrozenManifestSha256": "dfb870946b860657ff3bc5ac9e6b1756e50e70fd75fc28917b37758704712533",
+  "rebuiltManifestSha256": "6a516900cc890a87bcdf35a889fce8f595c1fbf2353c1b097d155cf536d22f7a",
+  "cleanExactCandidate": true,
+  "leanToolchain": "leanprover/lean4:v4.34.1",
+  "sourceView": "ordinary",
+  "capture": "unit",
+  "sources": [
+    {
+      "path": "Tunnell.lean",
+      "originalSha256": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+      "stagedSha256": "c9682c0d7197dc2c1dee807e82dfa6674a520602d7371f249acc9dc8a047b931"
+    },
+    {
+      "path": "Bench.lean",
+      "originalSha256": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+      "stagedSha256": "19c1774509a484e0ac1f402dbd9ea714e277ab1bdab5952a20b7046bdf7121a3"
+    }
+  ],
+  "changedEmitterSources": [
+    "Fir/Wasm/Emit/ResidentNatArithmetic.lean"
+  ],
+  "shared": {
+    "integration/talos/artifact/concrete-host.mjs": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82",
+    "integration/talos/artifact/module-client.mjs": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b",
+    "integration/lcnf-c-wasm/emscripten-loader.mjs": "7402cd28f0e29cbc07050fed6371aded18ca21d4a6dcd3338aa4ed5c25286578"
+  },
+  "artifacts": [
+    {
+      "workload": "tunnell",
+      "baselineSha256": "323c5f4c64f6e1f789922908d9b3988975e934b93e4041eed02745e2cd5859e1",
+      "candidateSha256": "146b9295463c1ec0c8c2f031f5a9db6599df946790b2b142e83eea990fe13b1a",
+      "candidateBytes": 25701,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "collatzRecord",
+      "baselineSha256": "6f4ade4f54d97f7e3d3580c80b874d8971139fe9f53100da8b12da0f58678acd",
+      "candidateSha256": "ae8ee33550687f7d00c2589650fd8f878c5c46d89163b20e148408f333b72c0c",
+      "candidateBytes": 11982,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "primeCount",
+      "baselineSha256": "7712b36e18d1d153532f7eb66ac989000928b2d370022725d0073a67426f6fcd",
+      "candidateSha256": "b9ff639a63bf8f8ae4c31afe31ac9368289c2674edcc17363f21c119d4fa23f1",
+      "candidateBytes": 15776,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "mertens",
+      "baselineSha256": "ae9ee40ee912b477eb902ce02013951153c6dbbe5bb0a8700d7df5a2df217107",
+      "candidateSha256": "b5869b12d25ad96e2f4404f5d6c5edc1c683d115813c8df150edff4972ba290a",
+      "candidateBytes": 21665,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "partitions",
+      "baselineSha256": "32b84f188a968ee17503ee22a6663afe9e55f158592542cada1243843839ba69",
+      "candidateSha256": "e58989934832f129ea49c3954d344e33b37eeb5908b025459892141677ece180",
+      "candidateBytes": 16822,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "fib",
+      "baselineSha256": "20a672068dce8d457a82141a39559f56890b5b47ec1a5c66a28010fd38a40682",
+      "candidateSha256": "9ce3c77df0315e2f620bcc727c845c9e394b0dfc2d03f4e6fceadb249849f44d",
+      "candidateBytes": 14678,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "fibBits",
+      "baselineSha256": "bcdeacb4c85d420eac58f27f2fde5abeaf512f4f4072384cf333d4c61c3af4c5",
+      "candidateSha256": "28fc3aee32e65c1de22f92fb62dd4af5ab41701b09b6eaf72e726fc9caa303f7",
+      "candidateBytes": 14715,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "partitionsBits",
+      "baselineSha256": "7733eacb4412183adf75b42b69e2e127982b7f853bafc5ff41f2b11bf067d1da",
+      "candidateSha256": "c5ec4a7684e4b25ddf66ab6fde42fe1004773830b754972665970022a2ba38cc",
+      "candidateBytes": 17095,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "isPrime",
+      "baselineSha256": "8b675cdaaabe10c87e26db030316c0dc71330bc89a3bc66d853b1b8f22b84d48",
+      "candidateSha256": "75137de6cd7b0a3350d82c341950c9c8b350a13357b5baad8c5ef47aff6fd0f9",
+      "candidateBytes": 18638,
+      "matchesFirRootFrozenPackage": true
+    },
+    {
+      "workload": "lifePopulation",
+      "baselineSha256": "1d0947f6ef8898e97e31a50ace48929554c1896fc352a51ad7410b7fa5eedc27",
+      "candidateSha256": "e675c4190195a67dce07c9e084d6759752e6098611713cd4ab22bf553aaf4f6b",
+      "candidateBytes": 21339,
+      "matchesFirRootFrozenPackage": true
+    }
+  ],
+  "checkHarnessSha256": "ab2ed4425c1162d1c9cbeb3c3974fa1b6706543c2009b76d4e177aaa0c286ce9",
+  "referenceSha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+}

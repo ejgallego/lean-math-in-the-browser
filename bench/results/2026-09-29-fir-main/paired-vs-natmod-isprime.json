@@ -1,0 +1,1151 @@
+{
+  "status": "passed",
+  "started": "2026-09-29T16:55:01.530Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-fir-revisions.mjs",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/campaign.VCD0YE/manifest.json",
+    "tests/out/research/fir-natmod-faee/fir-checks.json",
+    ".deps/fir-producer-main-94de/.deps/math-browser-fir/_build/campaign.pEV2HZ/manifest.json",
+    "tests/out/research/fir-main-94de/fir-checks.json",
+    "tests/out/research/fir-main-94de/paired-vs-natmod-isprime.json",
+    "--workload",
+    "isPrime"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    2.1,
+    2.59,
+    3.74
+  ],
+  "producers": {
+    "baseline": "faee469e5eb27f139a25527a3803318c24697721",
+    "candidate": "94de4678b44d0d940436247543f38c156b6f611c"
+  },
+  "files": [
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-fir-revisions.mjs",
+      "sha256": "05ef18d21c1653ce4ae87086d98f580e426801c0f18ecb36aee6b0004dc1f22f"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs",
+      "sha256": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad"
+    },
+    {
+      "path": "file:///home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs",
+      "sha256": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/campaign.VCD0YE/manifest.json",
+      "sha256": "dfb870946b860657ff3bc5ac9e6b1756e50e70fd75fc28917b37758704712533"
+    },
+    {
+      "path": "tests/out/research/fir-natmod-faee/fir-checks.json",
+      "sha256": "0dd280ff7359f9eb520d076fab632e3607331876487d24cb933265f014b4cd21"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/tunnell.wasm",
+      "sha256": "146b9295463c1ec0c8c2f031f5a9db6599df946790b2b142e83eea990fe13b1a"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/tunnell.wasm.json",
+      "sha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/build-identity.json",
+      "sha256": "bfa0e100cee5950c05b90a2ed7b496716e67eae5c5a9c98f570bbb189d20c671"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/collatzRecord.wasm",
+      "sha256": "ae8ee33550687f7d00c2589650fd8f878c5c46d89163b20e148408f333b72c0c"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/collatzRecord.wasm.json",
+      "sha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/build-identity.json",
+      "sha256": "ff859f661b2980c83d5cc70aa8e69e7a8d5110d9df4fb5cd8e829d06db30b625"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/primeCount.wasm",
+      "sha256": "b9ff639a63bf8f8ae4c31afe31ac9368289c2674edcc17363f21c119d4fa23f1"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/build-identity.json",
+      "sha256": "483e3c2d9f3a8081df5d7fc4a75db72b86d3e023b1f8689472b8892331f02d00"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/mertens.wasm",
+      "sha256": "b5869b12d25ad96e2f4404f5d6c5edc1c683d115813c8df150edff4972ba290a"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/build-identity.json",
+      "sha256": "a19bf97a0426fe5318c9d49fdae35722eb95d5c2518c59b25bf48f37e5b9d867"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/partitions.wasm",
+      "sha256": "e58989934832f129ea49c3954d344e33b37eeb5908b025459892141677ece180"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/partitions.wasm.json",
+      "sha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/build-identity.json",
+      "sha256": "78e29364450f199c775139a87cb0e937290ab4e599f670784c9dac1c8a752c2a"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/fib.wasm",
+      "sha256": "9ce3c77df0315e2f620bcc727c845c9e394b0dfc2d03f4e6fceadb249849f44d"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/fib.wasm.json",
+      "sha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/build-identity.json",
+      "sha256": "1e79b54302ab3c63121c824e87f67cade48d8fd6b3b1f7bfb9f27fcc9971e3c5"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/fibBits.wasm",
+      "sha256": "28fc3aee32e65c1de22f92fb62dd4af5ab41701b09b6eaf72e726fc9caa303f7"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/build-identity.json",
+      "sha256": "4208642d070ebcc34b0995865860949b494817b3f42d4efde9d4405c69ccc68a"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/partitionsBits.wasm",
+      "sha256": "c5ec4a7684e4b25ddf66ab6fde42fe1004773830b754972665970022a2ba38cc"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/partitionsBits.wasm.json",
+      "sha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/build-identity.json",
+      "sha256": "4132721ec2eaa0c2ac4d3da5b9f442d99bcdb2df4e2855863c52c00c424ec069"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/isPrime.wasm",
+      "sha256": "75137de6cd7b0a3350d82c341950c9c8b350a13357b5baad8c5ef47aff6fd0f9"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/build-identity.json",
+      "sha256": "0a5d931d8554d466e297cf84b68e15a7f5dac993ffcf5d55da7406c04ab70134"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/lifePopulation.wasm",
+      "sha256": "e675c4190195a67dce07c9e084d6759752e6098611713cd4ab22bf553aaf4f6b"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/lifePopulation.wasm.json",
+      "sha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/build-identity.json",
+      "sha256": "a72b5f0c29a9792201136707f70aa2d5dff6e2494743cc3e7d06d49350567770"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/fir/.worktrees/wasm-generation/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    },
+    {
+      "path": ".deps/fir-producer-main-94de/.deps/math-browser-fir/_build/campaign.pEV2HZ/manifest.json",
+      "sha256": "c803c7b47e81bb49b7c6a50276d8e9c82731ac649355debdfd7e2fd57f5fc039"
+    },
+    {
+      "path": "tests/out/research/fir-main-94de/fir-checks.json",
+      "sha256": "cd96552f29210397fe836ca06907938c2e0c7a263cd479777720834e4a2f36ff"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/tunnell.NL5GTQ/tunnell.wasm",
+      "sha256": "ed0f3ef776fd1f7e667e19211b6f38af2e4d22ccfcf846316491247bcae7e16e"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/tunnell.NL5GTQ/tunnell.wasm.json",
+      "sha256": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/tunnell.NL5GTQ/build-identity.json",
+      "sha256": "77b986b3aa52d5da37d13535ef109d033c5c84c511a25d28a69e11ab1e6b8b02"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/collatzRecord.66TSyh/collatzRecord.wasm",
+      "sha256": "b9d38807dd9ed04201282cf78491bf2f8402502675e9c50120741455f7334653"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/collatzRecord.66TSyh/collatzRecord.wasm.json",
+      "sha256": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/collatzRecord.66TSyh/build-identity.json",
+      "sha256": "435e8e0060998451db400196deb3183794d0906616b57d8c7ae1bfca58681aac"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/primeCount.aTQtrh/primeCount.wasm",
+      "sha256": "4e3f332aff182a5e144957f56d58b16508cde383e3fc660959db052f1ea21da1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/primeCount.aTQtrh/primeCount.wasm.json",
+      "sha256": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/primeCount.aTQtrh/build-identity.json",
+      "sha256": "3044eeedf384cb962c9fbf7e1ce9c5a9df76651bf4c29008418fc379d89c6684"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/mertens.eqPRO6/mertens.wasm",
+      "sha256": "8931339e7efaee0b80f2da4faf964c5e3db8993104471a06a1c0193c8df798c1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/mertens.eqPRO6/mertens.wasm.json",
+      "sha256": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/mertens.eqPRO6/build-identity.json",
+      "sha256": "bdf48f57938b5946ed29f2cbee3c578927c0a07ef5b3ac3bcacfa590f16dfcbe"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitions.dEZFrg/partitions.wasm",
+      "sha256": "c69c71c70600b0cf03258afb842c63352aaad83e898c88d45baadae7f9b32d88"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitions.dEZFrg/partitions.wasm.json",
+      "sha256": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitions.dEZFrg/build-identity.json",
+      "sha256": "e800d53987be47dc18c20c3fe08bf18e33b090ca7733074e7ed0e9ba408bdf99"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fib.vV7h1w/fib.wasm",
+      "sha256": "f459506522cd67a8b7636021767d7e304037dc62d34c2e757492278badcf5069"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fib.vV7h1w/fib.wasm.json",
+      "sha256": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fib.vV7h1w/build-identity.json",
+      "sha256": "da65275374c7bd525309fd0fc9df7116ccd1dcb822c03ed7d16a025a625260e0"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fibBits.RO4bTd/fibBits.wasm",
+      "sha256": "7aa0b5f146a77bcf16ce6c63bc381989d1317b7f7a72704881b6d4cbab2b1043"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fibBits.RO4bTd/fibBits.wasm.json",
+      "sha256": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/fibBits.RO4bTd/build-identity.json",
+      "sha256": "3e3ca120c5618318c90e37b35fbc0a1bef8c982907b415168636fb3d5aa619f7"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitionsBits.3E23bP/partitionsBits.wasm",
+      "sha256": "f9274ff54bdae18051dddc31767f441ab1a82b8e0e3318ce40eda32ad52253b9"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitionsBits.3E23bP/partitionsBits.wasm.json",
+      "sha256": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/partitionsBits.3E23bP/build-identity.json",
+      "sha256": "446ab320a5d0fb39f60849e9b86d31a062568cbc8aa53e27002ef347174bb61c"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm",
+      "sha256": "7a16eb88ba5524d81e1e71550e087dce71d30892c115d5f050ac7e8d0aa79d04"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/isPrime.wasm.json",
+      "sha256": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/isPrime.pkrXuS/build-identity.json",
+      "sha256": "ba68ec15704de069bbd75bc82508b729697f0402a7d0f7a96bb51adadbadf777"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/lifePopulation.pgsZzS/lifePopulation.wasm",
+      "sha256": "9357368898056c6f65ebd914d7d00a7aac133742bc7bffb6096578ecf5806eb1"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/lifePopulation.pgsZzS/lifePopulation.wasm.json",
+      "sha256": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/.deps/math-browser-fir/_build/lifePopulation.pgsZzS/build-identity.json",
+      "sha256": "a1462b6a93ead84fef1206da45bd021dd6d706c5923e2b06f9e87adf0f16a92d"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/integration/talos/artifact/concrete-host.mjs",
+      "sha256": "934b6beb5ae5933a246389a2e55d4f95334ae6525fbbf5b7a6fd86065877ea82"
+    },
+    {
+      "path": "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-main-94de/integration/talos/artifact/module-client.mjs",
+      "sha256": "6ff016115f0fa34d3ea9ec4266fde9c7b966798dce4a09292b78f7451bb50e9b"
+    }
+  ],
+  "selection": [
+    [
+      "isPrime",
+      61
+    ],
+    [
+      "isPrime",
+      127
+    ]
+  ],
+  "orders": [
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ]
+  ],
+  "policy": "Ten rounds alternating AB/BA, one warmup per retained instance per input. Same source/adapter and Lean 4.34.1. Results and warm frontier checked outside timer. No builds or other client benchmarks concurrent.",
+  "boundary": "FIR adapter call, result text and arena rewind. Startup excluded. No sampler or phase clocks.",
+  "caveats": "Node only; uncontrolled background load, affinity, clock frequency and temperature. Descriptive medians, not confidence intervals.",
+  "warmups": [
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 34.432013,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8843496,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 34.93956899999999,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 8843496,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 77.99177800000001,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 5778344,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 77.71939400000002,
+      "memory": {
+        "frontierBefore": 1024,
+        "peakFrontier": 5778344,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    }
+  ],
+  "rows": [
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 19.174093999999997,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 19.55395900000002,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 18.653663999999992,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 18.888406000000003,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 17.515120000000024,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 15.953568999999987,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 14.837967999999961,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 14.050804999999968,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 13.452026999999987,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 12.360450000000014,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 11.711048000000005,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 11.69779299999999,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 11.609626999999989,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 11.353494000000012,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 11.442182000000003,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 11.360658,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 11.491002999999978,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 11.458422000000041,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "candidate",
+      "ms": 11.336591999999996,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 61,
+      "engine": "baseline",
+      "ms": 11.392106999999953,
+      "memory": {
+        "frontierBefore": 1768,
+        "peakFrontier": 8843616,
+        "frontierAfter": 1768,
+        "bytes": 8847360
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.82373600000005,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 73.91589999999997,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 0,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 74.02221099999997,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.705914,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 1,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 74.06878799999993,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 74.65784699999995,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 2,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 73.97707499999979,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 74.15000200000009,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 3,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 75.78055300000005,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 74.32728500000007,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 4,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 74.10210100000018,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.845507,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 5,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.67303300000003,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 73.73638200000005,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 6,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 74.06948999999986,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.79460200000017,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 7,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.59860200000003,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 80.59052199999996,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 8,
+      "order": [
+        "baseline",
+        "candidate"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "candidate",
+      "ms": 79.62124600000016,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "baseline",
+      "ms": 73.96441099999993,
+      "memory": {
+        "frontierBefore": 1744,
+        "peakFrontier": 5778440,
+        "frontierAfter": 1744,
+        "bytes": 5832704
+      },
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "round": 9,
+      "order": [
+        "candidate",
+        "baseline"
+      ]
+    }
+  ],
+  "finished": "2026-09-29T16:55:03.569Z",
+  "loadAfter": [
+    2.1,
+    2.59,
+    3.74
+  ]
+}

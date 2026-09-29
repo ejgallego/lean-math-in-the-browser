@@ -1,0 +1,982 @@
+{
+  "status": "passed",
+  "started": "2026-09-29T16:43:57.539Z",
+  "command": [
+    "/usr/bin/node",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-all.mjs",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/campaign.VCD0YE/manifest.json",
+    "tests/out/research/fir-natmod-faee/fir-checks.json",
+    ".deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.manifest.json",
+    "tests/out/research/4341/emscripten-checks.json",
+    "tests/out/research/fir-natmod-faee/comparison-isprime.json",
+    "--workload",
+    "isPrime"
+  ],
+  "node": "v24.21.0",
+  "v8": "13.6.233.17-node.53",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "platform": "linux 7.2.6-070206-generic x64",
+  "loadBefore": [
+    1.22,
+    4.22,
+    5.34
+  ],
+  "producer": "/home/egallego/lean/fir/.worktrees/wasm-generation",
+  "producerCommit": "faee469e5eb27f139a25527a3803318c24697721",
+  "inputs": {
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/campaign.VCD0YE/manifest.json": "dfb870946b860657ff3bc5ac9e6b1756e50e70fd75fc28917b37758704712533",
+    "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/fir-natmod-faee/fir-checks.json": "0dd280ff7359f9eb520d076fab632e3607331876487d24cb933265f014b4cd21",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.manifest.json": "5c8f624fce0b2ee7faf0c20d2ff4d3c8791a437e91824b11feb17d7df167c57c",
+    "/home/egallego/lean/lean-math-in-the-browser/tests/out/research/4341/emscripten-checks.json": "0044b3c4c5171f5a5020b362e5084f4ac632ad69f02e7e194280569e07f4e6b1",
+    "/home/egallego/lean/lean-math-in-the-browser/.lake/build/bin/tunnell_cli": "6ad816963762077b2e3bc349923901b9935904968c203bfe47b8ab58a7b92883",
+    "/home/egallego/lean/lean-math-in-the-browser/.lake/build/vir/module-sets/Bench.parts/0.irpkg": "a7bfa01f047d54b2dd516bbf4fee1811d971cd6adac78d83477a2b6b3de2dbf7",
+    "/home/egallego/lean/lean-math-in-the-browser/.lake/build/vir/module-sets/Bench.parts/1.irpkg": "f1298847fcd9df87874a01d6e5c6cb723b4f33f8da0bb122a8309895cb8ac9ee",
+    "/home/egallego/lean/lean-math-in-the-browser/.lake/build/vir/module-sets/Bench.irpkg": "cdfad827ce9cd885a6f9eb0d7da450c17b544ee1507dd69fe929817e26540afd",
+    "/home/egallego/lean/lean-math-in-the-browser/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "/home/egallego/lean/lean-math-in-the-browser/lake-manifest.json": "df1bb5c74d2c5e179f1a5d0d252064edc5e7bf3060da22321297686913a3054a",
+    "/home/egallego/lean/lean-math-in-the-browser/Tunnell.lean": "b68d8773438f50ca1968e49cf99d9fe36eacae67a45a708708235b958edec4f9",
+    "/home/egallego/lean/lean-math-in-the-browser/Bench.lean": "8b77f5d1425932eb2b165c8a93d5fc21d46c88cd860b8071ff16d6badf655f89",
+    "/home/egallego/lean/lean-math-in-the-browser/Main.lean": "913f92a4cc9fb60b0245dcd86e02dd3d8717a39e3e3e0cd4fc07229ad437aeee",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/casos.mjs": "fdd92c89e60cc0fa25b6df020bb2c97788813357187335c83bc0d2677d70951a",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/js-baseline-revised.mjs": "ba70f34a4a43a94e3fc111462c92c8707d9d82d172fb7469dd7f5277f46a1bcc",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/wasm/vir-upstream.wasm": "c0aed82731f2448b1dd1867d322050a3cf99ee5e7e68437efae428356e9eadca",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/compare-all.mjs": "898da7110dea701eaa2d7e94e49d92ac4bdc00c95404fbfb0a2ddd5ef053b933",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/fir-client.mjs": "db18823368da93430b532715b5449afb36229f31eb876ba76f26cb9fdbedffad",
+    "/home/egallego/lean/lean-math-in-the-browser/bench/backends/emscripten-client.mjs": "3fd6fe3dfc1f300c8be7ed1bbd5016c05cad20dbd151d0234e2252ebbed58649",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-active-host-bindings.js": "07659db80728de3f71a17164ceff6dc568fec51f3df66204b7970f64da8e34b4",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-dom-host-bindings.js": "71e9d08d39e1c4aaba13f54cc918d7a3764d059aab745460e986f172f63d0631",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-infoview-host-bindings.js": "b0d8ba7b5501ac5b9eb7e0b98dedf79746b883c419044ac7fc01ebcee8deeaa2",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-infoview-panel-bindings.js": "a80d407731f3bc0a6c319c0ba31e70e4b929640b2c7382a70ae48f654db194d3",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-js-collection-bindings.js": "4534f09af422317c8cd75ec95ece18fd8ff6a3c0e9c272017ef070433d317af7",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host/vir-js-value-bindings.js": "e9bb2bc643baa8c428a0c477905cbde0546a09712e62639f2ec180141cfbea35",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/host-boundary.js": "d23c2cdada47b67e4704fa06de38431db6a4e18ab72247f8fed4ce8851bf2234",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/react/vir-react-root.js": "bbedb033f50ef72b0eebf45b670af6a22c341529a198cdc8f9ef216ad9b82262",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/call-timing.js": "30fbe731cab7516f053a3a465616c0a63f76e959b3f44a71e83248fd5a303336",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/callbacks.js": "2c51f4458ba8259fc1febf15f4a1e2b728b94132b317905d1e7034d15dfd9a60",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/cleanup.js": "08303f1c734035f463a037dc20b1bcbbb086575e530daace887b0d6105c65e25",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/core.js": "af0e402aa8404a30de3514db4badbea5463a6d15fd312713d6c01dcfbe1e9059",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/host-state.js": "84c591a04118005502da266b08416222ee0ed528132642ff074733ddbea068bb",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/interface-effects.js": "e295591a1f9f6355d9c4b00d805373570c4489689aad1cb2ec19b3b83e3ca21c",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/interface-manifest.js": "e34af6a8ebeecf562139c210908c8af8b17a8e0511233a3a8b8d345089f31ecb",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/interface-tags.js": "ad8a4dfdff548704c578b24b36ae9be7211f563503860ba715bf76f2788881e1",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/ir-package.js": "fc2a287e5c062bf2259739446f7f2a984dd5745b3836ecf4a6f260a227ccba44",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/module-name.js": "4225f30eb5104c75c24f239eda99108d1b44d01fe7caeb98fccdf3334eaa7ad8",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/object-abi-exports.js": "14ffa9cfbaf02bb9af87cdd6b1eea13e532651ac6bff556398f144223fc31abe",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/object-abi.js": "3d07ef73498d9b6fe60739fc7c23b2821cd0dfcbcb053770b72616c724e11bd5",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/object-values.js": "497a2746c64ce9e71e9204219d7268d5225ec6b1cbf7f965b10f0fd6e321dd62",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/package-contract.js": "c9ee21d6ab1f224750a30322127c0b594e2fc0991350a59097035b41df0b97f5",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/package-targets.js": "5cabbd222c48c0538d16805ca9f454b5034fb2a7f403463bfbeca06ffc8b2a5a",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/vir-codec.js": "fdbe2ec0a553e8e4b4536dd6ecdebf491c60e5930514ea7e0bde8ff6920f6362",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/runtime/vir-value-normalizers.js": "7d02943c2493ca223a718fc07e9564b865f2ad68e92ee690e78ea0819f56a311",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/vir-host-bindings.js": "4a262f91b0a3283e5f24eec2b2c55896d7d464e94b53cc801d5cdb82e476e33d",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/vir-react-dom-client.js": "c7aa48fc75a191153e6bab1a1c1b971d08bfa0c5a35c031d2b99ba39ef394358",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/vir-react-host-bindings.js": "41511e9dc740f85cfcf4c9c9727e55ef112f17a0775dbcbfc3407010c9da199d",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/vir-runtime-node.js": "5e582b6d8b6a061c797922cb4accdf2b1c403df5cdebec5c4eb9d7ce5ee54fe4",
+    "/home/egallego/lean/lean-math-in-the-browser/site/lean-vir/js/vir-runtime.js": "0ba57f0e580884f7d9215b10b09df8c210a497de288f39bd2b8809b8ad4b8c80",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/integration/lcnf-c-wasm/emscripten-loader.mjs": "7402cd28f0e29cbc07050fed6371aded18ca21d4a6dcd3338aa4ed5c25286578",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.mjs": "31cfed50b6b221186cb8f144d8e5bfdaab3bf7a267e30c21c97f7e3f59dd7ff8",
+    "/home/egallego/lean/lean-math-in-the-browser/.deps/fir-producer-4341/.deps/math-browser-c/_build/package/math-browser.wasm": "3aab10cf9ef687b31929d5e7629226d6535558e7054b80bfd4fc9168433f97b2",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/tunnell.wasm": "146b9295463c1ec0c8c2f031f5a9db6599df946790b2b142e83eea990fe13b1a",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/tunnell.wasm.json": "9f32ee35329e140749c38e7cf3d3eedf17a41223e33ad76752b23871937938d5",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/tunnell.DN4tfd/build-identity.json": "bfa0e100cee5950c05b90a2ed7b496716e67eae5c5a9c98f570bbb189d20c671",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/collatzRecord.wasm": "ae8ee33550687f7d00c2589650fd8f878c5c46d89163b20e148408f333b72c0c",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/collatzRecord.wasm.json": "5d02f607f96fde7498fccdb0b662834815844e49126feae63afbd37c31942c41",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/collatzRecord.NBcic2/build-identity.json": "ff859f661b2980c83d5cc70aa8e69e7a8d5110d9df4fb5cd8e829d06db30b625",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/primeCount.wasm": "b9ff639a63bf8f8ae4c31afe31ac9368289c2674edcc17363f21c119d4fa23f1",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/primeCount.wasm.json": "c52f469fbee0aa1939fa33936b2d14ccd516f2a6f5343bdf2548dd7f306e3718",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/primeCount.xvp4zj/build-identity.json": "483e3c2d9f3a8081df5d7fc4a75db72b86d3e023b1f8689472b8892331f02d00",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/mertens.wasm": "b5869b12d25ad96e2f4404f5d6c5edc1c683d115813c8df150edff4972ba290a",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/mertens.wasm.json": "cb3a1f76da40c6ef8538a52976b7417f1b83b8851ea2ca627dcffc6d92b9d713",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/mertens.TzIULH/build-identity.json": "a19bf97a0426fe5318c9d49fdae35722eb95d5c2518c59b25bf48f37e5b9d867",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/partitions.wasm": "e58989934832f129ea49c3954d344e33b37eeb5908b025459892141677ece180",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/partitions.wasm.json": "e50a096e5d6dc4c8876c0b29eac5de7ac6dc6cd506a9541ba2d6e21d7643c8d0",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitions.GeOElD/build-identity.json": "78e29364450f199c775139a87cb0e937290ab4e599f670784c9dac1c8a752c2a",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/fib.wasm": "9ce3c77df0315e2f620bcc727c845c9e394b0dfc2d03f4e6fceadb249849f44d",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/fib.wasm.json": "51a7dd1a86f100e634bff3bdff711841fa6f5ceb0e51135928693a40159961e1",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fib.7W5Xdp/build-identity.json": "1e79b54302ab3c63121c824e87f67cade48d8fd6b3b1f7bfb9f27fcc9971e3c5",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/fibBits.wasm": "28fc3aee32e65c1de22f92fb62dd4af5ab41701b09b6eaf72e726fc9caa303f7",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/fibBits.wasm.json": "d451a81d75fc14bad53eccf3be72bb403bc8c3e3af791b316860aa1f1af203e7",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/fibBits.cBRcww/build-identity.json": "4208642d070ebcc34b0995865860949b494817b3f42d4efde9d4405c69ccc68a",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/partitionsBits.wasm": "c5ec4a7684e4b25ddf66ab6fde42fe1004773830b754972665970022a2ba38cc",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/partitionsBits.wasm.json": "7fd7a8f5566bc5d30ce583c4647576e4620272ccce9424bb98e52d9c5b0ca903",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/partitionsBits.4PzEv2/build-identity.json": "4132721ec2eaa0c2ac4d3da5b9f442d99bcdb2df4e2855863c52c00c424ec069",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/isPrime.wasm": "75137de6cd7b0a3350d82c341950c9c8b350a13357b5baad8c5ef47aff6fd0f9",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/isPrime.wasm.json": "0dcb4cb370ec1f69ad5baf44d7d363c2394eeebae8fc29ab0369ecc036c3e474",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/isPrime.1o5iSn/build-identity.json": "0a5d931d8554d466e297cf84b68e15a7f5dac993ffcf5d55da7406c04ab70134",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/lifePopulation.wasm": "e675c4190195a67dce07c9e084d6759752e6098611713cd4ab22bf553aaf4f6b",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/lifePopulation.wasm.json": "960d70367dead0049414e4dba5dc2c6462d06f05b3f67ca586a992f1a8cff73b",
+    "/home/egallego/lean/fir/.worktrees/wasm-generation/.deps/math-browser-fir/_build/lifePopulation.cMBeKr/build-identity.json": "a72b5f0c29a9792201136707f70aa2d5dff6e2494743cc3e7d06d49350567770"
+  },
+  "selection": {
+    "isPrime": 127
+  },
+  "orders": [
+    [
+      "native",
+      "js",
+      "cwasm",
+      "vir",
+      "fir"
+    ],
+    [
+      "js",
+      "vir",
+      "native",
+      "fir",
+      "cwasm"
+    ],
+    [
+      "vir",
+      "fir",
+      "js",
+      "cwasm",
+      "native"
+    ],
+    [
+      "fir",
+      "cwasm",
+      "vir",
+      "native",
+      "js"
+    ],
+    [
+      "cwasm",
+      "native",
+      "fir",
+      "js",
+      "vir"
+    ],
+    [
+      "fir",
+      "vir",
+      "cwasm",
+      "js",
+      "native"
+    ],
+    [
+      "cwasm",
+      "fir",
+      "native",
+      "vir",
+      "js"
+    ],
+    [
+      "native",
+      "cwasm",
+      "js",
+      "fir",
+      "vir"
+    ],
+    [
+      "js",
+      "native",
+      "vir",
+      "cwasm",
+      "fir"
+    ],
+    [
+      "vir",
+      "js",
+      "fir",
+      "native",
+      "cwasm"
+    ]
+  ],
+  "policy": "Same inputs as earlier balanced FIR comparison; require current qualification. Ten orders balance each position and within-round predecessor pair. One warmup per retained JS/Wasm instance; native one warmup in each fresh process. All measured results checked outside timers.",
+  "boundary": "JS/FIR/VIR/C-Wasm call through adapter plus text result and cleanup. Native in-process Lean computation and formatting (second of two calls). Startup excluded. C-Wasm includes decimal argument parsing; native/VIR/FIR input handling differs. No phase clocks or sampler.",
+  "caveats": "Native, FIR, C-Wasm and new VIR packages use Lean 4.34.1; VIR runtime binary remains the original bundled artifact. Diagnostic FIR adapter. No CPU affinity/governor/background-load control. Node only. JS typed arrays and BigInt differ from Lean representations.",
+  "rows": [
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 0,
+      "order": [
+        "native",
+        "js",
+        "cwasm",
+        "vir",
+        "fir"
+      ],
+      "ms": 1.014593,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 0,
+      "order": [
+        "native",
+        "js",
+        "cwasm",
+        "vir",
+        "fir"
+      ],
+      "ms": 0.7770949999999743,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 0,
+      "order": [
+        "native",
+        "js",
+        "cwasm",
+        "vir",
+        "fir"
+      ],
+      "ms": 2.176082000000008,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 0,
+      "order": [
+        "native",
+        "js",
+        "cwasm",
+        "vir",
+        "fir"
+      ],
+      "ms": 4.574350000000038,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 0,
+      "order": [
+        "native",
+        "js",
+        "cwasm",
+        "vir",
+        "fir"
+      ],
+      "ms": 122.49190700000003,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 1,
+      "order": [
+        "js",
+        "vir",
+        "native",
+        "fir",
+        "cwasm"
+      ],
+      "ms": 1.0136400000000094,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 1,
+      "order": [
+        "js",
+        "vir",
+        "native",
+        "fir",
+        "cwasm"
+      ],
+      "ms": 6.142706999999973,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 1,
+      "order": [
+        "js",
+        "vir",
+        "native",
+        "fir",
+        "cwasm"
+      ],
+      "ms": 1.011486,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 1,
+      "order": [
+        "js",
+        "vir",
+        "native",
+        "fir",
+        "cwasm"
+      ],
+      "ms": 126.00367600000004,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 1,
+      "order": [
+        "js",
+        "vir",
+        "native",
+        "fir",
+        "cwasm"
+      ],
+      "ms": 2.345901000000026,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 2,
+      "order": [
+        "vir",
+        "fir",
+        "js",
+        "cwasm",
+        "native"
+      ],
+      "ms": 5.597689999999943,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 2,
+      "order": [
+        "vir",
+        "fir",
+        "js",
+        "cwasm",
+        "native"
+      ],
+      "ms": 115.673767,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 2,
+      "order": [
+        "vir",
+        "fir",
+        "js",
+        "cwasm",
+        "native"
+      ],
+      "ms": 0.8286119999999073,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 2,
+      "order": [
+        "vir",
+        "fir",
+        "js",
+        "cwasm",
+        "native"
+      ],
+      "ms": 1.726493000000005,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 2,
+      "order": [
+        "vir",
+        "fir",
+        "js",
+        "cwasm",
+        "native"
+      ],
+      "ms": 0.727461,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 3,
+      "order": [
+        "fir",
+        "cwasm",
+        "vir",
+        "native",
+        "js"
+      ],
+      "ms": 79.68608500000005,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 3,
+      "order": [
+        "fir",
+        "cwasm",
+        "vir",
+        "native",
+        "js"
+      ],
+      "ms": 1.532899000000043,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 3,
+      "order": [
+        "fir",
+        "cwasm",
+        "vir",
+        "native",
+        "js"
+      ],
+      "ms": 3.417299999999841,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 3,
+      "order": [
+        "fir",
+        "cwasm",
+        "vir",
+        "native",
+        "js"
+      ],
+      "ms": 0.661416,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 3,
+      "order": [
+        "fir",
+        "cwasm",
+        "vir",
+        "native",
+        "js"
+      ],
+      "ms": 0.6058820000000651,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 4,
+      "order": [
+        "cwasm",
+        "native",
+        "fir",
+        "js",
+        "vir"
+      ],
+      "ms": 1.4713830000000598,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 4,
+      "order": [
+        "cwasm",
+        "native",
+        "fir",
+        "js",
+        "vir"
+      ],
+      "ms": 0.640537,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 4,
+      "order": [
+        "cwasm",
+        "native",
+        "fir",
+        "js",
+        "vir"
+      ],
+      "ms": 77.14260300000001,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 4,
+      "order": [
+        "cwasm",
+        "native",
+        "fir",
+        "js",
+        "vir"
+      ],
+      "ms": 0.6159410000000207,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 4,
+      "order": [
+        "cwasm",
+        "native",
+        "fir",
+        "js",
+        "vir"
+      ],
+      "ms": 3.3136749999998756,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 5,
+      "order": [
+        "fir",
+        "vir",
+        "cwasm",
+        "js",
+        "native"
+      ],
+      "ms": 77.132022,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 5,
+      "order": [
+        "fir",
+        "vir",
+        "cwasm",
+        "js",
+        "native"
+      ],
+      "ms": 3.4487000000001444,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 5,
+      "order": [
+        "fir",
+        "vir",
+        "cwasm",
+        "js",
+        "native"
+      ],
+      "ms": 1.4817020000000412,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 5,
+      "order": [
+        "fir",
+        "vir",
+        "cwasm",
+        "js",
+        "native"
+      ],
+      "ms": 0.6185259999999744,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 5,
+      "order": [
+        "fir",
+        "vir",
+        "cwasm",
+        "js",
+        "native"
+      ],
+      "ms": 0.635989,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 6,
+      "order": [
+        "cwasm",
+        "fir",
+        "native",
+        "vir",
+        "js"
+      ],
+      "ms": 1.596608999999944,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 6,
+      "order": [
+        "cwasm",
+        "fir",
+        "native",
+        "vir",
+        "js"
+      ],
+      "ms": 86.11419999999998,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 6,
+      "order": [
+        "cwasm",
+        "fir",
+        "native",
+        "vir",
+        "js"
+      ],
+      "ms": 0.637071,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 6,
+      "order": [
+        "cwasm",
+        "fir",
+        "native",
+        "vir",
+        "js"
+      ],
+      "ms": 3.5414140000000316,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 6,
+      "order": [
+        "cwasm",
+        "fir",
+        "native",
+        "vir",
+        "js"
+      ],
+      "ms": 0.7686989999999696,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 7,
+      "order": [
+        "native",
+        "cwasm",
+        "js",
+        "fir",
+        "vir"
+      ],
+      "ms": 0.636389,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 7,
+      "order": [
+        "native",
+        "cwasm",
+        "js",
+        "fir",
+        "vir"
+      ],
+      "ms": 1.491600999999946,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 7,
+      "order": [
+        "native",
+        "cwasm",
+        "js",
+        "fir",
+        "vir"
+      ],
+      "ms": 0.7635989999998856,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 7,
+      "order": [
+        "native",
+        "cwasm",
+        "js",
+        "fir",
+        "vir"
+      ],
+      "ms": 72.45776299999989,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 7,
+      "order": [
+        "native",
+        "cwasm",
+        "js",
+        "fir",
+        "vir"
+      ],
+      "ms": 3.0998309999999947,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 8,
+      "order": [
+        "js",
+        "native",
+        "vir",
+        "cwasm",
+        "fir"
+      ],
+      "ms": 0.627572999999984,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 8,
+      "order": [
+        "js",
+        "native",
+        "vir",
+        "cwasm",
+        "fir"
+      ],
+      "ms": 0.677016,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 8,
+      "order": [
+        "js",
+        "native",
+        "vir",
+        "cwasm",
+        "fir"
+      ],
+      "ms": 3.4620139999999537,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 8,
+      "order": [
+        "js",
+        "native",
+        "vir",
+        "cwasm",
+        "fir"
+      ],
+      "ms": 1.2916439999999056,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 8,
+      "order": [
+        "js",
+        "native",
+        "vir",
+        "cwasm",
+        "fir"
+      ],
+      "ms": 67.46029399999998,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "vir",
+      "round": 9,
+      "order": [
+        "vir",
+        "js",
+        "fir",
+        "native",
+        "cwasm"
+      ],
+      "ms": 3.2363789999999426,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "js",
+      "round": 9,
+      "order": [
+        "vir",
+        "js",
+        "fir",
+        "native",
+        "cwasm"
+      ],
+      "ms": 0.538675000000012,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "fir",
+      "round": 9,
+      "order": [
+        "vir",
+        "js",
+        "fir",
+        "native",
+        "cwasm"
+      ],
+      "ms": 66.56689099999994,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "native",
+      "round": 9,
+      "order": [
+        "vir",
+        "js",
+        "fir",
+        "native",
+        "cwasm"
+      ],
+      "ms": 0.643673,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "w": "isPrime",
+      "x": 127,
+      "engine": "cwasm",
+      "round": 9,
+      "order": [
+        "vir",
+        "js",
+        "fir",
+        "native",
+        "cwasm"
+      ],
+      "ms": 1.4742280000000392,
+      "valueSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    }
+  ],
+  "virPackageMetadata": {
+    "generator": "tools/GeneratePackage.lean",
+    "packageFormatVersion": 11,
+    "manifestVersion": 8,
+    "leanVersion": "4.34.1",
+    "leanToolchain": "leanprover/lean4:4.34.1",
+    "leanGithash": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "targets": [
+      {
+        "module": "Bench",
+        "mode": "markedModule",
+        "roots": [],
+        "resolvedRoots": [
+          "Bench.isPrime",
+          "Bench.isPrime._boxed",
+          "Bench.fibBits",
+          "Bench.fibBits._boxed",
+          "Bench.partitionsBits",
+          "Bench.partitionsBits._boxed",
+          "Bench.collatzRecord",
+          "Bench.lifePopulation",
+          "Bench.primeCount",
+          "Bench.fib",
+          "Bench.fib._boxed",
+          "Bench.partitions",
+          "Bench.partitions._boxed",
+          "Bench.tunnell",
+          "Bench.mertens"
+        ]
+      }
+    ],
+    "packageSetMember": {
+      "module": "Bench",
+      "role": "root"
+    }
+  },
+  "finished": "2026-09-29T16:43:59.425Z",
+  "loadAfter": [
+    1.22,
+    4.22,
+    5.34
+  ]
+}

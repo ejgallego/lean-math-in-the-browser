@@ -1,0 +1,132 @@
+{
+  "candidateCommit": "faee469e5eb27f139a25527a3803318c24697721",
+  "qualification": {
+    "status": "passed",
+    "passedRows": 80,
+    "timedOutRows": 0,
+    "primality1279ElapsedMs": [
+      29635.22866,
+      29458.018857000003
+    ]
+  },
+  "paired": [
+    {
+      "workload": "tunnell",
+      "input": 1000003,
+      "baselineMedianMs": 12.847864999999999,
+      "candidateMedianMs": 12.763897,
+      "speedup": 1.0065785551230944
+    },
+    {
+      "workload": "collatzRecord",
+      "input": 100000,
+      "baselineMedianMs": 96.52576750000026,
+      "candidateMedianMs": 96.43179549999991,
+      "speedup": 1.0009744918624932
+    },
+    {
+      "workload": "primeCount",
+      "input": 1000000,
+      "baselineMedianMs": 28.257308000000194,
+      "candidateMedianMs": 27.85700349999979,
+      "speedup": 1.0143699770149508
+    },
+    {
+      "workload": "mertens",
+      "input": 1000000,
+      "baselineMedianMs": 701.3399759999993,
+      "candidateMedianMs": 652.3237219999992,
+      "speedup": 1.0751409957156213
+    },
+    {
+      "workload": "partitions",
+      "input": 3000,
+      "baselineMedianMs": 21.665282500001922,
+      "candidateMedianMs": 21.684533499999816,
+      "speedup": 0.9991122243880463
+    },
+    {
+      "workload": "fib",
+      "input": 10000,
+      "baselineMedianMs": 0.17025550000107614,
+      "candidateMedianMs": 0.1954280000009021,
+      "speedup": 0.8711929713259627
+    },
+    {
+      "workload": "fibBits",
+      "input": 10000,
+      "baselineMedianMs": 0.10442200000215962,
+      "candidateMedianMs": 0.10186699999758275,
+      "speedup": 1.0250817242545427
+    },
+    {
+      "workload": "partitionsBits",
+      "input": 3000,
+      "baselineMedianMs": 21.419404500000383,
+      "candidateMedianMs": 21.54754099999809,
+      "speedup": 0.9940533121622686
+    },
+    {
+      "workload": "isPrime",
+      "input": 61,
+      "baselineMedianMs": 13.164741499998854,
+      "candidateMedianMs": 9.969438999998602,
+      "speedup": 1.3205097598772308
+    },
+    {
+      "workload": "isPrime",
+      "input": 127,
+      "baselineMedianMs": 88.60108049999872,
+      "candidateMedianMs": 64.59730599999966,
+      "speedup": 1.3715909530344683
+    },
+    {
+      "workload": "lifePopulation",
+      "input": 100,
+      "baselineMedianMs": 59.12904949999938,
+      "candidateMedianMs": 57.87647899999865,
+      "speedup": 1.021642133758703
+    },
+    {
+      "workload": "fibBits",
+      "input": 100000,
+      "baselineMedianMs": 4.332785499998863,
+      "candidateMedianMs": 4.33378249999987,
+      "speedup": 0.9997699469225769
+    }
+  ],
+  "fiveBackend": {
+    "isprime": {
+      "native": 0.6525445000000001,
+      "js": 0.6955859999999348,
+      "vir": 3.455357000000049,
+      "fir": 78.41434400000003,
+      "cwasm": 1.5122499999999945
+    },
+    "mertens": {
+      "native": 45.1590575,
+      "js": 25.71332650000113,
+      "vir": 3537.508159000001,
+      "fir": 686.7116434999971,
+      "cwasm": 47.533632500000294
+    }
+  },
+  "prime61": {
+    "phaseMedianMs": 10.085234499999991,
+    "rawWasmMedianMs": 10.033732,
+    "samples": 941,
+    "natModInclusivePercent": 51.777193060696604
+  },
+  "prime127": {
+    "phaseMedianMs": 76.18526549999999,
+    "rawWasmMedianMs": 76.08676000000003,
+    "samples": 1463,
+    "natModInclusivePercent": 52.47028352182682
+  },
+  "mertens1m": {
+    "phaseMedianMs": 715.5524340000002,
+    "rawWasmMedianMs": 715.509583,
+    "samples": 2181,
+    "natModInclusivePercent": 16.755813833109602
+  }
+}
